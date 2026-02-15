@@ -80,13 +80,7 @@ export default function App() {
             <h2 className="h2">Acerca del proyecto</h2>
         
             <p className="sub">
-              Es un ejercicio de análisis paleobiológico aplicado a criaturas ficticias.
-            </p>
-            <p>
-              Cada especie se evalúa bajo criterios reales de anatomía funcional, biomecánica, dinámica poblacional y evolución insular.
-            </p>
-            <p>
-              El objetivo es sostener coherencia estructural, límites físicos plausibles y lógica ecológica interna, incluso cuando el punto de partida proviene de la ficción cinematográfica.
+              Cada especie se evalúa bajo criterios reales, ímites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
             </p>
         
             <div className="cards">
