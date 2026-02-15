@@ -54,19 +54,35 @@ button{font:inherit}
 .brand-title{font-weight:650}
 .brand-sub{font-size:12px; color:var(--muted); margin-top:2px}
 
-.nav-links{display:flex; gap:10px; align-items:center; flex-wrap:wrap; justify-content:flex-end}
-.nav-links button{
-  padding:9px 12px;
-  border-radius:999px;
-  border:1px solid var(--line);
+.nav-links {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.nav-btn {
+  padding: 9px 16px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
   background: rgba(255,255,255,0.04);
   color: var(--text);
-  cursor:pointer;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-weight: 500;
 }
-.nav-links button:hover{background: rgba(255,255,255,0.07)}
-.nav-links .cta{
-  background: rgba(255,255,255,0.10);
+
+.nav-btn:hover {
+  background: rgba(255,255,255,0.08);
+  transform: translateY(-1px);
+}
+
+.nav-primary {
+  background: rgba(255,255,255,0.12);
   border-color: rgba(255,255,255,0.18);
+}
+
+.nav-primary:hover {
+  background: rgba(255,255,255,0.18);
 }
 
 .hero{
