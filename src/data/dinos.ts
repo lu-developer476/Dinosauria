@@ -1,6 +1,6 @@
 import type { DinoCard } from "../types";
 
-export const dinos: DinoCard[] = [
+export const dinos = [
   {
     id: "brontosaurus-baxteri",
     name: "Brontosaurus baxteri",
