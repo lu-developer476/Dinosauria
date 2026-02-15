@@ -13,7 +13,7 @@ Megaherbívoro insular derivado de diplodócidos jurásicos. Presentaba una estr
 
 Su tamaño no respondía únicamente a requerimientos energéticos, sino a presión predatoria constante ejercida por terópodos colosales. La vida gregaria permitía coordinación defensiva y estampidas con impacto mecánico significativo sobre el terreno.
 
-Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros modificaban la estructura vegetal insular. Su fisiología mesotérmica le otorgaba estabilidad metabólica en un entorno de recursos variables.`
+Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros modificaban la estructura vegetal insular.`
   },
 
   {
@@ -26,9 +26,7 @@ Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros mod
 
 Terópodo derivado de abelisáuridos gondwánicos, modificado por evolución insular extrema. Presentaba cráneo compacto con suturas fusionadas y cuernos queratinizados diseñados para impacto directo.
 
-No era un corredor de persecución prolongada. Su estrategia se basaba en proximidad, potencia cervical y combate territorial. La densidad corporal elevada y blindaje dérmico parcial aumentaban resistencia estructural.
-
-Ocupaba un nicho de depredador intermedio, cazando fauna mediana y disputando territorio con violencia ritualizada o letal.`
+Su estrategia se basaba en combate cercano y dominio territorial más que en persecución prolongada.`
   },
 
   {
@@ -39,12 +37,47 @@ Ocupaba un nicho de depredador intermedio, cazando fauna mediana y disputando te
     size: "Colosal",
     description: `Masa estimada: 12–14 toneladas | Longitud: 13–15 metros | Locomoción: Bípeda de potencia explosiva | Termorregulación: Endotermia avanzada | Rol ecológico: Depredador ápice regulador | Estrategia dominante: Fuerza mandibular extrema y control territorial  
 
-Superdepredador ápice del ecosistema insular. Descendiente derivado de tiranosáuridos, evolucionó hacia una morfología más compacta y masiva que Tyrannosaurus rex.
+Superdepredador ápice del ecosistema insular. Evolucionó hacia una morfología más compacta y masiva que Tyrannosaurus rex.
 
-El cráneo alto y reforzado, junto con musculatura mandibular hipertrofiada, permitía fuerzas de mordida superiores a 50.000 newtons, funcionando como prensa biológica capaz de fracturar hueso denso.
+Su cráneo reforzado y musculatura mandibular hipertrofiada permitían fuerzas de mordida superiores a 50.000 newtons.`
+  },
 
-No optimizado para velocidad sostenida, sino para potencia explosiva y resistencia en combate. Controlaba poblaciones de megaherbívoros y eliminaba competidores, manteniendo estabilidad trófica del sistema.
+  {
+    id: "foetodon-ferrus",
+    name: "Foetodon ferrus",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 300–450 kg | Longitud: 3–4 metros | Locomoción: Bípeda ágil | Termorregulación: Endotermia elevada | Rol ecológico: Carroñero oportunista y cazador menor | Estrategia: Dentición adaptada a desgarro y resistencia bacteriana elevada  
 
-Representaba el extremo máximo de la carrera armamentista evolutiva en un entorno cerrado de presión selectiva permanente.`
+Pequeño terópodo altamente adaptado a ambientes insalubres y competencia carroñera extrema. Su nombre deriva de la emisión constante de compuestos orgánicos volátiles asociados a tejido en descomposición.
+
+Presentaba dentición serrada fina y mandíbula flexible, adecuada tanto para restos orgánicos como para presas pequeñas. Su sistema inmunológico habría sido excepcionalmente resistente, permitiéndole explotar nichos marginales.`
+  },
+
+  {
+    id: "ligocristus-innocens",
+    name: "Ligocristus innocens",
+    era: "Jurásico",
+    diet: "Herbívoro",
+    size: "Pequeño",
+    description: `Masa estimada: 120–180 kg | Longitud: 2–3 metros | Locomoción: Bípeda ligera | Termorregulación: Mesotérmica | Rol ecológico: Herbívoro basal de sotobosque | Estrategia defensiva: Camuflaje y velocidad reactiva  
+
+Ornitópodo insular de baja altura corporal y cráneo estrecho adaptado a vegetación baja. Su morfología indicaba dependencia de ambientes densamente vegetados.
+
+Carecía de defensas físicas desarrolladas, compensando mediante velocidad y comportamiento gregario disperso. Representaba la base energética para depredadores medianos.`
+  },
+
+  {
+    id: "venatosaurus-saevidicus",
+    name: "Venatosaurus saevidicus",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Grande",
+    description: `Masa estimada: 2–3 toneladas | Longitud: 8–9 metros | Locomoción: Bípeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Depredador coordinado en grupo | Estrategia ofensiva: Caza cooperativa y resistencia aeróbica  
+
+Terópodo esbelto y social, adaptado a persecución sostenida. A diferencia de Ferrucutus, su ventaja no era el impacto frontal sino la coordinación grupal.
+
+Poseía extremidades posteriores elongadas y cola rígida estabilizadora, optimizadas para cambios de dirección rápidos. En el ecosistema de Isla Calavera funcionaba como regulador secundario, capaz de presionar incluso a herbívoros de gran tamaño cuando actuaba en grupo.`
   }
 ];
