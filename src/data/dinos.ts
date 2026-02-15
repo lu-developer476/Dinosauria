@@ -1,9 +1,5 @@
 import type { DinoCard } from "../types";
 
-export const dinos: DinoCard[] = dinosData.sort((a, b) =>
-  a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-);
-
 export const dinos: DinoCard[] = [
   {
   id: "atercurisaurus",
