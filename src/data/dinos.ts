@@ -124,6 +124,27 @@ En la red trófica de Isla Calavera, cumplía un rol fundamental como consumidor
   },
 
   {
+  id: "indominus_rex",
+  name: "Indominus Rex",
+  era: "Holoceno",
+  diet: "Carnívoro",
+  size: "Gigante",
+  description: `Masa estimada: 8–10 toneladas | Longitud: 15.2 metros (hasta 16.9 m estimado adulto) | Altura a la cadera: 6 metros (hasta 6.7 m adulto) | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
+
+El Indominus Rex fue un organismo híbrido diseñado mediante ingeniería genética combinando ADN de Tyrannosaurus Rex, Velociraptor y múltiples terópodos adicionales, junto con material genético de especies modernas como sepias y anfibios. Su esqueleto mostraba una arquitectura masiva y reforzada, con vértebras cervicales robustas, caja torácica expandida y extremidades anteriores significativamente más desarrolladas que las de un tiranosáurido clásico.
+
+El cráneo presentaba una morfología intermedia entre T. rex y abelisáuridos, con ornamentaciones óseas irregulares y una mandíbula equipada con aproximadamente 74 dientes cónicos de reemplazo continuo. La musculatura mandibular permitía una fuerza de mordida superior a la de cualquier depredador terrestre conocido dentro de su universo narrativo.
+
+Su sistema tegumentario incluía escamas gruesas y posiblemente estructuras dérmicas reforzadas. Gracias a la incorporación de ADN de cefalópodos, poseía la capacidad de alterar parcialmente su pigmentación corporal, generando un camuflaje activo que le permitía evadir sensores térmicos y visuales. Esta adaptación la convertía en un depredador de emboscada extremadamente eficiente.
+
+Neurológicamente, presentaba un desarrollo cognitivo superior al de dinosaurios clonados convencionales, heredado en parte del Velociraptor. Mostraba conducta estratégica, evaluación de amenazas y capacidad de aprendizaje rápido, lo que aumentaba exponencialmente su peligrosidad.
+
+La reproducción era inviable de forma natural, ya que se trataba de un organismo creado en laboratorio bajo control genético. El crecimiento fue acelerado mediante manipulación hormonal y regulación artificial, alcanzando tamaño adulto en un período significativamente menor al que habría requerido un dinosaurio real de dimensiones comparables.
+
+En términos ecológicos, el Indominus Rex no ocupaba un nicho natural equilibrado: era un organismo diseñado para superar cualquier cadena trófica existente, careciendo de depredadores naturales y generando inestabilidad inmediata en el ecosistema donde era introducido.`
+  },
+
+  {
   id: "ligocristus-innocens",
   name: "Ligocristus innocens",
   era: "Jurásico",
@@ -198,6 +219,69 @@ Las garras largas y curvadas se utilizan mayormente para trepar y asegurar agarr
 
 Reproducción ovípara con puestas pequeñas de 2–3 huevos en cavidades protegidas (árboles huecos o cuevas bajo raíces). La hembra permanece incubando y criando, mientras el macho aporta alimento. Las crías nacen con colmillos cortos y desarrollan plenamente los sables alrededor del año. El macho abandona a la familia cerca de los cuatro meses; los jóvenes permanecen con la madre hasta la siguiente temporada reproductiva, cuando son expulsados y pasan a vida independiente.`
 
+  },
+
+  {
+  id: "spinoceratops",
+  name: "Spinoceratops",
+  era: "Holoceno",
+  diet: "Omnívoro",
+  size: "Grande",
+  description: `Masa estimada: 6 toneladas | Longitud: 10-12 metros | Altura a la cadera: 4.9 metros | Locomoción: Cuadrúpeda dominante con capacidad de impulso parcial | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador semiacuático híbrido | Estrategia ofensiva: Ataque de emboscada acuática y embestida frontal  
+
+El Spinoceratops es un híbrido genético resultado de la combinación de ADN de Spinosaurus y Sinoceratops. Su esqueleto integra la estructura corporal alargada y la adaptación semiacuática del espinosáurido con la robustez craneal y defensiva propia de los ceratópsidos.
+
+El cráneo presenta una morfología alargada con hocico estrecho adaptado a la captura de presas acuáticas, complementado por ornamentaciones y cuernos frontales derivados del linaje ceratopsiano. Esta combinación le permite tanto la captura de peces como la defensa activa ante amenazas terrestres.
+
+Su columna vertebral sostiene una estructura dorsal parcialmente desarrollada que recuerda la vela del Spinosaurus, posiblemente utilizada para regulación térmica y exhibición visual. Las extremidades son gruesas y estables, optimizadas para soportar su masa corporal en tierra firme, aunque su fisiología indica afinidad con ambientes ribereños y zonas pantanosas.
+
+La dieta piscívora sugiere comportamiento de acecho en márgenes de cuerpos de agua, donde puede aprovechar su tamaño y potencia para capturar presas acuáticas con rapidez. No obstante, su estructura corporal también le permite enfrentamientos directos si se siente amenazado.
+
+La reproducción contempla una nidada de 2 a 3 huevos, con incubación controlada debido a su naturaleza híbrida. El crecimiento es acelerado mediante intervención genética, alcanzando madurez funcional en un período reducido comparado con dinosaurios naturales de tamaño equivalente.
+
+En ecosistemas controlados, el Spinoceratops cumple el rol de depredador especializado en ambientes mixtos tierra-agua, ocupando un nicho intermedio entre carnívoros terrestres y cazadores acuáticos, con elevada capacidad defensiva gracias a su herencia ceratopsiana.`
+  },
+
+  {
+  id: "spinoraptor",
+  name: "Spinoraptor",
+  era: "Holoceno",
+  diet: "Carnívoro",
+  size: "Mediano",
+  description: `Masa estimada: 600-800 kg | Longitud: 6.5-8 metros | Altura a la cadera: 2.8-3 metros | Locomoción: Bípedo digitígrado | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador híbrido de persecución | Estrategia ofensiva: Ataque coordinado, velocidad y emboscada  
+
+El Spinoraptor es un híbrido genético creado mediante la combinación de ADN de Spinosaurus y Velociraptor. Su esqueleto muestra una estructura más estilizada que la de otros híbridos de gran tamaño, con extremidades posteriores largas que favorecen la velocidad y la maniobrabilidad.
+
+El cráneo conserva la elongación característica del linaje espinosáurido, aunque en proporciones reducidas, mientras que la herencia del Velociraptor aporta mayor agilidad, coordinación motora y capacidad de ataque estratégico. La mandíbula está equipada con dientes cónicos y afilados, adecuados para desgarrar carne y sujetar presas activas.
+
+La presencia de una estructura dorsal parcial, reminiscente de la vela del Spinosaurus, sugiere función de exhibición o regulación térmica secundaria. Su musculatura es más ligera que la de híbridos masivos, pero optimizada para aceleraciones rápidas y cambios de dirección en espacios abiertos.
+
+La dieta es estrictamente carnívora, mostrando preferencia por presas medianas y comportamiento depredador activo. A diferencia de híbridos más grandes diseñados para dominación bruta, el Spinoraptor exhibe patrones de caza más dinámicos y agresivos.
+
+La reproducción contempla una nidada de 1 a 3 huevos bajo incubación controlada. El crecimiento es acelerado mediante manipulación genética, alcanzando madurez operativa en plazos reducidos.
+
+En entornos controlados, el Spinoraptor ocupa el nicho de depredador rápido y adaptable, combinando potencia moderada con inteligencia táctica, convirtiéndolo en un híbrido particularmente peligroso pese a su tamaño inferior respecto a otras quimeras genéticas.`
+  },
+
+  {
+  id: "stegoceratops",
+  name: "Stegoceratops",
+  era: "Holoceno",
+  diet: "Paleobotánica de suelo",
+  size: "Grande",
+  description: `Masa estimada: 4 toneladas | Longitud: 11.6 metros | Altura a la cadera: 5.2 metros | Locomoción: Cuadrúpeda | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Megaherbívoro defensivo híbrido | Estrategia ofensiva: Embestida frontal combinada con defensa dorsal pasiva  
+
+El Stegoceratops es un híbrido genético perteneciente a la familia Híbridos, creado mediante la combinación de material genético de Stegosaurus y Triceratops. Su esqueleto presenta una arquitectura robusta con una cintura escapular poderosa y una región pélvica amplia, diseñada para soportar una masa corporal considerable y absorber impactos frontales.
+
+El cráneo combina un escudo óseo frontal amplio con cuernos desarrollados, mientras que el dorso exhibe placas dérmicas prominentes alineadas longitudinalmente. Esta doble estructura defensiva lo convierte en uno de los herbívoros híbridos mejor protegidos de su entorno.
+
+Su locomoción es estrictamente cuadrúpeda, con extremidades gruesas y columna vertebral reforzada para sostener su altura de 5.2 metros. La musculatura cervical permite sostener el peso del cráneo y ejecutar embestidas cortas si se siente amenazado.
+
+La dieta paleobotánica de suelo indica que se alimenta principalmente de vegetación baja, helechos, arbustos y flora rastrera, utilizando su pico córneo para arrancar material vegetal fibroso. Su sistema digestivo está adaptado para procesar grandes volúmenes de biomasa.
+
+La reproducción contempla una nidada de 2 a 4 huevos, con incubación controlada en instalaciones especializadas debido a su naturaleza híbrida. El crecimiento es acelerado mediante intervención genética, permitiendo alcanzar tamaño adulto en menor tiempo que especies mesozoicas naturales.
+
+En ecosistemas controlados, el Stegoceratops cumple el rol de megaherbívoro estructural, contribuyendo al mantenimiento del paisaje vegetal y funcionando como elemento disuasivo frente a depredadores de gran tamaño.`
   },
 
   {
