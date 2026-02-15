@@ -184,7 +184,7 @@ export default function App() {
         
         <section id="galeria" className="section">
           <div className="container">
-            <h2 className="h2">Especies</h2>
+            <h2 className="h2">Galería</h2>
             <div className="sub gallery-text">
             <p>
               La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
