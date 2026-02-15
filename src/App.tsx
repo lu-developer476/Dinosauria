@@ -169,7 +169,13 @@ export default function App() {
               {dinos.map((d) => (
                 <article className="card" key={d.id}>
                   <strong>{d.name}</strong>
-                  <p>{d.description}</p>
+                  
+                  <div className="sub dino-text">
+                    {d.description.split("\n\n").map((paragraph, index) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                  </div>
+                  
                   <div className="badges">
                     <span className="badge">{d.era}</span>
                     <span className="badge">{d.diet}</span>
