@@ -1,5 +1,9 @@
 import type { DinoCard } from "../types";
 
+export const dinos: DinoCard[] = dinosData.sort((a, b) =>
+  a.name.localeCompare(b.name, "es", { sensitivity: "base" })
+);
+
 export const dinos: DinoCard[] = [
   {
   id: "atercurisaurus",
@@ -265,7 +269,3 @@ La reproducción es ovípara, con puestas reducidas (2–4 huevos) en nidos simp
 En la red trófica de Isla Calavera, Zeropteryx torova cumple función como dispersor de semillas y consumidor de vegetación baja, contribuyendo a regeneración forestal. Representa un ejemplo clásico de evolución insular convergente con aves no voladoras históricas, adaptado a un entorno donde la pérdida de vuelo inicialmente no implicaba desventaja inmediata.`
   },
 ];
-
-export const dinos: DinoCard[] = dinosData.sort((a, b) =>
-  a.name.localeCompare(b.name, "es", { sensitivity: "base" })
-);
