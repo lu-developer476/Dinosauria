@@ -60,25 +60,14 @@ export default function App() {
                   <p className="lead">
                     Sitio no oficial de las especies jamás vistas por el hombre.
                   </p>
-                  <div className="hero-actions">
-                    <a className="primary" href="#explorar" onClick={(e) => (e.preventDefault(), smoothScrollTo("explorar"))}>
-                      Especies
-                    </a>
-                    <a href="#galeria" onClick={(e) => (e.preventDefault(), smoothScrollTo("galeria"))}>
-                      Abrir galería
-                    </a>
-                    <a href="#sobre" onClick={(e) => (e.preventDefault(), smoothScrollTo("sobre"))}>
-                      Metodología
-                    </a>
-                  </div>
                 </div>
 
                 <aside className="hero-aside" aria-label="Dato destacado">
-                  <div className="fact-title">Dato del día</div>
+                  <div className="fact-title">Curiosidad del día</div>
                   <div className="fact">{fact}</div>
                   <div className="fact-footer">
                     <span className="pill">Actualizado: {nowStamp()}</span>
-                    <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>Otro</button>
+                    <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>Más</button>
                   </div>
                 </aside>
               </div>
