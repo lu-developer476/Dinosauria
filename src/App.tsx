@@ -75,9 +75,10 @@ export default function App() {
           </div>
         </section>
 
-        <section id="sobre" className="section">
+                <section id="sobre" className="section">
           <div className="container">
             <h2 className="h2">Acerca del proyecto</h2>
+        
             <p className="sub">
               Es un ejercicio de análisis paleobiológico aplicado a criaturas ficticias.
             </p>
@@ -87,32 +88,32 @@ export default function App() {
             <p>
               El objetivo es sostener coherencia estructural, límites físicos plausibles y lógica ecológica interna, incluso cuando el punto de partida proviene de la ficción cinematográfica.
             </p>
-          </div>
-
+        
             <div className="cards">
               <div className="card">
                 <strong>Enfoque</strong>
                 <p>
-                  El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
+                  El análisis parte de anatomía comparada y modelado biomecánico básico...
                 </p>
                 <p>
-                  Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
+                  Se consideran presiones selectivas propias de ecosistemas cerrados...
                 </p>
               </div>
-
+        
               <div className="card">
                 <strong>Arquitectura</strong>
                 <p>
-                  El sitio está desarrollado en React con TypeScript como núcleo estructural.
+                  El sitio está desarrollado en React con TypeScript...
                 </p>
                 <p>
-                  Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
+                  Se utiliza JavaScript para utilidades específicas...
                 </p>
                 <p>
-                  La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
+                  La estructura está preparada para escalar...
                 </p>
               </div>
             </div>
+        
           </div>
         </section>
 
