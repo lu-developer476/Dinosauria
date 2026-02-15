@@ -6,5 +6,5 @@ export type DinoCard = {
   era: Era;
   diet: "Herbívoro" | "Carnívoro" | "Omnívoro";
   size: "Pequeño" | "Mediano" | "Grande" | "Colosal";
-  summary: string;
+  description: string;
 };
