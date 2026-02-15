@@ -93,23 +93,23 @@ export default function App() {
               <div className="card">
                 <strong>Enfoque</strong>
                 <p>
-                  El análisis parte de anatomía comparada y modelado biomecánico básico...
+                  El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
                 </p>
                 <p>
-                  Se consideran presiones selectivas propias de ecosistemas cerrados...
+                  Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
                 </p>
               </div>
         
               <div className="card">
                 <strong>Arquitectura</strong>
                 <p>
-                  El sitio está desarrollado en React con TypeScript...
+                  El sitio está desarrollado en React con TypeScript como núcleo estructural.
                 </p>
                 <p>
-                  Se utiliza JavaScript para utilidades específicas...
+                  Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
                 </p>
                 <p>
-                  La estructura está preparada para escalar...
+                  La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
                 </p>
               </div>
             </div>
