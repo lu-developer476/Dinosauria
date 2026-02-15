@@ -43,8 +43,8 @@ export default function App() {
           <nav className="nav-links" aria-label="Navegación principal">
             <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
-            <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
           </nav>
         </div>
       </header>
@@ -159,8 +159,32 @@ export default function App() {
           </div>
         </section>
 
+        <section id="explorar" className="section">
+          <div className="container">
+            <h2 className="h2">Especies</h2>
+            <p className="sub">
+              Esta sección reúne fichas sintéticas de las especies reconstruidas dentro del ecosistema insular. Cada entrada resume rasgos morfológicos, rol trófico y contexto evolutivo bajo criterios de anatomía funcional y plausibilidad biomecánica.
+            </p>
+
+            <div className="cards">
+              {dinos.map((d) => (
+                <article className="card" key={d.id}>
+                  <strong>{d.name}</strong>
+                  <p>{d.summary}</p>
+                  <div className="badges">
+                    <span className="badge">{d.era}</span>
+                    <span className="badge">{d.diet}</span>
+                    <span className="badge">{d.size}</span>
+                  </div>
+                </article>
+              ))}
+            </div>
+          </div>
+        </section>
+        
         <section id="galeria" className="section">
           <div className="container">
+            <h2 className="h2">Especies</h2>
             <div className="sub gallery-text">
             <p>
               La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
@@ -190,34 +214,12 @@ export default function App() {
           </div>
         </section>
 
-        <section id="explorar" className="section">
-          <div className="container">
-            <h2 className="h2">Especies</h2>
-            <p className="sub">
-              Esta sección reúne fichas sintéticas de las especies reconstruidas dentro del ecosistema insular. Cada entrada resume rasgos morfológicos, rol trófico y contexto evolutivo bajo criterios de anatomía funcional y plausibilidad biomecánica.
-            </p>
-
-            <div className="cards">
-              {dinos.map((d) => (
-                <article className="card" key={d.id}>
-                  <strong>{d.name}</strong>
-                  <p>{d.summary}</p>
-                  <div className="badges">
-                    <span className="badge">{d.era}</span>
-                    <span className="badge">{d.diet}</span>
-                    <span className="badge">{d.size}</span>
-                  </div>
-                </article>
-              ))}
-            </div>
-          </div>
-        </section>
       </main>
 
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()} Descubriendo Dinos · Repositorio: Dinosauria</small>
-          <small>React · TypeScript · JavaScript · CoffeeScript</small>
+          <small>© {new Date().getFullYear()} Realizado por Lucas Leonel Montenegro Burgos</small>
+          <small>Todos los derechos reservados</small>
         </div>
       </footer>
     </>
