@@ -7,15 +7,14 @@ export const dinos: DinoCard[] = [
     era: "Jurásico",
     diet: "Herbívoro",
     size: "Colosal",
+    description: `Masa estimada: 35–45 toneladas  
+Longitud: 22–25 metros  
+Locomoción: Cuadrúpeda graviportal  
+Termorregulación: Mesotérmica  
+Rol ecológico: Ingeniero ecosistémico estructurante  
+Estrategia defensiva: Gigantismo funcional y comportamiento gregario  
 
-    mass: "35–45 toneladas",
-    length: "22–25 metros",
-    locomotion: "Cuadrúpeda graviportal",
-    thermoregulation: "Mesotérmica",
-    ecologicalRole: "Especie estructurante del ecosistema",
-    defensiveStrategy: "Gigantismo defensivo y comportamiento gregario",
-
-    description: `Megaherbívoro insular derivado de diplodócidos jurásicos. Presentaba una estructura corporal extraordinariamente robusta, con vértebras cervicales reforzadas y musculatura densa en la base del cuello y la cola.
+Megaherbívoro insular derivado de diplodócidos jurásicos. Presentaba una estructura corporal extraordinariamente robusta, con vértebras cervicales reforzadas y musculatura densa en la base del cuello y la cola.
 
 Su tamaño no respondía únicamente a requerimientos energéticos, sino a presión predatoria constante ejercida por terópodos colosales. La vida gregaria permitía coordinación defensiva y estampidas con impacto mecánico significativo sobre el terreno.
 
@@ -28,15 +27,14 @@ Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros mod
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Grande",
+    description: `Masa estimada: 1.8–2.2 toneladas  
+Longitud: 7–8 metros  
+Locomoción: Bípeda robusta  
+Termorregulación: Endotermia parcial probable  
+Rol ecológico: Depredador intermedio territorial  
+Estrategia ofensiva: Cráneo reforzado y embestida frontal  
 
-    mass: "1.8–2.2 toneladas",
-    length: "7–8 metros",
-    locomotion: "Bípeda robusta",
-    thermoregulation: "Probablemente endotérmica parcial",
-    ecologicalRole: "Depredador intermedio territorial",
-    defensiveStrategy: "Cráneo reforzado y embestida frontal",
-
-    description: `Terópodo derivado de abelisáuridos gondwánicos, modificado por evolución insular extrema. Presentaba cráneo compacto con suturas fusionadas y cuernos queratinizados diseñados para impacto directo.
+Terópodo derivado de abelisáuridos gondwánicos, modificado por evolución insular extrema. Presentaba cráneo compacto con suturas fusionadas y cuernos queratinizados diseñados para impacto directo.
 
 No era un corredor de persecución prolongada. Su estrategia se basaba en proximidad, potencia cervical y combate territorial. La densidad corporal elevada y blindaje dérmico parcial aumentaban resistencia estructural.
 
@@ -49,15 +47,14 @@ Ocupaba un nicho de depredador intermedio, cazando fauna mediana y disputando te
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Colosal",
+    description: `Masa estimada: 12–14 toneladas  
+Longitud: 13–15 metros  
+Locomoción: Bípeda de potencia explosiva  
+Termorregulación: Endotermia avanzada  
+Rol ecológico: Depredador ápice regulador  
+Estrategia dominante: Fuerza mandibular extrema y control territorial  
 
-    mass: "12–14 toneladas",
-    length: "13–15 metros",
-    locomotion: "Bípeda de potencia explosiva",
-    thermoregulation: "Endotérmica avanzada",
-    ecologicalRole: "Depredador ápice regulador",
-    defensiveStrategy: "Fuerza mandibular extrema y dominancia territorial",
-
-    description: `Superdepredador ápice del ecosistema insular. Descendiente derivado de tiranosáuridos, evolucionó hacia una morfología más compacta y masiva que Tyrannosaurus rex.
+Superdepredador ápice del ecosistema insular. Descendiente derivado de tiranosáuridos, evolucionó hacia una morfología más compacta y masiva que Tyrannosaurus rex.
 
 El cráneo alto y reforzado, junto con musculatura mandibular hipertrofiada, permitía fuerzas de mordida superiores a 50.000 newtons, funcionando como prensa biológica capaz de fracturar hueso denso.
 
