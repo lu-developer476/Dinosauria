@@ -79,7 +79,11 @@ export default function App() {
             <h2 className="h2">Acerca del proyecto</h2>
             <p className="sub">
               Es un ejercicio de análisis paleobiológico aplicado a criaturas ficticias.
+            </p>
+            <p>
               Cada especie se evalúa bajo criterios reales de anatomía funcional, biomecánica, dinámica poblacional y evolución insular.
+            </p>
+            <p>
               El objetivo es sostener coherencia estructural, límites físicos plausibles y lógica ecológica interna, incluso cuando el punto de partida proviene de la ficción cinematográfica.
             </p>
 
@@ -88,6 +92,8 @@ export default function App() {
                 <strong>Enfoque</strong>
                 <p>
                   El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
+                </p>
+                <p>
                   Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
                 </p>
               </div>
@@ -96,7 +102,11 @@ export default function App() {
                 <strong>Arquitectura</strong>
                 <p>
                   El sitio está desarrollado en React con TypeScript como núcleo estructural.
+                </p>
+                <p>
                   Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
+                </p>
+                <p>
                   La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
                 </p>
               </div>
@@ -118,7 +128,11 @@ export default function App() {
                   <h3>Aislamiento prolongado</h3>
                   <p>
                     La Isla Calavera habría permanecido aislada desde finales del Cretácico, funcionando como un refugio biológico cerrado tras eventos de extinción global. Este aislamiento impidió intercambio genético con el exterior y favoreció procesos de deriva genética acelerada.
+                  </p>
+                  <p>
                     En ausencia de competencia externa, las especies sobrevivientes no conservaron su forma original: divergieron. Los linajes de saurópodos, terópodos y abelisáuridos evolucionaron hacia morfologías más robustas, con densidad ósea incrementada y mayor tolerancia al daño físico.
+                  </p>
+                  <p>
                     El resultado no es un “mundo congelado en el tiempo”, sino un ecosistema que continuó evolucionando bajo reglas propias durante millones de años.
                   </p>
                 </div>
@@ -130,7 +144,11 @@ export default function App() {
                   <h3>Especialización extrema</h3>
                   <p>
                     En ecosistemas de alta densidad trófica y competencia permanente, la selección natural no premia rasgos ornamentales sino funcionales.
+                  </p>
+                  <p>
                     Aumentos en masa corporal, reforzamiento craneal, densidad ósea elevada y comportamiento territorial son respuestas típicas a presión predatoria intensa.
+                  </p>
+                  <p>
                     Las especies que sobreviven no son las más rápidas o espectaculares, sino aquellas que optimizan energía, resistencia estructural y eficiencia biomecánica dentro de su nicho ecológico.
                   </p>
                 </div>
@@ -142,7 +160,11 @@ export default function App() {
                   <h3>Equilibrio inestable</h3>
                   <p>
                     La estabilidad del ecosistema no depende de abundancia masiva, sino de equilibrio entre natalidad elevada y mortalidad constante.
-                    En entornos cerrados, la mortalidad juvenil suele ser extremadamente alta, lo que mantiene control poblacional sin necesidad de grandes fluctuaciones demográficas.
+                  </p>
+                  <p>
+                  En entornos cerrados, la mortalidad juvenil suele ser extremadamente alta, lo que mantiene control poblacional sin necesidad de grandes fluctuaciones demográficas.
+                  </p>
+                  <p>
                     La aparente estabilidad ecológica es el resultado de ciclos continuos de reemplazo generacional, no de armonía permanente. La competencia por territorio y recursos es constante y estructural.
                   </p>
                 </div>
