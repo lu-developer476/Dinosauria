@@ -7,12 +7,7 @@ export const dinos: DinoCard[] = [
     era: "Jurásico",
     diet: "Herbívoro",
     size: "Colosal",
-    description: `Masa estimada: 35–45 toneladas  
-Longitud: 22–25 metros  
-Locomoción: Cuadrúpeda graviportal  
-Termorregulación: Mesotérmica  
-Rol ecológico: Ingeniero ecosistémico estructurante  
-Estrategia defensiva: Gigantismo funcional y comportamiento gregario  
+    description: `Masa estimada: 35–45 toneladas | Longitud: 22–25 metros | Locomoción: Cuadrúpeda graviportal | Termorregulación: Mesotérmica | Rol ecológico: Ingeniero ecosistémico estructurante | Estrategia defensiva: Gigantismo funcional y comportamiento gregario  
 
 Megaherbívoro insular derivado de diplodócidos jurásicos. Presentaba una estructura corporal extraordinariamente robusta, con vértebras cervicales reforzadas y musculatura densa en la base del cuello y la cola.
 
@@ -27,12 +22,7 @@ Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros mod
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Grande",
-    description: `Masa estimada: 1.8–2.2 toneladas  
-Longitud: 7–8 metros  
-Locomoción: Bípeda robusta  
-Termorregulación: Endotermia parcial probable  
-Rol ecológico: Depredador intermedio territorial  
-Estrategia ofensiva: Cráneo reforzado y embestida frontal  
+    description: `Masa estimada: 1.8–2.2 toneladas | Longitud: 7–8 metros | Locomoción: Bípeda robusta | Termorregulación: Endotermia parcial probable | Rol ecológico: Depredador intermedio territorial | Estrategia ofensiva: Cráneo reforzado y embestida frontal  
 
 Terópodo derivado de abelisáuridos gondwánicos, modificado por evolución insular extrema. Presentaba cráneo compacto con suturas fusionadas y cuernos queratinizados diseñados para impacto directo.
 
@@ -47,12 +37,7 @@ Ocupaba un nicho de depredador intermedio, cazando fauna mediana y disputando te
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Colosal",
-    description: `Masa estimada: 12–14 toneladas  
-Longitud: 13–15 metros  
-Locomoción: Bípeda de potencia explosiva  
-Termorregulación: Endotermia avanzada  
-Rol ecológico: Depredador ápice regulador  
-Estrategia dominante: Fuerza mandibular extrema y control territorial  
+    description: `Masa estimada: 12–14 toneladas | Longitud: 13–15 metros | Locomoción: Bípeda de potencia explosiva | Termorregulación: Endotermia avanzada | Rol ecológico: Depredador ápice regulador | Estrategia dominante: Fuerza mandibular extrema y control territorial  
 
 Superdepredador ápice del ecosistema insular. Descendiente derivado de tiranosáuridos, evolucionó hacia una morfología más compacta y masiva que Tyrannosaurus rex.
 
