@@ -201,9 +201,11 @@ button{font:inherit}
 .step h3{margin:0; font-size:15px; font-weight:700}
 .step p{margin:8px 0 0; color:var(--muted); line-height:1.6}
 
-.gallery-text p {
-  margin-bottom: 18px;
-  line-height: 1.7;
+.gallery{
+  margin-top:18px;
+  display:grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap:12px;
 }
 .gimg{
   grid-column: span 3;
