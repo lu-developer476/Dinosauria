@@ -86,6 +86,7 @@ export default function App() {
             <p>
               El objetivo es sostener coherencia estructural, límites físicos plausibles y lógica ecológica interna, incluso cuando el punto de partida proviene de la ficción cinematográfica.
             </p>
+          </div>
 
             <div className="cards">
               <div className="card">
