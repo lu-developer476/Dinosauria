@@ -23,6 +23,7 @@ export default function App() {
     () =>
       Array.from({ length: 8 }, (_, i) => ({
         src: `/images/gallery-${i + 1}.jpg`,
+        label: `Imagen ${i + 1}`
       })),
     []
   );
