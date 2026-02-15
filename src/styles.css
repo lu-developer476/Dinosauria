@@ -28,6 +28,10 @@ button{font:inherit}
 
 .container{max-width:var(--max); margin:0 auto; padding:0 20px}
 .section{padding:64px 0}
+  section[id] {
+    scroll-margin-top: 90px;
+  }
+
 .grid{display:grid; gap:18px}
 
 .nav{
