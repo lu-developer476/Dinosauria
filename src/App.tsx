@@ -94,17 +94,17 @@ export default function App() {
           <div className="container">
             <h2 className="h2">Sobre el proyecto</h2>
             <p className="sub">
-              “Descubriendo Dinos” presenta un enfoque ordenado: anatomía, biomecánica, ecología y evolución insular.
-              La idea es mostrar cómo se escribe un informe sólido incluso cuando el material proviene de ficción,
-              manteniendo consistencia interna y criterios científicos.
+              Es un ejercicio de análisis paleobiológico aplicado a criaturas ficticias.
+              Cada especie se evalúa bajo criterios reales de anatomía funcional, biomecánica, dinámica poblacional y evolución insular.
+              El objetivo es sostener coherencia estructural, límites físicos plausibles y lógica ecológica interna, incluso cuando el punto de partida proviene de la ficción cinematográfica.
             </p>
 
             <div className="cards">
               <div className="card">
                 <strong>Enfoque</strong>
                 <p>
-                  Anatomía comparada y plausibilidad biomecánica. Se prioriza lo que impone límites reales: masa, energía,
-                  locomoción, mordida y ecología.
+                  El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
+                  Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
                 </p>
                 <div className="badges">
                   <span className="badge">Biología evolutiva</span>
@@ -116,8 +116,9 @@ export default function App() {
               <div className="card">
                 <strong>Arquitectura</strong>
                 <p>
-                  React con TypeScript para el núcleo, utilidades en JavaScript y un módulo de CoffeeScript para la sección
-                  editorial de “hechos” que se compila durante el build.
+                  El sitio está desarrollado en React con TypeScript como núcleo estructural.
+                  Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
+                  La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
                 </p>
                 <div className="badges">
                   <span className="badge">Vite</span>
@@ -133,7 +134,7 @@ export default function App() {
           <div className="container">
             <h2 className="h2">Línea de tiempo</h2>
             <p className="sub">
-              Un marco simple para ubicar conceptos: aislamiento, presión selectiva y carreras armamentistas depredador–presa.
+              Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
             </p>
 
             <div className="timeline">
@@ -142,8 +143,9 @@ export default function App() {
                 <div>
                   <h3>Aislamiento prolongado</h3>
                   <p>
-                    Una isla cerrada opera como experimento natural: deriva genética, cuellos de botella y adaptación rápida
-                    cuando el ambiente no perdona.
+                    La Isla Calavera habría permanecido aislada desde finales del Cretácico, funcionando como un refugio biológico cerrado tras eventos de extinción global. Este aislamiento impidió intercambio genético con el exterior y favoreció procesos de deriva genética acelerada.
+                    En ausencia de competencia externa, las especies sobrevivientes no conservaron su forma original: divergieron. Los linajes de saurópodos, terópodos y abelisáuridos evolucionaron hacia morfologías más robustas, con densidad ósea incrementada y mayor tolerancia al daño físico.
+                    El resultado no es un “mundo congelado en el tiempo”, sino un ecosistema que continuó evolucionando bajo reglas propias durante millones de años.
                   </p>
                 </div>
               </div>
@@ -153,8 +155,9 @@ export default function App() {
                 <div>
                   <h3>Especialización extrema</h3>
                   <p>
-                    El ecosistema premia rasgos funcionales: blindaje, robustez craneal, tamaño defensivo, socialidad o
-                    conductas territoriales.
+                    En ecosistemas de alta densidad trófica y competencia permanente, la selección natural no premia rasgos ornamentales sino funcionales.
+                    Aumentos en masa corporal, reforzamiento craneal, densidad ósea elevada y comportamiento territorial son respuestas típicas a presión predatoria intensa.
+                    Las especies que sobreviven no son las más rápidas o espectaculares, sino aquellas que optimizan energía, resistencia estructural y eficiencia biomecánica dentro de su nicho ecológico.
                   </p>
                 </div>
               </div>
@@ -164,8 +167,9 @@ export default function App() {
                 <div>
                   <h3>Equilibrio inestable</h3>
                   <p>
-                    Pocas especies dominantes, alta mortalidad y recuperación por reemplazo. La estabilidad no es calma:
-                    es un balance violento.
+                    La estabilidad del ecosistema no depende de abundancia masiva, sino de equilibrio entre natalidad elevada y mortalidad constante.
+                    En entornos cerrados, la mortalidad juvenil suele ser extremadamente alta, lo que mantiene control poblacional sin necesidad de grandes fluctuaciones demográficas.
+                    La aparente estabilidad ecológica es el resultado de ciclos continuos de reemplazo generacional, no de armonía permanente. La competencia por territorio y recursos es constante y estructural.
                   </p>
                 </div>
               </div>
@@ -173,7 +177,8 @@ export default function App() {
 
             <div className="cta">
               <p>
-                Esta página está lista para sumar artículos largos, fichas ampliadas y contenido multimedia sin tocar la estructura base.
+                El ecosistema de Isla Calavera no es una fantasía desordenada: es un sistema evolutivo cerrado que puede analizarse con criterios paleobiológicos reales.
+                Representa un modelo hipotético de cómo la presión ambiental sostenida puede moldear linajes enteros hacia morfologías radicalmente funcionales.
               </p>
               <a href="#galeria" onClick={(e) => (e.preventDefault(), smoothScrollTo("galeria"))}>Ir a galería</a>
             </div>
@@ -184,8 +189,13 @@ export default function App() {
           <div className="container">
             <h2 className="h2">Galería</h2>
             <p className="sub">
-              Imágenes cargadas desde <span className="pill">public/</span> con los nombres <span className="pill">gallery-1.jpg</span> a <span className="pill">gallery-8.jpg</span>.
-              Reemplazá los placeholders por tus archivos reales manteniendo los nombres.
+              La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
+              Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
+              En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical, robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
+              Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora. En especies de gran tamaño, incluso pequeñas variaciones estructurales alteran radicalmente la viabilidad fisiológica.
+              También se observan patrones de comportamiento colectivo, escalas relativas entre individuos y efectos ambientales sobre la dinámica de desplazamiento. La relación entre topografía, vegetación y movilidad resulta clave para entender cómo se sostiene un sistema cerrado sin colapsar energéticamente.
+              Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
+              La observación detallada de cada imagen permite contrastar hipótesis sobre dominancia trófica, defensa estructural, eficiencia metabólica y adaptación insular prolongada.
             </p>
 
             <div className="gallery" role="list">
@@ -203,8 +213,7 @@ export default function App() {
           <div className="container">
             <h2 className="h2">Explorar especies</h2>
             <p className="sub">
-              Fichas resumidas con criterios científicos. Este bloque está pensado para crecer a un catálogo completo con rutas,
-              filtros y páginas de detalle.
+              Esta sección reúne fichas sintéticas de las especies reconstruidas dentro del ecosistema insular. Cada entrada resume rasgos morfológicos, rol trófico y contexto evolutivo bajo criterios de anatomía funcional y plausibilidad biomecánica.
             </p>
 
             <div className="cards">
