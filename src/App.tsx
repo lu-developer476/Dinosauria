@@ -45,10 +45,10 @@ export default function App() {
           </a>
 
           <nav className="nav-links" aria-label="Navegación principal">
-            <button onClick={() => smoothScrollTo("sobre")}>Sobre</button>
-            <button onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
-            <button onClick={() => smoothScrollTo("galeria")}>Galería</button>
-            <button className="cta" onClick={() => smoothScrollTo("explorar")}>Explorar</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Sobre</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
+            <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Explorar</button>
           </nav>
         </div>
       </header>
