@@ -41,7 +41,7 @@ export default function App() {
           </a>
 
           <nav className="nav-links" aria-label="Navegación principal">
-            <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Sobre</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Explorar</button>
@@ -77,7 +77,7 @@ export default function App() {
 
         <section id="sobre" className="section">
           <div className="container">
-            <h2 className="h2">Sobre el proyecto</h2>
+            <h2 className="h2">Acerca del proyecto</h2>
             <p className="sub">
               Es un ejercicio de análisis paleobiológico aplicado a criaturas ficticias.
               Cada especie se evalúa bajo criterios reales de anatomía funcional, biomecánica, dinámica poblacional y evolución insular.
