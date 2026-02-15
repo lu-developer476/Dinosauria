@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "coffee": "coffee -c -o src/generated src/coffee",
-    "build": "npm run coffee && tsc -b && vite build",
+    "build": "npm run coffee && vite build",
     "preview": "vite preview"
   },
   "dependencies": {
