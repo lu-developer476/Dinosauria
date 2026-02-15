@@ -22,12 +22,16 @@ Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros mod
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Grande",
-    description: `Masa estimada: 1.8–2.2 toneladas | Longitud: 7–8 metros | Locomoción: Bípeda robusta | Termorregulación: Endotermia parcial probable | Rol ecológico: Depredador intermedio territorial | Estrategia ofensiva: Cráneo reforzado y embestida frontal  
+    description: `Masa estimada: 6–8 toneladas | Longitud: 8–9 metros | Locomoción: Cuadrúpeda robusta | Termorregulación: Mesotérmica | Rol ecológico: Megaherbívoro defensivo territorial | Estrategia defensiva: Cráneo reforzado con cuernos de embestida  
 
-Terópodo derivado de abelisáuridos gondwánicos, modificado por evolución insular extrema. Presentaba cráneo compacto con suturas fusionadas y cuernos queratinizados diseñados para impacto directo.
+Ceratópsido insular derivado de formas similares a Triceratops, caracterizado por un cráneo hipertrofiado con cuernos frontales densos y reforzamiento óseo frontal.
 
-Su estrategia se basaba en combate cercano y dominio territorial más que en persecución prolongada.`
-  },
+Su locomoción era estrictamente cuadrúpeda, con extremidades anteriores poderosas y articulaciones estabilizadas para soportar cargas frontales durante embestidas. El centro de masa desplazado hacia adelante favorecía el combate directo más que la velocidad sostenida.
+
+No era un depredador. Su morfología indica adaptación defensiva extrema frente a superdepredadores insulares. La estructura cervical y la inserción muscular en la base del cráneo sugieren capacidad de impacto repetido.
+
+En el ecosistema de Isla Calavera funcionaba como herbívoro de alta biomasa con comportamiento territorial marcado.`
+},
 
   {
     id: "vastatosaurus-rex",
