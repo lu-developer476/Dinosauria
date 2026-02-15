@@ -165,23 +165,29 @@ export default function App() {
                 El ecosistema de Isla Calavera no es una fantasía desordenada: es un sistema evolutivo cerrado que puede analizarse con criterios paleobiológicos reales.
                 Representa un modelo hipotético de cómo la presión ambiental sostenida puede moldear linajes enteros hacia morfologías radicalmente funcionales.
               </p>
-              <a href="#galeria" onClick={(e) => (e.preventDefault(), smoothScrollTo("galeria"))}>Ir a galería</a>
             </div>
           </div>
         </section>
 
         <section id="galeria" className="section">
           <div className="container">
-            <h2 className="h2">Galería</h2>
-            <p className="sub">
+            <div className="sub gallery-text">
+            <p>
               La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
-              Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
-              En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical, robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
-              Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora. En especies de gran tamaño, incluso pequeñas variaciones estructurales alteran radicalmente la viabilidad fisiológica.
-              También se observan patrones de comportamiento colectivo, escalas relativas entre individuos y efectos ambientales sobre la dinámica de desplazamiento. La relación entre topografía, vegetación y movilidad resulta clave para entender cómo se sostiene un sistema cerrado sin colapsar energéticamente.
-              Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
-              La observación detallada de cada imagen permite contrastar hipótesis sobre dominancia trófica, defensa estructural, eficiencia metabólica y adaptación insular prolongada.
             </p>
+            <p>
+              Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
+            </p>
+            <p>
+              En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical y robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
+            </p>
+            <p>
+              Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora.
+            </p>
+            <p>
+              Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
+            </p>
+          </div>
 
             <div className="gallery" role="list">
               {gallery.map((g) => (
