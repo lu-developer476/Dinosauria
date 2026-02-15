@@ -1,5 +1,6 @@
 import { useMemo, useState } from "react";
 import { smoothScrollTo } from "./utils/scroll";
+import { useEffect, useState } from "react";
 import { facts } from "./generated/funfacts.js";
 import { dinos } from "./data/dinos";
 
@@ -28,6 +29,30 @@ export default function App() {
     []
   );
 
+  const [active, setActive] = useState("");
+  useEffect(() => {
+  const sections = ["sobre", "linea-tiempo", "galeria", "explorar"];
+
+  const onScroll = () => {
+    const scrollY = window.scrollY;
+
+    sections.forEach((id) => {
+      const el = document.getElementById(id);
+      if (!el) return;
+
+      const offsetTop = el.offsetTop - 120;
+      const offsetHeight = el.offsetHeight;
+
+      if (scrollY >= offsetTop && scrollY < offsetTop + offsetHeight) {
+        setActive(id);
+      }
+    });
+  };
+
+  window.addEventListener("scroll", onScroll);
+  return () => window.removeEventListener("scroll", onScroll);
+}, []);
+  
   return (
     <>
       <header className="nav">
