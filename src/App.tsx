@@ -44,7 +44,7 @@ export default function App() {
             <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
-            <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Explorar</button>
+            <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
           </nav>
         </div>
       </header>
@@ -91,11 +91,6 @@ export default function App() {
                   El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
                   Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
                 </p>
-                <div className="badges">
-                  <span className="badge">Biología evolutiva</span>
-                  <span className="badge">Tafonomía</span>
-                  <span className="badge">Paleoclima</span>
-                </div>
               </div>
 
               <div className="card">
@@ -105,11 +100,6 @@ export default function App() {
                   Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
                   La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
                 </p>
-                <div className="badges">
-                  <span className="badge">Vite</span>
-                  <span className="badge">Vercel-ready</span>
-                  <span className="badge">Accesibilidad</span>
-                </div>
               </div>
             </div>
           </div>
@@ -202,7 +192,7 @@ export default function App() {
 
         <section id="explorar" className="section">
           <div className="container">
-            <h2 className="h2">Explorar especies</h2>
+            <h2 className="h2">Especies</h2>
             <p className="sub">
               Esta sección reúne fichas sintéticas de las especies reconstruidas dentro del ecosistema insular. Cada entrada resume rasgos morfológicos, rol trófico y contexto evolutivo bajo criterios de anatomía funcional y plausibilidad biomecánica.
             </p>
