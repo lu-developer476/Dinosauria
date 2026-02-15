@@ -22,7 +22,7 @@ export default function App() {
   const gallery = useMemo(
     () =>
       Array.from({ length: 8 }, (_, i) => ({
-        src: `/gallery-${i + 1}.jpg`,
+        src: `/images/gallery-${i + 1}.jpg`,
         label: `Galería ${i + 1}`
       })),
     []
