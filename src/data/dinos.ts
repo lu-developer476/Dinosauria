@@ -77,7 +77,7 @@ Carecía de defensas físicas desarrolladas, compensando mediante velocidad y co
     name: "Venatosaurus saevidicus",
     era: "Cretácico",
     diet: "Carnívoro",
-    size: "Grande",
+    size: "Mediano",
     description: `Masa estimada: 2–3 toneladas | Longitud: 8–9 metros | Locomoción: Bípeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Depredador coordinado en grupo | Estrategia ofensiva: Caza cooperativa y resistencia aeróbica  
 
 Terópodo esbelto y social, adaptado a persecución sostenida. A diferencia de Ferrucutus, su ventaja no era el impacto frontal sino la coordinación grupal.
