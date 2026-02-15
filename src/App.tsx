@@ -169,7 +169,7 @@ export default function App() {
               {dinos.map((d) => (
                 <article className="card" key={d.id}>
                   <strong>{d.name}</strong>
-                  <p>{d.summary}</p>
+                  <p>{d.description}</p>
                   <div className="badges">
                     <span className="badge">{d.era}</span>
                     <span className="badge">{d.diet}</span>
