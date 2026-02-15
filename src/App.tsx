@@ -80,7 +80,7 @@ export default function App() {
             <h2 className="h2">Acerca del proyecto</h2>
         
             <p className="sub">
-              Cada especie se evalúa bajo criterios reales, ímites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
+              Cada especie se evalúa bajo criterios reales, límites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
             </p>
         
             <div className="cards">
