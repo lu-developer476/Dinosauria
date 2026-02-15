@@ -27,7 +27,7 @@ Su conducta era altamente agresiva y reactiva. No era un cazador estratégico de
   },
   {
     id: "vastatosaurus-rex",
-    name: "Vastatosaurus rex",
+    name: "Vastatosaurus Rex",
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Colosal",
