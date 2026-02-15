@@ -264,7 +264,7 @@ button{font:inherit}
 .footer-inner{display:flex; justify-content:space-between; gap:12px; flex-wrap:wrap; align-items:center}
 .footer small{color: var(--muted)}
 
-@media (max-width: 1024px){
+@media (max-width: 1240px){
 
   .hero-inner{
     grid-template-columns: 1fr;
@@ -295,7 +295,7 @@ button{font:inherit}
 @media (max-width: 768px){
 
 .gallery-text p {
-    text-align: left;
+    text-align: justify;
   }
   
   .nav-inner{
@@ -322,7 +322,13 @@ button{font:inherit}
   }
 
   .sub{
-    max-width: 100%;
+    color: var(--muted);
+    line-height: 1.7;
+    text-align: justify;
+  }
+
+  .section p {
+  text-align: justify;
   }
 
   .gimg{
