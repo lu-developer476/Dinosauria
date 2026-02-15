@@ -35,8 +35,8 @@ export default function App() {
           <a className="brand" href="#" onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}>
             <div className="logo" aria-hidden="true">🦴</div>
             <div>
-              <div className="brand-title">Descubriendo Dinos</div>
-              <div className="brand-sub">Paleobiología · Evolución · Isla Calavera</div>
+              <div className="brand-title">Dinosauria</div>
+              <div className="brand-sub">Paleobiología · Evolución</div>
             </div>
           </a>
 
@@ -55,15 +55,14 @@ export default function App() {
             <div className="hero-card">
               <div className="hero-inner">
                 <div>
-                  <div className="kicker">Museo digital · Proyecto React + TypeScript + CoffeeScript</div>
+                  <div className="kicker">Museo digital</div>
                   <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
                   <p className="lead">
-                    Un sitio profesional para presentar fichas, contexto evolutivo y una galería visual.
-                    Pensado para deploy directo en Vercel y para escalar a más especies, notas y material multimedia.
+                    Sitio no oficial de las especies jamás vistas por el hombre.
                   </p>
                   <div className="hero-actions">
                     <a className="primary" href="#explorar" onClick={(e) => (e.preventDefault(), smoothScrollTo("explorar"))}>
-                      Ver especies
+                      Especies
                     </a>
                     <a href="#galeria" onClick={(e) => (e.preventDefault(), smoothScrollTo("galeria"))}>
                       Abrir galería
