@@ -7,36 +7,62 @@ export const dinos: DinoCard[] = [
     era: "Jurásico",
     diet: "Herbívoro",
     size: "Colosal",
-    description: `Megaherbívoro insular derivado de diplodócidos jurásicos. Presentaba una estructura corporal extraordinariamente robusta, con vértebras cervicales reforzadas y musculatura densa en la base del cuello y la cola. A diferencia de los saurópodos continentales más esbeltos, B. baxteri evolucionó hacia un gigantismo defensivo funcional.
 
-Su tamaño —estimado entre 35 y 45 toneladas— no solo respondía a requerimientos alimenticios, sino a la presión constante de depredadores colosales. La vida gregaria era clave: los grupos familiares coordinaban movimientos y podían generar estampidas devastadoras capaces de alterar la estructura del terreno y neutralizar amenazas.
+    mass: "35–45 toneladas",
+    length: "22–25 metros",
+    locomotion: "Cuadrúpeda graviportal",
+    thermoregulation: "Mesotérmica",
+    ecologicalRole: "Especie estructurante del ecosistema",
+    defensiveStrategy: "Gigantismo defensivo y comportamiento gregario",
 
-Actuaba como especie estructurante del ecosistema, modificando la vegetación mediante ramoneo masivo y apertura de claros. Su metabolismo mesotérmico le permitía sostener actividad prolongada sin depender estrictamente de condiciones térmicas externas.`
+    description: `Megaherbívoro insular derivado de diplodócidos jurásicos. Presentaba una estructura corporal extraordinariamente robusta, con vértebras cervicales reforzadas y musculatura densa en la base del cuello y la cola.
+
+Su tamaño no respondía únicamente a requerimientos energéticos, sino a presión predatoria constante ejercida por terópodos colosales. La vida gregaria permitía coordinación defensiva y estampidas con impacto mecánico significativo sobre el terreno.
+
+Actuaba como ingeniero ecológico: el ramoneo masivo y la apertura de claros modificaban la estructura vegetal insular. Su fisiología mesotérmica le otorgaba estabilidad metabólica en un entorno de recursos variables.`
   },
+
   {
     id: "ferrucutus-cerastes",
     name: "Ferrucutus cerastes",
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Grande",
-    description: `Terópodo derivado de abelisáuridos gondwánicos, altamente modificado por evolución insular. Su rasgo más distintivo era el cráneo compacto con suturas óseas fusionadas y cuernos frontales queratinizados diseñados para embestida directa.
 
-Medía aproximadamente 7–8 metros y pesaba alrededor de 2 toneladas, pero su densidad corporal y blindaje dérmico parcial lo convertían en un animal excepcionalmente resistente. A diferencia de depredadores corredores, F. cerastes priorizaba combate frontal y dominio territorial.
+    mass: "1.8–2.2 toneladas",
+    length: "7–8 metros",
+    locomotion: "Bípeda robusta",
+    thermoregulation: "Probablemente endotérmica parcial",
+    ecologicalRole: "Depredador intermedio territorial",
+    defensiveStrategy: "Cráneo reforzado y embestida frontal",
 
-Su conducta era altamente agresiva y reactiva. No era un cazador estratégico de larga distancia; era un ejecutor de proximidad. En el ecosistema ocupaba el rango de depredador intermedio, cazando fauna mediana y compitiendo violentamente por territorio.`
+    description: `Terópodo derivado de abelisáuridos gondwánicos, modificado por evolución insular extrema. Presentaba cráneo compacto con suturas fusionadas y cuernos queratinizados diseñados para impacto directo.
+
+No era un corredor de persecución prolongada. Su estrategia se basaba en proximidad, potencia cervical y combate territorial. La densidad corporal elevada y blindaje dérmico parcial aumentaban resistencia estructural.
+
+Ocupaba un nicho de depredador intermedio, cazando fauna mediana y disputando territorio con violencia ritualizada o letal.`
   },
+
   {
     id: "vastatosaurus-rex",
     name: "Vastatosaurus Rex",
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Colosal",
-    description: `Superdepredador ápice del ecosistema insular. Descendiente derivado de tiranosáuridos, evolucionó hacia una morfología más compacta y masiva que la de Tyrannosaurus rex.
 
-Su cráneo era corto, alto y extraordinariamente reforzado, con arcos cigomáticos gruesos y musculatura mandibular hipertrofiada. La fuerza de mordida estimada superaba ampliamente la de cualquier terópodo continental, funcionando como prensa biológica capaz de triturar hueso con facilidad.
+    mass: "12–14 toneladas",
+    length: "13–15 metros",
+    locomotion: "Bípeda de potencia explosiva",
+    thermoregulation: "Endotérmica avanzada",
+    ecologicalRole: "Depredador ápice regulador",
+    defensiveStrategy: "Fuerza mandibular extrema y dominancia territorial",
 
-No estaba optimizado para velocidad sostenida, sino para potencia explosiva y resistencia en combate prolongado. Su papel ecológico era regulador absoluto del sistema, controlando poblaciones de megaherbívoros y eliminando competidores.
+    description: `Superdepredador ápice del ecosistema insular. Descendiente derivado de tiranosáuridos, evolucionó hacia una morfología más compacta y masiva que Tyrannosaurus rex.
 
-Territorial, dominante y altamente eficiente, representaba el punto máximo de la carrera armamentista evolutiva dentro de la Isla Calavera.`
+El cráneo alto y reforzado, junto con musculatura mandibular hipertrofiada, permitía fuerzas de mordida superiores a 50.000 newtons, funcionando como prensa biológica capaz de fracturar hueso denso.
+
+No optimizado para velocidad sostenida, sino para potencia explosiva y resistencia en combate. Controlaba poblaciones de megaherbívoros y eliminaba competidores, manteniendo estabilidad trófica del sistema.
+
+Representaba el extremo máximo de la carrera armamentista evolutiva en un entorno cerrado de presión selectiva permanente.`
   }
 ];
