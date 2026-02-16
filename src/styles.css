@@ -202,7 +202,9 @@ section[id]{scroll-margin-top:90px}
 
 /* CARDS */
 .card{
-  grid-column:span 6;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 28px;
   border-radius:var(--radius);
   border:1px solid var(--line);
   background:rgba(255,255,255,0.04);
