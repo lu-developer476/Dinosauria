@@ -84,7 +84,7 @@ export default function App() {
       setCurrentIndex((prev) =>
         prev + 2 >= filteredDinos.length ? 0 : prev + 2
       );
-    }, 10000);
+    }, 45000);
 
     return () => clearInterval(interval);
   }, [filteredDinos]);
@@ -124,7 +124,7 @@ export default function App() {
       <main id="top">
         <section className="hero">
           <div className="container">
-            <div className="hero-card">
+            <div className="card hero-card">
               <div className="hero-inner">
                 <div>
                   <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
