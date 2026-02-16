@@ -13,7 +13,6 @@ function nowStamp() {
 
 export default function App() {
   const [factIndex, setFactIndex] = useState(0);
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const fact = useMemo(() => {
     const i = ((factIndex % facts.length) + facts.length) % facts.length;
@@ -28,16 +27,12 @@ export default function App() {
       })),
     []
   );
-
+  
   return (
     <>
       <header className="nav">
         <div className="container nav-inner">
-          <a
-            className="brand"
-            href="#"
-            onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}
-          >
+          <a className="brand" href="#" onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}>
             <div className="logo" aria-hidden="true">🦴</div>
             <div>
               <div className="brand-title">Dinosauria</div>
@@ -45,7 +40,7 @@ export default function App() {
             </div>
           </a>
 
-          <nav className="nav-links">
+          <nav className="nav-links" aria-label="Navegación principal">
             <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
@@ -55,33 +50,151 @@ export default function App() {
       </header>
 
       <main id="top">
+        <section className="hero">
+          <div className="container">
+            <div className="hero-card">
+              <div className="hero-inner">
+                <div>
+                  <div className="kicker">Museo digital</div>
+                  <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
+                  <p className="lead">
+                    Sitio no oficial de las especies jamás vistas por el hombre... y otras creadas por su ambición.
+                  </p>
+                </div>
 
-        {/* ================== ESPECIES ================== */}
+                <aside className="hero-aside" aria-label="Dato destacado">
+                  <div className="fact-title">Curiosidad del día</div>
+                  <div className="fact">{fact}</div>
+                  <div className="fact-footer">
+                    <span className="pill">Actualizado: {nowStamp()}</span>
+                    <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>Más</button>
+                  </div>
+                </aside>
+              </div>
+            </div>
+          </div>
+        </section>
+
+                <section id="sobre" className="section">
+          <div className="container">
+            <h2 className="h2">Acerca del proyecto</h2>
+        
+            <p className="sub">
+              Cada especie se evalúa bajo criterios reales, límites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
+            </p>
+        
+            <div className="cards">
+              <div className="card">
+                <strong>Enfoque</strong>
+                <p>
+                  El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
+                </p>
+                <p>
+                  Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
+                </p>
+              </div>
+        
+              <div className="card">
+                <strong>Arquitectura</strong>
+                <p>
+                  El sitio está desarrollado en React con TypeScript como núcleo estructural.
+                </p>
+                <p>
+                  Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
+                </p>
+                <p>
+                  La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
+                </p>
+              </div>
+            </div>
+        
+          </div>
+        </section>
+
+        <section id="linea-tiempo" className="section">
+          <div className="container">
+            <h2 className="h2">Línea de tiempo</h2>
+            <p className="sub">
+              Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
+            </p>
+
+            <div className="timeline">
+              <div className="step">
+                <div className="dot">1</div>
+                <div>
+                  <h3>Aislamiento prolongado</h3>
+                  <p>
+                    El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada.
+                  </p>
+                  <p>
+                    Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos desconocidos.
+                  </p>
+                  <p>
+                    El resultado no es únicamente un “mundo perdido”, sino también un escenario donde la biotecnología redefine los límites de la paleobiología tradicional.
+                  </p>
+                </div>
+              </div>
+
+              <div className="step">
+                <div className="dot">2</div>
+                <div>
+                  <h3>Especialización natural y diseños artificiales sintéticos</h3>
+                  <p>
+                    En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales: aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
+                  </p>
+                  <p>
+                    En contraste, los híbridos genéticos del Holoceno no responden a selección natural directa, sino a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales específicas.
+                  </p>
+                  <p>
+                    La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
+                  </p>
+                </div>
+              </div>
+
+              <div className="step">
+                <div className="dot">3</div>
+                <div>
+                  <h3>Equilibrio natural vs. desequilibrio por intervención</h3>
+                  <p>
+                    Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico.
+                  </p>
+                  <p>
+                    Sin embargo, la introducción de híbridos diseñados rompe estos patrones tradicionales, ya que se trata de organismos sin historia evolutiva integrada en su entorno.
+                  </p>
+                  <p>
+                    La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica, donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div className="cta">
+              <p>
+                Este catálogo no representa únicamente un análisis de especies mesozoicas relictas o mundos aislados, sino un compendio que integra evolución natural y bioingeniería moderna dentro de universos ficticios.
+                Desde linajes moldeados por millones de años de selección natural hasta híbridos diseñados en laboratorio, cada organismo puede analizarse bajo criterios paleobiológicos, ecológicos y estructurales, ampliando la frontera entre ciencia evolutiva y biotecnología especulativa.
+              </p>
+            </div>
+          </div>
+        </section>
 
         <section id="explorar" className="section">
           <div className="container">
             <h2 className="h2">Especies</h2>
+            <p className="sub">
+              Esta sección reúne fichas sintéticas de las especies tanto de origen evolutivo "natural" como resultado de la ingeniería genética practicada. Cada entrada resume rasgos morfológicos, rol trófico y contexto biológico, analizados bajo criterios de anatomía funcional, coherencia ecológica y plausibilidad biomecánica.
+            </p>
 
             <div className="cards">
               {dinos.map((d) => (
                 <article className="card" key={d.id}>
-                  
-                  {/* Imagen pequeña */}
-                  <img
-                    src={d.image}
-                    alt={d.name}
-                    className="dino-thumb"
-                    onClick={() => setSelectedImage(d.image)}
-                  />
-
                   <strong>{d.name}</strong>
-
+                  
                   <div className="sub dino-text">
                     {d.description.split("\n\n").map((paragraph, index) => (
                       <p key={index}>{paragraph}</p>
                     ))}
                   </div>
-
+                  
                   <div className="badges">
                     <span className="badge">{d.era}</span>
                     <span className="badge">{d.diet}</span>
@@ -92,23 +205,44 @@ export default function App() {
             </div>
           </div>
         </section>
+        
+        <section id="galeria" className="section">
+          <div className="container">
+            <h2 className="h2">Galería</h2>
+            <div className="sub gallery-text">
+            <p>
+              La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
+            </p>
+            <p>
+              Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
+            </p>
+            <p>
+              En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical y robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
+            </p>
+            <p>
+              Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora.
+            </p>
+            <p>
+              Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
+            </p>
+          </div>
+
+            <div className="gallery" role="list">
+              {gallery.map((g) => (
+                <div className="gimg" role="listitem" key={g.src}>
+                  <img src={g.src} alt={g.label} />
+                  <div className="gcap">{g.label}</div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
 
       </main>
 
-      {/* ================== MODAL ================== */}
-
-      {selectedImage && (
-        <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
-          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <button className="modal-close" onClick={() => setSelectedImage(null)}>✕</button>
-            <img src={selectedImage} alt="Imagen ampliada" />
-          </div>
-        </div>
-      )}
-
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()} Todos los derechos reservados</small>
+          <small>© {new Date().getFullYear()}Todos los derechos reservados</small>
           <small>Realizado por Lucas Leonel Montenegro Burgos</small>
         </div>
       </footer>
