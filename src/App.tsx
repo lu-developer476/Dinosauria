@@ -11,10 +11,32 @@ function nowStamp() {
   return `${y}-${m}-${day}`;
 }
 
+function normalizeTag(tag: string) {
+  return tag.trim();
+}
+
+function getDinoTags(d: any): string[] {
+  const tags: string[] = [];
+
+  // Si existe tags: string[]
+  if (Array.isArray(d.tags)) tags.push(...d.tags);
+
+  // Backups: era/diet/size como etiquetas útiles
+  if (typeof d.era === "string") tags.push(d.era);
+  if (typeof d.diet === "string") tags.push(d.diet);
+  if (typeof d.size === "string") tags.push(d.size);
+
+  // Normalizar, deduplicar y evitar vacíos
+  return Array.from(
+    new Set(tags.map(normalizeTag).filter(Boolean))
+  );
+}
+
 export default function App() {
   const [factIndex, setFactIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  // Filtros + rotación
   const [filteredDinos, setFilteredDinos] = useState(dinos);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
@@ -33,6 +55,28 @@ export default function App() {
     []
   );
 
+  // Catálogo de etiquetas disponibles (tags + era/diet/size)
+  const availableFilters = useMemo(() => {
+    const all = dinos.flatMap((d: any) => getDinoTags(d));
+    return Array.from(new Set(all)).sort((a, b) => a.localeCompare(b));
+  }, []);
+
+  // Aplicar filtro y resetear índice de rotación
+  useEffect(() => {
+    if (!activeFilter) {
+      setFilteredDinos(dinos);
+      setCurrentIndex(0);
+      return;
+    }
+
+    const tag = normalizeTag(activeFilter);
+    const next = dinos.filter((d: any) => getDinoTags(d).includes(tag));
+
+    setFilteredDinos(next);
+    setCurrentIndex(0);
+  }, [activeFilter]);
+
+  // Rotación cada 10s (2 por “página”)
   useEffect(() => {
     if (filteredDinos.length <= 2) return;
 
@@ -44,12 +88,24 @@ export default function App() {
 
     return () => clearInterval(interval);
   }, [filteredDinos]);
-  
+
+  const visibleDinos = useMemo(() => {
+    return filteredDinos.slice(currentIndex, currentIndex + 2);
+  }, [filteredDinos, currentIndex]);
+
+  const handleFilterClick = (tag: string) => {
+    setActiveFilter((prev) => (prev === tag ? null : tag));
+  };
+
   return (
     <>
       <header className="nav">
         <div className="container nav-inner">
-          <a className="brand" href="#" onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}>
+          <a
+            className="brand"
+            href="#"
+            onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}
+          >
             <div className="logo" aria-hidden="true">🧬➝🦴</div>
             <div>
               <div className="brand-title">Dinosauria</div>
@@ -92,14 +148,14 @@ export default function App() {
           </div>
         </section>
 
-                <section id="sobre" className="section">
+        <section id="sobre" className="section">
           <div className="container">
             <h2 className="h2">Acerca del proyecto</h2>
-        
+
             <p className="sub">
               Cada especie se evalúa bajo criterios reales, límites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
             </p>
-        
+
             <div className="cards">
               <div className="card">
                 <strong>Enfoque</strong>
@@ -110,7 +166,7 @@ export default function App() {
                   Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
                 </p>
               </div>
-        
+
               <div className="card">
                 <strong>Arquitectura</strong>
                 <p>
@@ -124,7 +180,6 @@ export default function App() {
                 </p>
               </div>
             </div>
-        
           </div>
         </section>
 
@@ -201,57 +256,100 @@ export default function App() {
               Esta sección reúne fichas sintéticas de las especies tanto de origen evolutivo "natural" como resultado de la ingeniería genética practicada. Cada entrada resume rasgos morfológicos, rol trófico y contexto biológico, analizados bajo criterios de anatomía funcional, coherencia ecológica y plausibilidad biomecánica.
             </p>
 
-            <div className="cards">
-              {
-                filteredDinos
-                .slice(currentIndex, currentIndex + 2)
-                .map((d) => (
-                  <article className="card" key={d.id}>
-                    <strong className="dino-title">{d.name}</strong>
-                      <img
-                      src={d.image}
-                      alt={d.name}
-                      className="dino-image"
-                      onClick={() => setSelectedImage(d.image)}
-                    />
-                  
+            {/* Panel de filtros */}
+            <div className="filters" aria-label="Filtros de especies">
+              <button
+                className={`pill ${activeFilter === null ? "pill-active" : ""}`}
+                onClick={() => setActiveFilter(null)}
+                type="button"
+              >
+                Todos
+              </button>
+
+              {availableFilters.map((tag) => (
+                <button
+                  key={tag}
+                  className={`pill ${activeFilter === tag ? "pill-active" : ""}`}
+                  onClick={() => handleFilterClick(tag)}
+                  type="button"
+                >
+                  {tag}
+                </button>
+              ))}
+            </div>
+
+            <div className="cards cards-2col">
+              {visibleDinos.map((d: any) => (
+                <article className="card" key={d.id}>
+                  <strong className="dino-title">{d.name}</strong>
+
+                  <img
+                    src={d.image}
+                    alt={d.name}
+                    className="dino-image"
+                    onClick={() => setSelectedImage(d.image)}
+                  />
+
                   <div className="sub dino-text">
-                    {d.description.split("\n\n").map((paragraph, index) => (
-                      <p key={index}>{paragraph}</p>
-                    ))}
+                    {String(d.description ?? "")
+                      .split("\n\n")
+                      .map((paragraph: string, index: number) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
                   </div>
-                  
+
+                  {/* Badges clickeables (sirven como “atajo” de filtro) */}
                   <div className="badges">
-                    <span className="badge">{d.era}</span>
-                    <span className="badge">{d.diet}</span>
-                    <span className="badge">{d.size}</span>
+                    <button
+                      className={`badge ${activeFilter === d.era ? "badge-active" : ""}`}
+                      type="button"
+                      onClick={() => handleFilterClick(d.era)}
+                    >
+                      {d.era}
+                    </button>
+
+                    <button
+                      className={`badge ${activeFilter === d.diet ? "badge-active" : ""}`}
+                      type="button"
+                      onClick={() => handleFilterClick(d.diet)}
+                    >
+                      {d.diet}
+                    </button>
+
+                    <button
+                      className={`badge ${activeFilter === d.size ? "badge-active" : ""}`}
+                      type="button"
+                      onClick={() => handleFilterClick(d.size)}
+                    >
+                      {d.size}
+                    </button>
                   </div>
                 </article>
               ))}
             </div>
           </div>
         </section>
-        
+
         <section id="galeria" className="section">
           <div className="container">
             <h2 className="h2">Galería</h2>
             <div className="sub gallery-text">
-            <p>
-              La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
-            </p>
-            <p>
-              Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
-            </p>
-            <p>
-              En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical y robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
-            </p>
-            <p>
-              Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora.
-            </p>
-            <p>
-              Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
-            </p>
-          </div>
+              <p>
+                La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
+              </p>
+              <p>
+                Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
+              </p>
+              <p>
+                En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical y robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
+              </p>
+              <p>
+                Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora.
+              </p>
+              <p>
+                Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
+              </p>
+            </div>
 
             <div className="gallery" role="list">
               {gallery.map((g) => (
@@ -263,7 +361,6 @@ export default function App() {
             </div>
           </div>
         </section>
-
       </main>
 
       {selectedImage && (
