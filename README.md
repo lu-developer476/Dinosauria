@@ -1,11 +1,11 @@
 # Dinosauria — Descubriendo Dinos
 
-Sitio profesional (single-page) creado con React + TypeScript, con utilidades en JavaScript y un módulo editorial escrito en CoffeeScript (compilado en el build). Preparado para desplegar en Vercel.
+SPA profesional creado con React + TypeScript, con utilidades en JavaScript y un módulo editorial escrito en CoffeeScript (compilado en el build). Preparado para desplegar en Vercel.
 
 ## Qué incluye
 
 - Landing moderna con navegación sticky y scroll suave.
-- Secciones: Acerca de, Línea de tiempo, Especies, Galería (gallery-1.jpg a gallery-40.jpg).
+- Secciones: Línea de tiempo, Especies, Galería.
 - Estructura lista para escalar a un catálogo con rutas, filtros y páginas de detalle.
 - CoffeeScript integrado: `src/coffee/funfacts.coffee` se compila a `src/generated/funfacts.js`.
 
