@@ -40,7 +40,7 @@ export default function App() {
       setCurrentIndex((prev) =>
         prev + 2 >= filteredDinos.length ? 0 : prev + 2
       );
-    }, 5000);
+    }, 10000);
 
     return () => clearInterval(interval);
   }, [filteredDinos]);
