@@ -192,7 +192,6 @@ export default function App() {
 
             <div className="timeline">
               <div className="step">
-                <div className="dot">1</div>
                 <div>
                   <h3>Aislamiento prolongado</h3>
                   <p>
@@ -208,7 +207,6 @@ export default function App() {
               </div>
 
               <div className="step">
-                <div className="dot">2</div>
                 <div>
                   <h3>Especialización natural y diseños artificiales sintéticos</h3>
                   <p>
@@ -224,7 +222,6 @@ export default function App() {
               </div>
 
               <div className="step">
-                <div className="dot">3</div>
                 <div>
                   <h3>Equilibrio natural vs. desequilibrio por intervención</h3>
                   <p>
