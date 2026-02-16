@@ -1,5 +1,3 @@
-App.tsx:
-
 import { useMemo, useState, useEffect } from "react";
 import { smoothScrollTo } from "./utils/scroll";
 import { facts } from "./generated/funfacts.js";
