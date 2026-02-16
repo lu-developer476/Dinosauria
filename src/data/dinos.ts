@@ -2,12 +2,13 @@ import type { DinoCard } from "../types";
 
 export const dinos: DinoCard[] = [
   {
-  id: "atercurisaurus",
-  name: "Atercurisaurus",
-  era: "Cretácico",
-  diet: "Carnívoro",
-  size: "Mediano",
-  description: `Masa estimada: 5 toneladas | Longitud: 4.8–10 metros | Altura a la cadera: 2–2.4 metros | Locomoción: Bípeda cursorial de persecución sostenida | Termorregulación: Endotermia funcional | Rol ecológico: Depredador de persecución abierta | Estrategia ofensiva: Desgaste progresivo y mordida repetitiva  
+    id: "atercurisaurus",
+    name: "Atercurisaurus",
+    image: "/images/Gallery-1.jpg",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 5 toneladas | Longitud: 4.8–10 metros | Altura a la cadera: 2–2.4 metros | Locomoción: Bípeda cursorial de persecución sostenida | Termorregulación: Endotermia funcional | Rol ecológico: Depredador de persecución abierta | Estrategia ofensiva: Desgaste progresivo y mordida repetitiva  
 
 Terópodo insular de complexión estilizada que representa una rama evolutiva orientada a velocidad y resistencia aeróbica más que a fuerza bruta. Su esqueleto presenta extremidades posteriores elongadas, tibias proporcionalmente largas y pelvis optimizada para eficiencia de zancada.
 
@@ -25,6 +26,7 @@ En la red trófica de Isla Calavera ocupaba el nicho de cazador intermedio espec
   {
     id: "brontosaurus-baxteri",
     name: "Brontosaurus baxteri",
+    image: "/images/Gallery-3.jpg",
     era: "Jurásico",
     diet: "Herbívoro",
     size: "Colosal",
@@ -44,12 +46,13 @@ Actuaba como ingeniero ecológico dominante: abría corredores forestales, derri
   },
 
   {
-  id: "calcarisaurus-ieiuniosus",
-  name: "Calcarisaurus ieiuniosus",
-  era: "Cenozoico",
-  diet: "Carnívoro",
-  size: "Pequeño",
-  description: `Masa estimada: 75–90 kg | Longitud: 1.5–2.1 metros | Locomoción: Cuadrúpeda terrestre excavadora | Termorregulación: Ectotermia reptiliana | Rol ecológico: Mesodepredador forrajero de zonas abiertas | Estrategia defensiva: Blindaje dérmico, espinas e irritante secretado  
+    id: "calcarisaurus-ieiuniosus",
+    name: "Calcarisaurus ieiuniosus",
+    image: "/images/Gallery-6.jpg",
+    era: "Cenozoico",
+    diet: "Carnívoro",
+    size: "Pequeño",
+    description: `Masa estimada: 75–90 kg | Longitud: 1.5–2.1 metros | Locomoción: Cuadrúpeda terrestre excavadora | Termorregulación: Ectotermia reptiliana | Rol ecológico: Mesodepredador forrajero de zonas abiertas | Estrategia defensiva: Blindaje dérmico, espinas e irritante secretado  
 
 Escuámido acorazado y espinoso de las tierras bajas de Isla Calavera, descrito como un reptil “tipo tuátara / thorny devil” con un tegumento casi impenetrable. Pese a su tamaño relativamente pequeño, la mayoría de los depredadores mayores lo evita por respeto a la densa batería de espolones que cubre prácticamente toda la superficie corporal. Un irritante secretado en los bordes de las espinas refuerza su “mensaje” de incomestibilidad ante intentos de mordida o manipulación.
 
@@ -61,12 +64,13 @@ Existe, sin embargo, un depredador que sí constituye amenaza relevante: Venatos
   },
 
   {
-  id: "ferrucutus-cerastes",
-  name: "Ferrucutus cerastes",
-  era: "Cretácico",
-  diet: "Carnívoro",
-  size: "Grande",
-  description: `Masa estimada: 6–8 toneladas | Longitud: 8–9 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda robusta con capacidad de impulso anterior | Termorregulación: Mesotérmica | Rol ecológico: Depredador territorial de emboscada | Estrategia ofensiva: Impacto frontal con cuernos y trituración mandibular  
+    id: "ferrucutus-cerastes",
+    name: "Ferrucutus cerastes",
+    image: "/images/Gallery-7.jpg",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Grande",
+    description: `Masa estimada: 6–8 toneladas | Longitud: 8–9 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda robusta con capacidad de impulso anterior | Termorregulación: Mesotérmica | Rol ecológico: Depredador territorial de emboscada | Estrategia ofensiva: Impacto frontal con cuernos y trituración mandibular  
 
 Terópodo insular altamente especializado que desarrolló convergencia morfológica con ceratópsidos, especialmente en la región craneal. A diferencia de verdaderos ceratópsidos herbívoros, Ferrucutus conservó dentición carnívora serrada y musculatura mandibular potente.
 
@@ -82,12 +86,13 @@ En el ecosistema de Isla Calavera ocupaba un nivel trófico alto, actuando como 
   },
 
   {
-  id: "foetodon-ferrus",
-  name: "Foetodon ferrus",
-  era: "Cretácico",
-  diet: "Carnívoro",
-  size: "Mediano",
-  description: `Masa estimada: 400–600 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.5 metros | Locomoción: Bípeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Carroñero dominante y depredador oportunista | Estrategia: Caza cooperativa y resistencia patógena elevada  
+    id: "foetodon-ferrus",
+    name: "Foetodon ferrus",
+    image: "/images/Gallery-12.jpg",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 400–600 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.5 metros | Locomoción: Bípeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Carroñero dominante y depredador oportunista | Estrategia: Caza cooperativa y resistencia patógena elevada  
 
 Terópodo insular altamente adaptado a ambientes húmedos, cadáveres en descomposición y competencia trófica intensa. Su nombre deriva del fuerte olor corporal producido por secreciones dérmicas y restos orgánicos adheridos, lo que podría cumplir función tanto territorial como disuasiva frente a competidores.
 
@@ -103,12 +108,13 @@ En la red trófica de Isla Calavera ocupaban un rol clave como recicladores biol
   },
 
   {
-  id: "hebeosaurus-torvus",
-  name: "Hebeosaurus torvus",
-  era: "Cretácico",
-  diet: "Herbívoro",
-  size: "Grande",
-  description: `Masa estimada: 420 kg | Longitud: 5.4 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda graviportal ligera | Termorregulación: Mesotérmica estable | Rol ecológico: Megaherbívoro secundario de transición | Estrategia defensiva: Masa corporal y cohesión grupal  
+    id: "hebeosaurus-torvus",
+    name: "Hebeosaurus torvus",
+    image: "/images/Gallery-15.jpg",
+    era: "Cretácico",
+    diet: "Herbívoro",
+    size: "Grande",
+    description: `Masa estimada: 420 kg | Longitud: 5.4 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda graviportal ligera | Termorregulación: Mesotérmica estable | Rol ecológico: Megaherbívoro secundario de transición | Estrategia defensiva: Masa corporal y cohesión grupal  
 
 Ornitópodo insular de gran tamaño que representa una línea evolutiva especializada en consumo de vegetación media y alta, ocupando el nicho intermedio entre herbívoros pequeños del sotobosque y megasaurópodos dominantes. Su morfología sugiere descendencia de hadrosaurios derivados adaptados a entornos húmedos y boscosos.
 
@@ -124,12 +130,13 @@ En la red trófica de Isla Calavera, cumplía un rol fundamental como consumidor
   },
 
   {
-  id: "indominus_rex",
-  name: "Indominus Rex",
-  era: "Holoceno",
-  diet: "Carnívoro",
-  size: "Gigante",
-  description: `Masa estimada: 8–10 toneladas | Longitud: 15.2 metros (hasta 16.9 m estimado adulto) | Altura a la cadera: 6 metros (hasta 6.7 m adulto) | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
+    id: "indominus_rex",
+    name: "Indominus Rex",
+    image: "/images/Gallery-15.jpg",
+    era: "Holoceno",
+    diet: "Carnívoro",
+    size: "Gigante",
+    description: `Masa estimada: 8–10 toneladas | Longitud: 15.2 metros (hasta 16.9 m estimado adulto) | Altura a la cadera: 6 metros (hasta 6.7 m adulto) | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
 
 El Indominus Rex fue un organismo híbrido diseñado mediante ingeniería genética combinando ADN de Tyrannosaurus Rex, Velociraptor y múltiples terópodos adicionales, junto con material genético de especies modernas como sepias y anfibios. Su esqueleto mostraba una arquitectura masiva y reforzada, con vértebras cervicales robustas, caja torácica expandida y extremidades anteriores significativamente más desarrolladas que las de un tiranosáurido clásico.
 
@@ -145,12 +152,13 @@ En términos ecológicos, el Indominus Rex no ocupaba un nicho natural equilibra
   },
 
   {
-  id: "ligocristus-innocens",
-  name: "Ligocristus innocens",
-  era: "Jurásico",
-  diet: "Herbívoro",
-  size: "Pequeño",
-  description: `Masa estimada: 120–180 kg | Longitud: 2–3 metros | Altura a la cadera: 1–1.2 metros | Locomoción: Bípeda cursorial ligera | Termorregulación: Mesotérmica | Rol ecológico: Herbívoro basal de sotobosque | Estrategia defensiva: Camuflaje críptico y evasión grupal  
+    id: "ligocristus-innocens",
+    name: "Ligocristus innocens",
+    image: "/images/Gallery-17.jpg",
+    era: "Jurásico",
+    diet: "Herbívoro",
+    size: "Pequeño",
+    description: `Masa estimada: 120–180 kg | Longitud: 2–3 metros | Altura a la cadera: 1–1.2 metros | Locomoción: Bípeda cursorial ligera | Termorregulación: Mesotérmica | Rol ecológico: Herbívoro basal de sotobosque | Estrategia defensiva: Camuflaje críptico y evasión grupal  
 
 Pequeño ornitópodo insular altamente adaptable, descendiente de linajes jurásicos primitivos que sobrevivieron gracias a su tamaño reducido y dieta generalista. Su cráneo estrecho y dentición en batería permitían procesar hojas fibrosas, brotes tiernos y vegetación baja abundante en zonas húmedas de Isla Calavera.
 
@@ -164,12 +172,13 @@ En términos tróficos, Ligocristus innocens constituía la base energética pri
   },
 
   {
-  id: "malevolusaurus-perditor",
-  name: "Malevolusaurus perditor",
-  era: "Pérmico",
-  diet: "Omnívoro",
-  size: "Grande",
-  description: `Masa estimada: 1.3–2 toneladas | Longitud: 6–7.3 metros | Locomoción: Cuadrúpeda robusta | Termorregulación: Ectotermia con soporte de vela dorsal | Rol ecológico: Forrajero generalista oportunista de tierras altas | Estrategia dominante: Cleptoparasitismo, carroñeo y agresión territorial  
+    id: "malevolusaurus-perditor",
+    name: "Malevolusaurus perditor",
+    image: "/images/Gallery-20.jpg",
+    era: "Pérmico",
+    diet: "Omnívoro",
+    size: "Grande",
+    description: `Masa estimada: 1.3–2 toneladas | Longitud: 6–7.3 metros | Locomoción: Cuadrúpeda robusta | Termorregulación: Ectotermia con soporte de vela dorsal | Rol ecológico: Forrajero generalista oportunista de tierras altas | Estrategia dominante: Cleptoparasitismo, carroñeo y agresión territorial  
 
 Sinápsido sfenacodontino (sphenacodontine) de las tierras altas de Isla Calavera, descrito como descendiente directo de linajes tipo Dimetrodon y considerado un “fósil viviente” por su escasa divergencia sustantiva respecto de sus ancestros pérmicos. Presenta vela dorsal distintiva, heredada de su ascendencia, utilizada como adaptación para calentamiento matutino y aumento de energía diaria mediante exposición solar.
 
@@ -183,12 +192,13 @@ El único depredador señalado como capaz de cazar adultos plenamente desarrolla
   },
 
   {
-  id: "nefundusaurus-accerbus",
-  name: "Nefundusaurus accerbus",
-  era: "Cretácico",
-  diet: "Carnívoro",
-  size: "Mediano",
-  description: `Masa estimada: 2.5 toneladas | Longitud: 4.8-7.3 metros | Altura a la cadera: 2–2.3 metros | Locomoción: Bípeda robusta de emboscada | Termorregulación: Mesotermia avanzada | Rol ecológico: Depredador de presión intermedia | Estrategia ofensiva: Ataque súbito con mordida de sujeción prolongada  
+    id: "nefundusaurus-accerbus",
+    name: "Nefundusaurus accerbus",
+    image: "/images/Gallery-21.jpg",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 2.5 toneladas | Longitud: 4.8-7.3 metros | Altura a la cadera: 2–2.3 metros | Locomoción: Bípeda robusta de emboscada | Termorregulación: Mesotermia avanzada | Rol ecológico: Depredador de presión intermedia | Estrategia ofensiva: Ataque súbito con mordida de sujeción prolongada  
 
 Terópodo insular derivado de linajes abelisáuridos o carcarodontosáuridos tempranos que evolucionó en aislamiento dentro del ecosistema cerrado de Isla Calavera. Su morfología indica adaptación a caza en entornos de vegetación densa y terrenos irregulares, donde la velocidad máxima era menos determinante que la potencia explosiva inicial.
 
@@ -204,12 +214,13 @@ En la red trófica cumplía función reguladora sobre herbívoros pequeños y su
   },
 
   {
-  id: "scimitodon-sagax",
-  name: "Scimitodon sagax",
-  era: "Pérmico",
-  diet: "Carnívoro",
-  size: "Mediano",
-  description: `Masa estimada: 200–260 kg | Longitud: 1.8–2.7 metros | Locomoción: Cuadrúpeda semiarborícola (trepa y salta) | Termorregulación: Mesotermia probable (sinápsido) | Rol ecológico: Macropredador de emboscada arbórea | Armas: Colmillos tipo sable, garras, armadura dérmica, latigazo caudal  
+    id: "scimitodon-sagax",
+    name: "Scimitodon sagax",
+    image: "/images/Gallery-22.jpg",
+    era: "Pérmico",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 200–260 kg | Longitud: 1.8–2.7 metros | Locomoción: Cuadrúpeda semiarborícola (trepa y salta) | Termorregulación: Mesotermia probable (sinápsido) | Rol ecológico: Macropredador de emboscada arbórea | Armas: Colmillos tipo sable, garras, armadura dérmica, latigazo caudal  
 
 Sinápsido anteosaurio ágil y de hábitos marcadamente arborícolas en selvas de Isla Calavera. Se trata de un depredador especializado en emboscadas tanto en el suelo como en el dosel, con comportamiento principalmente solitario excepto durante el periodo reproductivo.
 
@@ -222,12 +233,13 @@ Reproducción ovípara con puestas pequeñas de 2–3 huevos en cavidades proteg
   },
 
   {
-  id: "spinoceratops",
-  name: "Spinoceratops",
-  era: "Holoceno",
-  diet: "Omnívoro",
-  size: "Grande",
-  description: `Masa estimada: 6 toneladas | Longitud: 10-12 metros | Altura a la cadera: 4.9 metros | Locomoción: Cuadrúpeda dominante con capacidad de impulso parcial | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador semiacuático híbrido | Estrategia ofensiva: Ataque de emboscada acuática y embestida frontal  
+    id: "spinoceratops",
+    name: "Spinoceratops",
+    image: "/images/Gallery-25.jpg",
+    era: "Holoceno",
+    diet: "Omnívoro",
+    size: "Grande",
+    description: `Masa estimada: 6 toneladas | Longitud: 10-12 metros | Altura a la cadera: 4.9 metros | Locomoción: Cuadrúpeda dominante con capacidad de impulso parcial | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador semiacuático híbrido | Estrategia ofensiva: Ataque de emboscada acuática y embestida frontal  
 
 El Spinoceratops es un híbrido genético resultado de la combinación de ADN de Spinosaurus y Sinoceratops. Su esqueleto integra la estructura corporal alargada y la adaptación semiacuática del espinosáurido con la robustez craneal y defensiva propia de los ceratópsidos.
 
@@ -243,12 +255,13 @@ En ecosistemas controlados, el Spinoceratops cumple el rol de depredador especia
   },
 
   {
-  id: "spinoraptor",
-  name: "Spinoraptor",
-  era: "Holoceno",
-  diet: "Carnívoro",
-  size: "Mediano",
-  description: `Masa estimada: 600-800 kg | Longitud: 6.5-8 metros | Altura a la cadera: 2.8-3 metros | Locomoción: Bípedo digitígrado | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador híbrido de persecución | Estrategia ofensiva: Ataque coordinado, velocidad y emboscada  
+    id: "spinoraptor",
+    name: "Spinoraptor",
+    image: "/images/Gallery-26.jpg",
+    era: "Holoceno",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 600-800 kg | Longitud: 6.5-8 metros | Altura a la cadera: 2.8-3 metros | Locomoción: Bípedo digitígrado | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador híbrido de persecución | Estrategia ofensiva: Ataque coordinado, velocidad y emboscada  
 
 El Spinoraptor es un híbrido genético creado mediante la combinación de ADN de Spinosaurus y Velociraptor. Su esqueleto muestra una estructura más estilizada que la de otros híbridos de gran tamaño, con extremidades posteriores largas que favorecen la velocidad y la maniobrabilidad.
 
@@ -264,12 +277,13 @@ En entornos controlados, el Spinoraptor ocupa el nicho de depredador rápido y a
   },
 
   {
-  id: "stegoceratops",
-  name: "Stegoceratops",
-  era: "Holoceno",
-  diet: "Paleobotánica de suelo",
-  size: "Grande",
-  description: `Masa estimada: 4 toneladas | Longitud: 11.6 metros | Altura a la cadera: 5.2 metros | Locomoción: Cuadrúpeda | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Megaherbívoro defensivo híbrido | Estrategia ofensiva: Embestida frontal combinada con defensa dorsal pasiva  
+    id: "stegoceratops",
+    name: "Stegoceratops",
+    image: "/images/Gallery-28.jpg",
+    era: "Holoceno",
+    diet: "Paleobotánica de suelo",
+    size: "Grande",
+    description: `Masa estimada: 4 toneladas | Longitud: 11.6 metros | Altura a la cadera: 5.2 metros | Locomoción: Cuadrúpeda | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Megaherbívoro defensivo híbrido | Estrategia ofensiva: Embestida frontal combinada con defensa dorsal pasiva  
 
 El Stegoceratops es un híbrido genético perteneciente a la familia Híbridos, creado mediante la combinación de material genético de Stegosaurus y Triceratops. Su esqueleto presenta una arquitectura robusta con una cintura escapular poderosa y una región pélvica amplia, diseñada para soportar una masa corporal considerable y absorber impactos frontales.
 
@@ -285,12 +299,13 @@ En ecosistemas controlados, el Stegoceratops cumple el rol de megaherbívoro est
   },
 
   {
-  id: "vastatosaurus-rex",
-  name: "Vastatosaurus Rex",
-  era: "Cretácico",
-  diet: "Carnívoro",
-  size: "Colosal",
-  description: `Masa estimada: 12–14 toneladas | Longitud: 13–15 metros | Altura a la cadera: 5–6 metros | Locomoción: Bípeda de potencia explosiva | Termorregulación: Endotermia avanzada | Fuerza de mordida estimada: >50.000 newtons | Rol ecológico: Depredador ápice regulador | Estrategia dominante: Dominio territorial y trituración ósea  
+    id: "vastatosaurus-rex",
+    name: "Vastatosaurus Rex",
+    image: "/images/Gallery-34.jpg",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Colosal",
+    description: `Masa estimada: 12–14 toneladas | Longitud: 13–15 metros | Altura a la cadera: 5–6 metros | Locomoción: Bípeda de potencia explosiva | Termorregulación: Endotermia avanzada | Fuerza de mordida estimada: >50.000 newtons | Rol ecológico: Depredador ápice regulador | Estrategia dominante: Dominio territorial y trituración ósea  
 
 Superdepredador definitivo del ecosistema insular, descendiente derivado de tiranosáuridos que evolucionó hacia una morfología más compacta, masiva y estructuralmente reforzada que Tyrannosaurus rex. La reducción relativa de longitud y el aumento de volumen corporal sugieren adaptación a confrontaciones directas en ambientes densos más que a persecuciones prolongadas.
 
@@ -308,12 +323,13 @@ Más que un simple depredador gigante, representaba el resultado extremo de una 
   },
 
   {
-  id: "venatosaurus",
-  name: "Venatosaurus (linaje insular)",
-  era: "Cretácico",
-  diet: "Carnívoro",
-  size: "Mediano",
-  description: `Masa estimada: 180–380 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.4–1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Termorregulación: Endotermia elevada | Rol ecológico: Depredador social coordinado | Estrategia ofensiva: Desgaste cooperativo y ataque súbito  
+    id: "venatosaurus",
+    name: "Venatosaurus (linaje insular)",
+    image: "/images/Gallery-37.jpg",
+    era: "Cretácico",
+    diet: "Carnívoro",
+    size: "Mediano",
+    description: `Masa estimada: 180–380 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.4–1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Termorregulación: Endotermia elevada | Rol ecológico: Depredador social coordinado | Estrategia ofensiva: Desgaste cooperativo y ataque súbito  
 
 Género de dromaeosáuridos insulares descendientes de formas similares a Utahraptor, que evolucionaron en Isla Calavera hacia morfologías más estilizadas y metabólicamente eficientes. Su anatomía combinaba cola rígida estabilizadora, extremidades posteriores elongadas y la característica garra falciforme en el segundo dedo del pie, utilizada para desgarrar tejido blando durante ataques coordinados.
 
@@ -329,12 +345,13 @@ En el ecosistema insular representaban el nivel de depredación dinámico y coor
   },
 
   {
-  id: "zeropteryx-torova",
-  name: "Zeropteryx torova",
-  era: "Cretácico",
-  diet: "Herbívoro",
-  size: "Pequeño",
-  description: `Masa estimada: 280 kg | Altura: 3 metros | Longitud: 1–1.3 metros | Locomoción: Bípeda terrestre no voladora | Termorregulación: Endotermia aviar | Rol ecológico: Herbívoro–omnívoro de sotobosque | Estrategia defensiva: Vigilancia grupal y evasión rápida  
+    id: "zeropteryx-torova",
+    name: "Zeropteryx torova",
+    image: "/images/Gallery-40.jpg",
+    era: "Cretácico",
+    diet: "Herbívoro",
+    size: "Pequeño",
+    description: `Masa estimada: 280 kg | Altura: 3 metros | Longitud: 1–1.3 metros | Locomoción: Bípeda terrestre no voladora | Termorregulación: Endotermia aviar | Rol ecológico: Herbívoro–omnívoro de sotobosque | Estrategia defensiva: Vigilancia grupal y evasión rápida  
 
 Ave insular no voladora descendiente de un linaje terópodo aviano que perdió progresivamente la capacidad de vuelo tras millones de años de aislamiento y ausencia inicial de depredadores aéreos. La reducción alar es marcada: las alas son vestigiales y carecen de capacidad funcional para sustentación.
 
