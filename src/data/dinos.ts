@@ -132,7 +132,7 @@ En la red trófica de Isla Calavera, cumplía un rol fundamental como consumidor
   {
     id: "indominus_rex",
     name: "Indominus Rex",
-    image: "/images/Gallery-15.jpg",
+    image: "/images/Gallery-16.jpg",
     era: "Holoceno",
     diet: "Carnívoro",
     size: "Gigante",
