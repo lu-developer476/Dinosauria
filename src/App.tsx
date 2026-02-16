@@ -49,14 +49,34 @@ export default function App() {
     return facts[i];
   }, [factIndex]);
 
-  const gallery = useMemo(
-    () =>
-      Array.from({ length: 8 }, (_, i) => ({
-        src: `/images/gallery-${i + 1}.jpg`,
-        label: `Imagen ${i + 1}`
-      })),
-    []
-  );
+const gallery = useMemo(
+  () => [
+    { id: 2, src: "/images/Gallery-2.jpg", caption: "Representación ósea del Atercurisaurus" },
+    { id: 4, src: "/images/Gallery-4.jpg", caption: "Representación ósea del Brontosaurus baxteri" },
+    { id: 5, src: "/images/Gallery-5.jpg", caption: "Ilustración a mano alzada del Brontosaurus baxteri" },
+    { id: 8, src: "/images/Gallery-8.jpg", caption: "Representación ósea del Ferrucutus cerastes" },
+    { id: 9, src: "/images/Gallery-9.jpg", caption: "Ilustración a mano alzada del Ferrucutus cerastes" },
+    { id: 10, src: "/images/Gallery-10.jpg", caption: "Mirada intimidante del Foetodon ferrus" },
+    { id: 11, src: "/images/Gallery-11.jpg", caption: "Ilustración del Foetodon ferrus" },
+    { id: 13, src: "/images/Gallery-13.jpg", caption: "Representación ósea del Foetodon ferrus" },
+    { id: 14, src: "/images/Gallery-14.jpg", caption: "Ilustración a mano alzada del Foetodon ferrus" },
+    { id: 18, src: "/images/Gallery-18.jpg", caption: "Adulto y cría de Ligocristus innocens" },
+    { id: 19, src: "/images/Gallery-19.jpg", caption: "Ilustración a mano alzada del Ligocristus innocens" },
+    { id: 23, src: "/images/Gallery-23.jpg", caption: "Variante 2 del Spinoceratops" },
+    { id: 24, src: "/images/Gallery-24.jpg", caption: "Variante 3 del Spinoceratops" },
+    { id: 27, src: "/images/Gallery-27.jpg", caption: "Variante 2 del Spinoraptor" },
+    { id: 29, src: "/images/Gallery-29.jpg", caption: "Representación ósea del Stegoceratops" },
+    { id: 30, src: "/images/Gallery-30.jpg", caption: "Ilustración 1 de un Vastatosaurus Rex macho" },
+    { id: 31, src: "/images/Gallery-31.jpg", caption: "Ilustración 2 de un Vastatosaurus Rex macho" },
+    { id: 32, src: "/images/Gallery-32.jpg", caption: "Ilustración de un Vastatosaurus Rex hembra" },
+    { id: 33, src: "/images/Gallery-33.jpg", caption: "Ilustración de una cría de Vastatosaurus Rex joven" },
+    { id: 35, src: "/images/Gallery-35.jpg", caption: "Representación ósea del Vastatosaurus Rex adulto" },
+    { id: 36, src: "/images/Gallery-36.jpg", caption: "Ilustración a mano alzada de una familia de Vastatosaurus Rex " },
+    { id: 38, src: "/images/Gallery-38.jpg", caption: "Representación ósea del Venatosaurus saevidicus" },
+    { id: 39, src: "/images/Gallery-39.jpg", caption: "Ilustración a mano alzada del Venatosaurus saevidicus" }
+  ],
+  []
+);
 
   // Catálogo de etiquetas disponibles (tags + era/diet/size)
   const availableFilters = useMemo(() => {
@@ -89,15 +109,18 @@ export default function App() {
       );
     }, 45000);
 
-    // Rotación automática galería (1 imagen cada 25s)
-useEffect(() => {
-  if (gallery.length <= 1) return;
+  // Rotación automática galería (1 imagen cada 25s)
+  useEffect(() => {
+    if (gallery.length <= 1) return;
 
-  const interval = setInterval(() => {
-    setGalleryIndex((prev) =>
-      prev + 1 >= gallery.length ? 0 : prev + 1
-    );
-  }, 25000);
+    const interval = setInterval(() => {
+      setGalleryIndex((prev) =>
+        prev + 1 >= gallery.length ? 0 : prev + 1
+      );
+    }, 25000);
+
+  return () => clearInterval(interval);
+}, [gallery]);
 
   return () => clearInterval(interval);
   }, [gallery]);
