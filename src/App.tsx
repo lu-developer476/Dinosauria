@@ -379,6 +379,7 @@ const gallery = useMemo(
               />
               <div className="gcap">
                 {gallery[galleryIndex].caption}
+                </div>
               </div>
             </div>
           </div>
