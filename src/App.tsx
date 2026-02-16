@@ -181,7 +181,7 @@ export default function App() {
           <div className="container">
             <h2 className="h2">Especies</h2>
             <p className="sub">
-              Esta sección reúne fichas sintéticas de las especies reconstruidas dentro del ecosistema insular. Cada entrada resume rasgos morfológicos, rol trófico y contexto evolutivo bajo criterios de anatomía funcional y plausibilidad biomecánica.
+              Esta sección reúne fichas sintéticas de las especies tanto de origen evolutivo "natural" como resultado de la ingeniería genética practicada. Cada entrada resume rasgos morfológicos, rol trófico y contexto biológico, analizados bajo criterios de anatomía funcional, coherencia ecológica y plausibilidad biomecánica.
             </p>
 
             <div className="cards">
