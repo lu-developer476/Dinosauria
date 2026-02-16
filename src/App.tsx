@@ -99,39 +99,29 @@ const gallery = useMemo(
     setCurrentIndex(0);
   }, [activeFilter]);
 
-  // Rotación cada 10s (2 por “página”)
+  // Rotación catálogo (cada 45s: avanza 2 cards)
   useEffect(() => {
     if (filteredDinos.length <= 2) return;
 
-    const interval = setInterval(() => {
+    const intervalId = window.setInterval(() => {
       setCurrentIndex((prev) =>
         prev + 2 >= filteredDinos.length ? 0 : prev + 2
       );
     }, 45000);
 
-// Rotación catálogo (cada 45s: avanza 2 cards)
-useEffect(() => {
-  if (filteredDinos.length <= 2) return;
+    return () => window.clearInterval(intervalId);
+  }, [filteredDinos]);
 
-  const intervalId = window.setInterval(() => {
-    setCurrentIndex((prev) =>
-      prev + 2 >= filteredDinos.length ? 0 : prev + 2
-    );
-  }, 45000);
+  // Rotación automática galería (1 imagen cada 25s)
+  useEffect(() => {
+    if (gallery.length <= 1) return;
 
-  return () => window.clearInterval(intervalId);
-}, [filteredDinos]);
+    const intervalId = window.setInterval(() => {
+      setGalleryIndex((prev) => (prev + 1) % gallery.length);
+    }, 25000);
 
-// Rotación automática galería (1 imagen cada 25s)
-useEffect(() => {
-  if (gallery.length <= 1) return;
-
-  const intervalId = window.setInterval(() => {
-    setGalleryIndex((prev) => (prev + 1) % gallery.length);
-  }, 25000);
-
-  return () => window.clearInterval(intervalId);
-}, [gallery.length]);
+    return () => window.clearInterval(intervalId);
+  }, [gallery.length]);
 
   const visibleDinos = useMemo(() => {
     return filteredDinos.slice(currentIndex, currentIndex + 2);
