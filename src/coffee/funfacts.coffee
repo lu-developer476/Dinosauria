@@ -1,4 +1,4 @@
-export const facts = [
+export.facts = [
 "El Atercurisaurus desarrolló unas mandíbulas reforzadas capaces de fracturar hueso compacto en cuestión de segundos.",
 "El Atercurisaurus presentaba numerosas cicatrices óseas que evidencian combates intraespecíficos frecuentes.",
 "El Atercurisaurus evolucionó en un entorno insular aislado que favoreció su agresividad extrema.",
