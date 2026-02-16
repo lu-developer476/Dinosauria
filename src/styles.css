@@ -100,7 +100,7 @@ section[id]{scroll-margin-top:90px}
 /* GRID 2 COLUMNAS */
 .cards-3col{
   display:grid;
-  grid-template-columns:repeat(2,1fr);
+  grid-template-columns:repeat(3,1fr);
   gap:24px;
   margin-top:36px;
   animation:fadeInCards 0.4s ease;
