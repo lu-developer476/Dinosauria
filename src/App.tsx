@@ -13,6 +13,7 @@ function nowStamp() {
 
 export default function App() {
   const [factIndex, setFactIndex] = useState(0);
+  const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
   const fact = useMemo(() => {
     const i = ((factIndex % facts.length) + facts.length) % facts.length;
@@ -187,7 +188,13 @@ export default function App() {
             <div className="cards">
               {dinos.map((d) => (
                 <article className="card" key={d.id}>
-                  <strong>{d.name}</strong>
+                  <strong className="dino-title">{d.name}</strong>
+                    <img
+                      src={d.image}
+                      alt={d.name}
+                      className="dino-image"
+                      onClick={() => setSelectedImage(d.image)}
+                    />
                   
                   <div className="sub dino-text">
                     {d.description.split("\n\n").map((paragraph, index) => (
@@ -239,6 +246,14 @@ export default function App() {
         </section>
 
       </main>
+
+      {selectedImage && (
+        <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
+          <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+            <img src={selectedImage} alt="Vista ampliada" />
+          </div>
+        </div>
+      )}
 
       <footer className="footer">
         <div className="container footer-inner">
