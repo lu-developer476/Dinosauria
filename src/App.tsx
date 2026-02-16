@@ -188,60 +188,48 @@ export default function App() {
               Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
             </p>
         
-            <div className="cards cards-3col">
-              <article className="card timeline-card">
-                <strong className="timeline-title">Aislamiento prolongado</strong>
-        
-                <div className="timeline-text">
-                  <p>
-                    El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada.
-                  </p>
-                  <p>
-                    Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos desconocidos.
-                  </p>
-                  <p>
-                    El resultado no es únicamente un “mundo perdido”, sino también un escenario donde la biotecnología redefine los límites de la paleobiología tradicional.
-                  </p>
-                </div>
-              </article>
-        
-              <article className="card timeline-card">
-                <strong className="timeline-title">
-                  Especialización natural y diseños artificiales sintéticos
-                </strong>
-        
-                <div className="timeline-text">
-                  <p>
-                    En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales: aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
-                  </p>
-                  <p>
-                    En contraste, los híbridos genéticos del Holoceno no responden a selección natural directa, sino a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales específicas.
-                  </p>
-                  <p>
-                    La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
-                  </p>
-                </div>
-              </article>
-        
-              <article className="card timeline-card">
-                <strong className="timeline-title">
-                  Equilibrio natural vs. desequilibrio por intervención
-                </strong>
-        
-                <div className="timeline-text">
-                  <p>
-                    Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico.
-                  </p>
-                  <p>
-                    Sin embargo, la introducción de híbridos diseñados rompe estos patrones tradicionales, ya que se trata de organismos sin historia evolutiva integrada en su entorno.
-                  </p>
-                  <p>
-                    La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica, donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
-                  </p>
-                </div>
-              </article>
-            </div>
-        
+          <div className="cards cards-2col">
+            <article className="card timeline-card">
+              <strong className="timeline-title">
+                Aislamiento, especialización y diseño biotecnológico
+              </strong>
+          
+              <div className="timeline-text">
+                <p>
+                  El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada. En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales como aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
+                </p>
+          
+                <p>
+                  Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos específicos. Mientras la presión evolutiva moldea organismos a lo largo de millones de años, los híbridos genéticos del Holoceno responden a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales dirigidas.
+                </p>
+          
+                <p>
+                  La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
+                </p>
+              </div>
+            </article>
+          
+            <article className="card timeline-card">
+              <strong className="timeline-title">
+                Equilibrio natural y ruptura ecológica
+              </strong>
+          
+              <div className="timeline-text">
+                <p>
+                  Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico. Este equilibrio no es estático, sino el resultado de interacciones tróficas sostenidas a lo largo del tiempo evolutivo.
+                </p>
+          
+                <p>
+                  Sin embargo, la introducción de organismos diseñados rompe estos patrones tradicionales, ya que se trata de entidades sin historia evolutiva integrada en su entorno. La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
+                </p>
+          
+                <p>
+                  El resultado no es únicamente un “mundo perdido”, sino un sistema híbrido donde selección natural y bioingeniería redefinen simultáneamente los límites de la paleobiología tradicional.
+                </p>
+              </div>
+            </article>
+          </div>
+
             <div className="cta">
               <p>
                 Este catálogo no representa únicamente un análisis de especies mesozoicas relictas o mundos aislados, sino un compendio que integra evolución natural y bioingeniería moderna dentro de universos ficticios.
