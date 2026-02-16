@@ -72,7 +72,7 @@ Existe, sin embargo, un depredador que sí constituye amenaza relevante: Venatos
     size: "Grande",
     description: `Masa estimada: 6–8 toneladas | Longitud: 8–9 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda robusta con capacidad de impulso anterior | Termorregulación: Mesotérmica | Rol ecológico: Depredador territorial de emboscada | Estrategia ofensiva: Impacto frontal con cuernos y trituración mandibular  
 
-Terópodo insular altamente especializado que desarrolló convergencia morfológica con ceratópsidos, especialmente en la región craneal. A diferencia de verdaderos ceratópsidos herbívoros, Ferrucutus conservó dentición carnívora serrada y musculatura mandibular potente.
+Notosuquio insular altamente peligroso que desarrolló convergencia morfológica, conservando su dentición carnívora serrada y musculatura mandibular potente.
 
 Su cráneo presentaba placas óseas engrosadas y cuernos frontales macizos utilizados tanto para combate intraespecífico como para incapacitar presas medianas mediante embestida directa. La base cervical estaba extraordinariamente reforzada, permitiendo absorber y generar fuerzas de impacto repetidas sin fractura estructural.
 
