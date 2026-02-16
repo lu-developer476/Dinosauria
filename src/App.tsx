@@ -71,7 +71,7 @@ const gallery = useMemo(
     { id: 32, src: "/images/Gallery-32.jpg", caption: "Ilustración de un Vastatosaurus Rex hembra" },
     { id: 33, src: "/images/Gallery-33.jpg", caption: "Ilustración de una cría de Vastatosaurus Rex joven" },
     { id: 35, src: "/images/Gallery-35.jpg", caption: "Representación ósea del Vastatosaurus Rex adulto" },
-    { id: 36, src: "/images/Gallery-36.jpg", caption: "Ilustración a mano alzada de una familia de Vastatosaurus Rex " },
+    { id: 36, src: "/images/Gallery-36.jpg", caption: "Ilustración a mano alzada de una familia de Vastatosaurus Rex" },
     { id: 38, src: "/images/Gallery-38.jpg", caption: "Representación ósea del Venatosaurus saevidicus" },
     { id: 39, src: "/images/Gallery-39.jpg", caption: "Ilustración a mano alzada del Venatosaurus saevidicus" }
   ],
@@ -109,24 +109,29 @@ const gallery = useMemo(
       );
     }, 45000);
 
-  // Rotación automática galería (1 imagen cada 25s)
-  useEffect(() => {
-    if (gallery.length <= 1) return;
+// Rotación catálogo (cada 45s: avanza 2 cards)
+useEffect(() => {
+  if (filteredDinos.length <= 2) return;
 
-    const interval = setInterval(() => {
-      setGalleryIndex((prev) =>
-        prev + 1 >= gallery.length ? 0 : prev + 1
-      );
-    }, 25000);
+  const intervalId = window.setInterval(() => {
+    setCurrentIndex((prev) =>
+      prev + 2 >= filteredDinos.length ? 0 : prev + 2
+    );
+  }, 45000);
 
-  return () => clearInterval(interval);
-}, [gallery]);
+  return () => window.clearInterval(intervalId);
+}, [filteredDinos]);
 
-  return () => clearInterval(interval);
-  }, [gallery]);
+// Rotación automática galería (1 imagen cada 25s)
+useEffect(() => {
+  if (gallery.length <= 1) return;
 
-    return () => clearInterval(interval);
-  }, [filteredDinos]);
+  const intervalId = window.setInterval(() => {
+    setGalleryIndex((prev) => (prev + 1) % gallery.length);
+  }, 25000);
+
+  return () => window.clearInterval(intervalId);
+}, [gallery.length]);
 
   const visibleDinos = useMemo(() => {
     return filteredDinos.slice(currentIndex, currentIndex + 2);
