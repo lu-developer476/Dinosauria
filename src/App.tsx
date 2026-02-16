@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState, useEffect } from "react";
 import { smoothScrollTo } from "./utils/scroll";
 import { facts } from "./generated/funfacts.js";
 import { dinos } from "./data/dinos";
@@ -15,6 +15,10 @@ export default function App() {
   const [factIndex, setFactIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
+  const [filteredDinos, setFilteredDinos] = useState(dinos);
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [activeFilter, setActiveFilter] = useState<string | null>(null);
+
   const fact = useMemo(() => {
     const i = ((factIndex % facts.length) + facts.length) % facts.length;
     return facts[i];
@@ -28,6 +32,18 @@ export default function App() {
       })),
     []
   );
+
+  useEffect(() => {
+    if (filteredDinos.length <= 2) return;
+
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) =>
+        prev + 2 >= filteredDinos.length ? 0 : prev + 2
+      );
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, [filteredDinos]);
   
   return (
     <>
