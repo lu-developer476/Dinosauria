@@ -41,6 +41,9 @@ export default function App() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
 
+  // Rotación Galería
+  const [galleryIndex, setGalleryIndex] = useState(0);
+
   const fact = useMemo(() => {
     const i = ((factIndex % facts.length) + facts.length) % facts.length;
     return facts[i];
@@ -85,6 +88,19 @@ export default function App() {
         prev + 2 >= filteredDinos.length ? 0 : prev + 2
       );
     }, 45000);
+
+    // Rotación automática galería (1 imagen cada 25s)
+useEffect(() => {
+  if (gallery.length <= 1) return;
+
+  const interval = setInterval(() => {
+    setGalleryIndex((prev) =>
+      prev + 1 >= gallery.length ? 0 : prev + 1
+    );
+  }, 25000);
+
+  return () => clearInterval(interval);
+  }, [gallery]);
 
     return () => clearInterval(interval);
   }, [filteredDinos]);
@@ -337,13 +353,15 @@ export default function App() {
               </p>
             </div>
 
-            <div className="gallery" role="list">
-              {gallery.map((g) => (
-                <div className="gimg" role="listitem" key={g.src}>
-                  <img src={g.src} alt={g.label} />
-                  <div className="gcap">{g.label}</div>
-                </div>
-              ))}
+          <div className="gallery">
+            <div className="gimg">
+              <img
+                src={gallery[galleryIndex].src}
+                alt={gallery[galleryIndex].caption}
+              />
+              <div className="gcap">
+                {gallery[galleryIndex].caption}
+              </div>
             </div>
           </div>
         </section>
