@@ -354,3 +354,32 @@ section[id]{scroll-margin-top:90px}
   max-height: 90vh;
   border-radius: 10px;
 }
+
+/* FILTROS */
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 28px;
+}
+
+.filter {
+  padding: 6px 14px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: rgba(255,255,255,0.05);
+  color: var(--text);
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.filter:hover {
+  background: rgba(30,255,122,0.12);
+  border-color: rgba(30,255,122,0.4);
+}
+
+.filter.active {
+  background: rgba(30,255,122,0.18);
+  border-color: rgba(30,255,122,0.6);
+}
