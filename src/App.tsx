@@ -373,8 +373,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()}Todos los derechos reservados</small>
-          <small>Realizado por Lucas Leonel Montenegro Burgos</small>
+          <small>© {new Date().getFullYear()}Todos los derechos reservados | Realizado por Lucas Leonel Montenegro Burgos</small>
         </div>
       </footer>
     </>
