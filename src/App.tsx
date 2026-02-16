@@ -136,7 +136,7 @@ export default function App() {
                 </div>
 
                 <aside className="hero-aside" aria-label="Dato destacado">
-                  <div className="fact-title">Curiosidad del día</div>
+                  <div className="fact-title"><strong>Curiosidad del día</strong></div>
                   <div className="fact">{fact}</div>
                   <div className="fact-footer">
                     <span className="pill">Actualizado: {nowStamp()}</span>
