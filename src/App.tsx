@@ -124,13 +124,13 @@ export default function App() {
                 <div>
                   <h3>Aislamiento prolongado</h3>
                   <p>
-                    La Isla Calavera habría permanecido aislada desde finales del Cretácico, funcionando como un refugio biológico cerrado tras eventos de extinción global. Este aislamiento impidió intercambio genético con el exterior y favoreció procesos de deriva genética acelerada.
+                    El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada.
                   </p>
                   <p>
-                    En ausencia de competencia externa, las especies sobrevivientes no conservaron su forma original: divergieron. Los linajes de saurópodos, terópodos y abelisáuridos evolucionaron hacia morfologías más robustas, con densidad ósea incrementada y mayor tolerancia al daño físico.
+                    Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos desconocidos.
                   </p>
                   <p>
-                    El resultado no es un “mundo congelado en el tiempo”, sino un ecosistema que continuó evolucionando bajo reglas propias durante millones de años.
+                    El resultado no es únicamente un “mundo perdido”, sino también un escenario donde la biotecnología redefine los límites de la paleobiología tradicional.
                   </p>
                 </div>
               </div>
@@ -138,15 +138,15 @@ export default function App() {
               <div className="step">
                 <div className="dot">2</div>
                 <div>
-                  <h3>Especialización extrema</h3>
+                  <h3>Especialización natural y diseños artificiales sintéticos</h3>
                   <p>
-                    En ecosistemas de alta densidad trófica y competencia permanente, la selección natural no premia rasgos ornamentales sino funcionales.
+                    En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales: aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
                   </p>
                   <p>
-                    Aumentos en masa corporal, reforzamiento craneal, densidad ósea elevada y comportamiento territorial son respuestas típicas a presión predatoria intensa.
+                    En contraste, los híbridos genéticos del Holoceno no responden a selección natural directa, sino a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales específicas.
                   </p>
                   <p>
-                    Las especies que sobreviven no son las más rápidas o espectaculares, sino aquellas que optimizan energía, resistencia estructural y eficiencia biomecánica dentro de su nicho ecológico.
+                    La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
                   </p>
                 </div>
               </div>
@@ -154,15 +154,15 @@ export default function App() {
               <div className="step">
                 <div className="dot">3</div>
                 <div>
-                  <h3>Equilibrio inestable</h3>
+                  <h3>Equilibrio natural vs. desequilibrio por intervención</h3>
                   <p>
-                    La estabilidad del ecosistema no depende de abundancia masiva, sino de equilibrio entre natalidad elevada y mortalidad constante.
+                    Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico.
                   </p>
                   <p>
-                  En entornos cerrados, la mortalidad juvenil suele ser extremadamente alta, lo que mantiene control poblacional sin necesidad de grandes fluctuaciones demográficas.
+                    Sin embargo, la introducción de híbridos diseñados rompe estos patrones tradicionales, ya que se trata de organismos sin historia evolutiva integrada en su entorno.
                   </p>
                   <p>
-                    La aparente estabilidad ecológica es el resultado de ciclos continuos de reemplazo generacional, no de armonía permanente. La competencia por territorio y recursos es constante y estructural.
+                    La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica, donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
                   </p>
                 </div>
               </div>
@@ -170,8 +170,8 @@ export default function App() {
 
             <div className="cta">
               <p>
-                El ecosistema de Isla Calavera no es una fantasía desordenada: es un sistema evolutivo cerrado que puede analizarse con criterios paleobiológicos reales.
-                Representa un modelo hipotético de cómo la presión ambiental sostenida puede moldear linajes enteros hacia morfologías radicalmente funcionales.
+                Este catálogo no representa únicamente un análisis de especies mesozoicas relictas o mundos aislados, sino un compendio que integra evolución natural y bioingeniería moderna dentro de universos ficticios.
+                Desde linajes moldeados por millones de años de selección natural hasta híbridos diseñados en laboratorio, cada organismo puede analizarse bajo criterios paleobiológicos, ecológicos y estructurales, ampliando la frontera entre ciencia evolutiva y biotecnología especulativa.
               </p>
             </div>
           </div>
