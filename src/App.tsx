@@ -26,7 +26,7 @@ function getDinoTags(d: any): string[] {
   if (typeof d.diet === "string") tags.push(d.diet);
   if (typeof d.size === "string") tags.push(d.size);
 
-  // Normalizar, deduplicar y evitar vacíos
+  // Normalizar y evitar vacíos
   return Array.from(
     new Set(tags.map(normalizeTag).filter(Boolean))
   );
