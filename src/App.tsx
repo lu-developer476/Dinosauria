@@ -191,11 +191,12 @@ export default function App() {
             <p className="sub">
               Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
             </p>
-
-            <div className="timeline">
-              <div className="step">
-                <div>
-                  <h3>Aislamiento prolongado</h3>
+        
+            <div className="cards cards-2col">
+              <article className="card timeline-card">
+                <strong className="timeline-title">Aislamiento prolongado</strong>
+        
+                <div className="timeline-text">
                   <p>
                     El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada.
                   </p>
@@ -206,11 +207,14 @@ export default function App() {
                     El resultado no es únicamente un “mundo perdido”, sino también un escenario donde la biotecnología redefine los límites de la paleobiología tradicional.
                   </p>
                 </div>
-              </div>
-
-              <div className="step">
-                <div>
-                  <h3>Especialización natural y diseños artificiales sintéticos</h3>
+              </article>
+        
+              <article className="card timeline-card">
+                <strong className="timeline-title">
+                  Especialización natural y diseños artificiales sintéticos
+                </strong>
+        
+                <div className="timeline-text">
                   <p>
                     En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales: aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
                   </p>
@@ -221,11 +225,14 @@ export default function App() {
                     La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
                   </p>
                 </div>
-              </div>
-
-              <div className="step">
-                <div>
-                  <h3>Equilibrio natural vs. desequilibrio por intervención</h3>
+              </article>
+        
+              <article className="card timeline-card">
+                <strong className="timeline-title">
+                  Equilibrio natural vs. desequilibrio por intervención
+                </strong>
+        
+                <div className="timeline-text">
                   <p>
                     Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico.
                   </p>
@@ -236,9 +243,9 @@ export default function App() {
                     La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica, donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
                   </p>
                 </div>
-              </div>
+              </article>
             </div>
-
+        
             <div className="cta">
               <p>
                 Este catálogo no representa únicamente un análisis de especies mesozoicas relictas o mundos aislados, sino un compendio que integra evolución natural y bioingeniería moderna dentro de universos ficticios.
@@ -372,7 +379,7 @@ export default function App() {
 
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()}Todos los derechos reservados | Realizado por Lucas Leonel Montenegro Burgos</small>
+          <small>© {new Date().getFullYear()} Todos los derechos reservados | Realizado por Lucas Leonel Montenegro Burgos</small>
         </div>
       </footer>
     </>
