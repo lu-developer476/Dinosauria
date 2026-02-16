@@ -9,10 +9,3 @@ export type DinoCard = {
   size: "Pequeño" | "Mediano" | "Grande" | "Colosal";
   description: string;
 };
-
-// GALERÍA //
-export interface GalleryItem {
-  id: number;
-  src: string;
-  caption: string;
-}
