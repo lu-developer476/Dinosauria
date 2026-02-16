@@ -98,7 +98,7 @@ section[id]{scroll-margin-top:90px}
 }
 
 /* GRID 2 COLUMNAS */
-.cards-2col{
+.cards-3col{
   display:grid;
   grid-template-columns:repeat(2,1fr);
   gap:24px;
@@ -107,7 +107,7 @@ section[id]{scroll-margin-top:90px}
 }
 
 @media(max-width:900px){
-  .cards-2col{
+  .cards-3col{
     grid-template-columns:1fr;
   }
 }
