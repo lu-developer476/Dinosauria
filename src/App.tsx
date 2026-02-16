@@ -114,6 +114,7 @@ export default function App() {
           </a>
 
           <nav className="nav-links" aria-label="Navegación principal">
+            <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Inicio</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
@@ -128,7 +129,6 @@ export default function App() {
             <div className="hero-card">
               <div className="hero-inner">
                 <div>
-                  <div className="kicker">Museo digital</div>
                   <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
                   <p className="lead">
                     Sitio no oficial de las especies jamás vistas por el hombre... y otras creadas por su ambición.
