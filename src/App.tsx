@@ -15,19 +15,7 @@ export default function App() {
   const [factIndex, setFactIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
-  const filteredDinos = useMemo(() => {
-    if (!activeFilter) return dinos;
-    return dinos.filter(d => d.tags?.includes(activeFilter));
-    }, [activeFilter]);
-
-  const allTags = useMemo(() => {
-  const set = new Set<string>();
-  dinos.forEach(d => {
-    d.tags?.forEach(tag => set.add(tag));
-  });
-  return Array.from(set).sort();
-}, []);
-  
+  const [filteredDinos, setFilteredDinos] = useState(dinos);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
 
@@ -111,29 +99,7 @@ export default function App() {
             <p className="sub">
               Cada especie se evalúa bajo criterios reales, límites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
             </p>
-
-            <div className="filters">
-              <button
-                className={!activeFilter ? "filter active" : "filter"}
-                onClick={() => setActiveFilter(null)}
-              >
-                Todas
-              </button>
-            
-              {allTags.map(tag => (
-                <button
-                  key={tag}
-                  className={activeFilter === tag ? "filter active" : "filter"}
-                  onClick={() => {
-                    setActiveFilter(tag);
-                    setCurrentIndex(0);
-                  }}
-                >
-                  {tag}
-                </button>
-              ))}
-            </div>
-            
+        
             <div className="cards">
               <div className="card">
                 <strong>Enfoque</strong>
