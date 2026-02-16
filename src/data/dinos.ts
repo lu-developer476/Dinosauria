@@ -8,9 +8,9 @@ export const dinos: DinoCard[] = [
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Masa estimada: 5 toneladas | Longitud: 4.8–10 metros | Altura a la cadera: 2–2.4 metros | Locomoción: Bípeda cursorial de persecución sostenida | Termorregulación: Endotermia funcional | Rol ecológico: Depredador de persecución abierta | Estrategia ofensiva: Desgaste progresivo y mordida repetitiva  
+    description: `Masa estimada: 5 toneladas | Longitud: 4.8–10 metros | Altura a la cadera: 2–2.4 metros | Locomoción: Cuadrúpeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Depredador de persecución abierta | Estrategia ofensiva: Desgaste progresivo y mordida repetitiva  
 
-Terópodo insular de complexión estilizada que representa una rama evolutiva orientada a velocidad y resistencia aeróbica más que a fuerza bruta. Su esqueleto presenta extremidades posteriores elongadas, tibias proporcionalmente largas y pelvis optimizada para eficiencia de zancada.
+Estegosáurido insular de complexión estilizada que representa una rama evolutiva orientada a velocidad y resistencia aeróbica más que a fuerza bruta. Su esqueleto presenta extremidades posteriores elongadas, tibias proporcionalmente largas y pelvis optimizada para eficiencia de zancada.
 
 El cráneo era más estrecho y alargado que en Nefundusaurus, con dentición serrada adaptada a desgarro repetitivo en lugar de trituración masiva. La musculatura cervical permitía sacudidas laterales rápidas para amplificar daño tisular tras cada mordida.
 
