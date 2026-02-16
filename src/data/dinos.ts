@@ -76,7 +76,7 @@ Existe, sin embargo, un depredador que sí constituye amenaza relevante: Venatos
     size: "Grande",
     description: `Masa estimada: 6–8 toneladas | Longitud: 8–9 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda robusta con capacidad de impulso anterior | Termorregulación: Mesotérmica | Rol ecológico: Depredador territorial de emboscada | Estrategia ofensiva: Impacto frontal con cuernos y trituración mandibular  
 
-Notosuquio insular altamente peligroso que desarrolló convergencia morfológica, conservando su dentición carnívora serrada y musculatura mandibular potente.
+Ceratópsido centrosaurino insular altamente peligroso que desarrolló convergencia morfológica, conservando su dentición carnívora serrada y musculatura mandibular potente.
 
 Su cráneo presentaba placas óseas engrosadas y cuernos frontales macizos utilizados tanto para combate intraespecífico como para incapacitar presas medianas mediante embestida directa. La base cervical estaba extraordinariamente reforzada, permitiendo absorber y generar fuerzas de impacto repetidas sin fractura estructural.
 
@@ -99,7 +99,7 @@ En el ecosistema de Isla Calavera ocupaba un nivel trófico alto, actuando como 
     size: "Mediano",
     description: `Masa estimada: 400–600 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.5 metros | Locomoción: Bípeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Carroñero dominante y depredador oportunista | Estrategia: Caza cooperativa y resistencia patógena elevada  
 
-Terópodo insular altamente adaptado a ambientes húmedos, cadáveres en descomposición y competencia trófica intensa. Su nombre deriva del fuerte olor corporal producido por secreciones dérmicas y restos orgánicos adheridos, lo que podría cumplir función tanto territorial como disuasiva frente a competidores.
+Notosuquio insular altamente adaptado a ambientes húmedos, cadáveres en descomposición y competencia trófica intensa. Su nombre deriva del fuerte olor corporal producido por secreciones dérmicas y restos orgánicos adheridos, lo que podría cumplir función tanto territorial como disuasiva frente a competidores.
 
 La dentición era fina, serrada y de reemplazo rápido, optimizada para desgarrar tejido blando más que triturar hueso. A diferencia de Vastatosaurus, carecía de potencia mandibular extrema, pero compensaba con velocidad y coordinación grupal.
 
