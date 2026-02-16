@@ -17,26 +17,17 @@ function normalizeTag(tag: string) {
 
 function getDinoTags(d: any): string[] {
   const tags: string[] = [];
-
-  // Si existe tags: string[]
   if (Array.isArray(d.tags)) tags.push(...d.tags);
-
-  // Backups: era/diet/size como etiquetas útiles
   if (typeof d.era === "string") tags.push(d.era);
   if (typeof d.diet === "string") tags.push(d.diet);
   if (typeof d.size === "string") tags.push(d.size);
 
-  // Normalizar, deduplicar y evitar vacíos
-  return Array.from(
-    new Set(tags.map(normalizeTag).filter(Boolean))
-  );
+  return Array.from(new Set(tags.map(normalizeTag).filter(Boolean)));
 }
 
 export default function App() {
   const [factIndex, setFactIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
-
-  // Filtros + rotación
   const [filteredDinos, setFilteredDinos] = useState(dinos);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
@@ -55,13 +46,11 @@ export default function App() {
     []
   );
 
-  // Catálogo de etiquetas disponibles (tags + era/diet/size)
   const availableFilters = useMemo(() => {
     const all = dinos.flatMap((d: any) => getDinoTags(d));
     return Array.from(new Set(all)).sort((a, b) => a.localeCompare(b));
   }, []);
 
-  // Aplicar filtro y resetear índice de rotación
   useEffect(() => {
     if (!activeFilter) {
       setFilteredDinos(dinos);
@@ -76,7 +65,6 @@ export default function App() {
     setCurrentIndex(0);
   }, [activeFilter]);
 
-  // Rotación cada 10s (2 por “página”)
   useEffect(() => {
     if (filteredDinos.length <= 2) return;
 
@@ -114,6 +102,8 @@ export default function App() {
           </a>
 
           <nav className="nav-links" aria-label="Navegación principal">
+            <button className="nav-btn" onClick={() => smoothScrollTo("Navegación principal")}>Inicio</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
@@ -122,64 +112,6 @@ export default function App() {
       </header>
 
       <main id="top">
-        <section className="hero">
-          <div className="container">
-            <div className="hero-card">
-              <div className="hero-inner">
-                <div>
-                  <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
-                  <p className="lead">
-                    Sitio no oficial de las especies jamás vistas por el hombre... y otras creadas por su ambición.
-                  </p>
-                </div>
-
-                <aside className="hero-aside" aria-label="Dato destacado">
-                  <div className="fact-title"><strong>Curiosidad del día</strong></div>
-                  <div className="fact">{fact}</div>
-                  <div className="fact-footer">
-                    <span className="pill">Actualizado: {nowStamp()}</span>
-                    <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>Más</button>
-                  </div>
-                </aside>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="sobre" className="section">
-          <div className="container">
-            <h2 className="h2">Acerca del proyecto</h2>
-
-            <p className="sub">
-              Cada especie se evalúa bajo criterios reales, límites físicos plausibles y lógica ecológica interna, cuando la base proviene de la ficción cinematográfica.
-            </p>
-
-            <div className="cards">
-              <div className="card">
-                <strong>Enfoque</strong>
-                <p>
-                  El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
-                </p>
-                <p>
-                  Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
-                </p>
-              </div>
-
-              <div className="card">
-                <strong>Arquitectura</strong>
-                <p>
-                  El sitio está desarrollado en React con TypeScript como núcleo estructural.
-                </p>
-                <p>
-                  Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
-                </p>
-                <p>
-                  La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
 
         <section id="linea-tiempo" className="section">
           <div className="container">
@@ -188,50 +120,44 @@ export default function App() {
               Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
             </p>
 
-            <div className="timeline">
-              <div className="step">
-                <div>
-                  <h3>Aislamiento prolongado</h3>
-                  <p>
-                    El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada.
-                  </p>
-                  <p>
-                    Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos desconocidos.
-                  </p>
-                  <p>
-                    El resultado no es únicamente un “mundo perdido”, sino también un escenario donde la biotecnología redefine los límites de la paleobiología tradicional.
-                  </p>
-                </div>
+            <div className="cards">
+              <div className="card">
+                <strong>1 · Aislamiento prolongado</strong>
+                <p>
+                  El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada.
+                </p>
+                <p>
+                  Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos desconocidos.
+                </p>
+                <p>
+                  El resultado no es únicamente un “mundo perdido”, sino también un escenario donde la biotecnología redefine los límites de la paleobiología tradicional.
+                </p>
               </div>
 
-              <div className="step">
-                <div>
-                  <h3>Especialización natural y diseños artificiales sintéticos</h3>
-                  <p>
-                    En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales: aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
-                  </p>
-                  <p>
-                    En contraste, los híbridos genéticos del Holoceno no responden a selección natural directa, sino a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales específicas.
-                  </p>
-                  <p>
-                    La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
-                  </p>
-                </div>
+              <div className="card">
+                <strong>2 · Especialización natural y diseños artificiales sintéticos</strong>
+                <p>
+                  En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales: aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
+                </p>
+                <p>
+                  En contraste, los híbridos genéticos del Holoceno no responden a selección natural directa, sino a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales específicas.
+                </p>
+                <p>
+                  La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
+                </p>
               </div>
 
-              <div className="step">
-                <div>
-                  <h3>Equilibrio natural vs. desequilibrio por intervención</h3>
-                  <p>
-                    Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico.
-                  </p>
-                  <p>
-                    Sin embargo, la introducción de híbridos diseñados rompe estos patrones tradicionales, ya que se trata de organismos sin historia evolutiva integrada en su entorno.
-                  </p>
-                  <p>
-                    La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica, donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
-                  </p>
-                </div>
+              <div className="card">
+                <strong>3 · Equilibrio natural vs. desequilibrio por intervención</strong>
+                <p>
+                  Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico.
+                </p>
+                <p>
+                  Sin embargo, la introducción de híbridos diseñados rompe estos patrones tradicionales, ya que se trata de organismos sin historia evolutiva integrada en su entorno.
+                </p>
+                <p>
+                  La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica, donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
+                </p>
               </div>
             </div>
 
