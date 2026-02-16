@@ -5,7 +5,7 @@ Sitio profesional (single-page) creado con React + TypeScript, con utilidades en
 ## Qué incluye
 
 - Landing moderna con navegación sticky y scroll suave.
-- Secciones: Hero, Sobre, Línea de tiempo, Galería (gallery-1.jpg a gallery-8.jpg) y Exploración de especies.
+- Secciones: Hero, Sobre, Línea de tiempo, Galería (gallery-1.jpg a gallery-40.jpg) y Exploración de especies.
 - Estructura lista para escalar a un catálogo con rutas, filtros y páginas de detalle.
 - CoffeeScript integrado: `src/coffee/funfacts.coffee` se compila a `src/generated/funfacts.js`.
 
