@@ -190,9 +190,7 @@ export default function App() {
         
           <div className="cards cards-2col">
             <article className="card timeline-card">
-              <strong className="timeline-title">
-                Aislamiento, especialización y diseño biotecnológico
-              </strong>
+              <strong className="timeline-title">Aislamiento, especialización y diseño biotecnológico</strong>
           
               <div className="timeline-text">
                 <p>
@@ -210,9 +208,7 @@ export default function App() {
             </article>
           
             <article className="card timeline-card">
-              <strong className="timeline-title">
-                Equilibrio natural y ruptura ecológica
-              </strong>
+              <strong className="timeline-title">Equilibrio natural y ruptura ecológica</strong>
           
               <div className="timeline-text">
                 <p>
