@@ -202,10 +202,13 @@ export default function App() {
             </p>
 
             <div className="cards">
-              {dinos.map((d) => (
-                <article className="card" key={d.id}>
-                  <strong className="dino-title">{d.name}</strong>
-                    <img
+              {
+                filteredDinos
+                .slice(currentIndex, currentIndex + 2)
+                .map((d) => (
+                  <article className="card" key={d.id}>
+                    <strong className="dino-title">{d.name}</strong>
+                      <img
                       src={d.image}
                       alt={d.name}
                       className="dino-image"
