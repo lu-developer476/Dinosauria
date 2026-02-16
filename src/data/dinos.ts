@@ -1,5 +1,4 @@
 import type { DinoCard } from "../types";
-isCover: boolean;
 
 export const dinos: DinoCard[] = [
   {
