@@ -98,16 +98,16 @@ section[id]{scroll-margin-top:90px}
 }
 
 /* GRID 2 COLUMNAS */
-.cards-3col{
+.cards-2col{
   display:grid;
-  grid-template-columns:repeat(3,1fr);
+  grid-template-columns:repeat(2,1fr);
   gap:24px;
   margin-top:36px;
   animation:fadeInCards 0.4s ease;
 }
 
 @media(max-width:900px){
-  .cards-3col{
+  .cards-2col{
     grid-template-columns:1fr;
   }
 }
