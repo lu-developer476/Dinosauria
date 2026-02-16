@@ -114,7 +114,7 @@ export default function App() {
           </a>
 
           <nav className="nav-links" aria-label="Navegación principal">
-            <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Inicio</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("Navegación principal")}>Inicio</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("sobre")}>Acerca de</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Línea de tiempo</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
