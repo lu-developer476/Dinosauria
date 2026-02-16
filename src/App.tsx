@@ -58,7 +58,7 @@ export default function App() {
                   <div className="kicker">Museo digital</div>
                   <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
                   <p className="lead">
-                    Sitio no oficial de las especies jamás vistas por el hombre.
+                    Sitio no oficial de las especies jamás vistas por el hombre... y otras creadas por su ambición.
                   </p>
                 </div>
 
