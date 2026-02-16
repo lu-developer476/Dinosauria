@@ -1,53 +1,53 @@
-export.facts = [
-"El Atercurisaurus desarrolló unas mandíbulas reforzadas capaces de fracturar hueso compacto en cuestión de segundos.",
-"El Atercurisaurus presentaba numerosas cicatrices óseas que evidencian combates intraespecíficos frecuentes.",
-"El Atercurisaurus evolucionó en un entorno insular aislado que favoreció su agresividad extrema.",
-"El Brontosaurus baxteri podía generar microtemblores perceptibles a cientos de metros durante una estampida masiva.",
-"El Brontosaurus baxteri mantenía una estructura social jerárquica basada en el tamaño y la edad de los individuos.",
-"El Brontosaurus baxteri era una especie clave para el equilibrio vegetal del ecosistema de la Isla Calavera.",
-"El Calcarisaurus ieiuniosus poseía espolones metatarsianos que le permitían desgarrar a sus presas desde abajo.",
-"El Calcarisaurus ieiuniosus tenía un centro de gravedad bajo que mejoraba su estabilidad en combate.",
-"El Calcarisaurus ieiuniosus era capaz de ejecutar giros rápidos sin perder tracción sobre terrenos irregulares.",
-"El Ferrucutus cerastes contaba con un blindaje dérmico parcial compuesto por osteodermos fusionados.",
-"El Ferrucutus cerastes prefería realizar embestidas frontales antes que persecuciones prolongadas.",
-"El Ferrucutus cerastes soportaba impactos directos gracias a la fusión estructural de su cráneo.",
-"El Foetodon ferrus liberaba un olor corporal intenso que probablemente funcionaba como mecanismo disuasivo.",
-"El Foetodon ferrus podía detectar carroña a varios kilómetros mediante un olfato altamente desarrollado.",
-"El Foetodon ferrus aprovechaba con frecuencia los restos dejados por depredadores de mayor tamaño.",
-"El Hebeosaurus torvus presentaba un metabolismo mesotérmico que le permitía alternar explosividad y resistencia.",
-"El Hebeosaurus torvus tenía una visión binocular adaptada a entornos de baja luminosidad selvática.",
-"El Hebeosaurus torvus utilizaba emboscadas estratégicas desde la cobertura vegetal densa.",
-"El Indominus Rex combinaba ADN de múltiples especies para potenciar su inteligencia y su capacidad de camuflaje.",
-"El Indominus Rex demostraba aprendizaje conductual tras cada enfrentamiento exitoso.",
-"El Indominus Rex representaba el máximo exponente de la hibridación genética depredadora.",
-"El Ligocristus innocens sobrevivía gracias a una conducta gregaria defensiva altamente coordinada.",
-"El Ligocristus innocens desarrolló una piel engrosada en los flancos como defensa ante depredadores medianos.",
-"El Ligocristus innocens dependía de la estampida colectiva como mecanismo primario de supervivencia.",
-"El Malevolusaurus perditor poseía una mordida diseñada para amputar extremidades en un solo ataque.",
-"El Malevolusaurus perditor presentaba dientes serrados optimizados para desgarrar tejido denso.",
-"El Malevolusaurus perditor prefería atacar individuos aislados en lugar de enfrentarse a grupos organizados.",
-"El Nefundusaurus accerbus mostraba una agresividad territorial incluso hacia miembros de su propia especie.",
-"El Nefundusaurus accerbus tenía una resistencia inusual a infecciones derivadas de heridas profundas.",
-"El Nefundusaurus accerbus presentaba una tasa de supervivencia adulta extremadamente baja.",
-"El Scimitodon sagax utilizaba sus garras en forma de cimitarra para inmovilizar a sus presas antes de morder.",
-"El Scimitodon sagax mantenía el equilibrio incluso durante giros violentos en combate.",
-"El Scimitodon sagax mostraba una inteligencia comparable a la de grandes aves rapaces actuales.",
-"El Spinoceratops combinaba rasgos defensivos de un ceratópsido con la potencia mandibular de un espinosáurido.",
-"El Spinoceratops probablemente utilizaba su cresta como elemento de exhibición territorial.",
-"El Spinoceratops equilibraba defensa frontal ósea con ataques laterales contundentes.",
-"El Spinoraptor era más ligero que otros híbridos, pero extremadamente veloz en distancias cortas.",
-"El Spinoraptor poseía una capacidad de rastreo térmico superior a la de terópodos tradicionales.",
-"El Spinoraptor podía nadar distancias cortas gracias a su cola musculosa y flexible.",
-"El Stegoceratops poseía placas óseas capaces de disipar parte del impacto de mordidas frontales.",
-"El Stegoceratops utilizaba su cola como arma secundaria en la defensa de los juveniles.",
-"El Stegoceratops podía resistir múltiples ataques antes de colapsar debido a su estructura corporal robusta.",
-"El Vastatosaurus Rex desarrolló una fuerza mandibular superior a la del Tyrannosaurus rex clásico.",
-"El Vastatosaurus Rex ocupaba el nicho de superdepredador absoluto en la Isla Calavera.",
-"El Vastatosaurus Rex mostraba una tolerancia al dolor excepcional durante combates prolongados.",
-"El Venatosaurus cazaba en grupos coordinados utilizando señales auditivas de baja frecuencia.",
-"El Venatosaurus ejecutaba ataques envolventes similares a los de manadas de cánidos modernos.",
-"El Venatosaurus emitía vocalizaciones complejas para sincronizar los movimientos del grupo.",
-"El Zeropteryx torova tenía extremidades anteriores reducidas pero una notable capacidad de salto vertical.",
-"El Zeropteryx torova compensaba la ausencia de alas funcionales con una musculatura dorsal poderosa.",
+export facts = [
+"El Atercurisaurus desarrolló unas mandíbulas reforzadas capaces de fracturar hueso compacto en cuestión de segundos."
+"El Atercurisaurus presentaba numerosas cicatrices óseas que evidencian combates intraespecíficos frecuentes."
+"El Atercurisaurus evolucionó en un entorno insular aislado que favoreció su agresividad extrema."
+"El Brontosaurus baxteri podía generar microtemblores perceptibles a cientos de metros durante una estampida masiva."
+"El Brontosaurus baxteri mantenía una estructura social jerárquica basada en el tamaño y la edad de los individuos."
+"El Brontosaurus baxteri era una especie clave para el equilibrio vegetal del ecosistema de la Isla Calavera."
+"El Calcarisaurus ieiuniosus poseía espolones metatarsianos que le permitían desgarrar a sus presas desde abajo."
+"El Calcarisaurus ieiuniosus tenía un centro de gravedad bajo que mejoraba su estabilidad en combate."
+"El Calcarisaurus ieiuniosus era capaz de ejecutar giros rápidos sin perder tracción sobre terrenos irregulares."
+"El Ferrucutus cerastes contaba con un blindaje dérmico parcial compuesto por osteodermos fusionados."
+"El Ferrucutus cerastes prefería realizar embestidas frontales antes que persecuciones prolongadas."
+"El Ferrucutus cerastes soportaba impactos directos gracias a la fusión estructural de su cráneo."
+"El Foetodon ferrus liberaba un olor corporal intenso que probablemente funcionaba como mecanismo disuasivo."
+"El Foetodon ferrus podía detectar carroña a varios kilómetros mediante un olfato altamente desarrollado."
+"El Foetodon ferrus aprovechaba con frecuencia los restos dejados por depredadores de mayor tamaño."
+"El Hebeosaurus torvus presentaba un metabolismo mesotérmico que le permitía alternar explosividad y resistencia."
+"El Hebeosaurus torvus tenía una visión binocular adaptada a entornos de baja luminosidad selvática."
+"El Hebeosaurus torvus utilizaba emboscadas estratégicas desde la cobertura vegetal densa."
+"El Indominus Rex combinaba ADN de múltiples especies para potenciar su inteligencia y su capacidad de camuflaje."
+"El Indominus Rex demostraba aprendizaje conductual tras cada enfrentamiento exitoso."
+"El Indominus Rex representaba el máximo exponente de la hibridación genética depredadora."
+"El Ligocristus innocens sobrevivía gracias a una conducta gregaria defensiva altamente coordinada."
+"El Ligocristus innocens desarrolló una piel engrosada en los flancos como defensa ante depredadores medianos."
+"El Ligocristus innocens dependía de la estampida colectiva como mecanismo primario de supervivencia."
+"El Malevolusaurus perditor poseía una mordida diseñada para amputar extremidades en un solo ataque."
+"El Malevolusaurus perditor presentaba dientes serrados optimizados para desgarrar tejido denso."
+"El Malevolusaurus perditor prefería atacar individuos aislados en lugar de enfrentarse a grupos organizados."
+"El Nefundusaurus accerbus mostraba una agresividad territorial incluso hacia miembros de su propia especie."
+"El Nefundusaurus accerbus tenía una resistencia inusual a infecciones derivadas de heridas profundas."
+"El Nefundusaurus accerbus presentaba una tasa de supervivencia adulta extremadamente baja."
+"El Scimitodon sagax utilizaba sus garras en forma de cimitarra para inmovilizar a sus presas antes de morder."
+"El Scimitodon sagax mantenía el equilibrio incluso durante giros violentos en combate."
+"El Scimitodon sagax mostraba una inteligencia comparable a la de grandes aves rapaces actuales."
+"El Spinoceratops combinaba rasgos defensivos de un ceratópsido con la potencia mandibular de un espinosáurido."
+"El Spinoceratops probablemente utilizaba su cresta como elemento de exhibición territorial."
+"El Spinoceratops equilibraba defensa frontal ósea con ataques laterales contundentes."
+"El Spinoraptor era más ligero que otros híbridos, pero extremadamente veloz en distancias cortas."
+"El Spinoraptor poseía una capacidad de rastreo térmico superior a la de terópodos tradicionales."
+"El Spinoraptor podía nadar distancias cortas gracias a su cola musculosa y flexible."
+"El Stegoceratops poseía placas óseas capaces de disipar parte del impacto de mordidas frontales."
+"El Stegoceratops utilizaba su cola como arma secundaria en la defensa de los juveniles."
+"El Stegoceratops podía resistir múltiples ataques antes de colapsar debido a su estructura corporal robusta."
+"El Vastatosaurus Rex desarrolló una fuerza mandibular superior a la del Tyrannosaurus rex clásico."
+"El Vastatosaurus Rex ocupaba el nicho de superdepredador absoluto en la Isla Calavera."
+"El Vastatosaurus Rex mostraba una tolerancia al dolor excepcional durante combates prolongados."
+"El Venatosaurus cazaba en grupos coordinados utilizando señales auditivas de baja frecuencia."
+"El Venatosaurus ejecutaba ataques envolventes similares a los de manadas de cánidos modernos."
+"El Venatosaurus emitía vocalizaciones complejas para sincronizar los movimientos del grupo."
+"El Zeropteryx torova tenía extremidades anteriores reducidas pero una notable capacidad de salto vertical."
+"El Zeropteryx torova compensaba la ausencia de alas funcionales con una musculatura dorsal poderosa."
 "El Zeropteryx torova utilizaba embestidas rápidas para desorientar a sus oponentes."
 ]
