@@ -33,7 +33,7 @@ export default function App() {
       <header className="nav">
         <div className="container nav-inner">
           <a className="brand" href="#" onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}>
-            <div className="logo" aria-hidden="true">🦴</div>
+            <div className="logo" aria-hidden="true">🧬➝🦴</div>
             <div>
               <div className="brand-title">Dinosauria</div>
               <div className="brand-sub">Paleobiología · Evolución</div>
