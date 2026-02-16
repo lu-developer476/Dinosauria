@@ -188,7 +188,7 @@ export default function App() {
               Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
             </p>
         
-            <div className="cards cards-2col">
+            <div className="cards cards-3col">
               <article className="card timeline-card">
                 <strong className="timeline-title">Aislamiento prolongado</strong>
         
