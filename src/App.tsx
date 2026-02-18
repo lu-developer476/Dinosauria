@@ -250,7 +250,7 @@ const gallery = useMemo(
           <div className="container">
             <h2 className="h2">Especies</h2>
             <p className="sub">
-              Esta sección reúne fichas sintéticas de las especies tanto de origen evolutivo "natural" como resultado de la ingeniería genética practicada. Cada entrada resume rasgos morfológicos, rol trófico y contexto biológico, analizados bajo criterios de anatomía funcional, coherencia ecológica y plausibilidad biomecánica.
+              Esta sección reúne fichas de especies, tanto naturales como creadas por ingeniería genética. En cada una se describe su forma, su función en el ecosistema y su contexto biológico, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.
             </p>
 
             {/* Panel de filtros */}
