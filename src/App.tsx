@@ -1,6 +1,6 @@
 import { useMemo, useState, useEffect } from "react";
 import { smoothScrollTo } from "./utils/scroll";
-import { facts } from "./generated/funfacts.js";
+import { facts } from "./generated/funfacts";
 import { dinos } from "./data/dinos";
 
 function nowStamp() {
