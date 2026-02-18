@@ -246,7 +246,9 @@ const gallery = useMemo(
                 </p>
               </div>
             </article>
-        </section>
+          </div>     {/* cierre cards */}
+        </div>       {/* cierre container */}
+      </section>
 
         <section id="explorar" className="section">
           <div className="container">
