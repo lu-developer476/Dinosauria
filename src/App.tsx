@@ -217,26 +217,18 @@ const gallery = useMemo(
 
         <section id="linea-tiempo" className="section">
           <div className="container">
-            <h2 className="h2">Línea de tiempo</h2>
-            <p className="sub">
-              Reconstrucción evolutiva del ecosistema insular a partir de presión selectiva extrema, aislamiento prolongado y competencia trófica permanente.
-            </p>
-        
+            <h2 className="h2">Convergencia</h2>      
           <div className="cards cards-2col">
             <article className="card timeline-card">
-              <strong className="timeline-title">Aislamiento, especialización y diseño biotecnológico</strong>
+              <strong className="timeline-title">Aislamiento y diseño biotecnológico</strong>
           
               <div className="timeline-text">
                 <p>
-                  El estudio de las especies presentadas en este catálogo abarca tanto linajes que evolucionaron en aislamiento geográfico extremo como organismos creados mediante ingeniería genética avanzada. En ecosistemas naturales de alta competencia, la selección favorece rasgos funcionales como aumento de masa corporal, refuerzo estructural y adaptaciones defensivas.
+                  En entornos de alta competencia, la selección natural favorece mayor tamaño, refuerzo estructural y defensas especializadas.
                 </p>
-          
+                    
                 <p>
-                  Algunos modelos de evolución natural y la manipulación deliberada del ADN diseñan organismos con fines y propósitos específicos. Mientras la presión evolutiva moldea organismos a lo largo de millones de años, los híbridos genéticos del Holoceno responden a objetivos humanos concretos: mayor tamaño, inteligencia incrementada, capacidad ofensiva mejorada o adaptaciones ambientales dirigidas.
-                </p>
-          
-                <p>
-                  La especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando organismos radicalmente distintos en origen pero comparables en impacto ecológico.
+                  Mientras la evolución actúa durante millones de años, la manipulación deliberada del ADN responde a objetivos humanos concretos: aumentar masa, inteligencia o capacidad ofensiva. Así, la especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando especies distintas en origen pero comparables en impacto ecológico.
                 </p>
               </div>
             </article>
@@ -246,27 +238,14 @@ const gallery = useMemo(
           
               <div className="timeline-text">
                 <p>
-                  Los ecosistemas naturales dependen de ciclos de natalidad, mortalidad y reemplazo generacional que mantienen un equilibrio dinámico. Este equilibrio no es estático, sino el resultado de interacciones tróficas sostenidas a lo largo del tiempo evolutivo.
+                  Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo. Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.
                 </p>
           
                 <p>
-                  Sin embargo, la introducción de organismos diseñados rompe estos patrones tradicionales, ya que se trata de entidades sin historia evolutiva integrada en su entorno. La coexistencia entre especies naturales y organismos artificiales genera escenarios de inestabilidad ecológica donde la biología deja de ser exclusivamente evolutiva para convertirse también en experimental.
-                </p>
-          
-                <p>
-                  El resultado no es únicamente un “mundo perdido”, sino un sistema híbrido donde selección natural y bioingeniería redefinen simultáneamente los límites de la paleobiología tradicional.
+                  El resultado es un sistema híbrido redefiniendo los límites entre la naturaleza y la paleobiología tradicional.
                 </p>
               </div>
             </article>
-          </div>
-
-            <div className="cta">
-              <p>
-                Este catálogo no representa únicamente un análisis de especies mesozoicas relictas o mundos aislados, sino un compendio que integra evolución natural y bioingeniería moderna dentro de universos ficticios.
-                Desde linajes moldeados por millones de años de selección natural hasta híbridos diseñados en laboratorio, cada organismo puede analizarse bajo criterios paleobiológicos, ecológicos y estructurales, ampliando la frontera entre ciencia evolutiva y biotecnología especulativa.
-              </p>
-            </div>
-          </div>
         </section>
 
         <section id="explorar" className="section">
@@ -353,24 +332,6 @@ const gallery = useMemo(
         <section id="galeria" className="section">
           <div className="container">
             <h2 className="h2">Galería</h2>
-            <div className="sub gallery-text">
-              <p>
-                La siguiente galería no cumple una función meramente ilustrativa. Cada imagen actúa como soporte visual para el análisis anatómico y ecológico desarrollado en las secciones anteriores.
-              </p>
-              <p>
-                Se documentan proporciones corporales, relación entre masa y estructura ósea, configuración craneal, disposición de extremidades y patrones de interacción interespecífica dentro del ecosistema insular.
-              </p>
-              <p>
-                En un entorno de presión selectiva constante, la morfología no es estética: es funcional. Las estructuras observadas —blindaje dérmico, densidad muscular, volumen torácico, longitud cervical y robustez mandibular— responden a demandas energéticas y dinámicas tróficas concretas.
-              </p>
-              <p>
-                Las imágenes permiten evaluar coherencia biomecánica: distribución del peso, equilibrio del centro de masa, rango de movimiento articular y plausibilidad locomotora.
-              </p>
-              <p>
-                Este archivo visual funciona como evidencia contextual para la reconstrucción hipotética del ecosistema de Isla Calavera: un sistema aislado, de competencia permanente y estabilidad basada en reemplazo generacional.
-              </p>
-            </div>
-
           <div className="gallery">
             <div className="gimg">
               <img
