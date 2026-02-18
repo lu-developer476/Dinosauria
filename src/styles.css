@@ -63,25 +63,26 @@ section[id]{scroll-margin-top:90px}
 .nav-btn{
   padding:10px 18px;
   border-radius:999px;
-  border:1px solid var(--line);
-  background:rgba(255,255,255,0.04);
+  border:1px solid rgba(59,130,246,0.35);
+  background:rgba(59,130,246,0.08);
   color:var(--text);
   cursor:pointer;
   transition:0.2s ease;
 }
 
 .nav-btn:hover{
-  background:rgba(255,255,255,0.08);
+  background:rgba(59,130,246,0.16);
   transform:translateY(-1px);
 }
 
 .nav-primary{
-  background:rgba(30,255,122,0.12);
-  border-color:rgba(30,255,122,0.4);
+  background:rgba(59,130,246,0.18);
+  box-shadow: 0 0 12px rgba(59,130,246,0.35);
+  border-color:rgba(59,130,246,0.55);
 }
 
 .nav-primary:hover{
-  background:rgba(30,255,122,0.22);
+  background:rgba(59,130,246,0.28);
 }
 
 /* CARDS */
