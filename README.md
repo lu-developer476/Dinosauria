@@ -56,8 +56,6 @@ El proyecto contiene 40 imágenes en `public/` con la siguiente estructura:
 
 - `gallery-[NÚMERO].jpg`
 
-Reemplazá los placeholders por tus imágenes reales manteniendo los nombres.
-
 ## Estructura
 
 - `src/App.tsx` — página principal y composición de secciones
