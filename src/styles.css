@@ -76,9 +76,8 @@ section[id]{scroll-margin-top:90px}
 }
 
 .nav-primary{
-  background:rgba(59,130,246,0.18);
-  box-shadow: 0 0 12px rgba(59,130,246,0.35);
-  border-color:rgba(59,130,246,0.55);
+  background: rgba(59,130,246,0.12);
+  border-color: rgba(59,130,246,0.4);
 }
 
 .nav-primary:hover{
