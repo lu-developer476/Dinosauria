@@ -27,6 +27,12 @@ body{
   line-height:1.65;
 }
 
+/* JUSTIFICADO GLOBAL DE TEXTO */
+p{
+  text-align: justify;
+  text-justify: inter-word;
+}
+
 /* TITULOS */
 h1,h2,h3,.h1,.h2{
   font-family:'Rajdhani',sans-serif;
