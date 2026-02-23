@@ -140,11 +140,7 @@ const gallery = useMemo(
             href="#"
             onClick={(e) => (e.preventDefault(), smoothScrollTo("top"))}
           >
-            <div className="logo" aria-hidden="true">
-              🧬
-              +
-              🦴
-            </div>
+            <div className="logo" aria-hidden="true">🧬 + 🦴</div>
             <div>
               <div className="brand-title">🦖</div>
               <div className="brand-sub">🦕</div>
