@@ -143,7 +143,7 @@ const gallery = useMemo(
             <div className="logo" aria-hidden="true">🧬➝🦴</div>
             <div>
               <div className="brand-title">Dinosauria</div>
-              <div className="brand-sub">Paleobiología · Evolución</div>
+              <div className="brand-sub">🦕 🦖</div>
             </div>
           </a>
 
@@ -183,34 +183,43 @@ const gallery = useMemo(
         <section id="sobre" className="section">
           <div className="container">
             <h2 className="h2">Acerca del proyecto</h2>
-
+            <p className="section-intro">
+              "Descubriendo Dinos" nace de la pasión por la paleontología y la creatividad digital. Este proyecto combina ciencia, tecnología y experiencia visual para ofrecer una inmersión única en el mundo de los dinosaurios, explorando no solo su anatomía y comportamiento, sino también la ecología de los ecosistemas que podrían haber habitado, de manera que incluso las especies ficticias se presentan con un trasfondo creíble y detallado.
+            </p>
+        
             <div className="cards">
               <div className="card">
-                <strong>Enfoque</strong>
+                <h3 className="card-title">Enfoque científico</h3>
                 <p>
-                  El análisis parte de anatomía comparada y modelado biomecánico básico: masa corporal estimada, centro de gravedad, tipo de locomoción, resistencia estructural y función craneodentaria.
+                  Cada especie es analizada siguiendo criterios de anatomía comparada y modelado biomecánico: estimamos masa corporal, centro de gravedad, tipo de locomoción, resistencia estructural y la función de su cráneo y dientes. Incluso las criaturas inventadas se estudian bajo las mismas reglas que los fósiles reales, asegurando consistencia y plausibilidad.
                 </p>
                 <p>
-                  Se consideran presiones selectivas propias de ecosistemas cerrados, competencia interespecífica y rol trófico dentro de una red alimentaria coherente.
+                  Además, consideramos las presiones selectivas que podrían actuar en sus ecosistemas: la competencia entre especies, la adaptación a recursos limitados y el rol trófico de cada dinosaurio dentro de redes alimentarias hipotéticas, creando así un entorno coherente donde cada criatura tiene un propósito y un lugar.
+                </p>
+                <p>
+                  Este enfoque permite que los usuarios no solo observen a los dinosaurios, sino que comprendan cómo podrían haber interactuado entre sí y con su ambiente, haciendo de la exploración algo educativo y entretenido al mismo tiempo.
                 </p>
               </div>
-
+        
               <div className="card">
-                <strong>Arquitectura</strong>
+                <h3 className="card-title">Arquitectura técnica</h3>
                 <p>
-                  El sitio está desarrollado en React con TypeScript como núcleo estructural.
+                  El sitio está construido sobre <strong>React</strong> y <strong>TypeScript</strong>, lo que garantiza una base sólida, escalable y fácil de mantener a medida que el proyecto crece. Esto nos permite incorporar nuevas especies, rutas individuales por dinosaurio y filtros taxonómicos sin comprometer la estabilidad del sistema.
                 </p>
                 <p>
-                  Se utiliza JavaScript para utilidades específicas de interacción y CoffeeScript para el módulo editorial de datos dinámicos, compilado durante el proceso de build.
+                  Para funcionalidades interactivas más dinámicas usamos <strong>JavaScript</strong>, mientras que el módulo editorial de datos se gestiona con <strong>CoffeeScript</strong>, compilado automáticamente durante el proceso de build. Esta combinación asegura eficiencia y flexibilidad técnica.
                 </p>
                 <p>
-                  La estructura está preparada para escalar hacia un catálogo completo con rutas individuales por especie, filtros taxonómicos y extensiones multimedia sin alterar la base del proyecto.
+                  La arquitectura está pensada para soportar contenido multimedia avanzado, como animaciones, galerías 3D y mapas de ecosistemas, permitiendo que la experiencia del usuario sea rica, educativa y envolvente, al mismo tiempo que la base de datos de especies se mantiene organizada y lista para futuras expansiones.
+                </p>
+                <p>
+                  En definitiva, cada capa del proyecto —desde el código hasta el contenido— ha sido diseñada para que la exploración de estas criaturas ficticias se sienta real, educativa y apasionante, reflejando la misma curiosidad que inspira a los paleontólogos del mundo real.
                 </p>
               </div>
             </div>
           </div>
         </section>
-
+        
         <section id="linea-tiempo" className="section">
           <div className="container">
             <h2 className="h2">Convergencia</h2>      
