@@ -7,7 +7,7 @@ export const dinos: DinoCard[] = [
     image: "/images/aciedactylus-mandocaris.jpg",
     isCover: true,
     era: "x",
-    diet: "Duróvoro",
+    diet: "Duróvora",
     size: "x",
     description: `Género: Aciedactylus | Masa estimada: x | Longitud: 3.6–4.5 metros | Altura: ~1.4 metros | Locomoción: bípedo | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -64,7 +64,7 @@ Uno de los mayores dinosaurios vadeadores, los Ambulaquasaurus son lo suficiente
     image: "/images/ankylodocus.jpg",
     isCover: true,
     era: "x",
-    diet: "Hervíboro",
+    diet: "Herbívora",
     size: "x",
     description: `Género: Híbrido | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
@@ -123,7 +123,7 @@ Menos robustos que el gigantesco Brontosaurus, los Asperdorsus tienen extremidad
     image: "/images/atercurisaurus.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Herbívoro",
+    diet: "Herbívora",
     size: "Mediano",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x 
 
@@ -180,7 +180,7 @@ Entre sus depredadores se encuentran los Arsartis y Gladiodones.`
     image: "/images/brontosaurus-baxteri.jpg",
     isCover: true,
     era: "Jurásico",
-    diet: "Herbívoro",
+    diet: "Herbívora",
     size: "Colosal",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -203,7 +203,7 @@ Actuaba como ingeniero ecológico dominante: abría corredores forestales, derri
     image: "/images/calcarisaurus-ieiuniosus.jpg",
     isCover: true,
     era: "Cenozoico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Pequeño",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -357,7 +357,7 @@ El hocico del dinosaurio, curvado como un arco y casi sin dientes, está perfect
     image: "/images/ferrucutus-cerastes.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Herbívoro",
+    diet: "Herbívora",
     size: "Grande",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -392,7 +392,7 @@ Vertebrados como el Ferrucutus provocan activamente a las termitas de Skull Isla
     image: "/images/foetodon-ferrus.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -431,7 +431,7 @@ Los Foetodones juveniles también son presa habitual de jóvenes Pirañadones, q
     image: "/images/formicavoro.jpg",
     isCover: true,
     era: "x",
-    diet: "Insectívoro",
+    diet: "Insectívora",
     size: "x",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
@@ -467,7 +467,7 @@ Es similar a un ave como la jacana o la gallareta. De todos los dinosaurios no a
     image: "/images/hebeosaurus-torvus.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Herbívoro",
+    diet: "Herbívora",
     size: "Grande",
     description: `Género: x | Masa estimada 420 kg | Longitud: 5.4 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda graviportal ligera | Termorregulación: Mesotérmica estable | Rol ecológico: Megaherbívoro secundario de transición | Estrategia defensiva: Masa corporal y cohesión grupal  
 
@@ -486,7 +486,7 @@ El Hebeosaurus cumplía en gran medida el papel de “ganado” de la isla, lo q
     image: "/images/indominus-rex.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Gigante",
     description: `Género: Indominus | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -509,7 +509,7 @@ En términos ecológicos, el Indominus Rex no ocupaba un nicho natural equilibra
     image: "/images/indominus-rex-GEN2.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Gigante",
     description: `Género: Indominus | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -522,7 +522,7 @@ La version alternativa de la Indominus Rex, diseñada a partir de los restos de 
     image: "/images/indoraptor.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada: 7.3 x | Longitud: 1.1 metros | Altura: 3.1 metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -543,7 +543,7 @@ Aunque muestra grandes signos de inteligencia, la cría del Indoraptor en un lab
     image: "/images/indoraptor-GEN2.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada: 7.3 x | Longitud: 1.1 metros | Altura: 3.1 metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -562,7 +562,7 @@ Aunque muestra grandes signos de inteligencia, la cría del Indoraptor en un lab
     image: "/images/ligocristus-innocens.jpg",
     isCover: true,
     era: "Jurásico",
-    diet: "Herbívoro",
+    diet: "Herbívora",
     size: "Pequeño",
     description: `Género: x | Masa estimada 120–180 kg | Longitud: 2–3 metros | Altura: 1–1.2 metros | Locomoción: Bípeda cursorial ligera | Termorregulación: Mesotérmica | Rol ecológico: Herbívoro basal de sotobosque | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x  
 
@@ -595,7 +595,7 @@ Para los adultos, el corto nado a través de un río o zona pantanosa no represe
     image: "/images/malevolusaurus-perditor.jpg",
     isCover: true,
     era: "Pérmico",
-    diet: "Omnívoro",
+    diet: "Omnívora",
     size: "Grande",
     description: `Género: x | Masa estimada 1.3–2 x | Longitud: 6–7.3 metros | Altura: 1–1.2 metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -614,7 +614,7 @@ Los Malevolusaurus depositan sus huevos en hendiduras sobre las laderas más sol
     image: "/images/monstrutalpus.jpg",
     isCover: true,
     era: "x",
-    diet: "Insectívoro",
+    diet: "Herbívora",
     size: "x",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
@@ -636,7 +636,7 @@ Los huevos son enterrados para que se desarrollen por sí solos, y las crías em
     image: "/images/nefundusaurus-accerbus.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada 2.5 toneladas | Longitud: 4.8-7.3 metros | Altura a la cadera: 2–2.3 metros | Locomoción: Bípeda robusta de emboscada | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -689,7 +689,7 @@ La vigilancia constante es su mejor defensa, lo que obliga a los Carvers (y a ot
     image: "/images/scimitodon-sagax.jpg",
     isCover: true,
     era: "Pérmico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -709,7 +709,7 @@ Las hembras ponen sus huevos en nidadas de dos o tres, dentro de árboles huecos
     image: "/images/spinoceratops.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Omnívoro",
+    diet: "Omnívora",
     size: "Grande",
     description: `Género: x | Masa estimada 6 toneladas | Longitud: 10-12 metros | Altura: 4.9 metros | Locomoción: Cuadrúpeda dominante con capacidad de impulso parcial | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -732,7 +732,7 @@ En ecosistemas controlados, el Spinoceratops cumple el rol de depredador especia
     image: "/images/spinoraptor.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada 600-800 kg | Longitud: 6.5-8 metros | Altura a la cadera: 2.8-3 metros Género: x | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
@@ -755,7 +755,7 @@ En entornos controlados, el Spinoraptor ocupa el nicho de depredador rápido y a
     image: "/images/stegoceratops.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Paleobotánica de suelo",
+    diet: "Herbívora",
     size: "Grande",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -828,7 +828,7 @@ Los Tartarusaurus prefieren acercarse sigilosamente a una presa potencial antes 
     image: "/images/vastatosaurus-rex.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Colosal",
     description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -867,7 +867,7 @@ Su inteligencia no es extraordinaria, pero tampoco completamente primitiva. Demu
     image: "/images/venatosaurus-species.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: x | Masa estimada 180–380 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.4–1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -900,7 +900,7 @@ En el ecosistema insular representaban el nivel de depredación dinámico y coor
     image: "/images/velociraptor-nublarensis.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Mediano",
     description: `Género: Desconocido | Masa estimada: 145 kg o 320 libras | Longitud: 3-3.9 metros | Altura a la cadera: 1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
@@ -948,7 +948,7 @@ Estas criaturas gregarias son nocturnas: durante el día descansan en salientes 
     image: "/images/zeropteryx-torova.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Carnívora",
     size: "Pequeño",
     description: `Masa estimada: 280 kg | Altura: 3 metros | Longitud: 1–1.3 metros | Locomoción: Bípeda terrestre no voladora | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
