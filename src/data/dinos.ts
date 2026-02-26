@@ -9,9 +9,9 @@ export const dinos: DinoCard[] = [
     era: "x",
     diet: "Duróvoro",
     size: "x",
-    description: `Género: Aciedactylus | Masa estimada: x | Longitud: 3.6–4.5 metros | Altura: ~1.4 metros | Locomoción: bípedo | Termorregulación: x | Rol ecológico: predador de nicho en estuarios y manglares | Dieta: crustáceos y moluscos | Adaptaciones: pies anchos, garras afiladas, dientes robustos | Comunicación: llamadas resonantes mediante fosas nasales secundarias | Estrategia ofensiva: garras-blade para defensa | Alimentación: puede respirar con fosas nasales altas mientras excava | Temperamento: generalmente apacible  
+    description: `Género: Aciedactylus | Masa estimada: x | Longitud: 3.6–4.5 metros | Altura: ~1.4 metros | Locomoción: bípedo | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
-Aciedactylus mandocaris (“devorador de cangrejos de dedos afilados”) es una especie de dinosaurio terópodo de entre 12 y 15 pies de largo (3,6–4,5 metros) que se encuentra en la Isla Calavera. El animal es descrito en el libro "The World of Kong: A Natural History of Skull Island (2005)".
+Aciedactylus mandocaris (“devorador de cangrejos de dedos afilados”) es una especie de dinosaurio terópodo de entre 12 y 15 pies de largo (3,6–4,5 metros) que se encuentra en la Isla Calavera. El animal es descrito en el libro "'The World of Kong: A Natural History of Skull Island (2005)'".
 
 El Aciedactylus estaba especializado en alimentarse de mariscos, moluscos y cangrejos en los estuarios pantanosos y manglares. Sus pies anchos y con dedos extendidos evitaban que se hundiera en el barro y la arena empapados, pero la adaptación más peculiar de este dinosaurio era el segundo par de fosas nasales ubicadas sobre sus crestas nasales triangulares.
 
@@ -28,9 +28,9 @@ Este terópodo de temperamento apacible se defendía con largas garras en forma 
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Adlapsusaurus (“lagarto sigiloso”) es una especie de dinosaurio terópodo de entre 5 y 7 pies de longitud (1,5–2,1 metros) que habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Adlapsusaurus (“lagarto sigiloso”) es una especie de dinosaurio terópodo de entre 5 y 7 pies de longitud (1,5–2,1 metros) que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Adlapsusaurus es un terópodo con postura semi-cuadrúpeda: corre sobre sus patas traseras, pero desciende a cuatro patas cuando está en reposo. En esa posición camina apoyándose sobre los nudillos, al estilo de un gorila.
 
@@ -47,9 +47,9 @@ Dotado de un oído agudo y reflejos rápidos, Adlapsusaurus se atreve a saquear 
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Ambulaquasaurus cristarufus (“lagarto caminante acuático de cresta roja”) es una especie de dinosaurio terópodo de entre 10 y 14 pies de longitud (3 a 4,2 metros) que habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Ambulaquasaurus cristarufus (“lagarto caminante acuático de cresta roja”) es una especie de dinosaurio terópodo de entre 10 y 14 pies de longitud (3 a 4,2 metros) que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Dedicado a la pesca, Ambulaquasaurus es un dromeosáurido esbelto, estrechamente relacionado con Venatosaurus. Con extremidades largas y un hocico alargado lleno de dientes finos como agujas, este depredador está perfectamente adaptado a la vida como pescador. Posiblemente sea un descendiente de la subfamilia Unenlagiinae.
 
@@ -66,7 +66,7 @@ Uno de los mayores dinosaurios vadeadores, los Ambulaquasaurus son lo suficiente
     era: "x",
     diet: "Hervíboro",
     size: "x",
-    description: `Género: Híbrido | Masa estimada x toneladas | Longitud: x metros | Altura a la cadera: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Estrategia ofensiva: x  
+    description: `Género: Híbrido | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El saurópodo herbívoro gigante Ankylodocus es un híbrido diseñado genéticamente que combina los genomas base del acorazado Ankylosaurus y el gigante sauropodo Diplodocus.
 
@@ -85,9 +85,9 @@ El Ankylodocus se alimenta principalmente de helechos arborescentes y coníferas
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Arsarticaedes agilis (“ágil experto en el asesinato”), o simplemente Arsartis, es una especie de dinosaurio terópodo que mide entre 8 y 12 pies de largo (2,4 a 3,6 metros) y que habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Arsarticaedes agilis (“ágil experto en el asesinato”), o simplemente Arsartis, es una especie de dinosaurio terópodo que mide entre 8 y 12 pies de largo (2,4 a 3,6 metros) y que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Terópodos extraños, el veloz Arsartis es el principal cazador de las manadas montañosas de Bifurcatops. En una reversión de las tendencias evolutivas, Arsartis ha vuelto a desplazarse en cuatro patas —como muchos dinosauromorfos no dinosaurianos— para lograr mayor estabilidad mientras se impulsa por el terreno traicionero de las tierras altas erosionadas en persecución de su presa.
 
@@ -102,7 +102,7 @@ Asesino solitario, utiliza la cobertura del entorno para acercarse lo más posib
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 Asperdorsus bellator (“guerrero de lomo áspero”) es una especie de dinosaurio saurópodo de tamaño pequeño que mide entre 36 y 42 pies de largo (10,9–12,8 metros) y que habita en la Isla Calavera. El animal es descrito en el libro “The World of Kong: A Natural History of Skull Island” (2005).
 
@@ -123,11 +123,11 @@ Menos robustos que el gigantesco Brontosaurus, los Asperdorsus tienen extremidad
     image: "/images/atercurisaurus.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Herbívoro",
     size: "Mediano",
-    description: `Género: x | Masa estimada 5 toneladas | Longitud: 4.8–10 metros | Altura a la cadera: 2–2.4 metros | Locomoción: Cuadrúpeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Depredador de persecución abierta | Estrategia ofensiva: Desgaste progresivo y mordida repetitiva  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x 
 
-Atercurisaurus (“lagarto lanza oscura”) es una especie de dinosaurio estegosáurido que mide entre 16 y 20 pies de largo (4,8–6 metros), aunque algunos ejemplares podrían haber alcanzado los 10 metros. Se encuentra en la Isla Calavera (Skull Island). El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005) y no aparece en la película de 2005.
+Atercurisaurus (“lagarto lanza oscura”) es una especie de dinosaurio estegosáurido que mide entre 16 y 20 pies de largo (4,8–6 metros), aunque algunos ejemplares podrían haber alcanzado los 10 metros. Se encuentra en la Isla Calavera (Skull Island). El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)' y no aparece en la película de 2005.
 
 El último de su suborden, la pequeña población sobreviviente de estegosáuridos de la Isla Calavera se aferra a la existencia en valles cubiertos de helechos, en lo profundo del interior de la isla. Impresionantemente blindado con una piel oscura cubierta de protuberancias, altas placas dorsales y letales púas en el abdomen y la cola, Atercurisaurus no es un almuerzo fácil para los depredadores. Sin embargo, la competencia con herbívoros más exitosos en la isla está provocando que su número disminuya.
 
@@ -146,7 +146,7 @@ Atercurisaurus es una especie ruidosa, que produce una variedad de sonidos, desd
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 Avarusaurus populator (“lagarto codicioso devastador”) es una especie de dinosaurio espinosáurido de entre 18 y 26 pies de largo (5,4–7,9 metros) que habita en la Isla Calavera. El animal es descrito en el libro “The World of Kong: A Natural History of Skull Island” (2005).
 
@@ -163,7 +163,7 @@ Un estómago intensamente ácido le permite a este gran omnívoro ingerir grande
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 Bifurcatops peritus (“rostro de dos puntas experto”) es una especie pequeña de dinosaurio ceratopsiano que mide entre 6 y 10 pies de largo (1,8–3 metros) y habita en la Isla Calavera. El animal es descrito en el libro “The World of Kong: A Natural History of Skull Island” (2005).
 
@@ -182,7 +182,7 @@ Entre sus depredadores se encuentran los Arsartis y Gladiodones.`
     era: "Jurásico",
     diet: "Herbívoro",
     size: "Colosal",
-    description: `Género: x | Masa estimada 70–105 toneladas | Longitud: 24–36 metros | Locomoción: Cuadrúpeda graviportal | Termorregulación: Mesotérmica | Rol ecológico: Ingeniero ecosistémico estructurante | Estrategia defensiva: Gigantismo funcional y comportamiento gregario  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 Megasaurópodo insular descendiente de diplodócidos jurásicos que, tras millones de años de aislamiento en Isla Calavera, evolucionó hacia un gigantismo superior al de sus equivalentes continentales. Su esqueleto muestra refuerzo cortical incrementado y articulaciones sobredimensionadas para soportar cargas dinámicas durante desplazamientos masivos.
 
@@ -205,7 +205,7 @@ Actuaba como ingeniero ecológico dominante: abría corredores forestales, derri
     era: "Cenozoico",
     diet: "Carnívoro",
     size: "Pequeño",
-    description: `Género: x | Masa estimada 75–90 kg | Longitud: 1.5–2.1 metros | Locomoción: Cuadrúpeda terrestre excavadora | Termorregulación: Ectotermia reptiliana | Rol ecológico: Mesodepredador forrajero de zonas abiertas | Estrategia defensiva: Blindaje dérmico, espinas e irritante secretado  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 Escuámido acorazado y espinoso de las tierras bajas de Isla Calavera, descrito como un reptil “tipo tuátara / thorny devil” con un tegumento casi impenetrable. Pese a su tamaño relativamente pequeño, la mayoría de los depredadores mayores lo evita por respeto a la densa batería de espolones que cubre prácticamente toda la superficie corporal. Un irritante secretado en los bordes de las espinas refuerza su “mensaje” de incomestibilidad ante intentos de mordida o manipulación.
 
@@ -224,7 +224,7 @@ Existe, sin embargo, un depredador que sí constituye amenaza relevante: Venatos
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El Carver, (Carocarptor interfector – “asesino descuartizador de carne”), es un terápsido grande y poderoso proveniente de las junglas de la Isla Calavera. Mide entre 25 y 33 pies de largo (7,6–10 metros). Los machos alcanzan los 10 pies de altura a la altura de los hombros (3 metros), mientras que las hembras llegan a los 9 pies (2,7 metros), con un peso que oscila entre 3,6 y 4,3 toneladas. Esto convierte a los Carvers en el segundo depredador terrestre más grande del bioma selvático y el tercero más grande en general.
 
@@ -256,9 +256,9 @@ Prácticamente las únicas criaturas de las que un Carver debe cuidarse son el V
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Chalyceratops seradorsus (“rostro de acero con cuernos y lomo de sierra”) o Chaly-tops es una especie de dinosaurio ceratopsiano de tamaño mediano, que mide entre 10 y 16 pies de largo (3 a 4,8 metros), y que se encuentra en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Chalyceratops seradorsus (“rostro de acero con cuernos y lomo de sierra”) o Chaly-tops es una especie de dinosaurio ceratopsiano de tamaño mediano, que mide entre 10 y 16 pies de largo (3 a 4,8 metros), y que se encuentra en Skull Island. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Chalyceratops es un ceratópsido resistente, habitante de zonas montañosas, muy similar a Chasmosaurus, propio de Skull Island. Pasta en los límites de la jungla, donde esta se transforma en pedregales y terreno rocoso. El Chaly-tops, un ceratopsiano de cabeza dura, se alimenta de vegetación subalpina, pero evita el bosque denso.
 
@@ -275,7 +275,7 @@ Entre sus depredadores se encuentran los Gladiodones.`
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El Diablosaurus (“lagarto diablo”) es un saurópodo de tamaño mediano, de entre 20 y 25 pies de largo (6–7,6 metros), nativo de las tierras bajas y selvas de Skull Island. Era más bajo que otros saurópodos como el Brontosaurus y el Asperdorsus, aunque estaba mucho más robustamente construido y, por lo tanto, pesaba más que el más delicado Asperdorsus. El animal es descrito en el libro "The World of Kong: A Natural History of Skull Island" (2005).
 
@@ -302,7 +302,7 @@ Los Diablosaurus están cubiertos de cuernos y osteodermos, formando una armadur
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El Dinocanisaurus (“lagarto perro terrible”) es un cinodonte no mamífero grande, sociable y cazador en manada que habita en las selvas de Skull Island. Mide entre 3 y 4 pies de largo (0,9–1,2 metros).
 
@@ -324,7 +324,7 @@ Aunque su comportamiento en manada es complejo, no alcanza el nivel de sofistica
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El Dirusuchus (“cocodrilo terrible”) es un cocodriliano costero de color verde, de aproximadamente 12 a 19 pies de longitud (3,6 a 6 metros), originario del estuario oriental de Skull Island.
 
@@ -342,7 +342,7 @@ Según las diferencias de tamaño, el Dirusuchus presenta un marcado dimorfismo 
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 Falcatops o Falcotops (“cara de guadaña”) es una especie de dinosaurio terópodo de tamaño mediano que mide entre 8 y 9 pies de largo (2,4 a 2,7 metros). Se encuentra en la Isla Calavera. El animal es descrito en el libro "The World of Kong: A Natural History of Skull Island" (2005).
 
@@ -357,11 +357,11 @@ El hocico del dinosaurio, curvado como un arco y casi sin dientes, está perfect
     image: "/images/ferrucutus-cerastes.jpg",
     isCover: true,
     era: "Cretácico",
-    diet: "Carnívoro",
+    diet: "Herbívoro",
     size: "Grande",
-    description: `Género: x | Masa estimada 6–8 toneladas | Longitud: 8–9 metros | Altura a la cadera: 3–3.5 metros | Locomoción: Cuadrúpeda robusta con capacidad de impulso anterior | Termorregulación: Mesotérmica | Rol ecológico: Depredador territorial de emboscada | Estrategia ofensiva: Impacto frontal con cuernos y trituración mandibular  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
-Ferrucutus cerastes (“piel de hierro con cuernos”) es una especie extremadamente grande de dinosaurio ceratópsido centrosaurino similar a Pachyrhinosaurus, que mide entre 24 y 34 pies de largo (7,3 a 10,3 metros) y habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Ferrucutus cerastes (“piel de hierro con cuernos”) es una especie extremadamente grande de dinosaurio ceratópsido centrosaurino similar a Pachyrhinosaurus, que mide entre 24 y 34 pies de largo (7,3 a 10,3 metros) y habita en Skull Island. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Entre los herbívoros más impresionantes y relativamente numerosos de Skull Island se encuentran los poderosos Ferrucutus, dinosaurios que viven en manadas, aunque a veces también pueden verse individuos solitarios. Las manadas pueden alcanzar hasta unos 12 integrantes. De constitución robusta, con hombros masivos y enormes golas óseas llenas de púas, estos poderosos pastadores y ramoneadores representan una presa peligrosa para los carnívoros de la isla.
 
@@ -394,7 +394,7 @@ Vertebrados como el Ferrucutus provocan activamente a las termitas de Skull Isla
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: x | Masa estimada 400–600 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.5 metros | Locomoción: Bípeda cursorial | Termorregulación: Endotermia funcional | Rol ecológico: Carroñero dominante y depredador oportunista | Estrategia: Caza cooperativa y resistencia patógena elevada  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 Foetodon (“diente cruel y maloliente”) es un notosuquio grande y robusto, similar a un lagarto o cocodrilo, proveniente de las junglas de Skull Island, que depende de emboscadas para cazar. Mide entre 15 y 20 pies de largo (4,5 a 6 metros).
 
@@ -433,9 +433,9 @@ Los Foetodones juveniles también son presa habitual de jóvenes Pirañadones, q
     era: "x",
     diet: "Insectívoro",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Formicavoro (“devorador de hormigas”) o Termito’saurus (“lagarto de las termitas”) es una especie de eupelicosaurio insectívoro de 12 a 16 pies (3.6 a 4.8 metros) de longitud que habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Formicavoro (“devorador de hormigas”) o Termito’saurus (“lagarto de las termitas”) es una especie de eupelicosaurio insectívoro de 12 a 16 pies (3.6 a 4.8 metros) de longitud que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Uno de los animales más extraños y singulares de Skull Island es el bizarro insectívoro comúnmente llamado Termito’saurus. Este comparte un ancestro con los sinápsidos esfenacodóntidos cuadrúpedos carnívoros; sin embargo, opta por alimentarse de la Termita de Skull Island y otros pequeños insectos. Con garras robustas y dientes sobresalientes en forma de colmillos, un Termito’saurus puede desgarrar nidos subterráneos y los montículos de termitas de Skull Island, duros como concreto, permitiendo que su lengua larga, pegajosa y notablemente ágil capture los insectos en su interior. Un agudo sentido del olfato guía a este saqueador eupelicosaurio hasta las cámaras de cría de una colonia de hormigas o de termitas de Skull Island, donde se encuentran las larvas ricas en proteínas.
 
@@ -452,9 +452,9 @@ Son criaturas solitarias y solo se emparejan brevemente durante la temporada rep
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Furcidactylus (“dedo bifurcado”) es una especie de pequeño dinosaurio terópodo que mide entre 2 y 2,6 pies de largo (60–79 centímetros) y que habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Furcidactylus (“dedo bifurcado”) es una especie de pequeño dinosaurio terópodo que mide entre 2 y 2,6 pies de largo (60–79 centímetros) y que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Furcidactylus es un celúrido pequeño, de dedos largos y adaptado a vadear, proveniente de los humedales de Skull Island, que utiliza sus dedos para atrapar pequeños peces. Del mismo modo, sus dedos extremadamente alargados distribuyen su peso sobre una superficie amplia, lo que le permite a Furcidactylus, literalmente, caminar sobre hojas y nenúfares.
 
@@ -488,7 +488,7 @@ El Hebeosaurus cumplía en gran medida el papel de “ganado” de la isla, lo q
     era: "Holoceno",
     diet: "Carnívoro",
     size: "Gigante",
-    description: `Género: Indominus | Masa estimada 8–10 toneladas | Longitud: 15.2 metros (hasta 16.9 m estimado adulto) | Altura a la cadera: 6 metros (hasta 6.7 m adulto) | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
+    description: `Género: Indominus | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Indominus Rex fue un organismo híbrido diseñado mediante ingeniería genética combinando ADN de Tyrannosaurus Rex, Velociraptor y múltiples terópodos adicionales, junto con material genético de especies modernas como sepias y anfibios. Su esqueleto mostraba una arquitectura masiva y reforzada, con vértebras cervicales robustas, caja torácica expandida y extremidades anteriores significativamente más desarrolladas que las de un tiranosáurido clásico.
 
@@ -511,7 +511,7 @@ En términos ecológicos, el Indominus Rex no ocupaba un nicho natural equilibra
     era: "Holoceno",
     diet: "Carnívoro",
     size: "Gigante",
-    description: `Género: Indominus | Masa estimada 8–10 toneladas | Longitud: 15.2 metros (hasta 16.9 m estimado adulto) | Altura a la cadera: 6 metros (hasta 6.7 m adulto) | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
+    description: `Género: Indominus | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 La version alternativa de la Indominus Rex, diseñada a partir de los restos de su contraparte original. Con un potencial de ataque más elevado y resistencia extendida, éste terópodo es posiblemente el dinosaurio más temible de todos, con el tamaño del Giganotosaurus, la velocidad e inteligencia del Velociraptor, la fuerza y agresividad del Tyrannosaurus rex, y diferentes características de ranas arbóreas y sepias que le permiten ocultar su señal térmica.`
   },
@@ -524,7 +524,7 @@ La version alternativa de la Indominus Rex, diseñada a partir de los restos de 
     era: "Holoceno",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: Indominus | Masa estimada 1.1 toneladas | Longitud: 7.3 metros | Altura a la cadera: 3.1 metros | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
+    description: `Género: x | Masa estimada: 7.3 x | Longitud: 1.1 metros | Altura: 3.1 metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Indoraptor es un dinosaurio híbrido creado a partir del ADN de diversas especies, como el Velociraptor, el Deinosuchus y el feroz Indominus rex. Famoso por su gran inteligencia y agresiva naturaleza, el Indoraptor es considerado uno de los dinosaurios más peligrosos que existen, con una velocidad, fuerza y agilidad increíbles, una vista excelente y la capacidad de camuflarse antes de emboscar a su presa.
 
@@ -545,7 +545,7 @@ Aunque muestra grandes signos de inteligencia, la cría del Indoraptor en un lab
     era: "Holoceno",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: Indominus | Masa estimada 1.1 toneladas | Longitud: 7.3 metros | Altura a la cadera: 2.4 metros | Locomoción: Bípedo digitígrado | Termorregulación: Mesotermia artificialmente optimizada | Rol ecológico: Superdepredador artificial sin equivalente natural | Estrategia ofensiva: Emboscada inteligente, fuerza bruta y manipulación del entorno  
+    description: `Género: x | Masa estimada: 7.3 x | Longitud: 1.1 metros | Altura: 3.1 metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 Variante mejorada del Indoraptor, su piel es blanca y su raya es azul, lo que hace que su coloración es invertida. Este super híbrido alternativo es más poderoso y letal que su contraparte prototípica.
 
@@ -564,9 +564,9 @@ Aunque muestra grandes signos de inteligencia, la cría del Indoraptor en un lab
     era: "Jurásico",
     diet: "Herbívoro",
     size: "Pequeño",
-    description: `Género: x | Masa estimada 120–180 kg | Longitud: 2–3 metros | Altura a la cadera: 1–1.2 metros | Locomoción: Bípeda cursorial ligera | Termorregulación: Mesotérmica | Rol ecológico: Herbívoro basal de sotobosque | Estrategia defensiva: Camuflaje críptico y evasión grupal  
+    description: `Género: x | Masa estimada 120–180 kg | Longitud: 2–3 metros | Altura: 1–1.2 metros | Locomoción: Bípeda cursorial ligera | Termorregulación: Mesotérmica | Rol ecológico: Herbívoro basal de sotobosque | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x  
 
-Ligocristus innocens ("cresta de azada inofensiva") es una especie de dinosaurio ornitópodo hadrosáurido de 26 a 34 pies de largo (7,9–10,3 metros) y 16 pies de altura (4,8 metros) que habita en la Isla Calavera. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Ligocristus innocens ("cresta de azada inofensiva") es una especie de dinosaurio ornitópodo hadrosáurido de 26 a 34 pies de largo (7,9–10,3 metros) y 16 pies de altura (4,8 metros) que habita en la Isla Calavera. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 El Ligocristus es un hadrosaurio lambeosaurino común y gregario, similar a Saurolophus, proveniente de las tierras bajas de la Isla Calavera. Es el gran herbívoro más numeroso de la isla y suele reunirse en manadas de varias decenas de individuos. Como ornitísquios hadrosaurios, poseen patas anchas con tres dedos y característicos hocicos amplios, parecidos al de un pato. Sin otras defensas físicas destacables, su seguridad radica en la cantidad: muchos ojos aumentan las probabilidades de detectar depredadores a tiempo. Son excelentes nadadores y están entre los pocos herbívoros nativos que se lanzan al agua sin dudar para escapar de amenazas terrestres. Aun así, constituyen la presa principal de numerosos depredadores, como V. rexes, Venatosaurus, Piranhadon, Foetodon y especies de forusrácidos como Zeropteryx.
 
@@ -597,7 +597,7 @@ Para los adultos, el corto nado a través de un río o zona pantanosa no represe
     era: "Pérmico",
     diet: "Omnívoro",
     size: "Grande",
-    description: `Género: x | Masa estimada 1.3–2 toneladas | Longitud: 6–7.3 metros | Locomoción: Cuadrúpeda robusta | Termorregulación: Ectotermia con soporte de vela dorsal | Rol ecológico: Forrajero generalista oportunista de tierras altas | Estrategia dominante: Cleptoparasitismo, carroñeo y agresión territorial  
+    description: `Género: x | Masa estimada 1.3–2 x | Longitud: 6–7.3 metros | Altura: 1–1.2 metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Malevolusaurus (Malevolusaurus perditor — “lagarto malicioso destructor”) es un gran esfenacodóntido esfenacodontino omnívoro de las tierras altas de Skull Island, descendiente del Dimetrodon. Mide entre 20 y 24 pies de largo (6 a 7,3 metros).
 
@@ -616,7 +616,7 @@ Los Malevolusaurus depositan sus huevos en hendiduras sobre las laderas más sol
     era: "x",
     diet: "Insectívoro",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El Monstrutalpus (“topo monstruo”) es un gran tapinocefaliano herbívoro de color verde proveniente de las selvas de Skull Island. Mide entre 12 y 15 pies de largo (3,6–4,5 metros).
 
@@ -638,7 +638,7 @@ Los huevos son enterrados para que se desarrollen por sí solos, y las crías em
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: x | Masa estimada 2.5 toneladas | Longitud: 4.8-7.3 metros | Altura a la cadera: 2–2.3 metros | Locomoción: Bípeda robusta de emboscada | Termorregulación: Mesotermia avanzada | Rol ecológico: Depredador de presión intermedia | Estrategia ofensiva: Ataque súbito con mordida de sujeción prolongada  
+    description: `Género: x | Masa estimada 2.5 toneladas | Longitud: 4.8-7.3 metros | Altura a la cadera: 2–2.3 metros | Locomoción: Bípeda robusta de emboscada | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Nefundusaurus (Nefundusaurus accerbus, que significa “lagarto abominable problemático”) es un prestosuquio grande, peligroso y de color azul que habita en las costas (incluido el estuario oriental) de Skull Island. Mide entre 16 y 24 pies de largo (4,8–7,3 metros).
 
@@ -655,7 +655,7 @@ El Nefundusaurus también utiliza su tamaño para robar presas a carnívoros má
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 Peracerdon exitialis (“diente muy afilado mortal”) es una especie de dinosaurio terópodo de tamaño mediano que mide entre 12 y 16 pies de largo (3,6 a 4,8 metros) y habita en las costas de la Isla Calavera. El animal es descrito en el libro “The World of Kong: A Natural History of Skull Island” (2005).
 
@@ -674,9 +674,9 @@ Peracerdon puede atacar con rapidez utilizando sus largas garras delanteras o su
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Pugiodorsus squameus (“espalda de daga escamada”) es una especie de pequeño dinosaurio tireóforo basal que mide 9 pies de largo (2,7 metros) y habita en la Isla Calavera. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Pugiodorsus squameus (“espalda de daga escamada”) es una especie de pequeño dinosaurio tireóforo basal que mide 9 pies de largo (2,7 metros) y habita en la Isla Calavera. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 El Pugiodorsus es un ornitisquio basal común, cubierto de placas óseas y con largas espinas en los hombros, proveniente de las junglas de la Isla Calavera. Es una presa habitual de los Carvers. Se desplaza en pequeños grupos y rota las tareas de vigilancia: uno o dos individuos permanecen atentos mientras el resto pasta plantas bajas.
 
@@ -691,7 +691,7 @@ La vigilancia constante es su mejor defensa, lo que obliga a los Carvers (y a ot
     era: "Pérmico",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: x | Masa estimada 200–260 kg | Longitud: 1.8–2.7 metros | Locomoción: Cuadrúpeda semiarborícola (trepa y salta) | Termorregulación: Mesotermia probable (sinápsido) | Rol ecológico: Macropredador de emboscada arbórea | Armas: Colmillos tipo sable, garras, armadura dérmica, latigazo caudal  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Scimitodon (Scimitodon sagax – “colmillo de cimitarra astuto”) es un ágil anteosaurio arborícola de las junglas de Skull Island. Mide entre 6 y 9 pies de largo (1.8–2.7 metros).
 
@@ -711,7 +711,7 @@ Las hembras ponen sus huevos en nidadas de dos o tres, dentro de árboles huecos
     era: "Holoceno",
     diet: "Omnívoro",
     size: "Grande",
-    description: `Género: x | Masa estimada 6 toneladas | Longitud: 10-12 metros | Altura a la cadera: 4.9 metros | Locomoción: Cuadrúpeda dominante con capacidad de impulso parcial | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador semiacuático híbrido | Estrategia ofensiva: Ataque de emboscada acuática y embestida frontal  
+    description: `Género: x | Masa estimada 6 toneladas | Longitud: 10-12 metros | Altura: 4.9 metros | Locomoción: Cuadrúpeda dominante con capacidad de impulso parcial | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Spinoceratops es un híbrido genético resultado de la combinación de ADN de Spinosaurus y Sinoceratops. Su esqueleto integra la estructura corporal alargada y la adaptación semiacuática del espinosáurido con la robustez craneal y defensiva propia de los ceratópsidos.
 
@@ -734,7 +734,7 @@ En ecosistemas controlados, el Spinoceratops cumple el rol de depredador especia
     era: "Holoceno",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: x | Masa estimada 600-800 kg | Longitud: 6.5-8 metros | Altura a la cadera: 2.8-3 metros | Locomoción: Bípedo digitígrado | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Depredador híbrido de persecución | Estrategia ofensiva: Ataque coordinado, velocidad y emboscada  
+    description: `Género: x | Masa estimada 600-800 kg | Longitud: 6.5-8 metros | Altura a la cadera: 2.8-3 metros Género: x | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
 El Spinoraptor es un híbrido genético creado mediante la combinación de ADN de Spinosaurus y Velociraptor. Su esqueleto muestra una estructura más estilizada que la de otros híbridos de gran tamaño, con extremidades posteriores largas que favorecen la velocidad y la maniobrabilidad.
 
@@ -757,7 +757,7 @@ En entornos controlados, el Spinoraptor ocupa el nicho de depredador rápido y a
     era: "Holoceno",
     diet: "Paleobotánica de suelo",
     size: "Grande",
-    description: `Género: x | Masa estimada 4 toneladas | Longitud: 11.6 metros | Altura a la cadera: 5.2 metros | Locomoción: Cuadrúpeda | Termorregulación: Endotermia asistida artificialmente | Rol ecológico: Megaherbívoro defensivo híbrido | Estrategia ofensiva: Embestida frontal combinada con defensa dorsal pasiva  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Stegoceratops es un híbrido genético perteneciente a la familia Híbridos, creado mediante la combinación de material genético de Stegosaurus y Triceratops. Su esqueleto presenta una arquitectura robusta con una cintura escapular poderosa y una región pélvica amplia, diseñada para soportar una masa corporal considerable y absorber impactos frontales.
 
@@ -780,9 +780,9 @@ En ecosistemas controlados, el Stegoceratops cumple el rol de megaherbívoro est
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Sylvaceratops (“rostro con cuernos del bosque”), o “copas de árbol”, es una especie de dinosaurio ceratopsiano de 12 a 16 pies de largo (3,6 a 4,8 metros) que habita en la Isla Calavera. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005) y no aparece en la película de 2005.
+Sylvaceratops (“rostro con cuernos del bosque”), o “copas de árbol”, es una especie de dinosaurio ceratopsiano de 12 a 16 pies de largo (3,6 a 4,8 metros) que habita en la Isla Calavera. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)' y no aparece en la película de 2005.
 
 En lo profundo de la selva húmeda y sofocante, un extraño miembro de la familia de ceratopsianos de tamaño medio se adaptó a la vida entre los troncos enmarañados. Mientras el robusto Ferrucutus de las tierras bajas tenía la complexión de un boxeador de peso pesado, el esbelto Sylvaceratops poseía el físico de un bailarín. Altos y delgados, tenían el cuerpo angosto para deslizarse con facilidad entre el denso laberinto de troncos; sus largas crestas se extendían planas a lo largo del cuello mientras avanzaban a presión entre la vegetación espesa.
 
@@ -809,9 +809,9 @@ La mayoría de los herbívoros pequeños y medianos de la selva eran presas pote
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Tartarusaurus saevus ("lagarto infernal cruel") es una especie de dinosaurio terópodo extremadamente grande que mide entre 20 y 28 pies de largo (6 a 8,5 metros) y habita en Skull Island. Aunque no es tan largo como los Carvers, el Tartarusaurus es mucho más robusto y constituye el segundo depredador terrestre más grande de toda la isla. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+Tartarusaurus saevus ("lagarto infernal cruel") es una especie de dinosaurio terópodo extremadamente grande que mide entre 20 y 28 pies de largo (6 a 8,5 metros) y habita en Skull Island. Aunque no es tan largo como los Carvers, el Tartarusaurus es mucho más robusto y constituye el segundo depredador terrestre más grande de toda la isla. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 Los Tartarusaurus tienen una constitución pesada y maciza. Este enorme depredador costero se encuentra a lo largo de todo el lado norte de Skull Island, donde se alimenta de otros reptiles costeros, como el Limusaurus (una forma de anfibio), aves marinas y focas. Al igual que el más pequeño Arsarticaedes, el Tartarusaurus ha regresado a una postura cuadrúpeda; posiblemente para obtener mayor estabilidad al desplazarse por las suaves playas arenosas. Son nómadas: siguen a las poblaciones de focas y defienden con ferocidad cualquier tramo de costa que hayan reclamado como propio frente a intrusos, especialmente otros Tartarusaurus.
 
@@ -830,9 +830,9 @@ Los Tartarusaurus prefieren acercarse sigilosamente a una presa potencial antes 
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Colosal",
-    description: `Género: x | Masa estimada 12–14 toneladas | Longitud: 13–15 metros | Altura a la cadera: 5–6 metros | Locomoción: Bípeda de potencia explosiva | Termorregulación: Endotermia avanzada | Fuerza de mordida estimada: >50.000 newtons | Rol ecológico: Depredador ápice regulador | Estrategia dominante: Dominio territorial y trituración ósea  
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
-El Vastatosaurus rex (“rey lagarto devastador”), o V-rex, es un gran y único tiranosáurido tiranosaurino de la Isla Calavera, descendiente del Tyrannosaurus. Mide aproximadamente 50 pies de largo (15,24 metros) y alcanza una altura de 20 pies (6,1 metros). El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005).
+El Vastatosaurus rex (“rey lagarto devastador”), o V-rex, es un gran y único tiranosáurido tiranosaurino de la Isla Calavera, descendiente del Tyrannosaurus. Mide aproximadamente 50 pies de largo (15,24 metros) y alcanza una altura de 20 pies (6,1 metros). El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 El mayor depredador terrestre de la Isla Calavera es el V-rex. Al igual que sus parientes tiranosaurios prehistóricos, los V-rex de la isla prácticamente no tienen competencia en la cima de la cadena alimenticia. De hecho, sería más preciso llamarlos superdepredadores. A pesar de su tamaño, pueden alcanzar ráfagas sorprendentes de velocidad por cortos períodos, llegando hasta 25 millas por hora (40 km/h aprox.) durante persecuciones breves.
 
@@ -869,7 +869,7 @@ Su inteligencia no es extraordinaria, pero tampoco completamente primitiva. Demu
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: x | Masa estimada 180–380 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.4–1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Termorregulación: Endotermia elevada | Rol ecológico: Depredador social coordinado | Estrategia ofensiva: Desgaste cooperativo y ataque súbito  
+    description: `Género: x | Masa estimada 180–380 kg | Longitud: 4.5–6 metros | Altura a la cadera: 1.4–1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 Venatosaurus saevidicus (“lagarto cazador salvaje”) fue un dinosaurio terópodo de gran tamaño que vivió en la Isla Calavera. Era descendiente de un grupo de dinosaurios no avianos llamados dromeosáuridos, muy probablemente del Utahraptor, el mayor dromeosáurido conocido. Medía entre 16 y 24 pies de largo (4,8–7,3 metros), aunque era relativamente ligero para su tamaño.
 
@@ -899,10 +899,10 @@ En el ecosistema insular representaban el nivel de depredación dinámico y coor
     name: "Velociraptor Nublarensis",
     image: "/images/velociraptor-nublarensis.jpg",
     isCover: true,
-    era: "Holceno",
+    era: "Holoceno",
     diet: "Carnívoro",
     size: "Mediano",
-    description: `Género: Desconocido | Masa estimada: 145 kg o 320 libras | Longitud: 3-3.9 metros | Altura a la cadera: 1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Termorregulación: Endotermia elevada | Rol ecológico: Depredador social coordinado | Estrategia ofensiva: Desgaste cooperativo y ataque súbito  
+    description: `Género: Desconocido | Masa estimada: 145 kg o 320 libras | Longitud: 3-3.9 metros | Altura a la cadera: 1.7 metros | Locomoción: Bípeda cursorial de alta aceleración | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 Su nombre científico proviene de nublar aunque eran nativos de la Isla Sorna, ya que fueron los primeros raptores en habitar la Isla Nublar. Las hembras son marrones y de ojos verdes y los machos son naranjas de rayas marron obscuro como un tigre, sus ojos son amarillos, el vientre en ambos casos es de color blanco(excepto en algunas excepcionescon las hembras que suelen tener tambien el vientre de color marron como su cuerpo). 
 
@@ -929,9 +929,9 @@ Entre los individuos genéticamente modificados se destacan:
     era: "x",
     diet: "x",
     size: "x",
-    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Termorregulación: x | Rol ecológico: x | Dieta: x | Adaptaciones: x | Comunicación: x | Estrategia ofensiva: x | Alimentación: x | Temperamento: x
+    description: `Género: x | Masa estimada: x | Longitud: x metros | Altura: x metros | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
 
-Vultursaurus (“lagarto buitre”) es una especie de dinosaurio terópodo volador muy pequeño, con una envergadura de 20 a 25 pulgadas (50,8–63,5 centímetros), que habita en Skull Island. El animal es descrito en el libro The World of Kong: A Natural History of Skull Island (2005), pero no apareció en la película de 2005.
+Vultursaurus (“lagarto buitre”) es una especie de dinosaurio terópodo volador muy pequeño, con una envergadura de 20 a 25 pulgadas (50,8–63,5 centímetros), que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)', pero no apareció en la película de 2005.
 
 Su nombre proviene de que Sam Kelley inicialmente lo confundió con un buitre y, al verlo con mayor claridad, lo bautizó como Vultursaurus.
 
@@ -950,7 +950,7 @@ Estas criaturas gregarias son nocturnas: durante el día descansan en salientes 
     era: "Cretácico",
     diet: "Carnívoro",
     size: "Pequeño",
-    description: `Masa estimada: 280 kg | Altura: 3 metros | Longitud: 1–1.3 metros | Locomoción: Bípeda terrestre no voladora | Termorregulación: Endotermia aviar | Rol ecológico: Herbívoro–omnívoro de sotobosque | Estrategia defensiva: Vigilancia grupal y evasión rápida  
+    description: `Masa estimada: 280 kg | Altura: 3 metros | Longitud: 1–1.3 metros | Locomoción: Bípeda terrestre no voladora | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
 El Zeropteryx torova (“matón ala cero”) es un forusrácido colorido y poderoso proveniente de las llanuras bajas de la Isla Calavera. Mide entre 1,5 y 1,8 metros de altura hasta la cadera y alcanza los 3 metros de altura total.
 
