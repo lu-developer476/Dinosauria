@@ -23,7 +23,7 @@ Este terópodo de temperamento apacible se defendía con largas garras en forma 
   {
     id: "adlapsusaurus",
     name: "Adlapsusaurus",
-    image: "/images/adlapsusaurus.jpg",
+    image: "/images/adlapusaurus.jpg",
     isCover: true,
     era: "x",
     diet: "x",
