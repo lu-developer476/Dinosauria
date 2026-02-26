@@ -11,7 +11,7 @@ export const dinos: DinoCard[] = [
     size: "x",
     description: `Género: Aciedactylus | Masa estimada: x | Longitud: 3.6–4.5 metros | Altura: ~1.4 metros | Locomoción: bípedo | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x  
 
-Aciedactylus mandocaris (“devorador de cangrejos de dedos afilados”) es una especie de dinosaurio terópodo de entre 12 y 15 pies de largo (3,6–4,5 metros) que se encuentra en la Isla Calavera. El animal es descrito en el libro "'The World of Kong: A Natural History of Skull Island (2005)'".
+Aciedactylus mandocaris (“devorador de cangrejos de dedos afilados”) es una especie de dinosaurio terópodo de entre 12 y 15 pies de largo (3,6–4,5 metros) que se encuentra en la Isla Calavera. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
 El Aciedactylus estaba especializado en alimentarse de mariscos, moluscos y cangrejos en los estuarios pantanosos y manglares. Sus pies anchos y con dedos extendidos evitaban que se hundiera en el barro y la arena empapados, pero la adaptación más peculiar de este dinosaurio era el segundo par de fosas nasales ubicadas sobre sus crestas nasales triangulares.
 
