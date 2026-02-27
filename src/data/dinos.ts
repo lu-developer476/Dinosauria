@@ -170,7 +170,7 @@ Entre sus depredadores se encuentran los Arsartis y Gladiodones.`
     name: "Brontosaurus excelsus o baxteri",
     image: "/images/brontosaurus-baxteri.jpg",
     isCover: true,
-    era: "Jurásico",
+    era: "Holoceno",
     diet: "Herbívoro",
     description: `Género: Brontosaurus | Masa estimada: 70–105 toneladas | Longitud: 24–36 metros | Altura: 15–17 metros | Locomoción: cuadrúpeda | Adaptaciones: cría vivípara, cuello y cuerpo largos para ramonear vegetación alta, extremidades robustas | Comunicación: señales de estampidos de pisadas transmitidas por el suelo para alarma y coordinación | Estrategias: manada de 6–20 individuos con macho dominante, defensa colectiva frente a depredadores, formación de senderos migratorios | Temperamento: pacífico y herbívoro, puede entrar en pánico o defenderse si es amenazado  
 
@@ -192,7 +192,7 @@ Actuaba como ingeniero ecológico dominante: abría corredores forestales, derri
     name: "Calcarisaurus ieiuniosus",
     image: "/images/calcarisaurus-ieiuniosus.jpg",
     isCover: true,
-    era: "Cenozoico",
+    era: "Holoceno",
     diet: "Carnívoro",
     description: `Género: Calcarisaurus | Masa estimada: 75-90 kg | Longitud: 1.5-2.1 metros | Altura: ~0.5-0.7 metros | Locomoción: cuadrúpeda terrestre | Adaptaciones: Armadura completa con espinas y espolones, secreción irritante en los bordes de los espolones para disuasión | Comunicación: Principalmente olfativa, sentidos visual y auditivo reducidos | Estrategias: Defensa pasiva mediante armadura y espinas; excavación para buscar presas con garras fuertes | Temperamento: Territorial y resistente, evita confrontaciones salvo para defenderse de depredadores mayores  
 
