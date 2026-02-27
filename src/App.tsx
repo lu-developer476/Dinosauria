@@ -353,13 +353,6 @@ const gallery = useMemo(
                       {d.diet}
                     </button>
 
-                    <button
-                      className={`badge ${activeFilter === d.size ? "badge-active" : ""}`}
-                      type="button"
-                      onClick={() => handleFilterClick(d.size)}
-                    >
-                      {d.size}
-                    </button>
                   </div>
                 </article>
               ))}
