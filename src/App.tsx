@@ -290,7 +290,7 @@ const gallery = useMemo(
           <div className="container">
             <h2 className="h2">Especies</h2>
             <p className="sub">
-              Esta sección reúne fichas de especies, tanto naturales como creadas por ingeniería genética. En cada una se describe su forma, su función en el ecosistema y su contexto biológico, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.
+              Esta sección reúne la forma, función en el ecosistema y contexto biológico de las especies, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.
             </p>
 
             {/* Panel de filtros */}
