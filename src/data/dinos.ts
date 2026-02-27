@@ -79,7 +79,7 @@ El Ankylodocus se alimenta principalmente de helechos arborescentes y coníferas
     image: "/images/arsarticaedes-agilis.jpg",
     isCover: true,
     era: "Holoceno",
-    diet: "Carnívora",
+    diet: "Carnívoro",
     description: `Género: Arsarticaedes | Masa estimada: 150-200 kg aprox. | Longitud: 2.4-3.6 metros | Altura: 1-1.2 metros aprox. | Locomoción: cuadrúpeda | Adaptaciones: garras delanteras afiladas, mordida letal, gran velocidad y maniobrabilidad | Comunicación: silenciosa, acecha usando cobertura | Estrategias: cazador solitario, emboscada, persecución rápida de presas | Temperamento: agresivo y territorial
 
 Arsarticaedes agilis (“ágil experto en el asesinato”), o simplemente Arsartis, es una especie de dinosaurio terópodo que mide entre 8 y 12 pies de largo (2,4 a 3,6 metros) y que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
