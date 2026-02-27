@@ -1,12 +1,11 @@
-export type Era = "Triásico" | "Jurásico" | "Cretácico";
+export type Era = "Holoceno";
 
 // DINO TARJETAS //
 export type DinoCard = {
   id: string;
   name: string;
   era: Era;
-  diet: "Herbívoro" | "Carnívoro" | "Omnívoro";
-  size: "Pequeño" | "Mediano" | "Grande" | "Colosal";
+  diet: "Carnívoro" | "Duróvoro" | "Herbívoro" | "Insectívoro" | "Piscívoro" | "Omnívoro";
   description: string;
 };
 
