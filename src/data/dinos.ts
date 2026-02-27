@@ -26,7 +26,7 @@ Este terópodo de temperamento apacible se defendía con largas garras en forma 
     isCover: true,
     era: "Holoceno",
     diet: "Carnívoro",
-    description: `Género: Adlapsusaurus | Masa estimada: Desconocida (probablemente ligera, acorde a su tamaño y hábitos ágiles) | Longitud: 1.5–2.1 metros | Altura: Aproximadamente 1–1.3 metros (estimada en postura bípeda) | Locomoción: Semi-cuadrúpeda (bípeda al correr, cuadrúpedo en reposo, desplazamiento sobre nudillos) | Adaptaciones: Oído agudo, reflejos rápidos, coloración brillante con crestas rojas, tolerancia al olor disuasorio de depredadores mayores | Comunicación: Exhibiciones visuales mediante crestas rojas (posibles señales de apareamiento o advertencia) | Estrategias: Saqueo de nidos, robo oportunista de huevos y crías, sigilo y retirada rápida a guaridas ocultas | Temperamento: Astuto, oportunista, audaz y altamente sigiloso
+    description: `Género: Adlapsusaurus | Masa estimada: desconocida | Longitud: 1.5–2.1 metros | Altura: 1–1.3 metros | Locomoción: semi-cuadrúpeda | Adaptaciones: Oído agudo, reflejos rápidos, coloración brillante con crestas rojas, tolerancia al olor disuasorio de depredadores mayores | Comunicación: Exhibiciones visuales mediante crestas rojas (posibles señales de apareamiento o advertencia) | Estrategias: Saqueo de nidos, robo oportunista de huevos y crías, sigilo y retirada rápida a guaridas ocultas | Temperamento: Astuto, oportunista, audaz y altamente sigiloso
 
 Adlapsusaurus (“lagarto sigiloso”) es una especie de dinosaurio terópodo de entre 5 y 7 pies de longitud (1,5–2,1 metros) que habitó en la Isla Calavera en hundimiento. El animal es descrito en el libro 'The World of Kong: A Natural History of Skull Island (2005)'.
 
