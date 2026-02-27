@@ -190,7 +190,7 @@ const gallery = useMemo(
                 <div>
                   <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
                   <p className="lead">
-                    Sitio no oficial de las especies jamás vistas por el hombre... y otras creadas por su ambición.
+                    Sitio no oficial de las especies ficticias vistas por el hombre... y otras creadas por su ambición.
                   </p>
                 </div>
 
@@ -218,7 +218,7 @@ const gallery = useMemo(
               <div className="card">
                 <h3 className="card-title">Enfoque científico</h3>
                 <p>
-                  Cada especie es analizada siguiendo criterios de anatomía comparada y modelado biomecánico: estimamos masa corporal, centro de gravedad, tipo de locomoción, resistencia estructural y la función de su cráneo y dientes. Incluso las criaturas inventadas se estudian bajo las mismas reglas que los fósiles reales, asegurando consistencia y plausibilidad.
+                  Cada especie es analizada siguiendo criterios de anatomía comparada y modelado biomecánico: estimamos masa corporal, centro de gravedad, tipo de locomoción, resistencia estructural y la función de su cráneo y dientes. Las criaturas inventadas se estudian bajo las mismas reglas que los fósiles reales, asegurando consistencia y plausibilidad.
                 </p>
                 <p>
                   Además, consideramos las presiones selectivas que podrían actuar en sus ecosistemas: la competencia entre especies, la adaptación a recursos limitados y el rol trófico de cada dinosaurio dentro de redes alimentarias hipotéticas, creando así un entorno coherente donde cada criatura tiene un propósito y un lugar.
@@ -270,11 +270,15 @@ const gallery = useMemo(
           
               <div className="timeline-text">
                 <p>
-                  Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo. Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.
+                  Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo.
+                </p>
+                
+                <p>
+                  Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.
                 </p>
           
                 <p>
-                  El resultado es un sistema híbrido redefiniendo los límites entre la naturaleza y la paleobiología tradicional.
+                  El resultado es un sistema mezclado, redefiniendo los límites entre la creación artificial, la naturaleza y la paleobiología tradicional.
                 </p>
               </div>
             </article>
