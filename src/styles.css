@@ -236,7 +236,7 @@ section[id]{scroll-margin-top:90px}
 }
 
 /* ============================= */
-/* RESPONSIVE DESIGN - DINOSAURIA */
+/*       RESPONSIVE DESIGN       */
 /* ============================= */
 
 /* ====== 1400px - Desktop grande ====== */
@@ -351,8 +351,8 @@ section[id]{scroll-margin-top:90px}
   }
 
   .brand{
-    flex-direction:column;
-    align-items:flex-start;
+    flex-direction:row;
+    align-items:center;
   }
 
   .brand-sub{
