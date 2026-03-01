@@ -89,7 +89,7 @@ Estructura pensada para escalar a:
 
 ------------------------------------------------------------------------
 
-## 📁 Estructura del Proyecto
+## 📁 Estructura inicial del Proyecto
 
     src/
     │
