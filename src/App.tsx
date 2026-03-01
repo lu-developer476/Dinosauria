@@ -5,10 +5,10 @@ import { dinos } from "./data/dinos";
 
 function nowStamp() {
   const d = new Date();
-  const y = d.getFullYear();
-  const m = String(d.getMonth() + 1).padStart(2, "0");
   const day = String(d.getDate()).padStart(2, "0");
-  return `${y}-${m}-${day}`;
+  const m = String(d.getMonth() + 1).padStart(2, "0");
+  const y = d.getFullYear();
+  return `${day}/${m}/${y}`;
 }
 
 function normalizeTag(tag: string) {
@@ -105,7 +105,7 @@ const gallery = useMemo(
   []
 );
 
-  // Catálogo de etiquetas disponibles (tags + era/diet/size)
+  // Catálogo de etiquetas disponibles (tags + era/diet)
   const availableFilters = useMemo(() => {
     const all = dinos.flatMap((d: any) => getDinoTags(d));
     return Array.from(new Set(all)).sort((a, b) => a.localeCompare(b));
