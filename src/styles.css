@@ -234,3 +234,198 @@ section[id]{scroll-margin-top:90px}
   border-top:1px solid var(--line);
   color:var(--muted);
 }
+
+/* ============================= */
+/* RESPONSIVE DESIGN - DINOSAURIA */
+/* ============================= */
+
+/* ====== 1400px - Desktop grande ====== */
+@media (min-width:1400px){
+  .container{
+    max-width:1280px;
+  }
+
+  .section{
+    padding:90px 0;
+  }
+
+  .dino-image{
+    max-height:320px;
+  }
+}
+
+/* ====== 1200px - Desktop estándar ====== */
+@media (max-width:1200px){
+  .container{
+    padding:0 24px;
+  }
+}
+
+/* ====== 1024px - Laptop ====== */
+@media (max-width:1024px){
+
+  h1{font-size:34px;}
+  h2{font-size:26px;}
+  h3{font-size:20px;}
+
+  .cards-2col{
+    gap:20px;
+  }
+
+  .card{
+    padding:18px;
+  }
+}
+
+/* ====== 900px - Tablet horizontal ====== */
+@media (max-width:900px){
+
+  .nav-inner{
+    flex-direction:column;
+    gap:14px;
+    align-items:flex-start;
+  }
+
+  .nav-links{
+    width:100%;
+    flex-wrap:wrap;
+  }
+
+  .nav-btn{
+    width:100%;
+    text-align:center;
+  }
+
+  .section{
+    padding:64px 0;
+  }
+}
+
+/* ====== 768px - Tablet vertical ====== */
+@media (max-width:768px){
+
+  body{
+    line-height:1.6;
+  }
+
+  h1{font-size:28px;}
+  h2{font-size:22px;}
+  h3{font-size:18px;}
+
+  p{
+    font-size:15px;
+  }
+
+  .container{
+    padding:0 18px;
+  }
+
+  .card{
+    padding:16px;
+  }
+
+  .dino-image{
+    max-height:220px;
+  }
+
+  .filters{
+    gap:8px;
+  }
+
+  .pill{
+    font-size:11px;
+    padding:7px 14px;
+  }
+
+  .badge{
+    font-size:11px;
+    padding:5px 10px;
+  }
+}
+
+/* ====== 600px - Mobile grande ====== */
+@media (max-width:600px){
+
+  .section{
+    padding:54px 0;
+  }
+
+  .brand{
+    flex-direction:column;
+    align-items:flex-start;
+  }
+
+  .brand-sub{
+    font-size:11px;
+  }
+
+  .nav-inner{
+    padding:14px 0;
+  }
+
+  .dino-text p:first-child{
+    font-size:12px;
+    padding-left:12px;
+  }
+
+  .dino-image{
+    max-height:200px;
+  }
+}
+
+/* ====== 480px - Mobile estándar ====== */
+@media (max-width:480px){
+
+  h1{font-size:24px;}
+  h2{font-size:20px;}
+  h3{font-size:16px;}
+
+  p{
+    font-size:14px;
+  }
+
+  .container{
+    padding:0 14px;
+  }
+
+  .card{
+    padding:14px;
+  }
+
+  .nav-btn{
+    padding:9px 14px;
+    font-size:14px;
+  }
+
+  .pill{
+    width:100%;
+    text-align:center;
+  }
+
+  .badge{
+    font-size:10px;
+  }
+
+  .dino-image{
+    max-height:180px;
+  }
+}
+
+/* ====== 360px - Mobile pequeño ====== */
+@media (max-width:360px){
+
+  h1{font-size:20px;}
+  h2{font-size:18px;}
+
+  p{
+    font-size:13px;
+  }
+
+  .card{
+    padding:12px;
+  }
+
+  .dino-image{
+    max-height:160px;
+  }
+}
