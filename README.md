@@ -1,5 +1,11 @@
 # Dinosauria
 
+![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![React DOM](https://img.shields.io/badge/React_DOM-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![CoffeeScript](https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=coffeescript&logoColor=white)
+
 Es una SPA profesional desarrollada con **React + TypeScript**, con utilidades en **JavaScript** y un módulo editorial escrito en **CoffeeScript** (compilado automáticamente en el build).
 
 El proyecto combina divulgación, ficción especulativa y estructura técnica moderna, preparado para despliegue directo en **Vercel**.
