@@ -35,6 +35,12 @@ function getDinoTags(d: any): string[] {
 export default function App() {
   const [factIndex, setFactIndex] = useState(0);
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [language, setLanguage] = useState<"es" | "en">("es");
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = theme;
+  }, [theme]);
 
   // Filtros + rotación
   const [filteredDinos, setFilteredDinos] = useState(dinos);
@@ -178,6 +184,24 @@ const gallery = useMemo(
             <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Convergencia</button>
             <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
             <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
+            <button
+              className="nav-btn nav-toggle"
+              type="button"
+              aria-label={`Cambiar idioma a ${language === "es" ? "inglés" : "español"}`}
+              aria-pressed={language === "en"}
+              onClick={() => setLanguage((current) => (current === "es" ? "en" : "es"))}
+            >
+              🇪🇸/🇺🇸
+            </button>
+            <button
+              className="nav-btn nav-toggle nav-theme-toggle"
+              type="button"
+              aria-label={`Activar ${theme === "dark" ? "modo claro" : "modo oscuro"}`}
+              aria-pressed={theme === "dark"}
+              onClick={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
+            >
+              {theme === "dark" ? "Modo claro" : "Modo oscuro"}
+            </button>
           </nav>
         </div>
       </header>

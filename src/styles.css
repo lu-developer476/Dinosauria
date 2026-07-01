@@ -11,6 +11,27 @@
   --radius: 18px;
   --max: 1120px;
   --accent: #1eff7a;
+  --body-bg:
+    radial-gradient(1200px 500px at 30% -10%, rgba(255,255,255,0.08), transparent 60%),
+    radial-gradient(900px 450px at 75% 0%, rgba(255,255,255,0.06), transparent 55%),
+    linear-gradient(180deg, #070a0e, #0b0f14 40%, #06080b);
+  --nav-bg: rgba(10,14,20,0.7);
+}
+
+:root[data-theme="light"]{
+  --bg: #f4efe4;
+  --panel: rgba(36,24,13,0.06);
+  --panel2: rgba(36,24,13,0.1);
+  --text: rgba(22,18,14,0.92);
+  --muted: rgba(52,41,31,0.72);
+  --line: rgba(61,43,25,0.18);
+  --shadow: 0 18px 45px rgba(71,48,24,0.18);
+  --accent: #127a3a;
+  --body-bg:
+    radial-gradient(1200px 500px at 30% -10%, rgba(30,255,122,0.2), transparent 60%),
+    radial-gradient(900px 450px at 75% 0%, rgba(59,130,246,0.16), transparent 55%),
+    linear-gradient(180deg, #fffaf0, #f4efe4 45%, #e8dcc8);
+  --nav-bg: rgba(255,250,240,0.78);
 }
 
 *{box-sizing:border-box}
@@ -19,10 +40,7 @@ html,body{height:100%}
 body{
   margin:0;
   font-family:'Inter',sans-serif;
-  background:
-    radial-gradient(1200px 500px at 30% -10%, rgba(255,255,255,0.08), transparent 60%),
-    radial-gradient(900px 450px at 75% 0%, rgba(255,255,255,0.06), transparent 55%),
-    linear-gradient(180deg, #070a0e, #0b0f14 40%, #06080b);
+  background:var(--body-bg);
   color:var(--text);
   line-height:1.65;
 }
@@ -52,7 +70,7 @@ section[id]{scroll-margin-top:90px}
 .nav{
   position:sticky;top:0;z-index:50;
   backdrop-filter:saturate(140%) blur(14px);
-  background:rgba(10,14,20,0.7);
+  background:var(--nav-bg);
   border-bottom:1px solid var(--line);
 }
 
@@ -64,7 +82,7 @@ section[id]{scroll-margin-top:90px}
 .brand{display:flex;align-items:center;gap:12px}
 .brand-sub{font-size:12px;color:var(--muted);margin-top:2px}
 
-.nav-links{display:flex;gap:12px;align-items:center}
+.nav-links{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
 
 .nav-btn{
   padding:10px 18px;
@@ -88,6 +106,15 @@ section[id]{scroll-margin-top:90px}
 
 .nav-primary:hover{
   background:rgba(59,130,246,0.28);
+}
+
+.nav-toggle{
+  border-color:rgba(30,255,122,0.4);
+  background:var(--panel);
+}
+
+.nav-theme-toggle{
+  min-width:128px;
 }
 
 /* CARDS */
@@ -294,6 +321,10 @@ section[id]{scroll-margin-top:90px}
   .nav-btn{
     width:100%;
     text-align:center;
+  }
+
+  .nav-theme-toggle{
+    min-width:0;
   }
 
   .section{
