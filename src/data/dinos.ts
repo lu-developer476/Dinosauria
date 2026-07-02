@@ -494,7 +494,7 @@ La version alternativa de la Indominus Rex, diseñada a partir de los restos de 
 
   {
     id: "indoraptor",
-    name: "Indomraptor",
+    name: "Indoraptor",
     image: "/images/indoraptor.jpg",
     isCover: true,
     era: "Holoceno",
@@ -514,7 +514,7 @@ Aunque muestra grandes signos de inteligencia, la cría del Indoraptor en un lab
 
   {
     id: "indoraptor-gen-2",
-    name: "Indomraptor de 2° Generación",
+    name: "Indoraptor de 2° Generación",
     image: "/images/indoraptor-GEN2.jpg",
     isCover: true,
     era: "Holoceno",
