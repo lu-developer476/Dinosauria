@@ -43,6 +43,24 @@ const translations = {
     galleryTitle: "Galería",
     modalAlt: "Vista ampliada",
     rights: "Todos los derechos reservados",
+    categoryLabel: "Categoría",
+    dinoLabel: "Entrada",
+    selectDino: "Elegí un dinosaurio",
+    encyclopediaTitle: "Entrada enciclopédica",
+    entriesAvailable: "entradas disponibles",
+    noEntries: "No hay entradas para esta categoría.",
+    technicalSheet: "Ficha técnica",
+    openImage: "Ampliar imagen de",
+    categoryMenu: "Exploración",
+    aboutScientificOne: "Cada especie es analizada siguiendo criterios de anatomía comparada y modelado biomecánico: estimamos masa corporal, centro de gravedad, tipo de locomoción, resistencia estructural y la función de su cráneo y dientes. Las criaturas inventadas se estudian bajo las mismas reglas que los fósiles reales, asegurando consistencia y plausibilidad.",
+    aboutScientificTwo: "Además, consideramos las presiones selectivas que podrían actuar en sus ecosistemas: la competencia entre especies, la adaptación a recursos limitados y el rol trófico de cada dinosaurio dentro de redes alimentarias hipotéticas, creando así un entorno coherente donde cada criatura tiene un propósito y un lugar.",
+    aboutScientificThree: "Este enfoque permite que los usuarios no solo observen a los dinosaurios, sino que comprendan cómo podrían haber interactuado entre sí y con su ambiente, haciendo de la exploración algo educativo y entretenido al mismo tiempo.",
+    aboutTechnicalOne: "El sitio está construido sobre React y TypeScript, lo que garantiza una base sólida, escalable y fácil de mantener a medida que el proyecto crece. Esto nos permite incorporar nuevas especies, rutas individuales por dinosaurio y filtros taxonómicos sin comprometer la estabilidad del sistema.",
+    aboutTechnicalTwo: "Para funcionalidades interactivas más dinámicas usamos JavaScript, mientras que el módulo editorial de datos se gestiona con CoffeeScript, compilado automáticamente durante el proceso de build. Esta combinación asegura eficiencia y flexibilidad técnica.",
+    aboutTechnicalThree: "La arquitectura está pensada para soportar contenido multimedia avanzado, como animaciones, galerías 3D y mapas de ecosistemas, permitiendo que la experiencia del usuario sea rica, educativa y envolvente, al mismo tiempo que la base de datos de especies se mantiene organizada y lista para futuras expansiones.",
+    aboutTechnicalFour: "En definitiva, cada capa del proyecto —desde el código hasta el contenido— ha sido diseñada para que la exploración de estas criaturas ficticias se sienta real, educativa y apasionante, reflejando la misma curiosidad que inspira a los paleontólogos del mundo real.",
+    timelineOneBody: ["En entornos de alta competencia, la selección natural favorece mayor tamaño, refuerzo estructural y defensas especializadas.", "Mientras la evolución actúa durante millones de años, la manipulación deliberada del ADN responde a objetivos humanos concretos: aumentar masa, inteligencia o capacidad ofensiva. Así, la especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando especies distintas en origen pero comparables en impacto ecológico."],
+    timelineTwoBody: ["Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo.", "Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.", "El resultado es un sistema mezclado, redefiniendo los límites entre la creación artificial, la naturaleza y la paleobiología tradicional."],
   },
   en: {
     navAria: "Main navigation",
@@ -74,8 +92,34 @@ const translations = {
     galleryTitle: "Gallery",
     modalAlt: "Expanded view",
     rights: "All rights reserved",
+    categoryLabel: "Category",
+    dinoLabel: "Entry",
+    selectDino: "Choose a dinosaur",
+    encyclopediaTitle: "Encyclopedia entry",
+    entriesAvailable: "available entries",
+    noEntries: "There are no entries for this category.",
+    technicalSheet: "Technical sheet",
+    openImage: "Open image of",
+    categoryMenu: "Exploration",
+    aboutScientificOne: "Each species is analyzed through comparative anatomy and biomechanical modeling: body mass, center of gravity, locomotion type, structural resistance, and skull and tooth function. Invented creatures are studied under the same rules as real fossils, ensuring consistency and plausibility.",
+    aboutScientificTwo: "We also consider the selective pressures that could shape their ecosystems: interspecies competition, adaptation to limited resources, and the trophic role of each dinosaur within hypothetical food webs, creating a coherent environment where every creature has a purpose and a place.",
+    aboutScientificThree: "This approach lets users not only observe dinosaurs, but also understand how they might have interacted with one another and with their environment, making exploration educational and entertaining at the same time.",
+    aboutTechnicalOne: "The site is built with React and TypeScript, providing a solid, scalable, and maintainable foundation as the project grows. This allows new species, individual dinosaur routes, and taxonomic filters to be added without compromising system stability.",
+    aboutTechnicalTwo: "More dynamic interactive features use JavaScript, while the editorial data module is managed with CoffeeScript and compiled automatically during the build process. This combination provides technical efficiency and flexibility.",
+    aboutTechnicalThree: "The architecture is designed to support advanced multimedia content, such as animations, 3D galleries, and ecosystem maps, keeping the user experience rich, educational, and immersive while the species database remains organized and ready for future expansion.",
+    aboutTechnicalFour: "Ultimately, every layer of the project —from code to content— has been designed so exploring these fictional creatures feels real, educational, and exciting, reflecting the same curiosity that inspires real-world paleontologists.",
+    timelineOneBody: ["In highly competitive environments, natural selection favors greater size, reinforced structures, and specialized defenses.", "While evolution acts over millions of years, deliberate DNA manipulation responds to specific human goals: increased mass, intelligence, or offensive capability. Specialization can therefore arise both from sustained evolutionary pressure and from technological intervention, producing species that differ in origin but are comparable in ecological impact."],
+    timelineTwoBody: ["Natural ecosystems operate through life cycles and trophic relationships that sustain a dynamic balance across evolutionary time.", "When engineered organisms are introduced, that balance changes because they lack an adaptive history integrated into the environment.", "The result is a blended system that redefines the boundaries between artificial creation, nature, and traditional paleobiology."],
   },
 } as const;
+const englishFacts = [
+  "Fossil records are not complete albums; they are archives with torn-out pages.",
+  "Footprints tell stories bones cannot: behavior, speed, and direction.",
+  "Skull Island would be an extreme evolutionary laboratory shaped by ruthless selection.",
+  "Biomechanics sets limits: not every giant can run, but mass can still dominate.",
+  "Taphonomy explains how a body became a fossil: death, transport, burial, and mineralization.",
+  "Mass extinctions do not erase life; they change the rules of the game.",
+];
 
 function normalizeTag(tag: string) {
   return tag.trim();
@@ -112,20 +156,20 @@ export default function App() {
     document.documentElement.lang = language;
   }, [language]);
 
-  // Filtros + rotación
-  const [filteredDinos, setFilteredDinos] = useState(dinos);
-  const [currentIndex, setCurrentIndex] = useState(0);
+  // Filtros de enciclopedia
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
+  const [selectedDinoId, setSelectedDinoId] = useState(dinos[0]?.id ?? "");
 
   // Rotación Galería
-  const [galleryIndex, setGalleryIndex] = useState(0);
+  const galleryIndex = 0;
 
   const t = translations[language];
 
   const fact = useMemo(() => {
-    const i = ((factIndex % facts.length) + facts.length) % facts.length;
-    return facts[i];
-  }, [factIndex]);
+    const sourceFacts = language === "en" ? englishFacts : facts;
+    const i = ((factIndex % sourceFacts.length) + sourceFacts.length) % sourceFacts.length;
+    return sourceFacts[i];
+  }, [factIndex, language]);
 
 const gallery = useMemo(
   () => [
@@ -189,52 +233,66 @@ const gallery = useMemo(
     return Array.from(new Set(all)).sort((a, b) => a.localeCompare(b));
   }, []);
 
-  // Aplicar filtro y resetear índice de rotación
-  useEffect(() => {
-    if (!activeFilter) {
-      setFilteredDinos(dinos);
-      setCurrentIndex(0);
-      return;
-    }
+  const filteredDinos = useMemo(() => {
+    if (!activeFilter) return dinos;
 
     const tag = normalizeTag(activeFilter);
-    const next = dinos.filter((d: any) => getDinoTags(d).includes(tag));
-
-    setFilteredDinos(next);
-    setCurrentIndex(0);
+    return dinos.filter((d: any) => getDinoTags(d).includes(tag));
   }, [activeFilter]);
 
-  // Rotación catálogo (cada 45s: avanza 2 cards)
   useEffect(() => {
-    if (filteredDinos.length <= 2) return;
-
-    const intervalId = window.setInterval(() => {
-      setCurrentIndex((prev) =>
-        prev + 2 >= filteredDinos.length ? 0 : prev + 2
-      );
-    }, 45000);
-
-    return () => window.clearInterval(intervalId);
+    setSelectedDinoId(filteredDinos[0]?.id ?? "");
   }, [filteredDinos]);
 
-  // Rotación automática galería (1 imagen cada 25s)
-  useEffect(() => {
-    if (gallery.length <= 1) return;
+  const selectedDino = useMemo(
+    () => filteredDinos.find((d: any) => d.id === selectedDinoId) ?? filteredDinos[0],
+    [filteredDinos, selectedDinoId]
+  );
 
-    const intervalId = window.setInterval(() => {
-      setGalleryIndex((prev) => (prev + 1) % gallery.length);
-    }, 25000);
+  const translateCategory = (tag: string) => {
+    if (language === "es") return tag;
 
-    return () => window.clearInterval(intervalId);
-  }, [gallery.length]);
+    const labels: Record<string, string> = {
+      Holoceno: "Holocene",
+      "Carnívoro": "Carnivore",
+      "Duróvoro": "Durophage",
+      "Herbívoro": "Herbivore",
+      "Insectívoro": "Insectivore",
+      "Piscívoro": "Piscivore",
+      "Omnívoro": "Omnivore",
+    };
 
-  const visibleDinos = useMemo(() => {
-    return filteredDinos.slice(currentIndex, currentIndex + 2);
-  }, [filteredDinos, currentIndex]);
-
-  const handleFilterClick = (tag: string) => {
-    setActiveFilter((prev) => (prev === tag ? null : tag));
+    return labels[tag] ?? tag;
   };
+
+  const localizeDescription = (description: string) => {
+    if (language === "es") return description;
+
+    return description
+      .replaceAll("Género:", "Genus:")
+      .replaceAll("Masa estimada:", "Estimated mass:")
+      .replaceAll("Longitud:", "Length:")
+      .replaceAll("Altura:", "Height:")
+      .replaceAll("Locomoción:", "Locomotion:")
+      .replaceAll("Adaptaciones:", "Adaptations:")
+      .replaceAll("Comunicación:", "Communication:")
+      .replaceAll("Estrategias:", "Strategies:")
+      .replaceAll("Temperamento:", "Temperament:")
+      .replaceAll("desconocida", "unknown")
+      .replaceAll("No especificada", "Not specified")
+      .replaceAll("aprox.", "approx.")
+      .replaceAll("bípeda", "bipedal")
+      .replaceAll("cuadrúpeda", "quadrupedal")
+      .replaceAll("semi-cuadrúpeda", "semi-quadrupedal")
+      .replaceAll("Carnívoro", "Carnivore")
+      .replaceAll("Herbívoro", "Herbivore")
+      .replaceAll("Omnívoro", "Omnivore")
+      .replaceAll("Piscívoro", "Piscivore")
+      .replaceAll("Insectívoro", "Insectivore")
+      .replaceAll("Duróvoro", "Durophage")
+      .replaceAll("Holoceno", "Holocene");
+  };
+
 
   return (
     <>
@@ -253,15 +311,19 @@ const gallery = useMemo(
           </a>
 
           <nav className="nav-links" aria-label={t.navAria}>
-            <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
-            <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
-            <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
             <details className="nav-menu">
               <summary className="nav-btn nav-menu-button" aria-label={t.menuLabel}>
                 ☰
               </summary>
 
               <div className="nav-menu-panel">
+                <div className="nav-menu-group" aria-label={t.navAria}>
+                  <span className="nav-menu-title">{t.categoryMenu}</span>
+                  <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
+                  <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
+                  <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
+                </div>
+
                 <div className="nav-menu-group" aria-label={t.languageMenu}>
                   <span className="nav-menu-title">{t.languageMenu}</span>
                   <button
@@ -343,29 +405,27 @@ const gallery = useMemo(
               <div className="card">
                 <h3 className="card-title">{t.scientificTitle}</h3>
                 <p>
-                  Cada especie es analizada siguiendo criterios de anatomía comparada y modelado biomecánico: estimamos masa corporal, centro de gravedad, tipo de locomoción, resistencia estructural y la función de su cráneo y dientes. Las criaturas inventadas se estudian bajo las mismas reglas que los fósiles reales, asegurando consistencia y plausibilidad.
+                  {t.aboutScientificOne}
                 </p>
                 <p>
-                  Además, consideramos las presiones selectivas que podrían actuar en sus ecosistemas: la competencia entre especies, la adaptación a recursos limitados y el rol trófico de cada dinosaurio dentro de redes alimentarias hipotéticas, creando así un entorno coherente donde cada criatura tiene un propósito y un lugar.
+                  {t.aboutScientificTwo}
                 </p>
                 <p>
-                  Este enfoque permite que los usuarios no solo observen a los dinosaurios, sino que comprendan cómo podrían haber interactuado entre sí y con su ambiente, haciendo de la exploración algo educativo y entretenido al mismo tiempo.
+                  {t.aboutScientificThree}
                 </p>
               </div>
 
               <div className="card">
                 <h3 className="card-title">{t.technicalTitle}</h3>
+                <p>{t.aboutTechnicalOne}</p>
                 <p>
-                  El sitio está construido sobre <strong>React</strong> y <strong>TypeScript</strong>, lo que garantiza una base sólida, escalable y fácil de mantener a medida que el proyecto crece. Esto nos permite incorporar nuevas especies, rutas individuales por dinosaurio y filtros taxonómicos sin comprometer la estabilidad del sistema.
+                  {t.aboutTechnicalTwo}
                 </p>
                 <p>
-                  Para funcionalidades interactivas más dinámicas usamos <strong>JavaScript</strong>, mientras que el módulo editorial de datos se gestiona con <strong>CoffeeScript</strong>, compilado automáticamente durante el proceso de build. Esta combinación asegura eficiencia y flexibilidad técnica.
+                  {t.aboutTechnicalThree}
                 </p>
                 <p>
-                  La arquitectura está pensada para soportar contenido multimedia avanzado, como animaciones, galerías 3D y mapas de ecosistemas, permitiendo que la experiencia del usuario sea rica, educativa y envolvente, al mismo tiempo que la base de datos de especies se mantiene organizada y lista para futuras expansiones.
-                </p>
-                <p>
-                  En definitiva, cada capa del proyecto —desde el código hasta el contenido— ha sido diseñada para que la exploración de estas criaturas ficticias se sienta real, educativa y apasionante, reflejando la misma curiosidad que inspira a los paleontólogos del mundo real.
+                  {t.aboutTechnicalFour}
                 </p>
               </div>
             </div>
@@ -380,13 +440,7 @@ const gallery = useMemo(
               <strong className="timeline-title">{t.timelineOneTitle}</strong>
 
               <div className="timeline-text">
-                <p>
-                  En entornos de alta competencia, la selección natural favorece mayor tamaño, refuerzo estructural y defensas especializadas.
-                </p>
-
-                <p>
-                  Mientras la evolución actúa durante millones de años, la manipulación deliberada del ADN responde a objetivos humanos concretos: aumentar masa, inteligencia o capacidad ofensiva. Así, la especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando especies distintas en origen pero comparables en impacto ecológico.
-                </p>
+                {t.timelineOneBody.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
             </article>
 
@@ -394,17 +448,7 @@ const gallery = useMemo(
               <strong className="timeline-title">{t.timelineTwoTitle}</strong>
 
               <div className="timeline-text">
-                <p>
-                  Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo.
-                </p>
-
-                <p>
-                  Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.
-                </p>
-
-                <p>
-                  El resultado es un sistema mezclado, redefiniendo los límites entre la creación artificial, la naturaleza y la paleobiología tradicional.
-                </p>
+                {t.timelineTwoBody.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
               </div>
             </article>
           </div>     {/* cierre cards */}
@@ -418,70 +462,91 @@ const gallery = useMemo(
               {t.speciesIntro}
             </p>
 
-            {/* Panel de filtros */}
-            <div className="filters" aria-label={t.navSpecies}>
-              <button
-                className={`pill ${activeFilter === null ? "pill-active" : ""}`}
-                onClick={() => setActiveFilter(null)}
-                type="button"
-              >
-                {t.all}
-              </button>
-
-              {availableFilters.map((tag) => (
-                <button
-                  key={tag}
-                  className={`pill ${activeFilter === tag ? "pill-active" : ""}`}
-                  onClick={() => handleFilterClick(tag)}
-                  type="button"
+            <div className="encyclopedia-controls" aria-label={t.navSpecies}>
+              <label className="select-field">
+                <span>{t.categoryLabel}</span>
+                <select
+                  value={activeFilter ?? "all"}
+                  onChange={(event) => setActiveFilter(event.target.value === "all" ? null : event.target.value)}
                 >
-                  {tag}
-                </button>
-              ))}
+                  <option value="all">{t.all}</option>
+                  {availableFilters.map((tag) => (
+                    <option key={tag} value={tag}>
+                      {translateCategory(tag)}
+                    </option>
+                  ))}
+                </select>
+              </label>
+
+              <label className="select-field">
+                <span>{t.dinoLabel}</span>
+                <select
+                  value={selectedDinoId}
+                  onChange={(event) => setSelectedDinoId(event.target.value)}
+                  disabled={filteredDinos.length === 0}
+                >
+                  {filteredDinos.length === 0 ? (
+                    <option value="">{t.noEntries}</option>
+                  ) : (
+                    filteredDinos.map((d: any) => (
+                      <option key={d.id} value={d.id}>
+                        {d.name}
+                      </option>
+                    ))
+                  )}
+                </select>
+              </label>
             </div>
 
-            <div className="cards cards-2col">
-              {visibleDinos.map((d: any) => (
-                <article className="card" key={d.id}>
-                  <strong className="dino-title">{d.name}</strong>
+            <p className="sub encyclopedia-count">
+              {filteredDinos.length} {t.entriesAvailable}
+            </p>
 
-                  <img
-                    src={d.image}
-                    alt={d.name}
-                    className="dino-image"
-                    onClick={() => setSelectedImage(d.image)}
-                  />
-
-                  <div className="sub dino-text">
-                    {String(d.description ?? "")
-                      .split("\n\n")
-                      .map((paragraph: string, index: number) => (
-                        <p key={index}>{paragraph}</p>
-                      ))}
+            {selectedDino ? (
+              <article className="card encyclopedia-entry">
+                <div className="entry-header">
+                  <div>
+                    <span className="entry-kicker">{t.encyclopediaTitle}</span>
+                    <h3 className="dino-title">{selectedDino.name}</h3>
                   </div>
 
-                  {/* Badges clickeables (sirven como “atajo” de filtro) */}
-                  <div className="badges">
+                  <div className="badges entry-badges" aria-label={t.categoryLabel}>
                     <button
-                      className={`badge ${activeFilter === d.era ? "badge-active" : ""}`}
+                      className={`badge ${activeFilter === selectedDino.era ? "badge-active" : ""}`}
                       type="button"
-                      onClick={() => handleFilterClick(d.era)}
+                      onClick={() => setActiveFilter(selectedDino.era)}
                     >
-                      {d.era}
+                      {translateCategory(selectedDino.era)}
                     </button>
 
                     <button
-                      className={`badge ${activeFilter === d.diet ? "badge-active" : ""}`}
+                      className={`badge ${activeFilter === selectedDino.diet ? "badge-active" : ""}`}
                       type="button"
-                      onClick={() => handleFilterClick(d.diet)}
+                      onClick={() => setActiveFilter(selectedDino.diet)}
                     >
-                      {d.diet}
+                      {translateCategory(selectedDino.diet)}
                     </button>
-
                   </div>
-                </article>
-              ))}
-            </div>
+                </div>
+
+                <img
+                  src={(selectedDino as any).image}
+                  alt={`${t.openImage} ${selectedDino.name}`}
+                  className="dino-image encyclopedia-image"
+                  onClick={() => setSelectedImage((selectedDino as any).image)}
+                />
+
+                <div className="sub dino-text encyclopedia-text">
+                  {localizeDescription(String(selectedDino.description ?? ""))
+                    .split("\n\n")
+                    .map((paragraph: string, index: number) => (
+                      <p key={index}>{paragraph}</p>
+                    ))}
+                </div>
+              </article>
+            ) : (
+              <div className="card"><p>{t.noEntries}</p></div>
+            )}
           </div>
         </section>
 
