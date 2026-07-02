@@ -41,6 +41,9 @@ const translations = {
     speciesIntro: "Esta sección reúne la forma, función en el ecosistema y contexto biológico de las especies, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.",
     all: "Todos",
     galleryTitle: "Galería",
+    galleryPrevious: "Imagen anterior",
+    galleryNext: "Imagen siguiente",
+    galleryEmpty: "No hay imágenes de galería para esta selección.",
     modalAlt: "Vista ampliada",
     rights: "Todos los derechos reservados",
     categoryLabel: "Categoría",
@@ -90,6 +93,9 @@ const translations = {
     speciesIntro: "This section brings together each species' form, ecosystem role and biological context, analyzed through anatomical criteria, ecological coherence and biomechanical realism.",
     all: "All",
     galleryTitle: "Gallery",
+    galleryPrevious: "Previous image",
+    galleryNext: "Next image",
+    galleryEmpty: "There are no gallery images for this selection.",
     modalAlt: "Expanded view",
     rights: "All rights reserved",
     categoryLabel: "Category",
@@ -159,9 +165,10 @@ export default function App() {
   // Filtros de enciclopedia
   const [activeFilter, setActiveFilter] = useState<string | null>(null);
   const [selectedDinoId, setSelectedDinoId] = useState(dinos[0]?.id ?? "");
+  const [galleryScope, setGalleryScope] = useState<"all" | "dino">("dino");
 
   // Rotación Galería
-  const galleryIndex = 0;
+  const [galleryIndex, setGalleryIndex] = useState(0);
 
   const t = translations[language];
 
@@ -263,6 +270,46 @@ const gallery = useMemo(
     };
 
     return labels[tag] ?? tag;
+  };
+
+
+  const displayedGallery = useMemo(() => {
+    if (galleryScope === "all" || !selectedDino) return gallery;
+
+    const dinoName = selectedDino.name.toLowerCase();
+    const dinoId = selectedDino.id.toLowerCase();
+    const searchTerms = new Set([
+      dinoId,
+      ...dinoId.split("-"),
+      ...dinoName.split(/\s+/),
+    ]);
+
+    const matchingGallery = gallery.filter((item) => {
+      const haystack = `${item.src} ${item.caption}`.toLowerCase();
+      return Array.from(searchTerms).some((term) => term.length > 3 && haystack.includes(term));
+    });
+
+    if (matchingGallery.length > 0) return matchingGallery;
+
+    return [{
+      id: 0,
+      src: selectedDino.image,
+      caption: selectedDino.name,
+    }];
+  }, [gallery, galleryScope, selectedDino]);
+
+  useEffect(() => {
+    setGalleryIndex(0);
+  }, [displayedGallery]);
+
+  const normalizedGalleryIndex = displayedGallery.length === 0 ? 0 : galleryIndex % displayedGallery.length;
+  const activeGalleryItem = displayedGallery[normalizedGalleryIndex];
+
+  const moveGallery = (step: number) => {
+    setGalleryIndex((current) => {
+      if (displayedGallery.length === 0) return 0;
+      return (current + step + displayedGallery.length) % displayedGallery.length;
+    });
   };
 
   const localizeDescription = (description: string) => {
@@ -467,7 +514,11 @@ const gallery = useMemo(
                 <span>{t.categoryLabel}</span>
                 <select
                   value={activeFilter ?? "all"}
-                  onChange={(event) => setActiveFilter(event.target.value === "all" ? null : event.target.value)}
+                  onChange={(event) => {
+                    const value = event.target.value;
+                    setActiveFilter(value === "all" ? null : value);
+                    setGalleryScope(value === "all" ? "all" : "dino");
+                  }}
                 >
                   <option value="all">{t.all}</option>
                   {availableFilters.map((tag) => (
@@ -482,7 +533,10 @@ const gallery = useMemo(
                 <span>{t.dinoLabel}</span>
                 <select
                   value={selectedDinoId}
-                  onChange={(event) => setSelectedDinoId(event.target.value)}
+                  onChange={(event) => {
+                    setSelectedDinoId(event.target.value);
+                    setGalleryScope("dino");
+                  }}
                   disabled={filteredDinos.length === 0}
                 >
                   {filteredDinos.length === 0 ? (
@@ -514,7 +568,10 @@ const gallery = useMemo(
                     <button
                       className={`badge ${activeFilter === selectedDino.era ? "badge-active" : ""}`}
                       type="button"
-                      onClick={() => setActiveFilter(selectedDino.era)}
+                      onClick={() => {
+                        setActiveFilter(selectedDino.era);
+                        setGalleryScope("dino");
+                      }}
                     >
                       {translateCategory(selectedDino.era)}
                     </button>
@@ -522,7 +579,10 @@ const gallery = useMemo(
                     <button
                       className={`badge ${activeFilter === selectedDino.diet ? "badge-active" : ""}`}
                       type="button"
-                      onClick={() => setActiveFilter(selectedDino.diet)}
+                      onClick={() => {
+                        setActiveFilter(selectedDino.diet);
+                        setGalleryScope("dino");
+                      }}
                     >
                       {translateCategory(selectedDino.diet)}
                     </button>
@@ -553,17 +613,41 @@ const gallery = useMemo(
         <section id="galeria" className="section">
           <div className="container">
             <h2 className="h2">{t.galleryTitle}</h2>
-          <div className="gallery">
-            <div className="gimg">
-              <img
-                src={gallery[galleryIndex].src}
-                alt={gallery[galleryIndex].caption}
-              />
-              <div className="gcap">
-                {gallery[galleryIndex].caption}
+          {activeGalleryItem ? (
+            <div className="gallery" aria-live="polite">
+              <button
+                className="gallery-arrow gallery-arrow-left"
+                type="button"
+                aria-label={t.galleryPrevious}
+                onClick={() => moveGallery(-1)}
+              >
+                ‹
+              </button>
+
+              <div className="gimg">
+                <img
+                  src={activeGalleryItem.src}
+                  alt={activeGalleryItem.caption}
+                  onClick={() => setSelectedImage(activeGalleryItem.src)}
+                />
+                <div className="gcap">
+                  {activeGalleryItem.caption}
+                  <span className="gallery-counter">{normalizedGalleryIndex + 1} / {displayedGallery.length}</span>
                 </div>
               </div>
+
+              <button
+                className="gallery-arrow gallery-arrow-right"
+                type="button"
+                aria-label={t.galleryNext}
+                onClick={() => moveGallery(1)}
+              >
+                ›
+              </button>
             </div>
+          ) : (
+            <div className="card"><p>{t.galleryEmpty}</p></div>
+          )}
           </div>
         </section>
       </main>
