@@ -11,6 +11,68 @@ function nowStamp() {
   return `${day}/${m}/${y}`;
 }
 
+
+const translations = {
+  es: {
+    navAria: "Navegación principal",
+    navTimeline: "Convergencia",
+    navSpecies: "Especies",
+    navGallery: "Galería",
+    switchTo: "Cambiar idioma a inglés",
+    lightMode: "Modo claro",
+    darkMode: "Modo oscuro",
+    activateLight: "Activar modo claro",
+    activateDark: "Activar modo oscuro",
+    heroTitle: "Una lectura científica de criaturas imposibles",
+    heroLead: "Sitio no oficial de las especies ficticias vistas por el hombre... y otras creadas por su ambición.",
+    factTitle: "Curiosidad del día",
+    updated: "Actualizado",
+    more: "Más",
+    aboutTitle: "Acerca del proyecto",
+    aboutIntro: "Descubriendo Dinos nace de la pasión por la paleontología y la creatividad digital. Este proyecto combina ciencia, tecnología y experiencia visual para ofrecer una inmersión única en el mundo de los dinosaurios, explorando no solo su anatomía y comportamiento, sino también la ecología de los ecosistemas que podrían haber habitado, de manera que incluso las especies ficticias se presentan con un trasfondo creíble y detallado.",
+    scientificTitle: "Enfoque científico",
+    technicalTitle: "Arquitectura técnica",
+    timelineTitle: "Convergencia",
+    timelineOneTitle: "Aislamiento y diseño biotecnológico",
+    timelineTwoTitle: "Equilibrio natural y ruptura ecológica",
+    speciesTitle: "Especies",
+    speciesIntro: "Esta sección reúne la forma, función en el ecosistema y contexto biológico de las especies, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.",
+    all: "Todos",
+    galleryTitle: "Galería",
+    modalAlt: "Vista ampliada",
+    rights: "Todos los derechos reservados",
+  },
+  en: {
+    navAria: "Main navigation",
+    navTimeline: "Convergence",
+    navSpecies: "Species",
+    navGallery: "Gallery",
+    switchTo: "Switch language to Spanish",
+    lightMode: "Light mode",
+    darkMode: "Dark mode",
+    activateLight: "Enable light mode",
+    activateDark: "Enable dark mode",
+    heroTitle: "A scientific reading of impossible creatures",
+    heroLead: "An unofficial site about fictional species seen by humankind... and others created by its ambition.",
+    factTitle: "Fact of the day",
+    updated: "Updated",
+    more: "More",
+    aboutTitle: "About the project",
+    aboutIntro: "Discovering Dinos was born from a passion for paleontology and digital creativity. This project combines science, technology and visual experience to offer a unique immersion into the world of dinosaurs, exploring not only their anatomy and behavior, but also the ecology of the ecosystems they might have inhabited, so even fictional species are presented with a believable and detailed background.",
+    scientificTitle: "Scientific approach",
+    technicalTitle: "Technical architecture",
+    timelineTitle: "Convergence",
+    timelineOneTitle: "Isolation and biotechnological design",
+    timelineTwoTitle: "Natural balance and ecological rupture",
+    speciesTitle: "Species",
+    speciesIntro: "This section brings together each species' form, ecosystem role and biological context, analyzed through anatomical criteria, ecological coherence and biomechanical realism.",
+    all: "All",
+    galleryTitle: "Gallery",
+    modalAlt: "Expanded view",
+    rights: "All rights reserved",
+  },
+} as const;
+
 function normalizeTag(tag: string) {
   return tag.trim();
 }
@@ -42,6 +104,10 @@ export default function App() {
     document.documentElement.dataset.theme = theme;
   }, [theme]);
 
+  useEffect(() => {
+    document.documentElement.lang = language;
+  }, [language]);
+
   // Filtros + rotación
   const [filteredDinos, setFilteredDinos] = useState(dinos);
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -49,6 +115,8 @@ export default function App() {
 
   // Rotación Galería
   const [galleryIndex, setGalleryIndex] = useState(0);
+
+  const t = translations[language];
 
   const fact = useMemo(() => {
     const i = ((factIndex % facts.length) + facts.length) % facts.length;
@@ -106,7 +174,7 @@ const gallery = useMemo(
     { id: 47, src: "/images/venatosaurus-saevidicus-bones.jpg", caption: "Representación ósea del Venatosaurus saevidicus" },
     { id: 48, src: "/images/venatosaurus-saevidicus-illustration.jpg", caption: "Ilustración a mano alzada de un Venatosaurus saevidicus" },
     { id: 49, src: "/images/vultusaurus-bones.jpg", caption: "Representación ósea del Vultusaurus" },
-    { id: 50, src: "/images/vultusaurus-illustration.jpg", caption: "Ilustración de un Vultusaurus" }    
+    { id: 50, src: "/images/vultusaurus-illustration.jpg", caption: "Ilustración de un Vultusaurus" }
   ],
   []
 );
@@ -180,14 +248,14 @@ const gallery = useMemo(
             </div>
           </a>
 
-          <nav className="nav-links" aria-label="Navegación principal">
-            <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>Convergencia</button>
-            <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>Especies</button>
-            <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>Galería</button>
+          <nav className="nav-links" aria-label={t.navAria}>
+            <button className="nav-btn" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
+            <button className="nav-btn nav-primary" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
+            <button className="nav-btn" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
             <button
               className="nav-btn nav-toggle"
               type="button"
-              aria-label={`Cambiar idioma a ${language === "es" ? "inglés" : "español"}`}
+              aria-label={t.switchTo}
               aria-pressed={language === "en"}
               onClick={() => setLanguage((current) => (current === "es" ? "en" : "es"))}
             >
@@ -196,11 +264,11 @@ const gallery = useMemo(
             <button
               className="nav-btn nav-toggle nav-theme-toggle"
               type="button"
-              aria-label={`Activar ${theme === "dark" ? "modo claro" : "modo oscuro"}`}
+              aria-label={theme === "dark" ? t.activateLight : t.activateDark}
               aria-pressed={theme === "dark"}
               onClick={() => setTheme((current) => (current === "dark" ? "light" : "dark"))}
             >
-              {theme === "dark" ? "Modo claro" : "Modo oscuro"}
+              {theme === "dark" ? t.lightMode : t.darkMode}
             </button>
           </nav>
         </div>
@@ -212,18 +280,18 @@ const gallery = useMemo(
             <div className="card hero-card">
               <div className="hero-inner">
                 <div>
-                  <h1 className="h1">Una lectura científica de criaturas imposibles</h1>
+                  <h1 className="h1">{t.heroTitle}</h1>
                   <p className="lead">
-                    Sitio no oficial de las especies ficticias vistas por el hombre... y otras creadas por su ambición.
+                    {t.heroLead}
                   </p>
                 </div>
 
-                <aside className="hero-aside" aria-label="Dato destacado">
-                  <div className="fact-title"><strong>Curiosidad del día</strong></div>
+                <aside className="hero-aside" aria-label={t.factTitle}>
+                  <div className="fact-title"><strong>{t.factTitle}</strong></div>
                   <div className="fact">{fact}</div>
                   <div className="fact-footer">
-                    <span className="pill">Actualizado: {nowStamp()}</span>
-                    <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>Más</button>
+                    <span className="pill">{t.updated}: {nowStamp()}</span>
+                    <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>{t.more}</button>
                   </div>
                 </aside>
               </div>
@@ -233,14 +301,14 @@ const gallery = useMemo(
 
         <section id="sobre" className="section">
           <div className="container">
-            <h2 className="h2">Acerca del proyecto</h2>
+            <h2 className="h2">{t.aboutTitle}</h2>
             <p className="section-intro">
-              "Descubriendo Dinos" nace de la pasión por la paleontología y la creatividad digital. Este proyecto combina ciencia, tecnología y experiencia visual para ofrecer una inmersión única en el mundo de los dinosaurios, explorando no solo su anatomía y comportamiento, sino también la ecología de los ecosistemas que podrían haber habitado, de manera que incluso las especies ficticias se presentan con un trasfondo creíble y detallado.
+              {t.aboutIntro}
             </p>
-        
+
             <div className="cards">
               <div className="card">
-                <h3 className="card-title">Enfoque científico</h3>
+                <h3 className="card-title">{t.scientificTitle}</h3>
                 <p>
                   Cada especie es analizada siguiendo criterios de anatomía comparada y modelado biomecánico: estimamos masa corporal, centro de gravedad, tipo de locomoción, resistencia estructural y la función de su cráneo y dientes. Las criaturas inventadas se estudian bajo las mismas reglas que los fósiles reales, asegurando consistencia y plausibilidad.
                 </p>
@@ -251,9 +319,9 @@ const gallery = useMemo(
                   Este enfoque permite que los usuarios no solo observen a los dinosaurios, sino que comprendan cómo podrían haber interactuado entre sí y con su ambiente, haciendo de la exploración algo educativo y entretenido al mismo tiempo.
                 </p>
               </div>
-        
+
               <div className="card">
-                <h3 className="card-title">Arquitectura técnica</h3>
+                <h3 className="card-title">{t.technicalTitle}</h3>
                 <p>
                   El sitio está construido sobre <strong>React</strong> y <strong>TypeScript</strong>, lo que garantiza una base sólida, escalable y fácil de mantener a medida que el proyecto crece. Esto nos permite incorporar nuevas especies, rutas individuales por dinosaurio y filtros taxonómicos sin comprometer la estabilidad del sistema.
                 </p>
@@ -270,37 +338,37 @@ const gallery = useMemo(
             </div>
           </div>
         </section>
-        
+
         <section id="linea-tiempo" className="section">
           <div className="container">
-            <h2 className="h2">Convergencia</h2>      
+            <h2 className="h2">{t.timelineTitle}</h2>
           <div className="cards cards-2col">
             <article className="card timeline-card">
-              <strong className="timeline-title">Aislamiento y diseño biotecnológico</strong>
-          
+              <strong className="timeline-title">{t.timelineOneTitle}</strong>
+
               <div className="timeline-text">
                 <p>
                   En entornos de alta competencia, la selección natural favorece mayor tamaño, refuerzo estructural y defensas especializadas.
                 </p>
-                    
+
                 <p>
                   Mientras la evolución actúa durante millones de años, la manipulación deliberada del ADN responde a objetivos humanos concretos: aumentar masa, inteligencia o capacidad ofensiva. Así, la especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando especies distintas en origen pero comparables en impacto ecológico.
                 </p>
               </div>
             </article>
-          
+
             <article className="card timeline-card">
-              <strong className="timeline-title">Equilibrio natural y ruptura ecológica</strong>
-          
+              <strong className="timeline-title">{t.timelineTwoTitle}</strong>
+
               <div className="timeline-text">
                 <p>
                   Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo.
                 </p>
-                
+
                 <p>
                   Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.
                 </p>
-          
+
                 <p>
                   El resultado es un sistema mezclado, redefiniendo los límites entre la creación artificial, la naturaleza y la paleobiología tradicional.
                 </p>
@@ -312,19 +380,19 @@ const gallery = useMemo(
 
         <section id="explorar" className="section">
           <div className="container">
-            <h2 className="h2">Especies</h2>
+            <h2 className="h2">{t.speciesTitle}</h2>
             <p className="sub">
-              Esta sección reúne la forma, función en el ecosistema y contexto biológico de las especies, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.
+              {t.speciesIntro}
             </p>
 
             {/* Panel de filtros */}
-            <div className="filters" aria-label="Filtros de especies">
+            <div className="filters" aria-label={t.navSpecies}>
               <button
                 className={`pill ${activeFilter === null ? "pill-active" : ""}`}
                 onClick={() => setActiveFilter(null)}
                 type="button"
               >
-                Todos
+                {t.all}
               </button>
 
               {availableFilters.map((tag) => (
@@ -386,7 +454,7 @@ const gallery = useMemo(
 
         <section id="galeria" className="section">
           <div className="container">
-            <h2 className="h2">Galería</h2>
+            <h2 className="h2">{t.galleryTitle}</h2>
           <div className="gallery">
             <div className="gimg">
               <img
@@ -405,14 +473,14 @@ const gallery = useMemo(
       {selectedImage && (
         <div className="modal-overlay" onClick={() => setSelectedImage(null)}>
           <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-            <img src={selectedImage} alt="Vista ampliada" />
+            <img src={selectedImage} alt={t.modalAlt} />
           </div>
         </div>
       )}
 
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()} Todos los derechos reservados • Built with HTML5, CSS3, JavaScript, TypeScript, CoffeeScript, React.js • UX/UI Interface • Deployed on Vercel ®</small>
+          <small>© {new Date().getFullYear()} {t.rights} • Built with HTML5, CSS3, JavaScript, TypeScript, CoffeeScript, React.js • UX/UI Interface • Deployed on Vercel ®</small>
         </div>
       </footer>
     </>
