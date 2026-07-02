@@ -662,7 +662,7 @@ const gallery = useMemo(
 
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()} {t.rights} • Built with HTML5, CSS3, JavaScript, TypeScript, CoffeeScript, React.js • UX/UI Interface • Deployed on Vercel ®</small>
+          <small>© {new Date().getFullYear()} {t.rights} • Built with HTML5, CSS3, JavaScript, TypeScript, CoffeeScript & React.js • UX/UI Interface • Deployed on Vercel ®</small>
         </div>
       </footer>
     </>
