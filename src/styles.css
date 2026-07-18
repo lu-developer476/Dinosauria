@@ -509,6 +509,29 @@ section[id]{scroll-margin-top:90px}
     max-height:calc(100vh - 124px);
   }
 
+  .nav-menu-panel{
+    padding:8px;
+  }
+
+  .nav-submenu + .nav-submenu{
+    margin-top:6px;
+  }
+
+  .nav-submenu-summary{
+    min-height:28px;
+    padding:6px 8px;
+  }
+
+  .nav-menu-group{
+    gap:4px;
+    padding:0 6px 6px;
+  }
+
+  .nav-menu-option{
+    min-height:34px;
+    padding:6px 8px;
+  }
+
 
   .section{
     padding:64px 0;
