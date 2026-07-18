@@ -777,6 +777,10 @@ section[id]{scroll-margin-top:90px}
   cursor:not-allowed;
 }
 
+.select-field select option{
+  color:#000;
+}
+
 .encyclopedia-count{
   margin-top:12px;
 }
