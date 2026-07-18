@@ -20,11 +20,11 @@ const translations = {
     navGallery: "Galería",
     menuLabel: "Opciones",
     languageMenu: "Idiomas",
-    themeMenu: "Modo de color",
+    themeMenu: "Modo",
     spanish: "Español",
     english: "Inglés",
-    lightMode: "Modo claro",
-    darkMode: "Modo oscuro",
+    lightMode: "Claro",
+    darkMode: "Oscuro",
     heroTitle: "Una lectura científica de criaturas imposibles",
     heroLead: "Sitio no oficial de las especies ficticias vistas por el hombre... y otras creadas por su ambición.",
     factTitle: "Curiosidad del día",
@@ -72,11 +72,11 @@ const translations = {
     navGallery: "Gallery",
     menuLabel: "Options",
     languageMenu: "Languages",
-    themeMenu: "Color mode",
+    themeMenu: "Mode",
     spanish: "Spanish",
     english: "English",
-    lightMode: "Light mode",
-    darkMode: "Dark mode",
+    lightMode: "Light",
+    darkMode: "Dark",
     heroTitle: "A scientific reading of impossible creatures",
     heroLead: "An unofficial site about fictional species seen by humankind... and others created by its ambition.",
     factTitle: "Fact of the day",
@@ -364,52 +364,58 @@ const gallery = useMemo(
               </summary>
 
               <div className="nav-menu-panel">
-                <div className="nav-menu-group" aria-label={t.navAria}>
-                  <span className="nav-menu-title">{t.categoryMenu}</span>
-                  <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
-                  <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
-                  <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
-                </div>
+                <details className="nav-submenu" open>
+                  <summary className="nav-menu-title nav-submenu-summary">{t.categoryMenu}</summary>
+                  <div className="nav-menu-group" aria-label={t.navAria}>
+                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
+                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
+                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
+                  </div>
+                </details>
 
-                <div className="nav-menu-group" aria-label={t.languageMenu}>
-                  <span className="nav-menu-title">{t.languageMenu}</span>
-                  <button
-                    className={`nav-menu-option ${language === "es" ? "nav-menu-option-active" : ""}`}
-                    type="button"
-                    aria-pressed={language === "es"}
-                    onClick={() => setLanguage("es")}
-                  >
-                    🇪🇸 {t.spanish}
-                  </button>
-                  <button
-                    className={`nav-menu-option ${language === "en" ? "nav-menu-option-active" : ""}`}
-                    type="button"
-                    aria-pressed={language === "en"}
-                    onClick={() => setLanguage("en")}
-                  >
-                    🇺🇸 {t.english}
-                  </button>
-                </div>
+                <details className="nav-submenu" open>
+                  <summary className="nav-menu-title nav-submenu-summary">{t.languageMenu}</summary>
+                  <div className="nav-menu-group" aria-label={t.languageMenu}>
+                    <button
+                      className={`nav-menu-option ${language === "es" ? "nav-menu-option-active" : ""}`}
+                      type="button"
+                      aria-pressed={language === "es"}
+                      onClick={() => setLanguage("es")}
+                    >
+                      🇪🇸 {t.spanish}
+                    </button>
+                    <button
+                      className={`nav-menu-option ${language === "en" ? "nav-menu-option-active" : ""}`}
+                      type="button"
+                      aria-pressed={language === "en"}
+                      onClick={() => setLanguage("en")}
+                    >
+                      🇺🇸 {t.english}
+                    </button>
+                  </div>
+                </details>
 
-                <div className="nav-menu-group" aria-label={t.themeMenu}>
-                  <span className="nav-menu-title">{t.themeMenu}</span>
-                  <button
-                    className={`nav-menu-option ${theme === "dark" ? "nav-menu-option-active" : ""}`}
-                    type="button"
-                    aria-pressed={theme === "dark"}
-                    onClick={() => setTheme("dark")}
-                  >
-                    🌙 {t.darkMode}
-                  </button>
-                  <button
-                    className={`nav-menu-option ${theme === "light" ? "nav-menu-option-active" : ""}`}
-                    type="button"
-                    aria-pressed={theme === "light"}
-                    onClick={() => setTheme("light")}
-                  >
-                    ☀️ {t.lightMode}
-                  </button>
-                </div>
+                <details className="nav-submenu" open>
+                  <summary className="nav-menu-title nav-submenu-summary">{t.themeMenu}</summary>
+                  <div className="nav-menu-group" aria-label={t.themeMenu}>
+                    <button
+                      className={`nav-menu-option ${theme === "dark" ? "nav-menu-option-active" : ""}`}
+                      type="button"
+                      aria-pressed={theme === "dark"}
+                      onClick={() => setTheme("dark")}
+                    >
+                      🌙 {t.darkMode}
+                    </button>
+                    <button
+                      className={`nav-menu-option ${theme === "light" ? "nav-menu-option-active" : ""}`}
+                      type="button"
+                      aria-pressed={theme === "light"}
+                      onClick={() => setTheme("light")}
+                    >
+                      ☀️ {t.lightMode}
+                    </button>
+                  </div>
+                </details>
               </div>
             </details>
           </nav>
