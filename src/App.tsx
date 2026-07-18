@@ -1,6 +1,7 @@
 import { useMemo, useState, useEffect } from "react";
 import { smoothScrollTo } from "./utils/scroll";
 import { facts } from "./generated/funfacts";
+import { factsEn } from "./data/funfactsEn";
 import { dinos } from "./data/dinos";
 import { dinoTechnicalSheetsEn } from "./data/dinoTechnicalSheetsEn";
 
@@ -119,14 +120,8 @@ const translations = {
     timelineTwoBody: ["Natural ecosystems operate through life cycles and trophic relationships that sustain a dynamic balance across evolutionary time.", "When engineered organisms are introduced, that balance changes because they lack an adaptive history integrated into the environment.", "The result is a blended system that redefines the boundaries between artificial creation, nature, and traditional paleobiology."],
   },
 } as const;
-const englishFacts = [
-  "Fossil records are not complete albums; they are archives with torn-out pages.",
-  "Footprints tell stories bones cannot: behavior, speed, and direction.",
-  "Skull Island would be an extreme evolutionary laboratory shaped by ruthless selection.",
-  "Biomechanics sets limits: not every giant can run, but mass can still dominate.",
-  "Taphonomy explains how a body became a fossil: death, transport, burial, and mineralization.",
-  "Mass extinctions do not erase life; they change the rules of the game.",
-];
+const translatedFacts = factsEn;
+
 
 function normalizeTag(tag: string) {
   return tag.trim();
@@ -174,7 +169,7 @@ export default function App() {
   const t = translations[language];
 
   const fact = useMemo(() => {
-    const sourceFacts = language === "en" ? englishFacts : facts;
+    const sourceFacts = language === "en" ? translatedFacts : facts;
     const i = ((factIndex % sourceFacts.length) + sourceFacts.length) % sourceFacts.length;
     return sourceFacts[i];
   }, [factIndex, language]);
@@ -685,63 +680,16 @@ const gallery = useMemo(
     const description = String(dino.description ?? "");
     if (language === "es") return description;
 
-    const technicalLabels: Record<string, string> = {
-      "Género": "Genus",
-      "Masa estimada": "Estimated mass",
-      "Longitud": "Length",
-      "Altura": "Height",
-      "Locomoción": "Locomotion",
-      "Adaptaciones": "Adaptations",
-      "Comunicación": "Communication",
-      "Estrategias": "Strategies",
-      "Temperamento": "Temperament",
-    };
+    const [rawSheet = "", ...bodyParagraphs] = description.split(/\n\s*\n/);
+    const localizedSheet = dinoTechnicalSheetsEn[dino.id] ?? translateTechnicalValue(rawSheet);
+    const localizedBody = bodyParagraphs.map((paragraph) => translateTechnicalValue(paragraph.trim()));
 
-    const [rawSheet = "", ...bodyParagraphs] = description.split("\n\n");
-    const localizedSheet = dinoTechnicalSheetsEn[dino.id] ?? rawSheet;
-    const sheetParts = localizedSheet
-      .split(" | ")
-      .map((part) => {
-        const [label, ...valueParts] = part.split(":");
-        if (valueParts.length === 0) return translateTechnicalValue(part.trim());
-
-        const translatedLabel = technicalLabels[label.trim()] ?? label.trim();
-        const translatedValue = translateTechnicalValue(valueParts.join(":").trim());
-        return `${translatedLabel}: ${translatedValue}`;
-      });
-
-    const genus = sheetParts.find((part) => part.startsWith("Genus:"))?.replace("Genus:", "").trim() ?? dino.name;
-    const mass = sheetParts.find((part) => part.startsWith("Estimated mass:"))?.replace("Estimated mass:", "").trim();
-    const length = sheetParts.find((part) => part.startsWith("Length:"))?.replace("Length:", "").trim();
-    const height = sheetParts.find((part) => part.startsWith("Height:"))?.replace("Height:", "").trim();
-    const locomotion = sheetParts.find((part) => part.startsWith("Locomotion:"))?.replace("Locomotion:", "").trim();
-    const adaptations = sheetParts.find((part) => part.startsWith("Adaptations:"))?.replace("Adaptations:", "").trim();
-    const communication = sheetParts.find((part) => part.startsWith("Communication:"))?.replace("Communication:", "").trim();
-    const strategies = sheetParts.find((part) => part.startsWith("Strategies:"))?.replace("Strategies:", "").trim();
-    const temperament = sheetParts.find((part) => part.startsWith("Temperament:"))?.replace("Temperament:", "").trim();
-    const availableSpanishContext = bodyParagraphs.length;
-
-    const overview = [
-      `${dino.name} is presented as a ${translateCategory(dino.era).toLowerCase()} ${translateCategory(dino.diet).toLowerCase()} entry in the Dinosauria encyclopedia. The profile treats ${genus} as a speculative animal and describes it through anatomy, ecology, behavior, and biomechanical plausibility rather than as a simple gallery item.`,
-      [
-        mass && `Estimated mass: ${mass}`,
-        length && `length: ${length}`,
-        height && `height: ${height}`,
-        locomotion && `locomotion: ${locomotion}`,
-      ].filter(Boolean).join("; ") + ".",
-      adaptations ? `Key adaptations include ${adaptations}.` : "The available technical sheet does not list specific adaptations for this entry.",
-      [
-        communication && `Communication is described as ${communication}`,
-        strategies && `ecological strategies include ${strategies}`,
-        temperament && `temperament is characterized as ${temperament}`,
-      ].filter(Boolean).join("; ") + ".",
-      availableSpanishContext > 0
-        ? `This English view summarizes the full species note without falling back to Spanish-only paragraphs, so the encyclopedia remains readable when English is selected.`
-        : "This English view is generated from the available technical sheet.",
-    ].filter((paragraph) => paragraph && paragraph !== ".");
-
-    return [`Technical sheet: ${sheetParts.join(" | ")}`, ...overview].join("\n\n");
+    return [
+      `${t.technicalSheet}: ${localizedSheet}`,
+      ...localizedBody,
+    ].filter(Boolean).join("\n\n");
   };
+
 
 
   return (
