@@ -504,7 +504,30 @@ section[id]{scroll-margin-top:90px}
     left:0;
     right:0;
     width:auto;
-    max-height:calc(100vh - 152px);
+    max-height:calc(100vh - 124px);
+  }
+
+  .nav-menu-panel{
+    padding:8px;
+  }
+
+  .nav-submenu + .nav-submenu{
+    margin-top:6px;
+  }
+
+  .nav-submenu-summary{
+    min-height:28px;
+    padding:6px 8px;
+  }
+
+  .nav-menu-group{
+    gap:4px;
+    padding:0 6px 6px;
+  }
+
+  .nav-menu-option{
+    min-height:34px;
+    padding:6px 8px;
   }
 
   .section{
