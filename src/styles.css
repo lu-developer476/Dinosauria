@@ -16,6 +16,7 @@
     radial-gradient(900px 450px at 75% 0%, rgba(255,255,255,0.06), transparent 55%),
     linear-gradient(180deg, #070a0e, #0b0f14 40%, #06080b);
   --nav-bg: rgba(10,14,20,0.7);
+  --menu-bg: rgba(13,18,25,0.97);
 }
 
 :root[data-theme="light"]{
@@ -32,6 +33,7 @@
     radial-gradient(900px 450px at 80% 0%, rgba(116,75,35,0.18), transparent 55%),
     linear-gradient(180deg, #fbf0d4, #efe2c8 45%, #d6bd91);
   --nav-bg: rgba(239,226,200,0.84);
+  --menu-bg: rgba(249,238,211,0.98);
 }
 
 *{box-sizing:border-box}
@@ -131,12 +133,17 @@ section[id]{scroll-margin-top:90px}
   top:calc(100% + 10px);
   right:0;
   min-width:230px;
-  padding:14px;
+  padding:18px;
   border:1px solid var(--line);
   border-radius:16px;
-  background:var(--nav-bg);
+  background:var(--menu-bg);
   box-shadow:var(--shadow);
   backdrop-filter:saturate(140%) blur(14px);
+}
+
+.nav-menu[open] .nav-menu-button{
+  border-color:rgba(30,255,122,0.6);
+  background:rgba(30,255,122,0.12);
 }
 
 .nav-menu-group{
@@ -160,7 +167,7 @@ section[id]{scroll-margin-top:90px}
 
 .nav-menu-option{
   width:100%;
-  padding:10px 12px;
+  padding:13px 12px;
   border:1px solid var(--line);
   border-radius:12px;
   background:rgba(255,255,255,0.05);
