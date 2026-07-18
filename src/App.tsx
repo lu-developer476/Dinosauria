@@ -3,12 +3,12 @@ import { smoothScrollTo } from "./utils/scroll";
 import { facts } from "./generated/funfacts";
 import { dinos } from "./data/dinos";
 
-function nowStamp() {
-  const d = new Date();
-  const day = String(d.getDate()).padStart(2, "0");
-  const m = String(d.getMonth() + 1).padStart(2, "0");
-  const y = d.getFullYear();
-  return `${day}/${m}/${y}`;
+function nowStamp(language: "es" | "en") {
+  return new Intl.DateTimeFormat(language === "en" ? "en-US" : "es-ES", {
+    day: "2-digit",
+    month: "2-digit",
+    year: "numeric",
+  }).format(new Date());
 }
 
 
@@ -272,6 +272,54 @@ const gallery = useMemo(
     return labels[tag] ?? tag;
   };
 
+  const localizeGalleryCaption = (caption: string) => {
+    if (language === "es") return caption;
+
+    const exactCaptions: Record<string, string> = {
+      "Beta, la intrépida hija de la velociraptor Blue": "Beta, the intrepid daughter of the velociraptor Blue",
+      "Blue, la velociraptor genéticamente modificada, ex miembro de la 'Raptor Squad'. Protagonista de varias aventuras": "Blue, the genetically modified velociraptor, former member of the Raptor Squad and protagonist of several adventures",
+      "Charlie, velociraptor genéticamente modificado y ex miembro de la 'Raptor Squad'": "Charlie, a genetically modified velociraptor and former member of the Raptor Squad",
+      "Delta, velociraptor genéticamente modificado y ex miembro de la 'Raptor Squad'": "Delta, a genetically modified velociraptor and former member of the Raptor Squad",
+      "Echo, velociraptor genéticamente modificado y ex miembro de la 'Raptor Squad'": "Echo, a genetically modified velociraptor and former member of the Raptor Squad",
+    };
+
+    if (exactCaptions[caption]) return exactCaptions[caption];
+
+    return caption
+      .replaceAll("Ilustración a mano alzada de un", "Freehand illustration of a")
+      .replaceAll("Ilustración a mano alzada del", "Freehand illustration of the")
+      .replaceAll("Ilustración a color del", "Color illustration of the")
+      .replaceAll("Ilustración del grupo endogámico de", "Illustration of the inbred group of")
+      .replaceAll("Ilustración de una familia de", "Illustration of a family of")
+      .replaceAll("Ilustración de un", "Illustration of a")
+      .replaceAll("Ilustración del", "Illustration of the")
+      .replaceAll("Ilustración de", "Illustration of")
+      .replaceAll("Representación completa de la especie", "Full-body representation of the species")
+      .replaceAll("Representación completa de un", "Full-body representation of a")
+      .replaceAll("Representación ósea de un", "Skeletal representation of a")
+      .replaceAll("Representación ósea de", "Skeletal representation of")
+      .replaceAll("Representación ósea del", "Skeletal representation of the")
+      .replaceAll("Una variante del", "A variant of the")
+      .replaceAll("Una cría de", "A juvenile")
+      .replaceAll("Un macho", "A male")
+      .replaceAll("Una hembra", "A female")
+      .replaceAll("visto en la película", "seen in the film")
+      .replaceAll("antagonista de la película", "antagonist of the film")
+      .replaceAll("del 2005", "from 2005")
+      .replaceAll("Un pequeño grupo de", "A small group of")
+      .replaceAll("a punto de alimentarse", "about to feed")
+      .replaceAll("Un grupo de", "A group of")
+      .replaceAll("siendo cazados por crías de", "being hunted by juvenile")
+      .replaceAll("Un", "A")
+      .replaceAll("en posición de ataque", "in an attack stance")
+      .replaceAll("en posición defensiva", "in a defensive stance")
+      .replaceAll("en posición de acecho", "in a stalking posture")
+      .replaceAll("al acecho de su potencial presa", "stalking potential prey")
+      .replaceAll("haciendo notar su presencia mediante su grito", "making its presence known with its roar")
+      .replaceAll("fallecido", "deceased")
+      .replaceAll("Dismorfismo sexual de la especie", "Sexual dimorphism in the species")
+      .replaceAll("2° Generación", "2nd Generation");
+  };
 
   const displayedGallery = useMemo(() => {
     if (galleryScope === "all" || !selectedDino) return gallery;
@@ -312,32 +360,118 @@ const gallery = useMemo(
     });
   };
 
-  const localizeDescription = (description: string) => {
+  const translateTechnicalValue = (value: string) => {
+    const replacements: Array<[string, string]> = [
+      ["Holoceno", "Holocene"],
+      ["Carnívoro", "carnivore"],
+      ["Herbívoro", "herbivore"],
+      ["Omnívoro", "omnivore"],
+      ["Piscívoro", "piscivore"],
+      ["Insectívoro", "insectivore"],
+      ["Duróvoro", "durophage"],
+      ["desconocida", "unknown"],
+      ["No especificada", "not specified"],
+      ["aprox.", "approx."],
+      ["estimada", "estimated"],
+      ["estimado", "estimated"],
+      ["bípeda", "bipedal"],
+      ["bípedo", "bipedal"],
+      ["cuadrúpeda", "quadrupedal"],
+      ["cuadrúpedo", "quadrupedal"],
+      ["semi-cuadrúpeda", "semi-quadrupedal"],
+      ["terrestre", "terrestrial"],
+      ["acuática", "aquatic"],
+      ["nocturna", "nocturnal"],
+      ["solitario", "solitary"],
+      ["territorial", "territorial"],
+      ["defensivo", "defensive"],
+      ["defensiva", "defensive"],
+      ["depredadores", "predators"],
+      ["presas", "prey"],
+      ["manadas", "herds"],
+      ["grupos", "groups"],
+      ["piel", "skin"],
+      ["armadura", "armor"],
+      ["espinas", "spines"],
+      ["cola", "tail"],
+      ["cráneo", "skull"],
+      ["dientes", "teeth"],
+      ["garras", "claws"],
+      ["olfativa", "olfactory"],
+      ["visual", "visual"],
+      ["auditiva", "auditory"],
+      ["comunicación", "communication"],
+      ["caza", "hunting"],
+      ["alimentación", "feeding"],
+      ["defensa", "defense"],
+      ["cortejo", "courtship"],
+    ];
+
+    return replacements.reduce(
+      (text, [from, to]) => text.replaceAll(from, to),
+      value,
+    );
+  };
+
+  const localizeDescription = (dino: any) => {
+    const description = String(dino.description ?? "");
     if (language === "es") return description;
 
-    return description
-      .replaceAll("Género:", "Genus:")
-      .replaceAll("Masa estimada:", "Estimated mass:")
-      .replaceAll("Longitud:", "Length:")
-      .replaceAll("Altura:", "Height:")
-      .replaceAll("Locomoción:", "Locomotion:")
-      .replaceAll("Adaptaciones:", "Adaptations:")
-      .replaceAll("Comunicación:", "Communication:")
-      .replaceAll("Estrategias:", "Strategies:")
-      .replaceAll("Temperamento:", "Temperament:")
-      .replaceAll("desconocida", "unknown")
-      .replaceAll("No especificada", "Not specified")
-      .replaceAll("aprox.", "approx.")
-      .replaceAll("bípeda", "bipedal")
-      .replaceAll("cuadrúpeda", "quadrupedal")
-      .replaceAll("semi-cuadrúpeda", "semi-quadrupedal")
-      .replaceAll("Carnívoro", "Carnivore")
-      .replaceAll("Herbívoro", "Herbivore")
-      .replaceAll("Omnívoro", "Omnivore")
-      .replaceAll("Piscívoro", "Piscivore")
-      .replaceAll("Insectívoro", "Insectivore")
-      .replaceAll("Duróvoro", "Durophage")
-      .replaceAll("Holoceno", "Holocene");
+    const technicalLabels: Record<string, string> = {
+      "Género": "Genus",
+      "Masa estimada": "Estimated mass",
+      "Longitud": "Length",
+      "Altura": "Height",
+      "Locomoción": "Locomotion",
+      "Adaptaciones": "Adaptations",
+      "Comunicación": "Communication",
+      "Estrategias": "Strategies",
+      "Temperamento": "Temperament",
+    };
+
+    const [rawSheet = "", ...bodyParagraphs] = description.split("\n\n");
+    const sheetParts = rawSheet
+      .split(" | ")
+      .map((part) => {
+        const [label, ...valueParts] = part.split(":");
+        if (valueParts.length === 0) return translateTechnicalValue(part.trim());
+
+        const translatedLabel = technicalLabels[label.trim()] ?? label.trim();
+        const translatedValue = translateTechnicalValue(valueParts.join(":").trim());
+        return `${translatedLabel}: ${translatedValue}`;
+      });
+
+    const genus = sheetParts.find((part) => part.startsWith("Genus:"))?.replace("Genus:", "").trim() ?? dino.name;
+    const mass = sheetParts.find((part) => part.startsWith("Estimated mass:"))?.replace("Estimated mass:", "").trim();
+    const length = sheetParts.find((part) => part.startsWith("Length:"))?.replace("Length:", "").trim();
+    const height = sheetParts.find((part) => part.startsWith("Height:"))?.replace("Height:", "").trim();
+    const locomotion = sheetParts.find((part) => part.startsWith("Locomotion:"))?.replace("Locomotion:", "").trim();
+    const adaptations = sheetParts.find((part) => part.startsWith("Adaptations:"))?.replace("Adaptations:", "").trim();
+    const communication = sheetParts.find((part) => part.startsWith("Communication:"))?.replace("Communication:", "").trim();
+    const strategies = sheetParts.find((part) => part.startsWith("Strategies:"))?.replace("Strategies:", "").trim();
+    const temperament = sheetParts.find((part) => part.startsWith("Temperament:"))?.replace("Temperament:", "").trim();
+    const availableSpanishContext = bodyParagraphs.length;
+
+    const overview = [
+      `${dino.name} is presented as a ${translateCategory(dino.era).toLowerCase()} ${translateCategory(dino.diet).toLowerCase()} entry in the Dinosauria encyclopedia. The profile treats ${genus} as a speculative animal and describes it through anatomy, ecology, behavior, and biomechanical plausibility rather than as a simple gallery item.`,
+      [
+        mass && `Estimated mass: ${mass}`,
+        length && `length: ${length}`,
+        height && `height: ${height}`,
+        locomotion && `locomotion: ${locomotion}`,
+      ].filter(Boolean).join("; ") + ".",
+      adaptations ? `Key adaptations include ${adaptations}.` : "The available technical sheet does not list specific adaptations for this entry.",
+      [
+        communication && `Communication is described as ${communication}`,
+        strategies && `ecological strategies include ${strategies}`,
+        temperament && `temperament is characterized as ${temperament}`,
+      ].filter(Boolean).join("; ") + ".",
+      availableSpanishContext > 0
+        ? `This English view summarizes the full species note without falling back to Spanish-only paragraphs, so the encyclopedia remains readable when English is selected.`
+        : "This English view is generated from the available technical sheet.",
+    ].filter((paragraph) => paragraph && paragraph !== ".");
+
+    return [`Technical sheet: ${sheetParts.join(" | ")}`, ...overview].join("\n\n");
   };
 
 
@@ -438,7 +572,7 @@ const gallery = useMemo(
                   <div className="fact-title"><strong>{t.factTitle}</strong></div>
                   <div className="fact">{fact}</div>
                   <div className="fact-footer">
-                    <span className="pill">{t.updated}: {nowStamp()}</span>
+                    <span className="pill">{t.updated}: {nowStamp(language)}</span>
                     <button className="smallbtn" onClick={() => setFactIndex((v) => v + 1)}>{t.more}</button>
                   </div>
                 </aside>
@@ -603,7 +737,7 @@ const gallery = useMemo(
                 />
 
                 <div className="sub dino-text encyclopedia-text">
-                  {localizeDescription(String(selectedDino.description ?? ""))
+                  {localizeDescription(selectedDino)
                     .split("\n\n")
                     .map((paragraph: string, index: number) => (
                       <p key={index}>{paragraph}</p>
@@ -633,11 +767,11 @@ const gallery = useMemo(
               <div className="gimg">
                 <img
                   src={activeGalleryItem.src}
-                  alt={activeGalleryItem.caption}
+                  alt={localizeGalleryCaption(activeGalleryItem.caption)}
                   onClick={() => setSelectedImage(activeGalleryItem.src)}
                 />
                 <div className="gcap">
-                  {activeGalleryItem.caption}
+                  {localizeGalleryCaption(activeGalleryItem.caption)}
                   <span className="gallery-counter">{normalizedGalleryIndex + 1} / {displayedGallery.length}</span>
                 </div>
               </div>
