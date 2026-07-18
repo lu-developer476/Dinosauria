@@ -588,7 +588,7 @@ const gallery = useMemo(
               </summary>
 
               <div className="nav-menu-panel">
-                <details className="nav-submenu" open>
+                <details className="nav-submenu">
                   <summary className="nav-menu-title nav-submenu-summary">{t.categoryMenu}</summary>
                   <div className="nav-menu-group" aria-label={t.navAria}>
                     <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
@@ -597,7 +597,7 @@ const gallery = useMemo(
                   </div>
                 </details>
 
-                <details className="nav-submenu" open>
+                <details className="nav-submenu">
                   <summary className="nav-menu-title nav-submenu-summary">{t.languageMenu}</summary>
                   <div className="nav-menu-group" aria-label={t.languageMenu}>
                     <button
@@ -619,7 +619,7 @@ const gallery = useMemo(
                   </div>
                 </details>
 
-                <details className="nav-submenu" open>
+                <details className="nav-submenu">
                   <summary className="nav-menu-title nav-submenu-summary">{t.themeMenu}</summary>
                   <div className="nav-menu-group" aria-label={t.themeMenu}>
                     <button
