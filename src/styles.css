@@ -130,12 +130,14 @@ section[id]{scroll-margin-top:90px}
 
 .nav-menu-panel{
   position:absolute;
-  top:calc(100% + 10px);
+  top:calc(100% + 8px);
   right:0;
-  min-width:230px;
-  padding:18px;
+  width:min(210px, calc(100vw - 32px));
+  max-height:calc(100vh - 92px);
+  overflow:auto;
+  padding:10px;
   border:1px solid var(--line);
-  border-radius:16px;
+  border-radius:14px;
   background:var(--menu-bg);
   box-shadow:var(--shadow);
   backdrop-filter:saturate(140%) blur(14px);
@@ -146,20 +148,50 @@ section[id]{scroll-margin-top:90px}
   background:rgba(30,255,122,0.12);
 }
 
-.nav-menu-group{
-  display:grid;
-  gap:8px;
+.nav-submenu{
+  border:1px solid var(--line);
+  border-radius:12px;
+  background:rgba(255,255,255,0.03);
+  overflow:hidden;
 }
 
-.nav-menu-group + .nav-menu-group{
-  margin-top:14px;
-  padding-top:14px;
-  border-top:1px solid var(--line);
+.nav-submenu + .nav-submenu{
+  margin-top:8px;
+}
+
+.nav-submenu-summary{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:8px;
+  padding:10px 10px;
+  cursor:pointer;
+  list-style:none;
+}
+
+.nav-submenu-summary::after{
+  content:"▾";
+  font-size:11px;
+  transition:transform 0.2s ease;
+}
+
+.nav-submenu:not([open]) .nav-submenu-summary::after{
+  transform:rotate(-90deg);
+}
+
+.nav-submenu-summary::-webkit-details-marker{
+  display:none;
+}
+
+.nav-menu-group{
+  display:grid;
+  gap:6px;
+  padding:0 8px 8px;
 }
 
 .nav-menu-title{
   color:var(--muted);
-  font-size:12px;
+  font-size:11px;
   font-weight:700;
   letter-spacing:1.2px;
   text-transform:uppercase;
@@ -167,9 +199,9 @@ section[id]{scroll-margin-top:90px}
 
 .nav-menu-option{
   width:100%;
-  padding:13px 12px;
+  padding:10px 10px;
   border:1px solid var(--line);
-  border-radius:12px;
+  border-radius:10px;
   background:rgba(255,255,255,0.05);
   color:var(--text);
   cursor:pointer;
@@ -471,6 +503,8 @@ section[id]{scroll-margin-top:90px}
   .nav-menu-panel{
     left:0;
     right:0;
+    width:auto;
+    max-height:calc(100vh - 152px);
   }
 
   .section{
