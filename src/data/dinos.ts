@@ -164,7 +164,43 @@ Su distintivo volante, casi con forma de herradura, junto con su disposición de
 
 Entre sus depredadores se encuentran los Arsartis y Gladiodones.`
   },
-  
+
+  {
+    id: "bidensaurus-mactabilis",
+    name: "Bidensaurus mactabilis",
+    image: "/images/bidensaurus-mactabilis.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Carnívoro",
+    description: `Género: X | Masa estimada: desconocida, pequeña (aprox. 28-42 kg) | Longitud: 1.5-1.8 metros | Altura: X | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
+
+The Bidensaurus (Bidensaurus mactabilis -"deadly two-fanged lizard") is a small, striped, nocturnal gorgonopsid from the uplands of Skull Island. It measures 5-6 feet long (1.5-1.8 meters).
+
+The Bidensaurus is a dog-sized nocturnal predator closely related to the Lycaesaurus of the lowlands and the impressive fan-backed Gladiodon.
+
+In many ways, the Bidensaurus fulfills the same role as a Leopard to the Lycaesaurus' Hyenas and the Gladiodon's Tiger.
+
+These carnivores are solitary, except in the breeding season, when mated pairs might stay together for several months. A Bidensaurus uses an acute sense of smell to sniff out small or sleeping large prey in the dead of night.`
+  },
+
+  {
+    id: "bocaaguja",
+    name: "Bocaaguja",
+    image: "/images/needlemouth-acusos-cadaverosus.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Carnívoro",
+    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X
+
+The Needlemouth, Acusos cadaverosus ("ghastly needlemouth"), is an aggressive, predatory, gar-like holost from the swamps of Skull Island. It measures 9-13 feet long (2.7-3.9 meters).
+
+An aggressive predator of the rivers, the needlemouth is a gar-like holost found throughout the streams and tributaries of the island. Needlemouths are swift and maneuverable, able to navigate the leaf-chocked jungle streams in pursuit of their favored prey: smaller to medium-sized bony fish like Stink-fish (though they also jump to catch Swamp-wing). These impressive hunters are the sharks of the waterways. While many of the reptilian river carnivores are ambush predators, needlemouths chase down their fast-moving prey, matching their speed and turns in flat-out races.
+
+Groups of 3-9 Needlemouths are needed to chased down their fast-moving prey, reaching a top speed of 31-56mph and able to sustain such speeds for relatively long periods of time.
+
+They themselves can become prey to killer-eels.`
+  },
+
   {
     id: "brontosaurus-baxteri",
     name: "Brontosaurus excelsus o baxteri",
@@ -185,6 +221,24 @@ La reproducción era ovípara. Las hembras depositaban entre 10 y 20 huevos por 
 El crecimiento era rápido en etapas tempranas, favorecido por abundancia vegetal, pero la madurez sexual probablemente no se alcanzaba antes de los 25–30 años. La longevidad extendida compensaba la alta pérdida de crías.
 
 Actuaba como ingeniero ecológico dominante: abría corredores forestales, derribaba árboles maduros y redistribuía nutrientes mediante desplazamientos estacionales. Su presión de consumo modelaba la estructura vegetal de Isla Calavera y sostenía indirectamente a múltiples niveles tróficos.`
+  },
+
+  {
+    id: "brutornis",
+    name: "Brutornis",
+    image: "/images/brutornis.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Carnívoro",
+    description: `Género: X | Masa estimada: 500 kg | Longitud: 3.5 metros | Altura: X | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
+
+The Brutornis ("heavy bird") is a tall, heavy, pale-colored phorusrhacid from the lowland plains of Skull Island. It measures 6-7 feet tall to the hip and is 11.4 feet tall total and - true to its scientific name of heavy bird - half a ton in weight making it the largest and tallest bird in the world and the biggest carnivorous avian alive.
+
+The largest of Skull Island's flightless avian carnivores and the apex predator of the lowland plains, Brutornis is an impressive predator that runs down prey in the open scrublands. With keen sight, the phorusrhacid can detect small movements in the grasses that betray small prey hidden below. The huge, adze-like bill is driven by powerful muscles and exerts a bite terrible enough to kill most prey with a single chomp.
+
+Brutornis nest on the edges of the grassy areas, where their eggs remain concealed but the open ground permits the parent a view of potential threats. Mothers show intense vigilance in protecting their eggs, going without food for up to a month during incubation to remain at the nest. Chicks have camouflaged plumage for hiding and follow their mother when she hunts, until old enough to fend for themselves.
+
+Cunning Lycaesaurus have developed tactics to lure Brutornis mothers off their valuable eggs. Conspicuously approaching the nest to catch the bird’s eye, one Lycaesaurus will act as a decoy, luring the protective mother off her clutch while the other raids the unattended nest. A valuable protein source, the melon-sized eggs are worth the risk of teasing such a dangerous larger predator. The decoy individual has to judge its lead carefully: if it goes too far the Brutornis might abandon pursuit to return to her eggs, too close and the ploy can turn to disaster; the would-be egg thieves becoming dinner for the starving bird.
   },
 
   {
@@ -563,6 +617,22 @@ Para los adultos, el corto nado a través de un río o zona pantanosa no represe
   },
 
   {
+    id: "lycaesaurus-kirkii",
+    name: "Lycaesaurus kirkii",
+    image: "/images/lycaesaurus-kirkii.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Carnívoro",
+    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+
+The Lycaesaurus (Lycaesaurus kirkii, meaning "Kirk's wolf lizard") is a gregarious, lowland plains-dwelling gorgonopsid from Skull Island, likely descended from Lycaenops. It measures 4-5 feet long (1.2-1.5 meters). It is described on The World of Kong book (2005).
+
+The Lycaesaurus is an intelligent, dog-sized predator that hunts in the grasses. Mating for life, pairs dig burrows in the volcanic soil and line them with dry vegetation for their pups (most often twins). They take a wide range of prey, feeding on anything smaller than themselves, and often follow larger carnivores like V. rexes (even at the risk of being eaten by the tyrannosaurs) in the hopes of scavenging morsels from their kills, or using the cover of one of their attacks to grab undefended young dinosaurs, such as that of Ferrucutus.
+
+The cunning Lycaesaurus have developed tactics to lure Brutornis mothers off their valuable eggs. Conspicuously approaching the nest to catch the bird's eye, one Lycaesaurus will act as a decoy, luring the protective mother off her clutch while the other raids the unattended nest. A valuable protein source, the melon-sized eggs are worth the risk of teasing such a dangerous larger predator. The decoy individual has to judge its lead carefully. If it goes too far, the mother Brutornis might abandon pursuit to return to her eggs; too close and the ploy could turn to disaster, the would-be egg thieves becoming dinner for the starving parent bird.`
+  },
+
+  {
     id: "malevolusaurus-perditor",
     name: "Malevolusaurus perditor",
     image: "/images/malevolusaurus-perditor.jpg",
@@ -618,6 +688,22 @@ El Nefundusaurus también utiliza su tamaño para robar presas a carnívoros má
   },
 
   {
+    id: "noctupervagus-pinguis",
+    name: "Noctupervagus pinguis",
+    image: "/images/noctupervagus-pinguis.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Insectívoro",
+    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+
+The Noctupervagus pinguis (filthy rich wandering through night) is a large, flightless, nocturnal novaeratite from the jungles of Skull Island. It measures 5-6 feet high at the hip and is 9.8 feet tall in total (3 meters).
+
+The nocturnal Noctupervagus is a sharp-eyed forager amid the leaf litter of the jungle floor. With a powerful kick and - unlike the majority of birds - a saw-toothed beak, the bird is quite capable of defending itself from smaller predators and more than a match for the venomous centipedes, such as Megapede horridus, that it feeds on exclusively. Despite its size, the bird is able to delicately hold and dismember the centipedes with its foot and beak, removing the venomous mouthparts with a surgeon’s dexterity.
+
+To hide them from harm, Noctupervagus eggs are dark and covered in a rich membranous coating, ideal for the growth of small spores and mosses. Shortly after being laid, the eggs become covered in small plants and fungi, camouflaging them from predators like Dinocanisaurus while their mother feeds in the jungle nearby. The tradeoff for the protection is that the fungus and plant growth can cause difficulty for the young trying to hatch. Parental assistance is essential to a successful hatching.`
+  },
+
+  {
     id: "peracerdon-exitialis",
     name: "Peracerdon exitialis",
     image: "/images/peracerdon-exitialis.jpg",
@@ -633,6 +719,56 @@ Peracerdon posee una cabeza estrecha, similar a la de un dragón, y una cola lar
 Un hocico largo, armado con filas de dientes delgados y afilados como cuchillas, identifica a Peracerdon como un consumidor de peces, aunque también aprovecha aves marinas, huevos e incluso crías desprotegidas de lobo marino de la Isla Calavera (si tiene la oportunidad). Sus poderosas garras le permiten mantenerse firme incluso en las olas más violentas, permaneciendo estable en medio del fuerte oleaje. Por lo general, se queda inmóvil y, de repente, lanza la cabeza hacia abajo para capturar a su presa.
 
 Peracerdon puede atacar con rapidez utilizando sus largas garras delanteras o su hocico, que funciona como una trampa, para arrebatar presas de las pozas cercanas a la orilla y a lo largo del borde del agua. Su larga cola le da equilibrio mientras se aferra en la zona de rompiente, y sus ojos penetrantes atraviesan las olas para detectar peces y cangrejos.`
+  },
+
+  {
+    id: "noctupervagus-pinguis",
+    name: "Noctupervagus pinguis",
+    image: "/images/noctupervagus-pinguis.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Insectívoro",
+    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+
+The Noctupervagus pinguis (filthy rich wandering through night) is a large, flightless, nocturnal novaeratite from the jungles of Skull Island. It measures 5-6 feet high at the hip and is 9.8 feet tall in total (3 meters).
+
+The nocturnal Noctupervagus is a sharp-eyed forager amid the leaf litter of the jungle floor. With a powerful kick and - unlike the majority of birds - a saw-toothed beak, the bird is quite capable of defending itself from smaller predators and more than a match for the venomous centipedes, such as Megapede horridus, that it feeds on exclusively. Despite its size, the bird is able to delicately hold and dismember the centipedes with its foot and beak, removing the venomous mouthparts with a surgeon’s dexterity.
+
+To hide them from harm, Noctupervagus eggs are dark and covered in a rich membranous coating, ideal for the growth of small spores and mosses. Shortly after being laid, the eggs become covered in small plants and fungi, camouflaging them from predators like Dinocanisaurus while their mother feeds in the jungle nearby. The tradeoff for the protection is that the fungus and plant growth can cause difficulty for the young trying to hatch. Parental assistance is essential to a successful hatching.`
+  },
+
+  {
+    id: "pinnatono-amarus",
+    name: "Pinnatono amarus",
+    image: "/images/noctupervagus-pinguis.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Fructívoro",
+    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+
+The Pinnatono amarus ("unkind feathered thunder"), is a large, colorful, frugivorous, flightless, wingless, moa-like notopalaeognath from the jungles of Skull Island. It measures 5-6 feet tall to the hip and is 9.8 feet tall in total (3 meters). It is the largest bird of Skull Island that is not a Phorusrhacid.
+
+The Pinnatono is a flightless bird with a small head to reach inside thorny bushes for hidden berries and other fruit.
+
+Though outwardly defenseless, a Pinnatono has one ace up its feathered sleeve. Making up about a quarter of the Pinnatono’s diet is a rather noxious berry that most other species leave alone for its extremely hot flesh. Immune to its gut-scaring qualities, a Pinnatono bulk loads the fruit. In the acidic stomach of the bird it acquires newfound potency, giving off a foul gas that rises heavily from the feces, breath and pores.
+
+On command, a Pinnatono can recall its stomach contents into an inflatable gullet in its throat and regurgitate it, with surprising accuracy and projection, to discourage threats. Even the most armored of predators, like V.Rexes, will avoid the acidic pulp, which causes extreme discomfort to the eyes and other sensitive parts.`
+  },
+
+  {
+    id: "piranhadon-titanus",
+    name: "Piranhadon titanus",
+    image: "/images/piranhadon-titanus.jpg",
+    isCover: true,
+    era: "Holoceno",
+    diet: "Carnívoro",
+    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+
+The Piranhadon titanus ("titan piranha tooth") is a river-dwelling fish that specializes in taking its prey from the riverbanks when they come down to drink. It is one of the many creatures residing on Skull Island. At 14 tons and 15 meters long, Piranhadon is the world's largest carnivorous freshwater fish.
+
+Male Piranhadon are much smaller than the females and must compete to prove their worth as mates. Young are born live in groups of around a dozen. Already five feet long at birth, a juvenile Piranhadon is already a dangerous aquatic predator, and will devour water birds, fish, amphibians, small dinosaurs, and just about anything else it can catch, including larger terrestrial animals. An ambush predator, Piranhadon tends to lie in wait near the river banks, using its sensitive barbels to detect the approach of potential prey, as its eyes are poor and can only see differences between light and dark. A surge of its enormous body, and it will lunge out of the water, taking its prey in its jaws, either killing it with a massive bite or dragging it down below the surface to drown.
+
+Piranhadon also use their lunging ability and powerful pectoral fins to occasionally beach themselves on a shaded river bank. Once ashore, birds, lizards, and other scavengers will flock to the huge fish, picking it clean of innumerable parasites. They will remain there until heat, dryness, and the threat of suffocation forces them back in the water. Though they are the largest river predator on Skull Island and apex predator of the swamps, when hunting prey near the riverbanks, they should be alert at all time from Vastatosaurus rex where they themselves might fall prey. Female Piranhadon can be up to 50 feet long (15.2 meters), and weigh around 14 tons with a relatively narrow, eel-like tail, and a larger, muscular body. Males rarely grow to be longer than 20 feet in length (6 meters) and weigh around 2 tons. Coloration looks to be greenish-black above and white below. A dorsal fin runs the length of the Piranhadon's back, while two huge pectoral fins serve to steer its bulk. Two barbels depend from the fish's lower jaw, the mouth has numerous sharp, pointed teeth, each of which are about the size of an adult human's forearm.`
   },
 
    {
