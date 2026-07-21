@@ -52,9 +52,9 @@ const translations = {
     dinoLabel: "Entrada",
     selectDino: "Elegí un dinosaurio",
     encyclopediaTitle: "Entrada enciclopédica",
-    entriesAvailable: "entradas disponibles",
     entriesTotalLabel: "Entradas",
-    entriesFilteredLabel: "Coincidencias",
+    entriesFilteredLabelSingular: "coincidencia",
+    entriesFilteredLabelPlural: "coincidencias",
     noEntries: "No hay entradas para esta categoría.",
     technicalSheet: "Ficha técnica",
     openImage: "Ampliar imagen de",
@@ -106,9 +106,9 @@ const translations = {
     dinoLabel: "Entry",
     selectDino: "Choose a dinosaur",
     encyclopediaTitle: "Encyclopedia entry",
-    entriesAvailable: "available entries",
     entriesTotalLabel: "Dinosaur entries",
-    entriesFilteredLabel: "Filter matches",
+    entriesFilteredLabelSingular: "match",
+    entriesFilteredLabelPlural: "matches",
     noEntries: "There are no entries for this category.",
     technicalSheet: "Technical sheet",
     openImage: "Open image of",
@@ -328,6 +328,10 @@ const gallery = useMemo(
       .replaceAll("Dismorfismo sexual de la especie", "Sexual dimorphism in the species")
       .replaceAll("2° Generación", "2nd Generation");
   };
+
+  const filteredEntriesLabel = filteredDinos.length === 1
+    ? t.entriesFilteredLabelSingular
+    : t.entriesFilteredLabelPlural;
 
   const displayedGallery = useMemo(() => {
     if (galleryScope === "all" || !selectedDino) return gallery;
@@ -926,10 +930,12 @@ const gallery = useMemo(
                 <strong>{dinos.length}</strong>
                 <span>{t.entriesTotalLabel}</span>
               </span>
-              <span className="count-card count-card-accent">
-                <strong>{filteredDinos.length}</strong>
-                <span>{activeFilter ? t.entriesFilteredLabel : t.entriesAvailable}</span>
-              </span>
+              {activeFilter ? (
+                <span className="count-card count-card-accent">
+                  <strong>{filteredDinos.length}</strong>
+                  <span>{filteredEntriesLabel}</span>
+                </span>
+              ) : null}
             </div>
 
             {selectedDino ? (
