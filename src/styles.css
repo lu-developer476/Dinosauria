@@ -782,7 +782,42 @@ section[id]{scroll-margin-top:90px}
 }
 
 .encyclopedia-count{
-  margin-top:12px;
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+  margin-top:14px;
+}
+
+.count-card{
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  min-height:44px;
+  padding:8px 14px;
+  border:1px solid var(--line);
+  border-radius:14px;
+  background:var(--panel);
+  color:var(--muted);
+  font-size:12px;
+  font-weight:700;
+  letter-spacing:1px;
+  text-transform:uppercase;
+}
+
+.count-card strong{
+  color:var(--text);
+  font-family:'Rajdhani',sans-serif;
+  font-size:28px;
+  line-height:1;
+}
+
+.count-card-accent{
+  border-color:rgba(30,255,122,0.42);
+  background:rgba(30,255,122,0.1);
+}
+
+.count-card-accent strong{
+  color:var(--accent);
 }
 
 .encyclopedia-entry{
@@ -830,7 +865,13 @@ section[id]{scroll-margin-top:90px}
   }
 }
 
-:root[data-theme="light"] .select-field select{
+:root[data-theme="light"] .select-field select,
+:root[data-theme="light"] .count-card{
   background:rgba(255,244,210,0.72);
   border-color:rgba(106,70,25,0.35);
+}
+
+:root[data-theme="light"] .count-card-accent{
+  background:rgba(196,139,35,0.18);
+  border-color:rgba(126,80,18,0.45);
 }
