@@ -7,133 +7,117 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![CoffeeScript](https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=coffeescript&logoColor=white)
 
-Es una SPA profesional desarrollada con **React + TypeScript**, con utilidades en **JavaScript** y un módulo editorial escrito en **CoffeeScript** (compilado automáticamente en el build).
+Dinosauria es una SPA editorial e interactiva desarrollada con **React + TypeScript**, utilidades en **JavaScript** y un módulo de curiosidades escrito en **CoffeeScript** que se compila automáticamente durante el build.
 
-El proyecto combina divulgación, ficción especulativa y estructura técnica moderna, preparado para despliegue directo en **Vercel**.
+El proyecto combina divulgación, ficción especulativa y una interfaz bilingüe para explorar especies reales, ficticias e híbridas desde una lectura científica, anatómica y narrativa. Está preparado para despliegue directo en **Vercel**.
 
-## 🎯 Concepto
+## 🎯 Estado actual del proyecto
 
-Es una experiencia editorial interactiva que explora criaturas reales y ficticias desde una lectura científica y narrativa.
+- Aplicación de una sola página construida con Vite y React 18.
+- Interfaz bilingüe en español e inglés, con traducciones para navegación, contenido editorial, galería y fichas técnicas.
+- Selector de tema claro/oscuro aplicado a nivel de documento.
+- Landing inmersiva con navegación sticky, menú desplegable y scroll suave.
+- Secciones activas: Acerca del proyecto, Convergencia, Especies y Galería.
+- Sistema de “Curiosidad del día” con rotación manual y fecha dinámica localizada.
+- Enciclopedia de especies con filtros por categoría, dieta/era y selector de entrada individual.
+- Contador visible de entradas sobre dinosaurios en la sección Especies, incluyendo total del catálogo y cantidad afectada por los filtros activos.
+- Galería con navegación anterior/siguiente, contador de imágenes, alcance global o por especie y modal de ampliación.
+- Datos de catálogo, traducciones técnicas e imágenes organizados para seguir escalando el contenido.
 
-## Qué incluye
-
-- Landing inmersiva con navegación sticky y scroll suave.
-- Secciones: Convergencia, Especies, Galería.
-- Fichas con curiosidades, etimologías y contexto
-- Sistema de "Curiosidad del día"
-- Fecha dinámica en formato DD/MM/YYYY
-- Base preparada para escalar hacia catálogo completo con rutas dinámicas
-- Estructura lista para escalar a un catálogo con rutas, filtros y páginas de detalle
-- CoffeeScript integrado: `src/coffee/funfacts.coffee` se compila a `src/generated/funfacts.js`
-
-## 🧱 Stack Tecnológico
+## 🧱 Stack tecnológico
 
 - React 18
 - TypeScript
-- JavaScript (utilidades auxiliares)
-- CoffeeScript (módulo editorial compilado)
+- JavaScript para utilidades auxiliares
+- CoffeeScript para el módulo editorial compilado
 - Vite 5
+- CSS personalizado responsive
 
 ## 📦 Requisitos
 
--   Node.js 18+ (recomendado 20+)
--   npm 9+
-
-------------------------------------------------------------------------
+- Node.js 18+ (recomendado 20+)
+- npm 9+
 
 ## 🚀 Instalación
 
-``` bash
+```bash
 npm install
 ```
 
-------------------------------------------------------------------------
-
 ## 🧪 Desarrollo
 
-``` bash
+```bash
 npm run dev
 ```
 
 Abrí el navegador en la URL que Vite indique en consola.
 
-------------------------------------------------------------------------
+## 🏗 Build de producción
 
-## 🏗 Build de Producción
-
-``` bash
+```bash
 npm run build
 ```
 
 Este comando:
 
-- Compila CoffeeScript
-- Valida TypeScript
-- Genera el build optimizado de Vite
+- Compila `src/coffee/funfacts.coffee` hacia `src/generated/funfacts.js`.
+- Valida y transpila la aplicación React + TypeScript.
+- Genera el build optimizado de Vite en `dist/`.
 
-------------------------------------------------------------------------
+## ✅ Checks disponibles
 
-## 👀 Preview del Build
-
-``` bash
-npm run preview
+```bash
+npm run check:translations
+npm run build
 ```
 
-------------------------------------------------------------------------
+`check:translations` valida que las fichas técnicas tengan cobertura en inglés para las entradas del catálogo.
 
-## 🖼 Galería de Imágenes
+## 🖼 Galería de imágenes
 
-Las imágenes están ubicadas dentro de:
+Las imágenes públicas están ubicadas dentro de:
 
-    public/
+```text
+public/images/
+```
 
-Estructura pensada para escalar a:
+La galería puede mostrarse en modo global o enfocada en la especie seleccionada, reutilizando imágenes específicas cuando hay coincidencias por nombre o identificador.
 
--   /public/dinos/
--   /public/hibridos/
--   /public/skull-island/
--   /public/jurassic-world/
+## 📁 Estructura principal
 
-------------------------------------------------------------------------
+```text
+src/
+├── App.tsx
+├── main.tsx
+├── styles.css
+├── types.ts
+├── coffee/
+│   └── funfacts.coffee
+├── data/
+│   ├── dinos.ts
+│   ├── dinoTechnicalSheetsEn.ts
+│   └── funfactsEn.ts
+├── generated/
+│   └── funfacts.js
+└── utils/
+    └── scroll.js
+```
 
-## 📁 Estructura inicial del Proyecto
-
-    src/
-    │
-    ├── App.tsx
-    ├── styles.css
-    ├── data/dinos.ts
-    ├── utils/scroll.js
-    │
-    ├── coffee/
-    │   └── funfacts.coffee
-    │
-    └── generated/
-        └── funfacts.js
-
-El archivo `funfacts.js` se regenera automáticamente en cada build.
-
-------------------------------------------------------------------------
+El archivo `src/generated/funfacts.js` se regenera automáticamente en cada build.
 
 ## ☁ Deploy en Vercel
 
 - Framework: Vite
-- Build Command: npm run build
-- Output Directory: dist
+- Build Command: `npm run build`
+- Output Directory: `dist`
 
-Repositorio listo para deploy directo sin configuraciones adicionales.
+El repositorio está listo para deploy directo sin configuraciones adicionales.
 
-------------------------------------------------------------------------
+## 📈 Próximos pasos sugeridos
 
-## 📈 Escalabilidad Proyectada
-
-Dinosauria está diseñado para evolucionar hacia:
-
-- Ruteo dinámico con React Router
-- Filtros por categoría/universo
-- Páginas individuales por especie
-- Sistema de etiquetas (Natural / Híbrido / Ficticio)
-- Optimización de imágenes y carga diferida
-- Internacionalización futura
-
-------------------------------------------------------------------------
+- Ruteo dinámico con React Router.
+- Páginas individuales por especie.
+- Filtros taxonómicos más específicos.
+- Sistema de etiquetas ampliado para Natural / Híbrido / Ficticio.
+- Optimización de imágenes y carga diferida.
+- Internacionalización completa del contenido narrativo largo.

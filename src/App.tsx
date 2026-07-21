@@ -53,6 +53,8 @@ const translations = {
     selectDino: "Elegí un dinosaurio",
     encyclopediaTitle: "Entrada enciclopédica",
     entriesAvailable: "entradas disponibles",
+    entriesTotalLabel: "Entradas sobre dinosaurios",
+    entriesFilteredLabel: "Coincidencias con filtros",
     noEntries: "No hay entradas para esta categoría.",
     technicalSheet: "Ficha técnica",
     openImage: "Ampliar imagen de",
@@ -105,6 +107,8 @@ const translations = {
     selectDino: "Choose a dinosaur",
     encyclopediaTitle: "Encyclopedia entry",
     entriesAvailable: "available entries",
+    entriesTotalLabel: "Dinosaur entries",
+    entriesFilteredLabel: "Filter matches",
     noEntries: "There are no entries for this category.",
     technicalSheet: "Technical sheet",
     openImage: "Open image of",
@@ -917,9 +921,16 @@ const gallery = useMemo(
               </label>
             </div>
 
-            <p className="sub encyclopedia-count">
-              {filteredDinos.length} {t.entriesAvailable}
-            </p>
+            <div className="encyclopedia-count" aria-live="polite">
+              <span className="count-card">
+                <strong>{dinos.length}</strong>
+                <span>{t.entriesTotalLabel}</span>
+              </span>
+              <span className="count-card count-card-accent">
+                <strong>{filteredDinos.length}</strong>
+                <span>{activeFilter ? t.entriesFilteredLabel : t.entriesAvailable}</span>
+              </span>
+            </div>
 
             {selectedDino ? (
               <article className="card encyclopedia-entry">
