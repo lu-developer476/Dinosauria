@@ -172,35 +172,29 @@ Entre sus depredadores se encuentran los Arsartis y Gladiodones.`
     isCover: true,
     era: "Holoceno",
     diet: "Carnívoro",
-    description: `Género: X | Masa estimada: desconocida, pequeña (aprox. 28-42 kg) | Longitud: 1.5-1.8 metros | Altura: X | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
+    description: `Género: Bidensaurus | Masa estimada: 28–42 kg | Longitud: 1.5–1.8 metros | Altura: aprox. 0.6–0.8 metros al hombro | Locomoción: cuadrúpeda | Adaptaciones: colmillos tipo sable, cuerpo pequeño y rayado, olfato agudo, actividad nocturna | Comunicación: principalmente olfativa; contacto social limitado a parejas reproductivas | Estrategias: depredador nocturno solitario; rastreo de presas pequeñas o grandes presas dormidas en tierras altas | Temperamento: sigiloso, solitario y oportunista
 
-The Bidensaurus (Bidensaurus mactabilis -"deadly two-fanged lizard") is a small, striped, nocturnal gorgonopsid from the uplands of Skull Island. It measures 5-6 feet long (1.5-1.8 meters).
+Bidensaurus mactabilis (“lagarto mortal de dos colmillos”) es un pequeño gorgonópsido rayado y nocturno de las tierras altas de la Isla Calavera. Mide entre 5 y 6 pies de largo (1,5–1,8 metros) y pesa aproximadamente entre 28 y 42 kilogramos.
 
-The Bidensaurus is a dog-sized nocturnal predator closely related to the Lycaesaurus of the lowlands and the impressive fan-backed Gladiodon.
+Es un depredador del tamaño de un perro, estrechamente relacionado con el Lycaesaurus de las llanuras bajas y con el impresionante Gladiodon de lomo en abanico. Dentro del ecosistema de la isla ocupa un rol comparable al de un leopardo: más solitario y sigiloso que los Lycaesaurus gregarios, pero menos dominante que el gran Gladiodon.
 
-In many ways, the Bidensaurus fulfills the same role as a Leopard to the Lycaesaurus' Hyenas and the Gladiodon's Tiger.
-
-These carnivores are solitary, except in the breeding season, when mated pairs might stay together for several months. A Bidensaurus uses an acute sense of smell to sniff out small or sleeping large prey in the dead of night.`
+Los Bidensaurus son carnívoros solitarios durante la mayor parte del año. Solo en la temporada reproductiva las parejas apareadas pueden permanecer juntas durante varios meses. Gracias a su olfato agudo, recorren la oscuridad de la noche para detectar presas pequeñas o animales grandes dormidos, atacando cuando la ventaja del sigilo es máxima.`
   },
-
   {
-    id: "bocaaguja",
-    name: "Bocaaguja",
+    id: "needlemouth-acusos-cadaverosus",
+    name: "Needlemouth (Acusos cadaverosus)",
     image: "/images/needlemouth-acusos-cadaverosus.jpg",
     isCover: true,
     era: "Holoceno",
     diet: "Carnívoro",
-    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X
+    description: `Género: Acusos | Masa estimada: 190–320 kg | Longitud: 2.7–3.9 metros | Altura: acuático, no aplicable | Locomoción: natación rápida y maniobrable | Adaptaciones: cuerpo tipo pejelagarto, boca y dientes de agarre, alta velocidad sostenida, persecución coordinada | Comunicación: coordinación grupal durante persecuciones; no se describen vocalizaciones | Estrategias: grupos de 3–9 individuos persiguen peces óseos y aves de pantano en canales obstruidos por hojas | Temperamento: agresivo, veloz y depredador activo
 
-The Needlemouth, Acusos cadaverosus ("ghastly needlemouth"), is an aggressive, predatory, gar-like holost from the swamps of Skull Island. It measures 9-13 feet long (2.7-3.9 meters).
+Needlemouth, Acusos cadaverosus (“boca de aguja cadavérica”), es un holósteo depredador parecido a un pejelagarto que habita los pantanos, ríos y tributarios de la Isla Calavera. Mide entre 9 y 13 pies de largo (2,7–3,9 metros) y pesa aproximadamente entre 190 y 320 kilogramos.
 
-An aggressive predator of the rivers, the needlemouth is a gar-like holost found throughout the streams and tributaries of the island. Needlemouths are swift and maneuverable, able to navigate the leaf-chocked jungle streams in pursuit of their favored prey: smaller to medium-sized bony fish like Stink-fish (though they also jump to catch Swamp-wing). These impressive hunters are the sharks of the waterways. While many of the reptilian river carnivores are ambush predators, needlemouths chase down their fast-moving prey, matching their speed and turns in flat-out races.
+A diferencia de muchos carnívoros fluviales de la isla, que dependen de la emboscada, los Needlemouth son perseguidores activos. Son rápidos y maniobrables, capaces de desplazarse entre corrientes selváticas llenas de hojas mientras persiguen peces óseos pequeños y medianos, como los Stink-fish. También pueden saltar fuera del agua para capturar Swamp-wing en el aire.
 
-Groups of 3-9 Needlemouths are needed to chased down their fast-moving prey, reaching a top speed of 31-56mph and able to sustain such speeds for relatively long periods of time.
-
-They themselves can become prey to killer-eels.`
+Estos cazadores funcionan como los tiburones de las vías fluviales. En grupos de 3 a 9 individuos, alcanzan velocidades de 31 a 56 mph y pueden sostenerlas durante lapsos relativamente prolongados mientras igualan los giros de sus presas. Aun así, no están fuera de peligro: las killer-eels pueden depredarlos.`
   },
-
   {
     id: "brontosaurus-baxteri",
     name: "Brontosaurus excelsus o baxteri",
@@ -230,17 +224,16 @@ Actuaba como ingeniero ecológico dominante: abría corredores forestales, derri
     isCover: true,
     era: "Holoceno",
     diet: "Carnívoro",
-    description: `Género: X | Masa estimada: 500 kg | Longitud: 3.5 metros | Altura: X | Locomoción: x | Adaptaciones: x | Comunicación: x | Estrategias: x | Temperamento: x
+    description: `Género: Brutornis | Masa estimada: 500 kg | Longitud: aprox. 3.5 metros de altura total | Altura: 3.5 metros total; 1.8–2.1 metros a la cadera | Locomoción: bípeda corredora | Adaptaciones: pico enorme tipo azuela, patas poderosas, garras, vista aguda, plumaje pálido | Comunicación: señales visuales y conductas parentales; no se describen vocalizaciones específicas | Estrategias: persecución en matorrales abiertos; nidificación en bordes de pastizales con vigilancia extrema | Temperamento: depredador ápice, territorial y ferozmente protector del nido
 
-The Brutornis ("heavy bird") is a tall, heavy, pale-colored phorusrhacid from the lowland plains of Skull Island. It measures 6-7 feet tall to the hip and is 11.4 feet tall total and - true to its scientific name of heavy bird - half a ton in weight making it the largest and tallest bird in the world and the biggest carnivorous avian alive.
+Brutornis (“ave pesada”) es un forusrácido alto, pesado y de color claro que habitaba las llanuras bajas de la Isla Calavera. Medía entre 6 y 7 pies hasta la cadera y 11,4 pies de altura total (unos 3,5 metros), con una masa cercana a media tonelada. Por tamaño y peso, era el ave carnívora viva más grande de su mundo.
 
-The largest of Skull Island's flightless avian carnivores and the apex predator of the lowland plains, Brutornis is an impressive predator that runs down prey in the open scrublands. With keen sight, the phorusrhacid can detect small movements in the grasses that betray small prey hidden below. The huge, adze-like bill is driven by powerful muscles and exerts a bite terrible enough to kill most prey with a single chomp.
+Como el mayor carnívoro aviano no volador de la isla y depredador ápice de las llanuras bajas, Brutornis perseguía a sus presas en los matorrales abiertos. Su vista aguda le permitía detectar pequeños movimientos entre la hierba, y su enorme pico, impulsado por músculos poderosos, podía matar a la mayoría de sus presas con una sola mordida.
 
-Brutornis nest on the edges of the grassy areas, where their eggs remain concealed but the open ground permits the parent a view of potential threats. Mothers show intense vigilance in protecting their eggs, going without food for up to a month during incubation to remain at the nest. Chicks have camouflaged plumage for hiding and follow their mother when she hunts, until old enough to fend for themselves.
+Anidaba en los bordes de las zonas herbosas, donde los huevos quedaban ocultos pero el terreno abierto permitía vigilar amenazas. Las madres protegían el nido con extrema atención y podían pasar hasta un mes sin alimentarse durante la incubación. Los polluelos nacían con plumaje camuflado y seguían a la madre durante la caza hasta poder valerse por sí mismos.
 
-Cunning Lycaesaurus have developed tactics to lure Brutornis mothers off their valuable eggs. Conspicuously approaching the nest to catch the bird’s eye, one Lycaesaurus will act as a decoy, luring the protective mother off her clutch while the other raids the unattended nest. A valuable protein source, the melon-sized eggs are worth the risk of teasing such a dangerous larger predator. The decoy individual has to judge its lead carefully: if it goes too far the Brutornis might abandon pursuit to return to her eggs, too close and the ploy can turn to disaster; the would-be egg thieves becoming dinner for the starving bird.
+Los Lycaesaurus desarrollaron tácticas para robar sus huevos: un individuo actuaba como señuelo para alejar a la madre, mientras otro saqueaba el nido. La maniobra era peligrosa, porque un error de distancia podía convertir a los ladrones de huevos en la comida de una Brutornis hambrienta.`
   },
-
   {
     id: "calcarisaurus-ieiuniosus",
     name: "Calcarisaurus ieiuniosus",
@@ -623,15 +616,16 @@ Para los adultos, el corto nado a través de un río o zona pantanosa no represe
     isCover: true,
     era: "Holoceno",
     diet: "Carnívoro",
-    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+    description: `Género: Lycaesaurus | Masa estimada: 15–24 kg | Longitud: 1.2–1.5 metros | Altura: aprox. 0.5–0.7 metros al hombro | Locomoción: cuadrúpeda | Adaptaciones: velocidad, colmillos, garras, inteligencia social, excavación de madrigueras | Comunicación: coordinación social en parejas o pequeños grupos, señales visuales y olfativas probables | Estrategias: caza gregaria en pastizales, carroñeo oportunista, robo táctico de huevos de Brutornis | Temperamento: astuto, social, oportunista y audaz
 
-The Lycaesaurus (Lycaesaurus kirkii, meaning "Kirk's wolf lizard") is a gregarious, lowland plains-dwelling gorgonopsid from Skull Island, likely descended from Lycaenops. It measures 4-5 feet long (1.2-1.5 meters). It is described on The World of Kong book (2005).
+Lycaesaurus kirkii (“lagarto lobo de Kirk”) es un gorgonópsido gregario de las llanuras bajas de la Isla Calavera, probablemente descendiente de Lycaenops. Mide entre 4 y 5 pies de largo (1,2–1,5 metros) y pesa entre 15 y 24 kilogramos.
 
-The Lycaesaurus is an intelligent, dog-sized predator that hunts in the grasses. Mating for life, pairs dig burrows in the volcanic soil and line them with dry vegetation for their pups (most often twins). They take a wide range of prey, feeding on anything smaller than themselves, and often follow larger carnivores like V. rexes (even at the risk of being eaten by the tyrannosaurs) in the hopes of scavenging morsels from their kills, or using the cover of one of their attacks to grab undefended young dinosaurs, such as that of Ferrucutus.
+Es un depredador inteligente del tamaño de un perro que caza entre los pastizales. Las parejas se aparean de por vida, excavan madrigueras en el suelo volcánico y las forran con vegetación seca para sus crías, que suelen nacer como gemelos.
 
-The cunning Lycaesaurus have developed tactics to lure Brutornis mothers off their valuable eggs. Conspicuously approaching the nest to catch the bird's eye, one Lycaesaurus will act as a decoy, luring the protective mother off her clutch while the other raids the unattended nest. A valuable protein source, the melon-sized eggs are worth the risk of teasing such a dangerous larger predator. The decoy individual has to judge its lead carefully. If it goes too far, the mother Brutornis might abandon pursuit to return to her eggs; too close and the ploy could turn to disaster, the would-be egg thieves becoming dinner for the starving parent bird.`
+Su dieta es amplia: captura animales más pequeños que él y también sigue a grandes carnívoros, incluso Vastatosaurus rex, para aprovechar restos de sus presas o el caos de un ataque. En esas oportunidades puede arrebatar crías indefensas de dinosaurios como Ferrucutus.
+
+Los Lycaesaurus también roban huevos de Brutornis mediante engaños coordinados. Un individuo se deja ver para atraer a la madre fuera del nido, mientras otro saquea los huevos del tamaño de melones. La táctica exige precisión: si el señuelo se aleja demasiado, la Brutornis vuelve al nido; si se acerca demasiado, puede terminar siendo devorado.`
   },
-
   {
     id: "malevolusaurus-perditor",
     name: "Malevolusaurus perditor",
@@ -694,15 +688,14 @@ El Nefundusaurus también utiliza su tamaño para robar presas a carnívoros má
     isCover: true,
     era: "Holoceno",
     diet: "Insectívoro",
-    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+    description: `Género: Noctupervagus | Masa estimada: 300 kg | Longitud: 3 metros de altura total | Altura: 3 metros total; 1.5–1.8 metros a la cadera | Locomoción: bípeda no voladora | Adaptaciones: visión aguda nocturna, patada potente, pico dentado, precisión para desmembrar ciempiés venenosos | Comunicación: asistencia parental durante la eclosión; no se describen vocalizaciones específicas | Estrategias: forrajeo nocturno en hojarasca, dieta especializada en Megapede horridus, huevos camuflados por musgos y hongos | Temperamento: reservado pero capaz de defenderse con fuerza
 
-The Noctupervagus pinguis (filthy rich wandering through night) is a large, flightless, nocturnal novaeratite from the jungles of Skull Island. It measures 5-6 feet high at the hip and is 9.8 feet tall in total (3 meters).
+Noctupervagus pinguis (“rico sucio que vaga por la noche”, de traducción aproximada) es una gran ave novaeratita, nocturna, no voladora, procedente de las selvas de la Isla Calavera. Medía entre 5 y 6 pies a la cadera y 9,8 pies de altura total (3 metros), con una masa estimada de 300 kilogramos.
 
-The nocturnal Noctupervagus is a sharp-eyed forager amid the leaf litter of the jungle floor. With a powerful kick and - unlike the majority of birds - a saw-toothed beak, the bird is quite capable of defending itself from smaller predators and more than a match for the venomous centipedes, such as Megapede horridus, that it feeds on exclusively. Despite its size, the bird is able to delicately hold and dismember the centipedes with its foot and beak, removing the venomous mouthparts with a surgeon’s dexterity.
+El Noctupervagus forrajeaba de noche entre la hojarasca del suelo selvático. Sus ojos agudos, su poderosa patada y un pico dentado poco común entre aves lo hacían capaz de defenderse de depredadores menores. Su presa exclusiva eran ciempiés venenosos como Megapede horridus, que podía sujetar y desmembrar con el pie y el pico, retirando las piezas bucales venenosas con notable precisión.
 
-To hide them from harm, Noctupervagus eggs are dark and covered in a rich membranous coating, ideal for the growth of small spores and mosses. Shortly after being laid, the eggs become covered in small plants and fungi, camouflaging them from predators like Dinocanisaurus while their mother feeds in the jungle nearby. The tradeoff for the protection is that the fungus and plant growth can cause difficulty for the young trying to hatch. Parental assistance is essential to a successful hatching.`
+Sus huevos eran oscuros y estaban cubiertos por una membrana rica, adecuada para el crecimiento de esporas, musgos y hongos. Poco después de la puesta, quedaban camuflados por pequeñas plantas y hongos, reduciendo el riesgo ante depredadores como Dinocanisaurus. Esa protección tenía un costo: el crecimiento vegetal podía dificultar la eclosión, por lo que la ayuda parental era esencial.`
   },
-
   {
     id: "peracerdon-exitialis",
     name: "Peracerdon exitialis",
@@ -722,39 +715,20 @@ Peracerdon puede atacar con rapidez utilizando sus largas garras delanteras o su
   },
 
   {
-    id: "noctupervagus-pinguis",
-    name: "Noctupervagus pinguis",
-    image: "/images/noctupervagus-pinguis.jpg",
-    isCover: true,
-    era: "Holoceno",
-    diet: "Insectívoro",
-    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
-
-The Noctupervagus pinguis (filthy rich wandering through night) is a large, flightless, nocturnal novaeratite from the jungles of Skull Island. It measures 5-6 feet high at the hip and is 9.8 feet tall in total (3 meters).
-
-The nocturnal Noctupervagus is a sharp-eyed forager amid the leaf litter of the jungle floor. With a powerful kick and - unlike the majority of birds - a saw-toothed beak, the bird is quite capable of defending itself from smaller predators and more than a match for the venomous centipedes, such as Megapede horridus, that it feeds on exclusively. Despite its size, the bird is able to delicately hold and dismember the centipedes with its foot and beak, removing the venomous mouthparts with a surgeon’s dexterity.
-
-To hide them from harm, Noctupervagus eggs are dark and covered in a rich membranous coating, ideal for the growth of small spores and mosses. Shortly after being laid, the eggs become covered in small plants and fungi, camouflaging them from predators like Dinocanisaurus while their mother feeds in the jungle nearby. The tradeoff for the protection is that the fungus and plant growth can cause difficulty for the young trying to hatch. Parental assistance is essential to a successful hatching.`
-  },
-
-  {
     id: "pinnatono-amarus",
     name: "Pinnatono amarus",
-    image: "/images/noctupervagus-pinguis.jpg",
+    image: "/images/pinnatono-amarus.jpg",
     isCover: true,
     era: "Holoceno",
     diet: "Fructívoro",
-    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+    description: `Género: Pinnatono | Masa estimada: 450 kg | Longitud: 3 metros de altura total | Altura: 3 metros total; 1.5–1.8 metros a la cadera | Locomoción: bípeda no voladora | Adaptaciones: cabeza pequeña para alcanzar frutos entre arbustos espinosos, tolerancia a bayas cáusticas, buche inflable para regurgitar defensa ácida | Comunicación: señales visuales de ave grande; no se describen vocalizaciones específicas | Estrategias: ramoneo de frutos selváticos, carga de bayas nocivas y expulsión defensiva de pulpa ácida | Temperamento: normalmente pacífico, defensivo cuando es amenazado
 
-The Pinnatono amarus ("unkind feathered thunder"), is a large, colorful, frugivorous, flightless, wingless, moa-like notopalaeognath from the jungles of Skull Island. It measures 5-6 feet tall to the hip and is 9.8 feet tall in total (3 meters). It is the largest bird of Skull Island that is not a Phorusrhacid.
+Pinnatono amarus (“trueno emplumado cruel”) es una gran ave notopaleognata, colorida, frugívora, no voladora y sin alas, similar a un moa, procedente de las selvas de la Isla Calavera. Medía entre 5 y 6 pies hasta la cadera y 9,8 pies de altura total (3 metros), con unos 450 kilogramos de masa. Era el ave más grande de la isla que no pertenecía a los forusrácidos.
 
-The Pinnatono is a flightless bird with a small head to reach inside thorny bushes for hidden berries and other fruit.
+Su cabeza pequeña le permitía introducirse entre arbustos espinosos para alcanzar bayas y otros frutos ocultos. Aunque parecía indefenso, contaba con una defensa química notable: cerca de una cuarta parte de su dieta consistía en bayas extremadamente picantes o cáusticas que otras especies evitaban.
 
-Though outwardly defenseless, a Pinnatono has one ace up its feathered sleeve. Making up about a quarter of the Pinnatono’s diet is a rather noxious berry that most other species leave alone for its extremely hot flesh. Immune to its gut-scaring qualities, a Pinnatono bulk loads the fruit. In the acidic stomach of the bird it acquires newfound potency, giving off a foul gas that rises heavily from the feces, breath and pores.
-
-On command, a Pinnatono can recall its stomach contents into an inflatable gullet in its throat and regurgitate it, with surprising accuracy and projection, to discourage threats. Even the most armored of predators, like V.Rexes, will avoid the acidic pulp, which causes extreme discomfort to the eyes and other sensitive parts.`
+El Pinnatono era inmune a los efectos intestinales de esas bayas. En su estómago ácido, el fruto ganaba potencia y generaba gases fétidos que escapaban por heces, aliento y poros. Ante una amenaza, podía devolver el contenido estomacal hacia un buche inflable y regurgitarlo con precisión y alcance sorprendentes. Incluso depredadores acorazados como Vastatosaurus rex evitaban la pulpa ácida, irritante para ojos y tejidos sensibles.`
   },
-
   {
     id: "piranhadon-titanus",
     name: "Piranhadon titanus",
@@ -762,16 +736,17 @@ On command, a Pinnatono can recall its stomach contents into an inflatable gulle
     isCover: true,
     era: "Holoceno",
     diet: "Carnívoro",
-    description: `Género: X | Masa estimada: X | Longitud: X | Altura: X | Locomoción: X | Adaptaciones: X | Comunicación: X | Estrategias: X | Temperamento: X  
+    description: `Género: Piranhadon | Masa estimada: hembras hasta 14 toneladas; machos aprox. 2 toneladas | Longitud: hembras hasta 15.2 metros; machos hasta 6 metros | Altura: acuático, no aplicable | Locomoción: natación fluvial; embestidas y varamientos breves con aletas pectorales | Adaptaciones: barbillones sensitivos, ojos simples sensibles a luz y sombra, mordida enorme, dientes del tamaño de un antebrazo humano, aletas pectorales potentes | Comunicación: competencia entre machos; no se describen vocalizaciones | Estrategias: emboscada en riberas, captura de animales que bajan a beber, nacimiento vivíparo de crías grandes, varamiento para limpieza de parásitos | Temperamento: depredador ápice acuático, paciente y extremadamente peligroso
 
-The Piranhadon titanus ("titan piranha tooth") is a river-dwelling fish that specializes in taking its prey from the riverbanks when they come down to drink. It is one of the many creatures residing on Skull Island. At 14 tons and 15 meters long, Piranhadon is the world's largest carnivorous freshwater fish.
+Piranhadon titanus (“diente de piraña titán”) es un pez fluvial de la Isla Calavera especializado en capturar presas desde las riberas cuando se acercan a beber. Con hembras de hasta 15 metros y 14 toneladas, es presentado como el pez carnívoro de agua dulce más grande del mundo.
 
-Male Piranhadon are much smaller than the females and must compete to prove their worth as mates. Young are born live in groups of around a dozen. Already five feet long at birth, a juvenile Piranhadon is already a dangerous aquatic predator, and will devour water birds, fish, amphibians, small dinosaurs, and just about anything else it can catch, including larger terrestrial animals. An ambush predator, Piranhadon tends to lie in wait near the river banks, using its sensitive barbels to detect the approach of potential prey, as its eyes are poor and can only see differences between light and dark. A surge of its enormous body, and it will lunge out of the water, taking its prey in its jaws, either killing it with a massive bite or dragging it down below the surface to drown.
+La especie muestra dimorfismo sexual marcado: los machos son mucho más pequeños, rara vez superan los 20 pies (6 metros) y rondan las 2 toneladas. Compiten entre sí para demostrar su valor reproductivo. Las crías nacen vivas en camadas de alrededor de una docena y ya miden unos 5 pies al nacer, por lo que desde el inicio son depredadores peligrosos.
 
-Piranhadon also use their lunging ability and powerful pectoral fins to occasionally beach themselves on a shaded river bank. Once ashore, birds, lizards, and other scavengers will flock to the huge fish, picking it clean of innumerable parasites. They will remain there until heat, dryness, and the threat of suffocation forces them back in the water. Though they are the largest river predator on Skull Island and apex predator of the swamps, when hunting prey near the riverbanks, they should be alert at all time from Vastatosaurus rex where they themselves might fall prey. Female Piranhadon can be up to 50 feet long (15.2 meters), and weigh around 14 tons with a relatively narrow, eel-like tail, and a larger, muscular body. Males rarely grow to be longer than 20 feet in length (6 meters) and weigh around 2 tons. Coloration looks to be greenish-black above and white below. A dorsal fin runs the length of the Piranhadon's back, while two huge pectoral fins serve to steer its bulk. Two barbels depend from the fish's lower jaw, the mouth has numerous sharp, pointed teeth, each of which are about the size of an adult human's forearm.`
+Como cazador de emboscada, Piranhadon espera cerca de las orillas y usa sus barbillones sensitivos para detectar la aproximación de presas. Sus ojos son pobres y distinguen sobre todo contrastes de luz y oscuridad. Con una súbita embestida, sale del agua, atrapa a la víctima con las mandíbulas y la mata con una mordida masiva o la arrastra bajo la superficie para ahogarla.
+
+También puede impulsarse con sus aletas pectorales y vararse temporalmente en riberas sombreadas, donde aves, lagartos y otros carroñeros retiran sus parásitos. Debe volver al agua antes de sufrir por calor, sequedad o asfixia. Aunque domina los pantanos y ríos, incluso un Piranhadon puede caer presa de un Vastatosaurus rex si se expone demasiado cerca de la orilla.`
   },
-
-   {
+  {
     id: "pugiodorsus-squameus",
     name: "Pugiodorsus squameus",
     image: "/images/pugiodorsus-squameus.jpg",
@@ -786,7 +761,7 @@ El Pugiodorsus es un ornitisquio basal común, cubierto de placas óseas y con l
 
 La vigilancia constante es su mejor defensa, lo que obliga a los Carvers (y a otros depredadores como el Foetodon) a actuar con extremo sigilo, incluso durante la noche. Sus espinas afiladas en los hombros, orientadas hacia atrás para protegerlos de atacantes que los persiguen, obligan a los Carvers a ser cuidadosos al dar la mordida letal. Un cazador inteligente se asegura de morder bajo, apuntando al estómago o al cuello.`
   },
-  
+
   {
     id: "scimitodon-sagax",
     name: "Scimitodon sagax",
