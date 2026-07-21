@@ -225,7 +225,15 @@ const gallery = useMemo(
     { id: 47, src: "/images/venatosaurus-saevidicus-bones.jpg", caption: "Representación ósea del Venatosaurus saevidicus" },
     { id: 48, src: "/images/venatosaurus-saevidicus-illustration.jpg", caption: "Ilustración a mano alzada de un Venatosaurus saevidicus" },
     { id: 49, src: "/images/vultusaurus-bones.jpg", caption: "Representación ósea del Vultusaurus" },
-    { id: 50, src: "/images/vultusaurus-illustration.jpg", caption: "Ilustración de un Vultusaurus" }
+    { id: 50, src: "/images/vultusaurus-illustration.jpg", caption: "Ilustración de un Vultusaurus" },
+    { id: 51, src: "/images/bidensaurus-mactabilis.jpg", caption: "Ilustración del Bidensaurus mactabilis" },
+    { id: 52, src: "/images/brutornis-illustration.jpg", caption: "Ilustración del Brutornis" },
+    { id: 53, src: "/images/lycaesaurus-hunting.jpg", caption: "Lycaesaurus kirkii cazando en grupo" },
+    { id: 54, src: "/images/needlemouth-hunting.jpg", caption: "Needlemouth cazando en aguas de Isla Calavera" },
+    { id: 55, src: "/images/noctupervagus-eggs.jpg", caption: "Huevos camuflados de Noctupervagus pinguis" },
+    { id: 56, src: "/images/pinnatono-defending.jpg", caption: "Pinnatono amarus defendiéndose con pulpa ácida" },
+    { id: 57, src: "/images/pirahnadon-illustration.jpg", caption: "Ilustración del Piranhadon titanus" },
+    { id: 58, src: "/images/piranahdon-corpse.jpg", caption: "Cadáver de Piranhadon titanus en la ribera" }
   ],
   []
 );
