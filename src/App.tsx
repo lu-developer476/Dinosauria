@@ -738,8 +738,7 @@ const gallery = useMemo(
                   <div className="nav-menu-group" aria-label={t.navAria}>
                     <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
                     <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("sobre")}>{t.navAbout}</button>
-                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
-                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
+                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("ficha")}>{t.navSpecies}</button>
                   </div>
                 </details>
 
@@ -878,10 +877,10 @@ const gallery = useMemo(
         </div>       {/* cierre container */}
       </section>
 
-        <div className="profile-gallery-layout">
+        <div id="ficha" className="profile-gallery-layout">
+          <h2 className="h2 profile-gallery-title">{t.speciesTitle}</h2>
           <section id="explorar" className="section">
             <div className="container">
-              <h2 className="h2">{t.speciesTitle}</h2>
               <p className="sub">
                 {t.speciesIntro}
               </p>
@@ -999,7 +998,6 @@ const gallery = useMemo(
   
           <section id="galeria" className="section">
             <div className="container">
-              <h2 className="h2">{t.galleryTitle}</h2>
             {activeGalleryItem ? (
               <div className="gallery" aria-live="polite">
                 <button
