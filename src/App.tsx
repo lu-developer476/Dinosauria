@@ -33,7 +33,7 @@ const translations = {
     updated: "Actualizado",
     more: "Más",
     aboutTitle: "Acerca del proyecto",
-    aboutIntro: "Descubriendo Dinos nace de la pasión por la paleontología y la creatividad digital. Este proyecto combina ciencia, tecnología y experiencia visual para ofrecer una inmersión única en el mundo de los dinosaurios, explorando no solo su anatomía y comportamiento, sino también la ecología de los ecosistemas que podrían haber habitado, de manera que incluso las especies ficticias se presentan con un trasfondo creíble y detallado.",
+    aboutIntro: "Dinosauria nace de la pasión por la paleontología y la creatividad digital. Este proyecto combina ciencia, tecnología y experiencia visual para ofrecer una inmersión única en el mundo de los dinosaurios, explorando no solo su anatomía y comportamiento, sino también la ecología de los ecosistemas que podrían haber habitado, de manera que incluso las especies ficticias se presentan con un trasfondo creíble y detallado.",
     scientificTitle: "Enfoque científico",
     technicalTitle: "Arquitectura técnica",
     timelineTitle: "Convergencia",
@@ -87,7 +87,7 @@ const translations = {
     updated: "Updated",
     more: "More",
     aboutTitle: "About the project",
-    aboutIntro: "Discovering Dinos was born from a passion for paleontology and digital creativity. This project combines science, technology and visual experience to offer a unique immersion into the world of dinosaurs, exploring not only their anatomy and behavior, but also the ecology of the ecosystems they might have inhabited, so even fictional species are presented with a believable and detailed background.",
+    aboutIntro: "Dinosauria was born from a passion for paleontology and digital creativity. This project combines science, technology and visual experience to offer a unique immersion into the world of dinosaurs, exploring not only their anatomy and behavior, but also the ecology of the ecosystems they might have inhabited, so even fictional species are presented with a believable and detailed background.",
     scientificTitle: "Scientific approach",
     technicalTitle: "Technical architecture",
     timelineTitle: "Convergence",
@@ -719,7 +719,7 @@ const gallery = useMemo(
           >
             <div className="logo" aria-hidden="true">🧬 + 🦴</div>
             <div>
-              <div className="brand-title">🦖</div>
+              <div className="brand-title">Dinosauria</div>
               <div className="brand-sub">🦕</div>
             </div>
           </a>
