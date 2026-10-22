@@ -875,3 +875,87 @@ section[id]{scroll-margin-top:90px}
   background:rgba(196,139,35,0.18);
   border-color:rgba(126,80,18,0.45);
 }
+
+
+/* LECTURA EN Z: jerarquía visual y recorrido diagonal, sin alterar el hero principal */
+.reading-z > section:not(.hero) .container > .h2 {
+  max-width: 78%;
+  position: relative;
+  padding-bottom: 10px;
+}
+.reading-z > section:not(.hero) .container > .h2::after {
+  content: "";
+  display: block;
+  width: clamp(72px, 16%, 180px);
+  height: 3px;
+  margin-top: 8px;
+  background: var(--accent);
+  border-radius: 99px;
+}
+.reading-z > section:not(.hero):nth-of-type(odd) .container > .h2 {
+  margin-left: auto;
+  text-align: right;
+}
+.reading-z > section:not(.hero):nth-of-type(odd) .container > .h2::after {
+  margin-left: auto;
+}
+.reading-z .cards {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+.reading-z .cards > .card:nth-child(2n) { transform: translateY(22px); }
+.reading-z .cards > .card:nth-child(2n + 1) { transform: translateY(-4px); }
+
+/* Ficha y galería en una única fila, con alturas visualmente alineadas */
+.profile-gallery-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.05fr) minmax(0, 0.95fr);
+  align-items: stretch;
+  gap: 28px;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.profile-gallery-layout > .section { min-width: 0; padding: 48px 0; }
+.profile-gallery-layout > .section .container {
+  width: 100%;
+  max-width: none;
+  height: 100%;
+  padding: 0;
+}
+.profile-gallery-layout .encyclopedia-entry { height: calc(100% - 72px); }
+.profile-gallery-layout .gallery {
+  height: calc(100% - 72px);
+  min-height: 420px;
+  margin-top: 28px;
+}
+.profile-gallery-layout .gimg { display: flex; flex-direction: column; height: 100%; }
+.profile-gallery-layout .gimg img {
+  height: 0;
+  min-height: 300px;
+  flex: 1 1 auto;
+}
+@media (min-width: 1400px) { .profile-gallery-layout { max-width: 1280px; } }
+@media (max-width: 900px) {
+  .reading-z .cards { grid-template-columns: 1fr; }
+  .reading-z .cards > .card:nth-child(n) { transform: none; }
+  .profile-gallery-layout {
+    grid-template-columns: 1fr;
+    gap: 0;
+    padding: 0 24px;
+  }
+  .profile-gallery-layout > .section { padding: 36px 0; }
+  .profile-gallery-layout .encyclopedia-entry,
+  .profile-gallery-layout .gallery { height: auto; }
+  .profile-gallery-layout .gallery { min-height: 0; }
+  .profile-gallery-layout .gimg img {
+    height: min(56vh, 460px);
+    min-height: 0;
+    flex: initial;
+  }
+}
+@media (max-width: 600px) {
+  .profile-gallery-layout { padding: 0 18px; }
+  .reading-z > section:not(.hero) .container > .h2 { max-width: 100%; }
+}
