@@ -789,7 +789,7 @@ const gallery = useMemo(
         </div>
       </header>
 
-      <main id="top">
+      <main id="top" className="reading-z">
         <section className="hero">
           <div className="container">
             <div className="card hero-card">
@@ -875,163 +875,166 @@ const gallery = useMemo(
         </div>       {/* cierre container */}
       </section>
 
-        <section id="explorar" className="section">
-          <div className="container">
-            <h2 className="h2">{t.speciesTitle}</h2>
-            <p className="sub">
-              {t.speciesIntro}
-            </p>
-
-            <div className="encyclopedia-controls" aria-label={t.navSpecies}>
-              <label className="select-field">
-                <span>{t.categoryLabel}</span>
-                <select
-                  value={activeFilter ?? "all"}
-                  onChange={(event) => {
-                    const value = event.target.value;
-                    setActiveFilter(value === "all" ? null : value);
-                    setGalleryScope(value === "all" ? "all" : "dino");
-                  }}
-                >
-                  <option value="all">{t.all}</option>
-                  {availableFilters.map((tag) => (
-                    <option key={tag} value={tag}>
-                      {translateCategory(tag)}
-                    </option>
-                  ))}
-                </select>
-              </label>
-
-              <label className="select-field">
-                <span>{t.dinoLabel}</span>
-                <select
-                  value={selectedDinoId}
-                  onChange={(event) => {
-                    setSelectedDinoId(event.target.value);
-                    setGalleryScope("dino");
-                  }}
-                  disabled={filteredDinos.length === 0}
-                >
-                  {filteredDinos.length === 0 ? (
-                    <option value="">{t.noEntries}</option>
-                  ) : (
-                    filteredDinos.map((d: any) => (
-                      <option key={d.id} value={d.id}>
-                        {d.name}
+        <div className="profile-gallery-layout">
+          <section id="explorar" className="section">
+            <div className="container">
+              <h2 className="h2">{t.speciesTitle}</h2>
+              <p className="sub">
+                {t.speciesIntro}
+              </p>
+  
+              <div className="encyclopedia-controls" aria-label={t.navSpecies}>
+                <label className="select-field">
+                  <span>{t.categoryLabel}</span>
+                  <select
+                    value={activeFilter ?? "all"}
+                    onChange={(event) => {
+                      const value = event.target.value;
+                      setActiveFilter(value === "all" ? null : value);
+                      setGalleryScope(value === "all" ? "all" : "dino");
+                    }}
+                  >
+                    <option value="all">{t.all}</option>
+                    {availableFilters.map((tag) => (
+                      <option key={tag} value={tag}>
+                        {translateCategory(tag)}
                       </option>
-                    ))
-                  )}
-                </select>
-              </label>
-            </div>
-
-            <div className="encyclopedia-count" aria-live="polite">
-              <span className="count-card">
-                <strong>{dinos.length}</strong>
-                <span>{t.entriesTotalLabel}</span>
-              </span>
-              {activeFilter ? (
-                <span className="count-card count-card-accent">
-                  <strong>{filteredDinos.length}</strong>
-                  <span>{filteredEntriesLabel}</span>
-                </span>
-              ) : null}
-            </div>
-
-            {selectedDino ? (
-              <article className="card encyclopedia-entry">
-                <div className="entry-header">
-                  <div>
-                    <span className="entry-kicker">{t.encyclopediaTitle}</span>
-                    <h3 className="dino-title">{selectedDino.name}</h3>
-                  </div>
-
-                  <div className="badges entry-badges" aria-label={t.categoryLabel}>
-                    <button
-                      className={`badge ${activeFilter === selectedDino.era ? "badge-active" : ""}`}
-                      type="button"
-                      onClick={() => {
-                        setActiveFilter(selectedDino.era);
-                        setGalleryScope("dino");
-                      }}
-                    >
-                      {translateCategory(selectedDino.era)}
-                    </button>
-
-                    <button
-                      className={`badge ${activeFilter === selectedDino.diet ? "badge-active" : ""}`}
-                      type="button"
-                      onClick={() => {
-                        setActiveFilter(selectedDino.diet);
-                        setGalleryScope("dino");
-                      }}
-                    >
-                      {translateCategory(selectedDino.diet)}
-                    </button>
-                  </div>
-                </div>
-
-                <img
-                  src={(selectedDino as any).image}
-                  alt={`${t.openImage} ${selectedDino.name}`}
-                  className="dino-image encyclopedia-image"
-                  onClick={() => setSelectedImage((selectedDino as any).image)}
-                />
-
-                <div className="sub dino-text encyclopedia-text">
-                  {localizeDescription(selectedDino)
-                    .split("\n\n")
-                    .map((paragraph: string, index: number) => (
-                      <p key={index}>{paragraph}</p>
                     ))}
-                </div>
-              </article>
-            ) : (
-              <div className="card"><p>{t.noEntries}</p></div>
-            )}
-          </div>
-        </section>
-
-        <section id="galeria" className="section">
-          <div className="container">
-            <h2 className="h2">{t.galleryTitle}</h2>
-          {activeGalleryItem ? (
-            <div className="gallery" aria-live="polite">
-              <button
-                className="gallery-arrow gallery-arrow-left"
-                type="button"
-                aria-label={t.galleryPrevious}
-                onClick={() => moveGallery(-1)}
-              >
-                ‹
-              </button>
-
-              <div className="gimg">
-                <img
-                  src={activeGalleryItem.src}
-                  alt={localizeGalleryCaption(activeGalleryItem.caption)}
-                  onClick={() => setSelectedImage(activeGalleryItem.src)}
-                />
-                <div className="gcap">
-                  {localizeGalleryCaption(activeGalleryItem.caption)}
-                  <span className="gallery-counter">{normalizedGalleryIndex + 1} / {displayedGallery.length}</span>
-                </div>
+                  </select>
+                </label>
+  
+                <label className="select-field">
+                  <span>{t.dinoLabel}</span>
+                  <select
+                    value={selectedDinoId}
+                    onChange={(event) => {
+                      setSelectedDinoId(event.target.value);
+                      setGalleryScope("dino");
+                    }}
+                    disabled={filteredDinos.length === 0}
+                  >
+                    {filteredDinos.length === 0 ? (
+                      <option value="">{t.noEntries}</option>
+                    ) : (
+                      filteredDinos.map((d: any) => (
+                        <option key={d.id} value={d.id}>
+                          {d.name}
+                        </option>
+                      ))
+                    )}
+                  </select>
+                </label>
               </div>
-
-              <button
-                className="gallery-arrow gallery-arrow-right"
-                type="button"
-                aria-label={t.galleryNext}
-                onClick={() => moveGallery(1)}
-              >
-                ›
-              </button>
+  
+              <div className="encyclopedia-count" aria-live="polite">
+                <span className="count-card">
+                  <strong>{dinos.length}</strong>
+                  <span>{t.entriesTotalLabel}</span>
+                </span>
+                {activeFilter ? (
+                  <span className="count-card count-card-accent">
+                    <strong>{filteredDinos.length}</strong>
+                    <span>{filteredEntriesLabel}</span>
+                  </span>
+                ) : null}
+              </div>
+  
+              {selectedDino ? (
+                <article className="card encyclopedia-entry">
+                  <div className="entry-header">
+                    <div>
+                      <span className="entry-kicker">{t.encyclopediaTitle}</span>
+                      <h3 className="dino-title">{selectedDino.name}</h3>
+                    </div>
+  
+                    <div className="badges entry-badges" aria-label={t.categoryLabel}>
+                      <button
+                        className={`badge ${activeFilter === selectedDino.era ? "badge-active" : ""}`}
+                        type="button"
+                        onClick={() => {
+                          setActiveFilter(selectedDino.era);
+                          setGalleryScope("dino");
+                        }}
+                      >
+                        {translateCategory(selectedDino.era)}
+                      </button>
+  
+                      <button
+                        className={`badge ${activeFilter === selectedDino.diet ? "badge-active" : ""}`}
+                        type="button"
+                        onClick={() => {
+                          setActiveFilter(selectedDino.diet);
+                          setGalleryScope("dino");
+                        }}
+                      >
+                        {translateCategory(selectedDino.diet)}
+                      </button>
+                    </div>
+                  </div>
+  
+                  <img
+                    src={(selectedDino as any).image}
+                    alt={`${t.openImage} ${selectedDino.name}`}
+                    className="dino-image encyclopedia-image"
+                    onClick={() => setSelectedImage((selectedDino as any).image)}
+                  />
+  
+                  <div className="sub dino-text encyclopedia-text">
+                    {localizeDescription(selectedDino)
+                      .split("\n\n")
+                      .map((paragraph: string, index: number) => (
+                        <p key={index}>{paragraph}</p>
+                      ))}
+                  </div>
+                </article>
+              ) : (
+                <div className="card"><p>{t.noEntries}</p></div>
+              )}
             </div>
-          ) : (
-            <div className="card"><p>{t.galleryEmpty}</p></div>
-          )}
-          </div>
-        </section>
+          </section>
+  
+  
+          <section id="galeria" className="section">
+            <div className="container">
+              <h2 className="h2">{t.galleryTitle}</h2>
+            {activeGalleryItem ? (
+              <div className="gallery" aria-live="polite">
+                <button
+                  className="gallery-arrow gallery-arrow-left"
+                  type="button"
+                  aria-label={t.galleryPrevious}
+                  onClick={() => moveGallery(-1)}
+                >
+                  ‹
+                </button>
+  
+                <div className="gimg">
+                  <img
+                    src={activeGalleryItem.src}
+                    alt={localizeGalleryCaption(activeGalleryItem.caption)}
+                    onClick={() => setSelectedImage(activeGalleryItem.src)}
+                  />
+                  <div className="gcap">
+                    {localizeGalleryCaption(activeGalleryItem.caption)}
+                    <span className="gallery-counter">{normalizedGalleryIndex + 1} / {displayedGallery.length}</span>
+                  </div>
+                </div>
+  
+                <button
+                  className="gallery-arrow gallery-arrow-right"
+                  type="button"
+                  aria-label={t.galleryNext}
+                  onClick={() => moveGallery(1)}
+                >
+                  ›
+                </button>
+              </div>
+            ) : (
+              <div className="card"><p>{t.galleryEmpty}</p></div>
+            )}
+            </div>
+          </section>
+        </div>
       </main>
 
       {selectedImage && (
