@@ -18,8 +18,9 @@ const translations = {
   es: {
     navAria: "Navegación principal",
     navTimeline: "Convergencia",
-    navSpecies: "Especies",
-    navGallery: "Galería",
+    navAbout: "Historia",
+    navSpecies: "Ficha",
+    navGallery: "Ficha",
     menuLabel: "Opciones",
     languageMenu: "Idiomas",
     themeMenu: "Modo",
@@ -32,17 +33,17 @@ const translations = {
     factTitle: "Curiosidad del día",
     updated: "Actualizado",
     more: "Más",
-    aboutTitle: "Acerca del proyecto",
+    aboutTitle: "Historia",
     aboutIntro: "Dinosauria nace de la pasión por la paleontología y la creatividad digital. Este proyecto combina ciencia, tecnología y experiencia visual para ofrecer una inmersión única en el mundo de los dinosaurios, explorando no solo su anatomía y comportamiento, sino también la ecología de los ecosistemas que podrían haber habitado, de manera que incluso las especies ficticias se presentan con un trasfondo creíble y detallado.",
     scientificTitle: "Enfoque científico",
     technicalTitle: "Arquitectura técnica",
     timelineTitle: "Convergencia",
     timelineOneTitle: "Aislamiento y diseño biotecnológico",
     timelineTwoTitle: "Equilibrio natural y ruptura ecológica",
-    speciesTitle: "Especies",
+    speciesTitle: "Ficha",
     speciesIntro: "Esta sección reúne la forma, función en el ecosistema y contexto biológico de las especies, analizados con criterios anatómicos, coherencia ecológica y realismo biomecánico.",
     all: "Todos",
-    galleryTitle: "Galería",
+    galleryTitle: "Ficha",
     galleryPrevious: "Imagen anterior",
     galleryNext: "Imagen siguiente",
     galleryEmpty: "No hay imágenes de galería para esta selección.",
@@ -72,8 +73,9 @@ const translations = {
   en: {
     navAria: "Main navigation",
     navTimeline: "Convergence",
-    navSpecies: "Species",
-    navGallery: "Gallery",
+    navAbout: "History",
+    navSpecies: "Profile",
+    navGallery: "Profile",
     menuLabel: "Options",
     languageMenu: "Languages",
     themeMenu: "Mode",
@@ -86,17 +88,17 @@ const translations = {
     factTitle: "Fact of the day",
     updated: "Updated",
     more: "More",
-    aboutTitle: "About the project",
+    aboutTitle: "History",
     aboutIntro: "Dinosauria was born from a passion for paleontology and digital creativity. This project combines science, technology and visual experience to offer a unique immersion into the world of dinosaurs, exploring not only their anatomy and behavior, but also the ecology of the ecosystems they might have inhabited, so even fictional species are presented with a believable and detailed background.",
     scientificTitle: "Scientific approach",
     technicalTitle: "Technical architecture",
     timelineTitle: "Convergence",
     timelineOneTitle: "Isolation and biotechnological design",
     timelineTwoTitle: "Natural balance and ecological rupture",
-    speciesTitle: "Species",
+    speciesTitle: "Profile",
     speciesIntro: "This section brings together each species' form, ecosystem role and biological context, analyzed through anatomical criteria, ecological coherence and biomechanical realism.",
     all: "All",
-    galleryTitle: "Gallery",
+    galleryTitle: "Profile",
     galleryPrevious: "Previous image",
     galleryNext: "Next image",
     galleryEmpty: "There are no gallery images for this selection.",
@@ -735,6 +737,7 @@ const gallery = useMemo(
                   <summary className="nav-menu-title nav-submenu-summary">{t.categoryMenu}</summary>
                   <div className="nav-menu-group" aria-label={t.navAria}>
                     <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("linea-tiempo")}>{t.navTimeline}</button>
+                    <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("sobre")}>{t.navAbout}</button>
                     <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("explorar")}>{t.navSpecies}</button>
                     <button className="nav-menu-option" type="button" onClick={() => smoothScrollTo("galeria")}>{t.navGallery}</button>
                   </div>
