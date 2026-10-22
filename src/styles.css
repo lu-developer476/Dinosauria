@@ -959,3 +959,19 @@ section[id]{scroll-margin-top:90px}
   .profile-gallery-layout { padding: 0 18px; }
   .reading-z > section:not(.hero) .container > .h2 { max-width: 100%; }
 }
+
+
+/* Alturas uniformes para las parejas de tarjetas editoriales */
+.reading-z #sobre .cards,
+.reading-z #linea-tiempo .cards {
+  align-items: stretch;
+}
+.reading-z #sobre .cards > .card,
+.reading-z #linea-tiempo .cards > .timeline-card {
+  height: 100%;
+  min-width: 0;
+}
+.reading-z #sobre .cards > .card,
+.reading-z #linea-tiempo .cards > .timeline-card {
+  transform: none;
+}
