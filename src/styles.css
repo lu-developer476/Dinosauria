@@ -1062,6 +1062,35 @@ section[id]{scroll-margin-top:90px}
   background: var(--accent);
   border-radius: 99px;
 }
+
+/* La introducción de Ficha ocupa todo el ancho antes de las dos columnas */
+.profile-gallery-layout > .profile-gallery-intro {
+  grid-column: 1 / -1;
+  width: 100%;
+  max-width: none;
+  margin: 0;
+  text-align: justify;
+}
+.profile-gallery-layout > #explorar,
+.profile-gallery-layout > #galeria {
+  align-self: stretch;
+}
+.profile-gallery-layout .encyclopedia-entry,
+.profile-gallery-layout .gallery,
+.profile-gallery-layout .gimg {
+  box-sizing: border-box;
+}
+.encyclopedia-count.filter-count-enter {
+  animation: filterCountIn 320ms cubic-bezier(.2,.75,.25,1) both;
+  transform-origin: top left;
+}
+@keyframes filterCountIn {
+  from { opacity: 0; transform: translateY(-8px) scale(.97); }
+  to { opacity: 1; transform: translateY(0) scale(1); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .encyclopedia-count.filter-count-enter { animation: none; }
+}
 @media (max-width: 600px) {
   .profile-gallery-layout > .profile-gallery-title { max-width: 100%; }
 }
