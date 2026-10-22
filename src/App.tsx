@@ -879,11 +879,11 @@ const gallery = useMemo(
 
         <div id="ficha" className="profile-gallery-layout">
           <h2 className="h2 profile-gallery-title">{t.speciesTitle}</h2>
+          <p className="sub profile-gallery-intro">
+            {t.speciesIntro}
+          </p>
           <section id="explorar" className="section">
             <div className="container">
-              <p className="sub">
-                {t.speciesIntro}
-              </p>
   
               <div className="encyclopedia-controls" aria-label={t.navSpecies}>
                 <label className="select-field">
@@ -928,18 +928,14 @@ const gallery = useMemo(
                 </label>
               </div>
   
-              <div className="encyclopedia-count" aria-live="polite">
-                <span className="count-card">
-                  <strong>{dinos.length}</strong>
-                  <span>{t.entriesTotalLabel}</span>
-                </span>
-                {activeFilter ? (
+              {activeFilter ? (
+                <div key={activeFilter} className="encyclopedia-count filter-count-enter" aria-live="polite">
                   <span className="count-card count-card-accent">
                     <strong>{filteredDinos.length}</strong>
                     <span>{filteredEntriesLabel}</span>
                   </span>
-                ) : null}
-              </div>
+                </div>
+              ) : null}
   
               {selectedDino ? (
                 <article className="card encyclopedia-entry">
