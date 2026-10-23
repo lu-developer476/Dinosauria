@@ -1112,3 +1112,45 @@ section[id]{scroll-margin-top:90px}
     grid-template-columns: 1fr;
   }
 }
+
+/* Orden explícito de la sección Ficha: intro, filtros a ancho completo y luego tarjetas alineadas */
+.profile-gallery-layout > .encyclopedia-filter-row {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-width: 0;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  align-self: stretch;
+}
+.profile-gallery-layout > .encyclopedia-filter-row > .encyclopedia-controls {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin: 8px 0 0;
+}
+.profile-gallery-layout > .encyclopedia-filter-row > .encyclopedia-count {
+  margin-top: 14px;
+}
+.profile-gallery-layout > #explorar {
+  grid-column: 1;
+  grid-row: auto;
+}
+.profile-gallery-layout > #galeria {
+  grid-column: 2;
+  grid-row: auto;
+}
+.profile-gallery-layout > #explorar,
+.profile-gallery-layout > #galeria {
+  min-width: 0;
+  align-self: start;
+}
+@media (max-width: 900px) {
+  .profile-gallery-layout > #explorar,
+  .profile-gallery-layout > #galeria {
+    grid-column: 1;
+  }
+  .profile-gallery-layout > .encyclopedia-filter-row > .encyclopedia-controls {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
