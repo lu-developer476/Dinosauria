@@ -744,11 +744,17 @@ section[id]{scroll-margin-top:90px}
 }
 
 /* ENCICLOPEDIA */
-.encyclopedia-controls{
-  display:grid;
-  grid-template-columns:repeat(2,minmax(0,1fr));
-  gap:16px;
-  margin-top:28px;
+.profile-gallery-layout > .encyclopedia-controls {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  margin-top: 8px;
+  margin-bottom: 0;
+}
+.profile-gallery-layout > .encyclopedia-count {
+  grid-column: 1 / -1;
+  margin-top: 14px;
 }
 
 .select-field{
@@ -1093,4 +1099,16 @@ section[id]{scroll-margin-top:90px}
 }
 @media (max-width: 600px) {
   .profile-gallery-layout > .profile-gallery-title { max-width: 100%; }
+}
+
+
+/* Filtros a ancho completo; ambas tarjetas comienzan alineadas debajo */
+.profile-gallery-layout > #explorar,
+.profile-gallery-layout > #galeria {
+  padding-top: 0;
+}
+@media (max-width: 768px) {
+  .profile-gallery-layout > .encyclopedia-controls {
+    grid-template-columns: 1fr;
+  }
 }
