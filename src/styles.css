@@ -1154,3 +1154,31 @@ section[id]{scroll-margin-top:90px}
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Brillo titilante discreto para las tecnologías mencionadas en Arquitectura técnica */
+.tech-glow {
+  color: var(--accent);
+  text-shadow: 0 0 4px rgba(30,255,122,0.22);
+  animation: techGlowPulse 2.8s ease-in-out infinite;
+}
+@keyframes techGlowPulse {
+  0%, 100% {
+    text-shadow: 0 0 2px rgba(30,255,122,0.16);
+    opacity: 0.94;
+  }
+  50% {
+    text-shadow: 0 0 7px rgba(30,255,122,0.62), 0 0 12px rgba(30,255,122,0.2);
+    opacity: 1;
+  }
+}
+
+/* Las tarjetas de Historia comparten la altura natural de la más alta */
+.reading-z #sobre .cards > .card {
+  height: auto;
+  align-self: stretch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-glow { animation: none; }
+}
+
