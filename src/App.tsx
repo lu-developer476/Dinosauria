@@ -1048,7 +1048,18 @@ const gallery = useMemo(
 
       <footer className="footer">
         <div className="container footer-inner">
-          <small>© {new Date().getFullYear()} {t.rights} • Built with HTML5, CSS3, JavaScript, TypeScript, CoffeeScript & React.js • UX/UI Interface • Deployed on Vercel ®</small>
+          <small className="footer-credit">
+            © {new Date().getFullYear()} {t.rights} • Built with{" "}
+            <span className="tech-keywords" aria-label="Project technology stack">
+              <span style={{ "--tech-index": 0 } as React.CSSProperties}>HTML5</span>
+              <span style={{ "--tech-index": 1 } as React.CSSProperties}>CSS3</span>
+              <span style={{ "--tech-index": 2 } as React.CSSProperties}>JavaScript</span>
+              <span style={{ "--tech-index": 3 } as React.CSSProperties}>TypeScript</span>
+              <span style={{ "--tech-index": 4 } as React.CSSProperties}>CoffeeScript</span>
+              <span style={{ "--tech-index": 5 } as React.CSSProperties}>React.js</span>
+            </span>
+            {" "}• UX/UI Interface • Deployed on <span className="tech-keyword-single">Vercel</span> ®
+          </small>
         </div>
       </footer>
     </>
