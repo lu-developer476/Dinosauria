@@ -845,7 +845,7 @@ const gallery = useMemo(
 
               <div className="card">
                 <h3 className="card-title">{t.technicalTitle}</h3>
-                <p>{t.aboutTechnicalOne}</p>
+                <p>{renderTechKeywords(t.aboutTechnicalOne)}</p>
                 <p>{renderTechKeywords(t.aboutTechnicalTwo)}</p>
                 <p>
                   {t.aboutTechnicalThree}
