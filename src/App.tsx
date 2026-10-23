@@ -66,7 +66,6 @@ const translations = {
     aboutTechnicalOne: "El sitio está construido sobre React y TypeScript, lo que garantiza una base sólida, escalable y fácil de mantener a medida que el proyecto crece. Esto nos permite incorporar nuevas especies, rutas individuales por dinosaurio y filtros taxonómicos sin comprometer la estabilidad del sistema.",
     aboutTechnicalTwo: "Para funcionalidades interactivas más dinámicas usamos JavaScript, mientras que el módulo editorial de datos se gestiona con CoffeeScript, compilado automáticamente durante el proceso de build. Esta combinación asegura eficiencia y flexibilidad técnica.",
     aboutTechnicalThree: "La arquitectura está pensada para soportar contenido multimedia avanzado, como animaciones, galerías 3D y mapas de ecosistemas, permitiendo que la experiencia del usuario sea rica, educativa y envolvente, al mismo tiempo que la base de datos de especies se mantiene organizada y lista para futuras expansiones.",
-    aboutTechnicalFour: "En definitiva, cada capa del proyecto —desde el código hasta el contenido— ha sido diseñada para que la exploración de estas criaturas ficticias se sienta real, educativa y apasionante, reflejando la misma curiosidad que inspira a los paleontólogos del mundo real.",
     timelineOneBody: ["En entornos de alta competencia, la selección natural favorece mayor tamaño, refuerzo estructural y defensas especializadas.", "Mientras la evolución actúa durante millones de años, la manipulación deliberada del ADN responde a objetivos humanos concretos: aumentar masa, inteligencia o capacidad ofensiva. Así, la especialización puede surgir tanto por presión evolutiva sostenida como por intervención tecnológica, generando especies distintas en origen pero comparables en impacto ecológico."],
     timelineTwoBody: ["Los ecosistemas naturales funcionan a partir de ciclos de vida y relaciones tróficas que sostienen un equilibrio dinámico a lo largo del tiempo evolutivo.", "Cuando se introducen organismos diseñados, ese balance se altera, ya que carecen de una historia adaptativa integrada al entorno.", "El resultado es un sistema mezclado, redefiniendo los límites entre la creación artificial, la naturaleza y la paleobiología tradicional."],
   },
@@ -121,13 +120,20 @@ const translations = {
     aboutTechnicalOne: "The site is built with React and TypeScript, providing a solid, scalable, and maintainable foundation as the project grows. This allows new species, individual dinosaur routes, and taxonomic filters to be added without compromising system stability.",
     aboutTechnicalTwo: "More dynamic interactive features use JavaScript, while the editorial data module is managed with CoffeeScript and compiled automatically during the build process. This combination provides technical efficiency and flexibility.",
     aboutTechnicalThree: "The architecture is designed to support advanced multimedia content, such as animations, 3D galleries, and ecosystem maps, keeping the user experience rich, educational, and immersive while the species database remains organized and ready for future expansion.",
-    aboutTechnicalFour: "Ultimately, every layer of the project —from code to content— has been designed so exploring these fictional creatures feels real, educational, and exciting, reflecting the same curiosity that inspires real-world paleontologists.",
     timelineOneBody: ["In highly competitive environments, natural selection favors greater size, reinforced structures, and specialized defenses.", "While evolution acts over millions of years, deliberate DNA manipulation responds to specific human goals: increased mass, intelligence, or offensive capability. Specialization can therefore arise both from sustained evolutionary pressure and from technological intervention, producing species that differ in origin but are comparable in ecological impact."],
     timelineTwoBody: ["Natural ecosystems operate through life cycles and trophic relationships that sustain a dynamic balance across evolutionary time.", "When engineered organisms are introduced, that balance changes because they lack an adaptive history integrated into the environment.", "The result is a blended system that redefines the boundaries between artificial creation, nature, and traditional paleobiology."],
   },
 } as const;
 const translatedFacts = factsEn;
 
+
+function renderTechKeywords(text: string) {
+  return text.split(/(React|TypeScript|JavaScript|CoffeeScript)/g).map((part, index) =>
+    /^(React|TypeScript|JavaScript|CoffeeScript)$/.test(part)
+      ? <span className="tech-glow" key={index}>{part}</span>
+      : part
+  );
+}
 
 function normalizeTag(tag: string) {
   return tag.trim();
@@ -840,14 +846,9 @@ const gallery = useMemo(
               <div className="card">
                 <h3 className="card-title">{t.technicalTitle}</h3>
                 <p>{t.aboutTechnicalOne}</p>
-                <p>
-                  {t.aboutTechnicalTwo}
-                </p>
+                <p>{renderTechKeywords(t.aboutTechnicalTwo)}</p>
                 <p>
                   {t.aboutTechnicalThree}
-                </p>
-                <p>
-                  {t.aboutTechnicalFour}
                 </p>
               </div>
             </div>
