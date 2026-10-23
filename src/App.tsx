@@ -882,57 +882,59 @@ const gallery = useMemo(
           <p className="sub profile-gallery-intro">
             {t.speciesIntro}
           </p>
-              <div className="encyclopedia-controls" aria-label={t.navSpecies}>
-                <label className="select-field">
-                  <span>{t.categoryLabel}</span>
-                  <select
-                    value={activeFilter ?? "all"}
-                    onChange={(event) => {
-                      const value = event.target.value;
-                      setActiveFilter(value === "all" ? null : value);
-                      setGalleryScope(value === "all" ? "all" : "dino");
-                    }}
-                  >
-                    <option value="all">{t.all}</option>
-                    {availableFilters.map((tag) => (
-                      <option key={tag} value={tag}>
-                        {translateCategory(tag)}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-  
-                <label className="select-field">
-                  <span>{t.dinoLabel}</span>
-                  <select
-                    value={selectedDinoId}
-                    onChange={(event) => {
-                      setSelectedDinoId(event.target.value);
-                      setGalleryScope("dino");
-                    }}
-                    disabled={filteredDinos.length === 0}
-                  >
-                    {filteredDinos.length === 0 ? (
-                      <option value="">{t.noEntries}</option>
-                    ) : (
-                      filteredDinos.map((d: any) => (
-                        <option key={d.id} value={d.id}>
-                          {d.name}
+              <div className="encyclopedia-filter-row">
+                <div className="encyclopedia-controls" aria-label={t.navSpecies}>
+                  <label className="select-field">
+                    <span>{t.categoryLabel}</span>
+                    <select
+                      value={activeFilter ?? "all"}
+                      onChange={(event) => {
+                        const value = event.target.value;
+                        setActiveFilter(value === "all" ? null : value);
+                        setGalleryScope(value === "all" ? "all" : "dino");
+                      }}
+                    >
+                      <option value="all">{t.all}</option>
+                      {availableFilters.map((tag) => (
+                        <option key={tag} value={tag}>
+                          {translateCategory(tag)}
                         </option>
-                      ))
-                    )}
-                  </select>
-                </label>
-              </div>
-  
-              {activeFilter ? (
-                <div key={activeFilter} className="encyclopedia-count filter-count-enter" aria-live="polite">
-                  <span className="count-card count-card-accent">
-                    <strong>{filteredDinos.length}</strong>
-                    <span>{filteredEntriesLabel}</span>
-                  </span>
+                      ))}
+                    </select>
+                  </label>
+
+                  <label className="select-field">
+                    <span>{t.dinoLabel}</span>
+                    <select
+                      value={selectedDinoId}
+                      onChange={(event) => {
+                        setSelectedDinoId(event.target.value);
+                        setGalleryScope("dino");
+                      }}
+                      disabled={filteredDinos.length === 0}
+                    >
+                      {filteredDinos.length === 0 ? (
+                        <option value="">{t.noEntries}</option>
+                      ) : (
+                        filteredDinos.map((d: any) => (
+                          <option key={d.id} value={d.id}>
+                            {d.name}
+                          </option>
+                        ))
+                      )}
+                    </select>
+                  </label>
                 </div>
-              ) : null}
+
+                {activeFilter ? (
+                  <div key={activeFilter} className="encyclopedia-count filter-count-enter" aria-live="polite">
+                    <span className="count-card count-card-accent">
+                      <strong>{filteredDinos.length}</strong>
+                      <span>{filteredEntriesLabel}</span>
+                    </span>
+                  </div>
+                ) : null}
+              </div>
 
                     <section id="explorar" className="section">
             <div className="container">
