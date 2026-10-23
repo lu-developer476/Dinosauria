@@ -1155,19 +1155,21 @@ section[id]{scroll-margin-top:90px}
   }
 }
 
-/* Brillo titilante discreto para las tecnologías mencionadas en Arquitectura técnica */
+/* Brillo titilante visible para las tecnologías de Arquitectura técnica */
 .tech-glow {
+  display: inline;
   color: var(--accent);
-  text-shadow: 0 0 4px rgba(30,255,122,0.22);
-  animation: techGlowPulse 2.8s ease-in-out infinite;
+  font-weight: 700;
+  text-shadow: 0 0 5px rgba(30,255,122,0.45), 0 0 10px rgba(30,255,122,0.2);
+  animation: techGlowPulse 1.8s ease-in-out infinite;
 }
 @keyframes techGlowPulse {
   0%, 100% {
-    text-shadow: 0 0 2px rgba(30,255,122,0.16);
-    opacity: 0.94;
+    text-shadow: 0 0 3px rgba(30,255,122,0.3), 0 0 6px rgba(30,255,122,0.12);
+    opacity: 0.96;
   }
   50% {
-    text-shadow: 0 0 7px rgba(30,255,122,0.62), 0 0 12px rgba(30,255,122,0.2);
+    text-shadow: 0 0 6px rgba(30,255,122,0.85), 0 0 13px rgba(30,255,122,0.45);
     opacity: 1;
   }
 }
