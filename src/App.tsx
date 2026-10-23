@@ -882,9 +882,6 @@ const gallery = useMemo(
           <p className="sub profile-gallery-intro">
             {t.speciesIntro}
           </p>
-          <section id="explorar" className="section">
-            <div className="container">
-  
               <div className="encyclopedia-controls" aria-label={t.navSpecies}>
                 <label className="select-field">
                   <span>{t.categoryLabel}</span>
@@ -936,6 +933,11 @@ const gallery = useMemo(
                   </span>
                 </div>
               ) : null}
+
+                    <section id="explorar" className="section">
+            <div className="container">
+  
+
   
               {selectedDino ? (
                 <article className="card encyclopedia-entry">
