@@ -1154,3 +1154,50 @@ section[id]{scroll-margin-top:90px}
     grid-template-columns: minmax(0, 1fr);
   }
 }
+
+/* Palabras clave del stack: entrada escalonada y brillo sutil */
+.footer-credit {
+  display: inline;
+  line-height: 2.2;
+}
+.tech-keywords {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  margin: 0 3px;
+  vertical-align: baseline;
+}
+.tech-keywords > span,
+.tech-keyword-single {
+  display: inline-block;
+  padding: 2px 7px;
+  border: 1px solid rgba(30,255,122,0.28);
+  border-radius: 6px;
+  color: var(--accent);
+  background: rgba(30,255,122,0.055);
+  font-weight: 700;
+  animation: techKeywordReveal 520ms cubic-bezier(.2,.75,.25,1) both;
+  animation-delay: calc(var(--tech-index, 6) * 90ms);
+  transition: border-color 180ms ease, background 180ms ease, box-shadow 180ms ease;
+}
+.tech-keywords > span:hover,
+.tech-keyword-single:hover {
+  border-color: rgba(30,255,122,0.7);
+  background: rgba(30,255,122,0.13);
+  box-shadow: 0 0 12px rgba(30,255,122,0.12);
+}
+.tech-keyword-single {
+  animation-delay: 540ms;
+}
+@keyframes techKeywordReveal {
+  from { opacity: 0; transform: translateY(7px); filter: blur(2px); }
+  to { opacity: 1; transform: translateY(0); filter: blur(0); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tech-keywords > span,
+  .tech-keyword-single {
+    animation: none;
+    transition: none;
+  }
+}
