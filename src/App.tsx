@@ -727,7 +727,7 @@ const gallery = useMemo(
           >
             <div className="logo" aria-hidden="true">🧬 + 🦴</div>
             <div>
-              <div className="brand-title">Dinosauria</div>
+              <div className="brand-title">🦖</div>
               <div className="brand-sub">🦕</div>
             </div>
           </a>
