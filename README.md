@@ -2,122 +2,156 @@
 
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![React DOM](https://img.shields.io/badge/React_DOM-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 ![CoffeeScript](https://img.shields.io/badge/CoffeeScript-2F2625?style=for-the-badge&logo=coffeescript&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 
-Dinosauria es una SPA editorial e interactiva desarrollada con **React + TypeScript**, utilidades en **JavaScript** y un módulo de curiosidades escrito en **CoffeeScript** que se compila automáticamente durante el build.
+**Dinosauria** es una enciclopedia visual e interactiva dedicada a los dinosaurios y otras criaturas prehistóricas, reales y ficticias. El proyecto combina divulgación, ficción especulativa y criterios de anatomía comparada, biomecánica y ecología para explorar cada especie desde una perspectiva científica y narrativa.
 
-El proyecto combina divulgación, ficción especulativa y una interfaz bilingüe para explorar especies reales, ficticias e híbridas desde una lectura científica, anatómica y narrativa. Está preparado para despliegue directo en **Vercel**.
+Desarrollada como una aplicación de una sola página con **React, TypeScript y Vite**, ofrece una experiencia bilingüe en español e inglés y está preparada para desplegarse en **Vercel**.
 
-## 🎯 Estado actual del proyecto
+## 🦖 Características
 
-- Aplicación de una sola página construida con Vite y React 18.
-- Interfaz bilingüe en español e inglés, con traducciones para navegación, contenido editorial, galería y fichas técnicas.
-- Selector de tema claro/oscuro aplicado a nivel de documento.
-- Landing inmersiva con navegación sticky, menú desplegable y scroll suave.
-- Secciones activas: Acerca del proyecto, Convergencia, Especies y Galería.
-- Sistema de “Curiosidad del día” con rotación manual y fecha dinámica localizada.
-- Enciclopedia de especies con filtros por categoría, dieta/era y selector de entrada individual.
-- Contador visible de entradas sobre dinosaurios en la sección Especies, incluyendo total del catálogo y cantidad afectada por los filtros activos.
-- Galería con navegación anterior/siguiente, contador de imágenes, alcance global o por especie y modal de ampliación.
-- Datos de catálogo, traducciones técnicas e imágenes organizados para seguir escalando el contenido.
+- **Enciclopedia de especies:** catálogo de 50 entradas con descripciones y fichas técnicas.
+- **Exploración y filtros:** selección de especies y filtros por categoría, dieta y otros atributos disponibles en el catálogo.
+- **Fichas técnicas:** información organizada para consultar las características y el contexto biológico de cada entrada, con cobertura en inglés.
+- **Interfaz bilingüe:** navegación y contenido disponible en español e inglés.
+- **Curiosidad del día:** módulo de datos breves con rotación y fecha localizada.
+- **Galería visual:** 58 imágenes con navegación anterior/siguiente, contador, vista global o filtrada por especie y ampliación en modal.
+- **Tema claro y oscuro:** selector manual de apariencia.
+- **Diseño adaptable:** estilos CSS personalizados para distintos tamaños de pantalla.
+- **Navegación fluida:** desplazamiento suave entre las secciones de la aplicación.
+
+## 🧬 Enfoque del proyecto
+
+Dinosauria reúne especies de distintos orígenes y las presenta mediante una lectura que considera:
+
+- Anatomía comparada y características morfológicas.
+- Masa corporal estimada, locomoción y biomecánica.
+- Dieta, función trófica y relaciones ecológicas.
+- Adaptaciones y posibles interacciones con el entorno.
+- Coherencia biológica para criaturas ficticias y organismos diseñados.
+
+Las especies ficticias se analizan con criterios de plausibilidad anatómica y ecológica, sin confundir su origen narrativo con el de los taxones paleontológicos reales.
 
 ## 🧱 Stack tecnológico
 
-- React 18
-- TypeScript
-- JavaScript para utilidades auxiliares
-- CoffeeScript para el módulo editorial compilado
-- Vite 5
-- CSS personalizado responsive
+| Tecnología | Uso |
+| --- | --- |
+| React 18 | Componentes e interfaz de usuario |
+| TypeScript | Tipado y estructura de la aplicación |
+| JavaScript | Utilidades y lógica complementaria |
+| CoffeeScript | Módulo de curiosidades en español |
+| Vite 5 | Servidor de desarrollo y build de producción |
+| CSS | Estilos, temas y diseño responsive |
+| React DOM | Renderizado de la aplicación |
 
 ## 📦 Requisitos
 
-- Node.js 18+ (recomendado 20+)
-- npm 9+
+- Node.js 18 o superior (recomendado: Node.js 20+).
+- npm 9 o superior.
 
-## 🚀 Instalación
+## 🚀 Instalación y ejecución
+
+Cloná el repositorio e ingresá al directorio:
+
+```bash
+git clone https://github.com/lu-developer476/Dinosauria.git
+cd Dinosauria
+```
+
+Instalá las dependencias:
 
 ```bash
 npm install
 ```
 
-## 🧪 Desarrollo
+Iniciá el servidor de desarrollo:
 
 ```bash
 npm run dev
 ```
 
-Abrí el navegador en la URL que Vite indique en consola.
+Vite mostrará en la terminal la dirección local para abrir la aplicación en el navegador.
 
-## 🏗 Build de producción
+## 🛠 Scripts disponibles
+
+| Comando | Descripción |
+| --- | --- |
+| `npm run dev` | Inicia el servidor local de desarrollo. |
+| `npm run coffee` | Compila los archivos CoffeeScript a JavaScript. |
+| `npm run check:translations` | Comprueba la cobertura de fichas técnicas y curiosidades en inglés. |
+| `npm run build` | Compila CoffeeScript y genera el build optimizado de Vite. |
+| `npm run preview` | Sirve localmente el build de producción. |
+
+### Build de producción
 
 ```bash
 npm run build
 ```
 
-Este comando:
+El proceso ejecuta la compilación de CoffeeScript y luego genera la versión optimizada de la aplicación en `dist/`.
 
-- Compila `src/coffee/funfacts.coffee` hacia `src/generated/funfacts.js`.
-- Valida y transpila la aplicación React + TypeScript.
-- Genera el build optimizado de Vite en `dist/`.
-
-## ✅ Checks disponibles
+Para revisar la cobertura de traducciones:
 
 ```bash
 npm run check:translations
-npm run build
 ```
 
-`check:translations` valida que las fichas técnicas tengan cobertura en inglés para las entradas del catálogo.
-
-## 🖼 Galería de imágenes
-
-Las imágenes públicas están ubicadas dentro de:
+## 📁 Estructura del proyecto
 
 ```text
-public/images/
+Dinosauria/
+├── public/
+│   ├── images/                 # Recursos visuales de la galería
+│   ├── favicon.ico
+│   └── robots.txt
+├── scripts/
+│   └── check-english-coverage.mjs
+├── src/
+│   ├── App.tsx                 # Aplicación y componentes principales
+│   ├── main.tsx                # Punto de entrada
+│   ├── styles.css              # Estilos y temas
+│   ├── types.ts                # Tipos TypeScript
+│   ├── coffee/
+│   │   └── funfacts.coffee     # Curiosidades en español
+│   ├── data/
+│   │   ├── dinos.ts            # Catálogo de especies
+│   │   ├── dinoTechnicalSheetsEn.ts
+│   │   └── funfactsEn.ts       # Curiosidades en inglés
+│   ├── generated/
+│   │   └── funfacts.js         # Archivo generado durante la compilación
+│   └── utils/
+│       └── scroll.js           # Utilidades de desplazamiento
+├── index.html
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+├── vercel.json
+└── README.md
 ```
 
-La galería puede mostrarse en modo global o enfocada en la especie seleccionada, reutilizando imágenes específicas cuando hay coincidencias por nombre o identificador.
+El archivo `src/generated/funfacts.js` es un artefacto generado: se vuelve a crear a partir de los fuentes CoffeeScript durante el build. Los cambios del módulo deben realizarse en `src/coffee/funfacts.coffee`.
 
-## 📁 Estructura principal
+## ☁️ Despliegue en Vercel
 
-```text
-src/
-├── App.tsx
-├── main.tsx
-├── styles.css
-├── types.ts
-├── coffee/
-│   └── funfacts.coffee
-├── data/
-│   ├── dinos.ts
-│   ├── dinoTechnicalSheetsEn.ts
-│   └── funfactsEn.ts
-├── generated/
-│   └── funfacts.js
-└── utils/
-    └── scroll.js
-```
+El proyecto utiliza Vite y está preparado para desplegarse directamente en Vercel con la siguiente configuración:
 
-El archivo `src/generated/funfacts.js` se regenera automáticamente en cada build.
+| Configuración | Valor |
+| --- | --- |
+| Framework Preset | Vite |
+| Build Command | `npm run build` |
+| Output Directory | `dist` |
+| Install Command | `npm install` |
 
-## ☁ Deploy en Vercel
+El archivo `vercel.json` forma parte de la configuración del repositorio.
 
-- Framework: Vite
-- Build Command: `npm run build`
-- Output Directory: `dist`
+## 📄 Licencia y uso
 
-El repositorio está listo para deploy directo sin configuraciones adicionales.
+Todos los derechos reservados. El proyecto está disponible públicamente para visualización y evaluación. No se autoriza su uso, copia, modificación, distribución ni explotación sin consentimiento previo y por escrito del autor.
 
-## 📈 Próximos pasos sugeridos
+Consultá el archivo [LICENSE](LICENSE) para conocer los términos completos. La versión en inglés prevalece ante cualquier diferencia de interpretación.
 
-- Ruteo dinámico con React Router.
-- Páginas individuales por especie.
-- Filtros taxonómicos más específicos.
-- Sistema de etiquetas ampliado para Natural / Híbrido / Ficticio.
-- Optimización de imágenes y carga diferida.
-- Internacionalización completa del contenido narrativo largo.
+---
+
+**Dinosauria** — una exploración visual de la paleontología, la biología y la imaginación.
